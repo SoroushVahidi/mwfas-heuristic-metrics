@@ -41,8 +41,8 @@
     },
     {
       "path": "README.md",
-      "size_bytes": 4622,
-      "sha256": "bdfb677fc3b8cdb77523e2b9d9c5ebb6c9895658afb65063a059b89ca681b09f",
+      "size_bytes": 5301,
+      "sha256": "0f79743e2663b371069fc6db43c2aeb77c8f04aaa878c0be09bf9dd16fcd3057",
       "origin": "new_public_release_material",
       "license_scope": "CC-BY-4.0-author-controlled"
     },
@@ -90,8 +90,8 @@
     },
     {
       "path": "docs/DATA_AVAILABILITY.md",
-      "size_bytes": 2858,
-      "sha256": "d4dee535e8195c5654c59d3f70adc81e6b0ddd0a5c897751585678cd6ccc0e1d",
+      "size_bytes": 3496,
+      "sha256": "36e3e762313e34cd32931bd1d0f73e0bffb3e8e58008da94bc972ce35ce03b11",
       "origin": "new_public_release_material",
       "license_scope": "CC-BY-4.0-author-controlled"
     },
@@ -129,6 +129,13 @@
       "sha256": "07a7f56366faf57284b5f5549eee51b7d41e640d17c56ae784c80af48ba8061c",
       "origin": "exact_author_source_snapshot",
       "license_scope": "CC-BY-4.0-author-controlled"
+    },
+    {
+      "path": "release/verify_objective_witnesses.py",
+      "origin": "new_public_release_material",
+      "license_scope": "MIT",
+      "size_bytes": 13660,
+      "sha256": "1d46945178f4631a643d88b0a3f2c0b2acfc6e895a53715261b68add5e228032"
     },
     {
       "path": "release/verify_package.py",

@@ -8,6 +8,7 @@
 - `src/mwfas_data/` contains a DIMACS reader, backward-arc and acyclicity checks, pinned retrieval and dataset audit code. The audit reports `PASS`, `FAIL`, or `NOT_VERIFIABLE` without changing rows or filling missing inputs. The committed baseline validation includes its original failures and unavailable checks.
 - `release/public_reference_manifest.csv` names 62 pinned, public byte references: 29 original dataset files, 20 Ali graph files, and 13 historical Wikimedia-derived files (three graphs and ten saved orderings). These are references, not 62 independent graphs or a copy of their bytes. `release/verify_public_refs.py` validates the list offline or checks remotely retrieved bytes in memory.
 - `configs/`, `data/manifests/`, and `docs/` describe the original baseline, source parents, provenance, rights and access limits.
+- The separate [benchmark extension dataset at immutable revision `1e9db1d`](https://huggingface.co/datasets/SoroushVahidi/mwfas-benchmark-extension/tree/1e9db1daa5401b56398e9807d4e48d989d9f0eab) publishes five path-free metadata tables (442 graph rows, 5,254 outcomes, 243 numerical references) and exact bytes for three Wikimedia graph views and ten complete saved orders. `release/verify_objective_witnesses.py` independently recomputes those ten objectives and checks the metadata contracts.
 
 ## Quick checks
 
@@ -18,13 +19,15 @@ uv run --locked pytest -q
 python scripts/check_manifests.py
 python release/verify_public_refs.py --offline
 python release/verify_public_refs.py --artifact-id 'ALI:core-bad/bad1.d'
+hf download SoroushVahidi/mwfas-benchmark-extension --repo-type dataset --revision 1e9db1daa5401b56398e9807d4e48d989d9f0eab --local-dir extension
+python release/verify_objective_witnesses.py extension
 ```
 
 To audit the original public dataset, run `uv run --locked mwfas-data fetch` and then `uv run --locked mwfas-data audit`. Downloads go to ignored `data/cache/`; the audit report goes to ignored `results/`. The audit retains original failed and incomplete statuses. It does not rerun optimization. The small `scripts/run_exp01_smoke.py` adapter can check a pinned upstream implementation on the included synthetic test graph, with five IPSNS iterations and a 30 second timeout per method; see [reproducibility](docs/REPRODUCIBILITY.md).
 
 ## Scientific limits
 
-The audited later extension indexed 442 graph rows under specific contracts; this is **not** a count of globally unique graph inputs. Views, paired weights and runs can share a topology or source parent. The later numerical solver certificates are numerical, not exact-arithmetic proofs; time-limited cases remain bounded rather than certified. This repository does not publish the later extension tables, raw solver logs, or a complete central objective witness set. Historical Wikimedia-derived graph and order bytes are pinned in a separate public workspace, but their pre-May 2026 monthly source TSV snapshots remain unavailable. See [data availability](docs/DATA_AVAILABILITY.md) for the exact reproduction boundary.
+The audited later extension indexed 442 graph rows under specific contracts; this is **not** a count of globally unique graph inputs. Views, paired weights and runs can share a topology or source parent. The later numerical solver certificates are numerical, not exact-arithmetic proofs; time-limited cases remain bounded rather than certified. The extension dataset publishes metadata and ten Wikimedia objectives with complete byte witnesses; the central synthetic and other source-family graph/order bytes are not yet publicly released. The pre-May 2026 Wikimedia monthly source TSV snapshots remain unavailable. See [data availability](docs/DATA_AVAILABILITY.md) for the exact reproduction boundary.
 
 ## Sources, rights and citation
 
