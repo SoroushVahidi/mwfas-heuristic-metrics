@@ -34,8 +34,8 @@
     },
     {
       "path": "LICENSE_SCOPE.md",
-      "size_bytes": 1427,
-      "sha256": "6c429302cc0906eb192b4013421b73766ce52d9b37ec46dcae2b64219c0379cc",
+      "size_bytes": 1461,
+      "sha256": "5a12a8edb96c2799caa99eccfdf93be00725805359d308a393060b79f3a2766d",
       "origin": "new_public_release_material",
       "license_scope": "CC-BY-4.0-author-controlled"
     },
