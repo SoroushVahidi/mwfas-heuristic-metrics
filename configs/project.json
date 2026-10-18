@@ -1,0 +1,10 @@
+{
+  "dataset_repo": "SoroushVahidi/mwfas-heuristic-metrics",
+  "dataset_revision": "5b6cd5620ca0a1c9b3be5e8d996bf8e3c467e79f",
+  "source_repo": "SoroushVahidi/minimum-weighted-fas-heuristics",
+  "source_revision": "40209c26966247d9bf9ad34764de4ac4181f98c2",
+  "benchmark_repo": "alidasdan/graph-benchmarks",
+  "benchmark_revision": "77e5b8b4f1e1a1b8e80cfb9430f90492ffee3675",
+  "default_seed": 1,
+  "cache_dir": "data/cache/hf"
+}

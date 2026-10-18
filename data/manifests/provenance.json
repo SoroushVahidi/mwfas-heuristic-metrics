@@ -1,0 +1,102 @@
+{
+  "benchmark_repo": "alidasdan/graph-benchmarks",
+  "benchmark_revision": "77e5b8b4f1e1a1b8e80cfb9430f90492ffee3675",
+  "benchmark_revision_role": "current reference snapshot; original experiment graph revision not established",
+  "configs": {
+    "ablation": {
+      "parquet_file": "data/ablation/train.parquet",
+      "rows": 80
+    },
+    "aggregate_summary": {
+      "parquet_file": "data/aggregate_summary/train.parquet",
+      "rows": 96
+    },
+    "application_case": {
+      "parquet_file": "data/application_case/train.parquet",
+      "rows": 6
+    },
+    "budget_curve": {
+      "parquet_file": "data/budget_curve/train.parquet",
+      "rows": 120
+    },
+    "core_benchmark": {
+      "parquet_file": "data/core_benchmark/train.parquet",
+      "rows": 369
+    },
+    "exact_small": {
+      "parquet_file": "data/exact_small/train.parquet",
+      "rows": 67
+    },
+    "external_baselines": {
+      "parquet_file": "data/external_baselines/train.parquet",
+      "rows": 984
+    },
+    "lolib_dense": {
+      "parquet_file": "data/lolib_dense/train.parquet",
+      "rows": 400
+    },
+    "medium_mip_baseline": {
+      "parquet_file": "data/medium_mip_baseline/train.parquet",
+      "rows": 15
+    },
+    "plain_local_search": {
+      "parquet_file": "data/plain_local_search/train.parquet",
+      "rows": 60
+    },
+    "robustness": {
+      "parquet_file": "data/robustness/train.parquet",
+      "rows": 3720
+    },
+    "run_metrics": {
+      "parquet_file": "data/run_metrics/train.parquet",
+      "rows": 1290
+    },
+    "sensitivity": {
+      "parquet_file": "data/sensitivity/train.parquet",
+      "rows": 140
+    },
+    "topological_extraction_sensitivity": {
+      "parquet_file": "data/topological_extraction_sensitivity/train.parquet",
+      "rows": 24
+    }
+  },
+  "dataset_repo": "SoroushVahidi/mwfas-heuristic-metrics",
+  "dataset_revision": "5b6cd5620ca0a1c9b3be5e8d996bf8e3c467e79f",
+  "files": {
+    ".gitattributes": "9e75dd981de037ec3769f24f790e126bc5a160b6871f510214e68dc70649aeeb",
+    "CHECKSUMS.sha256": "72779a448457f1495e588144ef238a9ee98527c0f809d2b29f8355a1cf74479e",
+    "CITATION.cff": "13ec126f1092b2d941777a687b4411e09070f00f091f383c737f8e4f6c9500a5",
+    "LICENSE": "e7ea69f77744f09d6f646829b7033f0d4a3cb31c49c3c08f5c8390dc861e2dc1",
+    "README.md": "feeceec40d38d77a447c7a8799b61cd4fe7453e28f01bd525143f277c824438a",
+    "data/ablation/train.parquet": "a7b280c5323f9de1006e1c3f9bd16731139ea0a3203f652dd96072fca9f96159",
+    "data/aggregate_summary/train.parquet": "e0825f9f18bbb1228abd05db9839f1dd4d85ee4ef99ec8e26acd538701f81396",
+    "data/application_case/train.parquet": "9023d83cb4376dda8d6208afddaff8b046cc4d5a5bf32ff3f4014590f89e75e2",
+    "data/budget_curve/train.parquet": "e7b5d8538f53612091ac8a4d28e8020d8d9342cf5a77d3a8d0d7f7779b4b5077",
+    "data/core_benchmark/train.parquet": "85c913f44fa01cc6f5e3ae602c752b6c48070371cc4388ef8b8ed14789846e19",
+    "data/exact_small/train.parquet": "4888d6ed82366210853fef72d2133844a3306ccca98ce20e543d0e31bf488be5",
+    "data/external_baselines/train.parquet": "4a2879a11c11804ac7d2d579492ee915d506acf6a66ee05306330c1bd6738a91",
+    "data/lolib_dense/train.parquet": "280368a5fe62698d8ca0809efac3f30cf61d1744f2edb9f8683087f7313da4d2",
+    "data/medium_mip_baseline/train.parquet": "e9d366ce4ab012aa0b7b97cf8125e32252b7671106cd8b2f48ddc26e66c664f1",
+    "data/plain_local_search/train.parquet": "bd57fb2581b32d7e3afb014106567801031af4697000b2eaca091dd7e506cb7e",
+    "data/robustness/train.parquet": "b09278df79d05f5dd9f97eb25c4b0fa5340cb379ad6cf8f725c49de219b6944b",
+    "data/run_metrics/train.parquet": "eee58ccbdff9b646aa37d40ee395391cd66eb687b289500d7d5a94c8fc83b6ac",
+    "data/sensitivity/train.parquet": "c23491aebba2fa17ffcdba0c0dda42fbae1cc7951398c733638eea590326ac31",
+    "data/topological_extraction_sensitivity/train.parquet": "1948a58ebd68b81c4356b7dc09c577a3bac978c82541a428c0b9572f77660147",
+    "metadata/algorithm_provenance.json": "4c28210da200e7d1c14fcdf39f5fa14a94c7f3a569e909fbc235891c5405bab1",
+    "metadata/benchmark_provenance.json": "de9ca1cb2e2b465bce7a88d0ac477a5867c7e9676d7ebbb2b8e2a7a476b74db6",
+    "metadata/build_validation_report.json": "ab56b43645ae4895c421a5d024fa54fce41e6c12ed8c631a7a32b3ab1494c50d",
+    "metadata/canonical_experiment_registry.json": "afccdc65a1bd98c14ab137820d9cb4bdec72c6611c69ea442590ddcc4747da91",
+    "metadata/citation.bib": "e8200e65e74b0650c428274843ef478c3f7874308e385ce0097e4d736557dcf9",
+    "metadata/file_inventory.json": "77e1bd889418cb70d03e09d1287934ab37f2218750f215f555462b8440de4bd2",
+    "metadata/release_manifest.json": "e923ecc384c9b5271c1cc8bf6368dfd985b2dd1ff2b54293d6899917bc375b6e",
+    "metadata/schema.json": "8d0e9963fcb3a07592687caac389172d89593ed6f93691ae156d7e31b8147bfb",
+    "metadata/security_scan_report.json": "a8853a46b29c0279631919e000e2f174ad9843397e2bd1c598960754686fe32d",
+    "metadata/statistics.json": "ee8a4851feff6ec4aab5f3c15b4847ccd09e1eedcf20035dece5e5e584f1b63b"
+  },
+  "observed_row_source_revisions": [
+    "40209c26966247d9bf9ad34764de4ac4181f98c2",
+    "80b3144d5fdbbe250faed8a4fe671dde2da76c89"
+  ],
+  "source_repo": "SoroushVahidi/minimum-weighted-fas-heuristics",
+  "source_revision": "40209c26966247d9bf9ad34764de4ac4181f98c2"
+}

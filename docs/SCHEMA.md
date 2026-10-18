@@ -1,0 +1,7 @@
+# Released metadata contracts
+
+`configs/project.json` pins the original Hugging Face dataset, method source, and Ali reference revisions. `data/manifests/provenance.json` records the 14 original dataset configurations, expected row counts and file hashes. `data/manifests/baseline_audit.json` and `initial_validation.json` preserve the original baseline observations, including failures and checks that could not be verified. These are about the original public Hugging Face release, not the later private extension.
+
+`release/public_reference_manifest.csv` has one row per pinned external file. `artifact_id` is unique within this manifest, not a global graph ID. `kind` distinguishes original dataset files, Ali source graph files, author-derived Wikimedia graphs and saved orders. `source_parent` groups dependent observations. `revision` must be present in the HTTPS `url`; `size_bytes` and `sha256` identify exact bytes. `rights_status` is a scoped reuse description, never a grant from this repository. `upstream_reconstruction` distinguishes pinned derived bytes from unavailable upstream inputs. The 62 rows comprise 29 original HF files, 20 Ali files, three Wikimedia graphs and ten Wikimedia saved orders.
+
+`release/manifest.json` is the release-file ledger. Its file entries give path, size, SHA-256, scope and origin for every published content file except itself. It is generated from the staged tree and checked before publication. External byte references retain their own hashes in the CSV.

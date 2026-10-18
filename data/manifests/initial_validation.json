@@ -1,0 +1,1745 @@
+{
+  "checks": [
+    {
+      "detail": "SHA-256 verified; 80 rows vs 80 expected",
+      "name": "ablation.integrity",
+      "status": "PASS"
+    },
+    {
+      "count": 0,
+      "detail": "source_experiment, source_commit, benchmark_resource, instance_id",
+      "name": "ablation.required_metadata",
+      "status": "PASS"
+    },
+    {
+      "count": 0,
+      "detail": "Key: ['benchmark_resource', 'instance_id', 'algorithm_variant']; duplicate rows beyond first",
+      "name": "ablation.key_uniqueness",
+      "status": "PASS"
+    },
+    {
+      "count": 0,
+      "detail": "Byte-equivalent field values across complete rows",
+      "name": "ablation.full_row_duplicates",
+      "status": "PASS"
+    },
+    {
+      "detail": "No complete total/forward/backward triples",
+      "name": "ablation.objective_arithmetic",
+      "status": "NOT_VERIFIABLE"
+    },
+    {
+      "detail": "SHA-256 verified; 96 rows vs 96 expected",
+      "name": "aggregate_summary.integrity",
+      "status": "PASS"
+    },
+    {
+      "count": 0,
+      "detail": "benchmark_resource",
+      "name": "aggregate_summary.required_metadata",
+      "status": "PASS"
+    },
+    {
+      "detail": "No unique run key defined for this config",
+      "name": "aggregate_summary.key_uniqueness",
+      "status": "NOT_VERIFIABLE"
+    },
+    {
+      "count": 0,
+      "detail": "Byte-equivalent field values across complete rows",
+      "name": "aggregate_summary.full_row_duplicates",
+      "status": "PASS"
+    },
+    {
+      "detail": "No complete total/forward/backward triples",
+      "name": "aggregate_summary.objective_arithmetic",
+      "status": "NOT_VERIFIABLE"
+    },
+    {
+      "detail": "SHA-256 verified; 6 rows vs 6 expected",
+      "name": "application_case.integrity",
+      "status": "PASS"
+    },
+    {
+      "count": 0,
+      "detail": "source_experiment, source_commit, benchmark_resource, instance_id",
+      "name": "application_case.required_metadata",
+      "status": "PASS"
+    },
+    {
+      "detail": "No unique run key defined for this config",
+      "name": "application_case.key_uniqueness",
+      "status": "NOT_VERIFIABLE"
+    },
+    {
+      "count": 0,
+      "detail": "Byte-equivalent field values across complete rows",
+      "name": "application_case.full_row_duplicates",
+      "status": "PASS"
+    },
+    {
+      "detail": "No complete total/forward/backward triples",
+      "name": "application_case.objective_arithmetic",
+      "status": "NOT_VERIFIABLE"
+    },
+    {
+      "detail": "SHA-256 verified; 120 rows vs 120 expected",
+      "name": "budget_curve.integrity",
+      "status": "PASS"
+    },
+    {
+      "count": 0,
+      "detail": "source_experiment, source_commit, benchmark_resource, instance_id",
+      "name": "budget_curve.required_metadata",
+      "status": "PASS"
+    },
+    {
+      "detail": "No unique run key defined for this config",
+      "name": "budget_curve.key_uniqueness",
+      "status": "NOT_VERIFIABLE"
+    },
+    {
+      "count": 0,
+      "detail": "Byte-equivalent field values across complete rows",
+      "name": "budget_curve.full_row_duplicates",
+      "status": "PASS"
+    },
+    {
+      "count": 0,
+      "detail": "Checked 120 complete rows",
+      "name": "budget_curve.objective_arithmetic",
+      "status": "PASS"
+    },
+    {
+      "detail": "SHA-256 verified; 369 rows vs 369 expected",
+      "name": "core_benchmark.integrity",
+      "status": "PASS"
+    },
+    {
+      "count": 0,
+      "detail": "source_experiment, source_commit, benchmark_resource, instance_id",
+      "name": "core_benchmark.required_metadata",
+      "status": "PASS"
+    },
+    {
+      "count": 54,
+      "detail": "Key: ['benchmark_resource', 'instance_id', 'algorithm']; duplicate rows beyond first",
+      "name": "core_benchmark.key_uniqueness",
+      "status": "FAIL"
+    },
+    {
+      "count": 0,
+      "detail": "Byte-equivalent field values across complete rows",
+      "name": "core_benchmark.full_row_duplicates",
+      "status": "PASS"
+    },
+    {
+      "count": 0,
+      "detail": "Checked 369 complete rows",
+      "name": "core_benchmark.objective_arithmetic",
+      "status": "PASS"
+    },
+    {
+      "detail": "SHA-256 verified; 67 rows vs 67 expected",
+      "name": "exact_small.integrity",
+      "status": "PASS"
+    },
+    {
+      "count": 0,
+      "detail": "source_experiment, source_commit, benchmark_resource, instance_id",
+      "name": "exact_small.required_metadata",
+      "status": "PASS"
+    },
+    {
+      "detail": "No unique run key defined for this config",
+      "name": "exact_small.key_uniqueness",
+      "status": "NOT_VERIFIABLE"
+    },
+    {
+      "count": 0,
+      "detail": "Byte-equivalent field values across complete rows",
+      "name": "exact_small.full_row_duplicates",
+      "status": "PASS"
+    },
+    {
+      "detail": "No complete total/forward/backward triples",
+      "name": "exact_small.objective_arithmetic",
+      "status": "NOT_VERIFIABLE"
+    },
+    {
+      "detail": "SHA-256 verified; 984 rows vs 984 expected",
+      "name": "external_baselines.integrity",
+      "status": "PASS"
+    },
+    {
+      "count": 0,
+      "detail": "source_experiment, source_commit, benchmark_resource, instance_id",
+      "name": "external_baselines.required_metadata",
+      "status": "PASS"
+    },
+    {
+      "count": 144,
+      "detail": "Key: ['benchmark_resource', 'instance_id', 'algorithm']; duplicate rows beyond first",
+      "name": "external_baselines.key_uniqueness",
+      "status": "FAIL"
+    },
+    {
+      "count": 0,
+      "detail": "Byte-equivalent field values across complete rows",
+      "name": "external_baselines.full_row_duplicates",
+      "status": "PASS"
+    },
+    {
+      "count": 0,
+      "detail": "Checked 972 complete rows",
+      "name": "external_baselines.objective_arithmetic",
+      "status": "PASS"
+    },
+    {
+      "detail": "SHA-256 verified; 400 rows vs 400 expected",
+      "name": "lolib_dense.integrity",
+      "status": "PASS"
+    },
+    {
+      "count": 0,
+      "detail": "source_experiment, source_commit, benchmark_resource, instance_id",
+      "name": "lolib_dense.required_metadata",
+      "status": "PASS"
+    },
+    {
+      "detail": "No unique run key defined for this config",
+      "name": "lolib_dense.key_uniqueness",
+      "status": "NOT_VERIFIABLE"
+    },
+    {
+      "count": 0,
+      "detail": "Byte-equivalent field values across complete rows",
+      "name": "lolib_dense.full_row_duplicates",
+      "status": "PASS"
+    },
+    {
+      "count": 0,
+      "detail": "Checked 400 complete rows",
+      "name": "lolib_dense.objective_arithmetic",
+      "status": "PASS"
+    },
+    {
+      "detail": "SHA-256 verified; 15 rows vs 15 expected",
+      "name": "medium_mip_baseline.integrity",
+      "status": "PASS"
+    },
+    {
+      "count": 0,
+      "detail": "source_experiment, source_commit, benchmark_resource, instance_id",
+      "name": "medium_mip_baseline.required_metadata",
+      "status": "PASS"
+    },
+    {
+      "detail": "No unique run key defined for this config",
+      "name": "medium_mip_baseline.key_uniqueness",
+      "status": "NOT_VERIFIABLE"
+    },
+    {
+      "count": 0,
+      "detail": "Byte-equivalent field values across complete rows",
+      "name": "medium_mip_baseline.full_row_duplicates",
+      "status": "PASS"
+    },
+    {
+      "detail": "No complete total/forward/backward triples",
+      "name": "medium_mip_baseline.objective_arithmetic",
+      "status": "NOT_VERIFIABLE"
+    },
+    {
+      "detail": "SHA-256 verified; 60 rows vs 60 expected",
+      "name": "plain_local_search.integrity",
+      "status": "PASS"
+    },
+    {
+      "count": 0,
+      "detail": "source_experiment, source_commit, benchmark_resource, instance_id",
+      "name": "plain_local_search.required_metadata",
+      "status": "PASS"
+    },
+    {
+      "detail": "No unique run key defined for this config",
+      "name": "plain_local_search.key_uniqueness",
+      "status": "NOT_VERIFIABLE"
+    },
+    {
+      "count": 0,
+      "detail": "Byte-equivalent field values across complete rows",
+      "name": "plain_local_search.full_row_duplicates",
+      "status": "PASS"
+    },
+    {
+      "detail": "No complete total/forward/backward triples",
+      "name": "plain_local_search.objective_arithmetic",
+      "status": "NOT_VERIFIABLE"
+    },
+    {
+      "detail": "SHA-256 verified; 3720 rows vs 3720 expected",
+      "name": "robustness.integrity",
+      "status": "PASS"
+    },
+    {
+      "count": 0,
+      "detail": "source_experiment, source_commit, benchmark_resource, instance_id",
+      "name": "robustness.required_metadata",
+      "status": "PASS"
+    },
+    {
+      "detail": "No unique run key defined for this config",
+      "name": "robustness.key_uniqueness",
+      "status": "NOT_VERIFIABLE"
+    },
+    {
+      "count": 0,
+      "detail": "Byte-equivalent field values across complete rows",
+      "name": "robustness.full_row_duplicates",
+      "status": "PASS"
+    },
+    {
+      "detail": "No complete total/forward/backward triples",
+      "name": "robustness.objective_arithmetic",
+      "status": "NOT_VERIFIABLE"
+    },
+    {
+      "detail": "SHA-256 verified; 1290 rows vs 1290 expected",
+      "name": "run_metrics.integrity",
+      "status": "PASS"
+    },
+    {
+      "count": 0,
+      "detail": "source_experiment, source_commit, benchmark_resource, instance_id",
+      "name": "run_metrics.required_metadata",
+      "status": "PASS"
+    },
+    {
+      "detail": "No unique run key defined for this config",
+      "name": "run_metrics.key_uniqueness",
+      "status": "NOT_VERIFIABLE"
+    },
+    {
+      "count": 0,
+      "detail": "Byte-equivalent field values across complete rows",
+      "name": "run_metrics.full_row_duplicates",
+      "status": "PASS"
+    },
+    {
+      "detail": "No complete total/forward/backward triples",
+      "name": "run_metrics.objective_arithmetic",
+      "status": "NOT_VERIFIABLE"
+    },
+    {
+      "detail": "SHA-256 verified; 140 rows vs 140 expected",
+      "name": "sensitivity.integrity",
+      "status": "PASS"
+    },
+    {
+      "count": 0,
+      "detail": "source_experiment, source_commit, benchmark_resource, instance_id",
+      "name": "sensitivity.required_metadata",
+      "status": "PASS"
+    },
+    {
+      "detail": "No unique run key defined for this config",
+      "name": "sensitivity.key_uniqueness",
+      "status": "NOT_VERIFIABLE"
+    },
+    {
+      "count": 0,
+      "detail": "Byte-equivalent field values across complete rows",
+      "name": "sensitivity.full_row_duplicates",
+      "status": "PASS"
+    },
+    {
+      "detail": "No complete total/forward/backward triples",
+      "name": "sensitivity.objective_arithmetic",
+      "status": "NOT_VERIFIABLE"
+    },
+    {
+      "detail": "SHA-256 verified; 24 rows vs 24 expected",
+      "name": "topological_extraction_sensitivity.integrity",
+      "status": "PASS"
+    },
+    {
+      "count": 0,
+      "detail": "source_experiment, source_commit, benchmark_resource, instance_id",
+      "name": "topological_extraction_sensitivity.required_metadata",
+      "status": "PASS"
+    },
+    {
+      "detail": "No unique run key defined for this config",
+      "name": "topological_extraction_sensitivity.key_uniqueness",
+      "status": "NOT_VERIFIABLE"
+    },
+    {
+      "count": 0,
+      "detail": "Byte-equivalent field values across complete rows",
+      "name": "topological_extraction_sensitivity.full_row_duplicates",
+      "status": "PASS"
+    },
+    {
+      "detail": "No complete total/forward/backward triples",
+      "name": "topological_extraction_sensitivity.objective_arithmetic",
+      "status": "NOT_VERIFIABLE"
+    },
+    {
+      "count": 0,
+      "detail": "Instances in multiple splits: []",
+      "name": "run_metrics.tuning_holdout_overlap",
+      "status": "PASS"
+    },
+    {
+      "count": 0,
+      "detail": "Compared 315 instance/algorithm keys; mismatches: []",
+      "name": "core_external_objective_agreement",
+      "status": "PASS"
+    },
+    {
+      "count": 0,
+      "detail": "Checked 96 of 96 rows; first failures: []",
+      "name": "aggregate_summary.recalculation",
+      "status": "PASS"
+    },
+    {
+      "detail": "Release contains metrics but no graph edge lists, orderings, or feedback-arc sets; independent objective and acyclicity recomputation requires fetched source artifacts",
+      "name": "graph_and_order_artifacts",
+      "status": "NOT_VERIFIABLE"
+    },
+    {
+      "count": 1,
+      "detail": "Mismatched entries: ['README.md']",
+      "name": "upstream_CHECKSUMS",
+      "status": "FAIL"
+    }
+  ],
+  "dataset_revision": "5b6cd5620ca0a1c9b3be5e8d996bf8e3c467e79f",
+  "rows_loaded": {
+    "ablation": 80,
+    "aggregate_summary": 96,
+    "application_case": 6,
+    "budget_curve": 120,
+    "core_benchmark": 369,
+    "exact_small": 67,
+    "external_baselines": 984,
+    "lolib_dense": 400,
+    "medium_mip_baseline": 15,
+    "plain_local_search": 60,
+    "robustness": 3720,
+    "run_metrics": 1290,
+    "sensitivity": 140,
+    "topological_extraction_sensitivity": 24
+  },
+  "schemas": {
+    "ablation": {
+      "acquisition_date": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "algorithm_variant": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "backward_weight": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "benchmark_resource": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "experiment_family": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "instance_id": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "runtime_seconds": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "source_commit": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "source_experiment": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "status": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      }
+    },
+    "aggregate_summary": {
+      "algorithm": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "benchmark_resource": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "configuration_id": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "experiment_family": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "instance_family": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "n_instances": {
+        "arrow_type": "int64",
+        "null_count": 0
+      },
+      "n_runs": {
+        "arrow_type": "int64",
+        "null_count": 0
+      },
+      "normalized_objective_mean": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "objective_weight_mean": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "objective_weight_median": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "runtime_seconds_mean": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "runtime_seconds_median": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "source_config": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "split": {
+        "arrow_type": "large_string",
+        "null_count": 54
+      },
+      "success_rate": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "validation_rate": {
+        "arrow_type": "double",
+        "null_count": 0
+      }
+    },
+    "application_case": {
+      "acquisition_date": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "algorithm": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "backward_weight": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "benchmark_resource": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "density": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "experiment_family": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "instance_id": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "m": {
+        "arrow_type": "int64",
+        "null_count": 0
+      },
+      "n": {
+        "arrow_type": "int64",
+        "null_count": 0
+      },
+      "runtime_seconds": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "source_commit": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "source_experiment": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "status": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "top_n": {
+        "arrow_type": "int64",
+        "null_count": 0
+      },
+      "total_weight": {
+        "arrow_type": "double",
+        "null_count": 0
+      }
+    },
+    "budget_curve": {
+      "acquisition_date": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "algorithm": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "backward_weight": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "benchmark_resource": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "budget": {
+        "arrow_type": "int64",
+        "null_count": 0
+      },
+      "experiment_family": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "forward_ratio": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "forward_weight": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "instance_id": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "m": {
+        "arrow_type": "int64",
+        "null_count": 0
+      },
+      "n": {
+        "arrow_type": "int64",
+        "null_count": 0
+      },
+      "runtime": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "seed": {
+        "arrow_type": "int64",
+        "null_count": 0
+      },
+      "source_commit": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "source_experiment": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "status": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "total_weight": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "wmsf_seed_mode": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      }
+    },
+    "core_benchmark": {
+      "acquisition_date": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "algorithm": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "backward_weight": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "benchmark_resource": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "experiment_family": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "forward_ratio": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "forward_weight": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "instance_id": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "m": {
+        "arrow_type": "int64",
+        "null_count": 0
+      },
+      "n": {
+        "arrow_type": "int64",
+        "null_count": 0
+      },
+      "runtime_seconds": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "source_commit": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "source_experiment": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "total_weight": {
+        "arrow_type": "double",
+        "null_count": 0
+      }
+    },
+    "exact_small": {
+      "acquisition_date": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "benchmark_resource": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "exact_bw": {
+        "arrow_type": "double",
+        "null_count": 3
+      },
+      "exact_status": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "exact_time": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "experiment_family": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "instance_id": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "ipsns_bw": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "ipsns_gap_abs": {
+        "arrow_type": "double",
+        "null_count": 5
+      },
+      "ipsns_gap_rel": {
+        "arrow_type": "double",
+        "null_count": 5
+      },
+      "ipsns_is_optimal": {
+        "arrow_type": "bool",
+        "null_count": 3
+      },
+      "ipsns_status": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "ipsns_time": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "lrta_bw": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "lrta_gap_abs": {
+        "arrow_type": "double",
+        "null_count": 5
+      },
+      "lrta_gap_rel": {
+        "arrow_type": "double",
+        "null_count": 5
+      },
+      "lrta_is_optimal": {
+        "arrow_type": "bool",
+        "null_count": 3
+      },
+      "lrta_status": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "lrta_time": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "m": {
+        "arrow_type": "int64",
+        "null_count": 0
+      },
+      "n": {
+        "arrow_type": "int64",
+        "null_count": 0
+      },
+      "source_commit": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "source_experiment": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "total_weight": {
+        "arrow_type": "double",
+        "null_count": 3
+      },
+      "wmsf_bw": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "wmsf_gap_abs": {
+        "arrow_type": "double",
+        "null_count": 5
+      },
+      "wmsf_gap_rel": {
+        "arrow_type": "double",
+        "null_count": 5
+      },
+      "wmsf_is_optimal": {
+        "arrow_type": "bool",
+        "null_count": 3
+      },
+      "wmsf_status": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "wmsf_time": {
+        "arrow_type": "double",
+        "null_count": 0
+      }
+    },
+    "external_baselines": {
+      "acquisition_date": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "algorithm": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "backward_weight": {
+        "arrow_type": "double",
+        "null_count": 12
+      },
+      "benchmark_resource": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "error": {
+        "arrow_type": "large_string",
+        "null_count": 972
+      },
+      "experiment_family": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "external_version_or_commit": {
+        "arrow_type": "large_string",
+        "null_count": 742
+      },
+      "forward_ratio": {
+        "arrow_type": "double",
+        "null_count": 12
+      },
+      "forward_weight": {
+        "arrow_type": "double",
+        "null_count": 12
+      },
+      "instance_id": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "m": {
+        "arrow_type": "int64",
+        "null_count": 0
+      },
+      "n": {
+        "arrow_type": "int64",
+        "null_count": 0
+      },
+      "runtime": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "source_commit": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "source_experiment": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "source_type": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "status": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "total_weight": {
+        "arrow_type": "double",
+        "null_count": 0
+      }
+    },
+    "lolib_dense": {
+      "acquisition_date": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "algorithm": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "backward_weight": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "benchmark_resource": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "experiment_family": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "external_version_or_commit": {
+        "arrow_type": "large_string",
+        "null_count": 300
+      },
+      "forward_ratio": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "forward_weight": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "instance_family": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "instance_id": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "m": {
+        "arrow_type": "int64",
+        "null_count": 0
+      },
+      "n": {
+        "arrow_type": "int64",
+        "null_count": 0
+      },
+      "runtime": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "source_commit": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "source_experiment": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "source_type": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "status": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "total_weight": {
+        "arrow_type": "double",
+        "null_count": 0
+      }
+    },
+    "medium_mip_baseline": {
+      "acquisition_date": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "benchmark_resource": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "density": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "drmaciver_bw": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "experiment_family": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "instance_id": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "ipsns_bw": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "ipsns_gap_to_bound_pct": {
+        "arrow_type": "double",
+        "null_count": 14
+      },
+      "ipsns_gap_to_incumbent_pct": {
+        "arrow_type": "double",
+        "null_count": 14
+      },
+      "lrta_bw": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "m": {
+        "arrow_type": "int64",
+        "null_count": 0
+      },
+      "mip_bw_incumbent": {
+        "arrow_type": "double",
+        "null_count": 8
+      },
+      "mip_dual_bound_bw": {
+        "arrow_type": "double",
+        "null_count": 8
+      },
+      "mip_gap_pct": {
+        "arrow_type": "double",
+        "null_count": 15
+      },
+      "mip_objective": {
+        "arrow_type": "double",
+        "null_count": 8
+      },
+      "mode": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "n": {
+        "arrow_type": "int64",
+        "null_count": 0
+      },
+      "proven_optimal": {
+        "arrow_type": "bool",
+        "null_count": 0
+      },
+      "runtime_seconds": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "solver": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "source_commit": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "source_experiment": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "status": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "status_message": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "time_limit_seconds": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "wmsf_bw": {
+        "arrow_type": "double",
+        "null_count": 15
+      }
+    },
+    "plain_local_search": {
+      "accepted_moves": {
+        "arrow_type": "int64",
+        "null_count": 0
+      },
+      "acquisition_date": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "backward_weight": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "benchmark_resource": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "budget_label": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "experiment_family": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "improvement_over_seed": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "instance_id": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "ls_runtime_seconds": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "m": {
+        "arrow_type": "int64",
+        "null_count": 0
+      },
+      "method": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "n": {
+        "arrow_type": "int64",
+        "null_count": 0
+      },
+      "passes_completed": {
+        "arrow_type": "int64",
+        "null_count": 0
+      },
+      "runtime_seconds": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "seed_bw": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "seed_method": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "seed_runtime_seconds": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "source_commit": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "source_experiment": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "status": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "stopped_reason": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "total_weight": {
+        "arrow_type": "double",
+        "null_count": 0
+      }
+    },
+    "robustness": {
+      "accepted_moves": {
+        "arrow_type": "double",
+        "null_count": 1860
+      },
+      "acquisition_date": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "acyclicity_valid": {
+        "arrow_type": "bool",
+        "null_count": 0
+      },
+      "algorithm": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "algorithm_variant": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "benchmark_resource": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "best_iteration": {
+        "arrow_type": "double",
+        "null_count": 1860
+      },
+      "configuration_id": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "density": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "experiment_family": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "failed_repairs": {
+        "arrow_type": "double",
+        "null_count": 1860
+      },
+      "forward_weight": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "improved_incumbent": {
+        "arrow_type": "bool",
+        "null_count": 1860
+      },
+      "initial_incumbent_objective": {
+        "arrow_type": "double",
+        "null_count": 1860
+      },
+      "instance_family": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "instance_id": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "iterations_executed": {
+        "arrow_type": "double",
+        "null_count": 1860
+      },
+      "lrta_seed_objective": {
+        "arrow_type": "double",
+        "null_count": 1860
+      },
+      "n_edges": {
+        "arrow_type": "int64",
+        "null_count": 0
+      },
+      "n_vertices": {
+        "arrow_type": "int64",
+        "null_count": 0
+      },
+      "noop_moves": {
+        "arrow_type": "double",
+        "null_count": 1860
+      },
+      "normalized_objective": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "objective_match": {
+        "arrow_type": "bool",
+        "null_count": 0
+      },
+      "objective_recomputed": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "objective_weight": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "ordering_valid": {
+        "arrow_type": "bool",
+        "null_count": 0
+      },
+      "rejected_moves": {
+        "arrow_type": "double",
+        "null_count": 1860
+      },
+      "run_index": {
+        "arrow_type": "int64",
+        "null_count": 0
+      },
+      "runtime_seconds": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "seed": {
+        "arrow_type": "int64",
+        "null_count": 1860
+      },
+      "source_commit": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "source_experiment": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "source_run_id": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "status": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "time_to_best_seconds": {
+        "arrow_type": "double",
+        "null_count": 1860
+      },
+      "timeout_seconds": {
+        "arrow_type": "double",
+        "null_count": 1860
+      },
+      "total_edge_weight": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "validated": {
+        "arrow_type": "bool",
+        "null_count": 0
+      },
+      "wmsf_seed_objective": {
+        "arrow_type": "double",
+        "null_count": 1860
+      }
+    },
+    "run_metrics": {
+      "acquisition_date": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "algorithm": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "algorithm_variant": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "benchmark_resource": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "configuration_id": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "density": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "destroy_addback_fraction": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "destroy_remove_fraction": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "experiment_family": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "forward_weight": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "improved_incumbent": {
+        "arrow_type": "bool",
+        "null_count": 0
+      },
+      "improvement_absolute": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "improvement_relative": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "initial_incumbent_objective": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "instance_family": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "instance_id": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "iteration_budget": {
+        "arrow_type": "int64",
+        "null_count": 0
+      },
+      "iterations_executed": {
+        "arrow_type": "int64",
+        "null_count": 0
+      },
+      "lrta_seed_objective": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "n_edges": {
+        "arrow_type": "int64",
+        "null_count": 0
+      },
+      "n_vertices": {
+        "arrow_type": "int64",
+        "null_count": 0
+      },
+      "normalized_objective": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "objective_weight": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "runtime_seconds": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "scc_select_mode": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "seed": {
+        "arrow_type": "int64",
+        "null_count": 0
+      },
+      "seed_ordering": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "source_commit": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "source_experiment": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "source_run_id": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "split": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "status": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "tolerance": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "topk_scc": {
+        "arrow_type": "int64",
+        "null_count": 0
+      },
+      "total_edge_weight": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "validated": {
+        "arrow_type": "bool",
+        "null_count": 0
+      },
+      "wmsf_seed_mode": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "wmsf_seed_objective": {
+        "arrow_type": "double",
+        "null_count": 0
+      }
+    },
+    "sensitivity": {
+      "accepted_moves": {
+        "arrow_type": "double",
+        "null_count": 140
+      },
+      "algorithm": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "algorithm_variant": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "attempted_moves": {
+        "arrow_type": "double",
+        "null_count": 140
+      },
+      "baseline_default_objective": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "benchmark_resource": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "configuration_id": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "density": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "destroy_addback_fraction": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "destroy_remove_fraction": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "experiment_family": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "first_improvement_iteration": {
+        "arrow_type": "double",
+        "null_count": 140
+      },
+      "improvement_absolute_vs_default": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "improvement_absolute_vs_incumbent": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "improvement_relative_vs_default": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "improvement_relative_vs_incumbent": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "initial_incumbent_objective": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "initial_seed_method": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "instance_family": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "instance_id": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "iteration_budget": {
+        "arrow_type": "int64",
+        "null_count": 0
+      },
+      "largest_scc_fraction": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "last_improvement_iteration": {
+        "arrow_type": "double",
+        "null_count": 140
+      },
+      "n_edges": {
+        "arrow_type": "int64",
+        "null_count": 0
+      },
+      "n_vertices": {
+        "arrow_type": "int64",
+        "null_count": 0
+      },
+      "nontrivial_scc_node_fraction": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "objective_weight": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "quality_per_runtime": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "runtime_seconds": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "runtime_trace_available": {
+        "arrow_type": "bool",
+        "null_count": 0
+      },
+      "scc_count_nontrivial": {
+        "arrow_type": "int64",
+        "null_count": 0
+      },
+      "scc_select_mode": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "seed": {
+        "arrow_type": "int64",
+        "null_count": 0
+      },
+      "seed_ordering": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "sensitivity_parameter": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "source_commit": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "source_experiment": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "source_run_id": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "status": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "termination_reason": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "tolerance": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "topk_scc": {
+        "arrow_type": "int64",
+        "null_count": 0
+      },
+      "validated": {
+        "arrow_type": "bool",
+        "null_count": 0
+      },
+      "wmsf_seed_mode": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      }
+    },
+    "topological_extraction_sensitivity": {
+      "acquisition_date": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "algorithm": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "backward_weight": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "benchmark_resource": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "experiment_family": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "extraction_rule": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "forward_weight": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "gap": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "instance_id": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "rel_improve_vs_current": {
+        "arrow_type": "double",
+        "null_count": 0
+      },
+      "source_commit": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      },
+      "source_experiment": {
+        "arrow_type": "large_string",
+        "null_count": 0
+      }
+    }
+  }
+}

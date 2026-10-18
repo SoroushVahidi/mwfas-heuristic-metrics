@@ -1,0 +1,5 @@
+c New independent three-cycle fixture for smoke tests
+p sp 3 3
+a 1 2 3
+a 2 3 2
+a 3 1 1

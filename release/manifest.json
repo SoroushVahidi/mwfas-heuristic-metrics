@@ -1,0 +1,268 @@
+{
+  "schema_version": 1,
+  "release_package": "MWFAS Heuristic Metrics public reference and validation package",
+  "source_snapshot_commit": "7317c4b6427e5afffa7a0df66c71b6827b898e63",
+  "source_snapshot_access": "private provenance identifier; not a public access route",
+  "files": [
+    {
+      "path": ".gitignore",
+      "size_bytes": 62,
+      "sha256": "ff2e0d0b7357e9901b7e7b2c10207e1ea765ce1f90539ec25fac4166f45163f5",
+      "origin": "new_public_release_material",
+      "license_scope": "CC-BY-4.0-author-controlled"
+    },
+    {
+      "path": "CITATION.cff",
+      "size_bytes": 1075,
+      "sha256": "faafc81a5fee5a30272651a12bb9f8fab06083df92a1346bb70ee325feba80c6",
+      "origin": "new_public_release_material",
+      "license_scope": "CC-BY-4.0-author-controlled"
+    },
+    {
+      "path": "LICENSES/CC-BY-4.0.txt",
+      "size_bytes": 18657,
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411",
+      "origin": "official_cc_by_4_0_license_text",
+      "license_scope": "license_text"
+    },
+    {
+      "path": "LICENSES/MIT.txt",
+      "size_bytes": 1071,
+      "sha256": "7286933e7e07d579ef902ab64bcb9d83067b23876dd98f37638ae4c2fec6468f",
+      "origin": "standard_mit_license_text",
+      "license_scope": "license_text"
+    },
+    {
+      "path": "LICENSE_SCOPE.md",
+      "size_bytes": 1427,
+      "sha256": "6c429302cc0906eb192b4013421b73766ce52d9b37ec46dcae2b64219c0379cc",
+      "origin": "new_public_release_material",
+      "license_scope": "CC-BY-4.0-author-controlled"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 4622,
+      "sha256": "bdfb677fc3b8cdb77523e2b9d9c5ebb6c9895658afb65063a059b89ca681b09f",
+      "origin": "new_public_release_material",
+      "license_scope": "CC-BY-4.0-author-controlled"
+    },
+    {
+      "path": "configs/exp01.json",
+      "size_bytes": 612,
+      "sha256": "3de56a5e402e0f816f434dbfdba3960f3e401dc625792189021592ed65887654",
+      "origin": "exact_author_source_snapshot",
+      "license_scope": "CC-BY-4.0-author-controlled"
+    },
+    {
+      "path": "configs/exp03.json",
+      "size_bytes": 656,
+      "sha256": "7d008bef2bce001eddc2d1aa39571a51af1c986fb9b09baa0239602a27faa282",
+      "origin": "exact_author_source_snapshot",
+      "license_scope": "CC-BY-4.0-author-controlled"
+    },
+    {
+      "path": "configs/project.json",
+      "size_bytes": 430,
+      "sha256": "5f7fc14e9d82441014e12d8f15954c67039d4384ec05965273706a8f4ed294b6",
+      "origin": "exact_author_source_snapshot",
+      "license_scope": "CC-BY-4.0-author-controlled"
+    },
+    {
+      "path": "data/manifests/baseline_audit.json",
+      "size_bytes": 52299,
+      "sha256": "5029c55dc78235a649e3065a4b61ceff386bc1bddf90f56da615f16ca5a8f715",
+      "origin": "exact_author_source_snapshot",
+      "license_scope": "CC-BY-4.0-author-controlled"
+    },
+    {
+      "path": "data/manifests/initial_validation.json",
+      "size_bytes": 43335,
+      "sha256": "63256b4c2aebd79a6e85e54f4543e3ad3d4cfd2e81dcd9a9eb17c8d224f55e71",
+      "origin": "exact_author_source_snapshot",
+      "license_scope": "CC-BY-4.0-author-controlled"
+    },
+    {
+      "path": "data/manifests/provenance.json",
+      "size_bytes": 5238,
+      "sha256": "60da1e803c59be9b1b4dbb25e5f092313055295e687f0992f9ab4c5d26ef71b1",
+      "origin": "exact_author_source_snapshot",
+      "license_scope": "CC-BY-4.0-author-controlled"
+    },
+    {
+      "path": "docs/DATA_AVAILABILITY.md",
+      "size_bytes": 2858,
+      "sha256": "d4dee535e8195c5654c59d3f70adc81e6b0ddd0a5c897751585678cd6ccc0e1d",
+      "origin": "new_public_release_material",
+      "license_scope": "CC-BY-4.0-author-controlled"
+    },
+    {
+      "path": "docs/REPRODUCIBILITY.md",
+      "size_bytes": 2605,
+      "sha256": "5aef8d737dbaa947810d14101c840418a23ceb02fed7b57cfdfdb7f37b7edb54",
+      "origin": "new_public_release_material",
+      "license_scope": "CC-BY-4.0-author-controlled"
+    },
+    {
+      "path": "docs/SCHEMA.md",
+      "size_bytes": 1507,
+      "sha256": "6c1e2ff3904813a726798b5d074e91eefac2a97e2fbac70297b6da8ae260d486",
+      "origin": "new_public_release_material",
+      "license_scope": "CC-BY-4.0-author-controlled"
+    },
+    {
+      "path": "docs/SOURCE_ATTRIBUTION.md",
+      "size_bytes": 3612,
+      "sha256": "65fa8d76e7db43ea0558557980adf91afcba741966bdf79e3fac163e96c9034d",
+      "origin": "new_public_release_material",
+      "license_scope": "CC-BY-4.0-author-controlled"
+    },
+    {
+      "path": "pyproject.toml",
+      "size_bytes": 536,
+      "sha256": "362c4838eede1eb61389263c1366d001905c3d6d141f88d4344498b06b3262de",
+      "origin": "exact_author_source_snapshot",
+      "license_scope": "MIT"
+    },
+    {
+      "path": "release/public_reference_manifest.csv",
+      "size_bytes": 26011,
+      "sha256": "07a7f56366faf57284b5f5549eee51b7d41e640d17c56ae784c80af48ba8061c",
+      "origin": "exact_author_source_snapshot",
+      "license_scope": "CC-BY-4.0-author-controlled"
+    },
+    {
+      "path": "release/verify_package.py",
+      "size_bytes": 1420,
+      "sha256": "09527f0e9ca7ca8ec74b01dd05a419de1bc0eb70efd4b44191d3c5dd78e0ec24",
+      "origin": "new_public_release_material",
+      "license_scope": "MIT"
+    },
+    {
+      "path": "release/verify_public_refs.py",
+      "size_bytes": 3270,
+      "sha256": "0fd172c16fb99f75c8ddf3fdf371f6413c36f62b302b0b7527a42af79021e965",
+      "origin": "exact_author_source_snapshot",
+      "license_scope": "MIT"
+    },
+    {
+      "path": "scripts/check_manifests.py",
+      "size_bytes": 1385,
+      "sha256": "440632f258ad2ad9ee97bbf07f26cbf951aa45539e093ff007a8a3f6d18777e6",
+      "origin": "exact_author_source_snapshot",
+      "license_scope": "MIT"
+    },
+    {
+      "path": "scripts/fetch_public_source.py",
+      "size_bytes": 1167,
+      "sha256": "647cfb27dcb0e57b2627508c826a0a2c9a5ceac48f6f7a67d8bda93ca8ab7c06",
+      "origin": "exact_author_source_snapshot",
+      "license_scope": "MIT"
+    },
+    {
+      "path": "scripts/run_exp01_smoke.py",
+      "size_bytes": 1053,
+      "sha256": "a2fddbee6fcc40f2493a732e53c62fb5e88ffcf718631fa4fe1c429ea106df84",
+      "origin": "exact_author_source_snapshot",
+      "license_scope": "MIT"
+    },
+    {
+      "path": "src/mwfas_data/__init__.py",
+      "size_bytes": 65,
+      "sha256": "8a1c6d88399a6a7176d1175e3f695dc27c7a349e393db89a40d24cc522e8ad25",
+      "origin": "exact_author_source_snapshot",
+      "license_scope": "MIT"
+    },
+    {
+      "path": "src/mwfas_data/cli.py",
+      "size_bytes": 1085,
+      "sha256": "23a2d4fe88cd0d1a307a1e93eabdd7628819badf61943c618f07e6b5c3ccb040",
+      "origin": "exact_author_source_snapshot",
+      "license_scope": "MIT"
+    },
+    {
+      "path": "src/mwfas_data/config.py",
+      "size_bytes": 757,
+      "sha256": "415c6ef8b15540d6ac7a7b2411f90520424a4f5b8d4e225f04c7b297738eddf4",
+      "origin": "exact_author_source_snapshot",
+      "license_scope": "MIT"
+    },
+    {
+      "path": "src/mwfas_data/experiment.py",
+      "size_bytes": 3458,
+      "sha256": "b525d992584fcf58099a086712921529e4835622f5e87885bd9ceb2a513558d2",
+      "origin": "exact_author_source_snapshot",
+      "license_scope": "MIT"
+    },
+    {
+      "path": "src/mwfas_data/generation.py",
+      "size_bytes": 2127,
+      "sha256": "2de1a5f8533a2cac66727e6cb3ddd14e85e6d9a7eba83b5fa99a1c69ed0ecbae",
+      "origin": "exact_author_source_snapshot",
+      "license_scope": "MIT"
+    },
+    {
+      "path": "src/mwfas_data/graph.py",
+      "size_bytes": 3523,
+      "sha256": "9856208e377ac6cd667492030d60b70f9383250be7e546867ad8a0039da78a1c",
+      "origin": "exact_author_source_snapshot",
+      "license_scope": "MIT"
+    },
+    {
+      "path": "src/mwfas_data/retrieval.py",
+      "size_bytes": 1891,
+      "sha256": "36679e889f30fd1011fe23bfad4d278d431cff8f3cf483e1da03e3da9a9cbb81",
+      "origin": "exact_author_source_snapshot",
+      "license_scope": "MIT"
+    },
+    {
+      "path": "src/mwfas_data/validate.py",
+      "size_bytes": 8953,
+      "sha256": "2f5d3fba1a704f5e6e8faab9937da530714b3177b9f8fe4184a8a55e79a9f947",
+      "origin": "exact_author_source_snapshot",
+      "license_scope": "MIT"
+    },
+    {
+      "path": "tests/fixtures/triangle.dimacs",
+      "size_bytes": 87,
+      "sha256": "756aba980cbc2c9ea37fba9b5055217f04ecde843f7dc0aee0dbd985cb90e650",
+      "origin": "exact_author_source_snapshot",
+      "license_scope": "CC-BY-4.0-author-controlled"
+    },
+    {
+      "path": "tests/test_experiment.py",
+      "size_bytes": 539,
+      "sha256": "b0868bcd8d310259efb2b219424a9d76f03821ca671139c3c10f01d2331cd6c8",
+      "origin": "exact_author_source_snapshot",
+      "license_scope": "MIT"
+    },
+    {
+      "path": "tests/test_generation.py",
+      "size_bytes": 528,
+      "sha256": "020d39923c5e244750d92588fdd65547d5948023b273980874dc57531fb18aba",
+      "origin": "exact_author_source_snapshot",
+      "license_scope": "MIT"
+    },
+    {
+      "path": "tests/test_graph.py",
+      "size_bytes": 1482,
+      "sha256": "585687152879bf0ebe02ca3a1e95328f12728d69f491a9b42343356eb43136b6",
+      "origin": "exact_author_source_snapshot",
+      "license_scope": "MIT"
+    },
+    {
+      "path": "tests/test_validate.py",
+      "size_bytes": 985,
+      "sha256": "68b8760e48619831cdbdd429faccb1484e9c87e41b927740121ba9cd07940391",
+      "origin": "exact_author_source_snapshot",
+      "license_scope": "MIT"
+    },
+    {
+      "path": "uv.lock",
+      "size_bytes": 17497,
+      "sha256": "6bb821a76eeb4489f52acb9aa5c892580f09f59abb346a08fb0f1869618cfc3d",
+      "origin": "exact_author_source_snapshot",
+      "license_scope": "MIT"
+    }
+  ],
+  "external_references": "release/public_reference_manifest.csv"
+}

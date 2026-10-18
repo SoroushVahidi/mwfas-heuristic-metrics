@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "Please cite the original dataset and this validation software when used. Cite the eventual JDSA article only after publication."
+title: "MWFAS Heuristic Metrics: public reference and validation package"
+type: software
+authors:
+  - family-names: Vahidi
+    given-names: Soroush
+    orcid: https://orcid.org/0000-0003-1934-6282
+repository-code: https://github.com/SoroushVahidi/mwfas-heuristic-metrics
+url: https://huggingface.co/datasets/SoroushVahidi/mwfas-heuristic-metrics
+keywords:
+  - minimum weighted feedback arc set
+  - benchmark validation
+  - reproducibility
+references:
+  - type: dataset
+    title: MWFAS Heuristic Metrics
+    authors:
+      - family-names: Vahidi
+        given-names: Soroush
+    url: https://huggingface.co/datasets/SoroushVahidi/mwfas-heuristic-metrics/tree/5b6cd5620ca0a1c9b3be5e8d996bf8e3c467e79f
+  - type: article
+    title: "Training-Free Ranking from Pairwise Comparisons via Acyclic Graph Construction"
+    authors:
+      - family-names: Vahidi
+        given-names: Soroush
+    doi: 10.1007/s11227-026-08852-4

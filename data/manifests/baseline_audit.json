@@ -1,0 +1,2216 @@
+{
+  "checksum_checks": [
+    {
+      "actual": "13ec126f1092b2d941777a687b4411e09070f00f091f383c737f8e4f6c9500a5",
+      "expected": "13ec126f1092b2d941777a687b4411e09070f00f091f383c737f8e4f6c9500a5",
+      "match": true,
+      "path": "CITATION.cff"
+    },
+    {
+      "actual": "e7ea69f77744f09d6f646829b7033f0d4a3cb31c49c3c08f5c8390dc861e2dc1",
+      "expected": "e7ea69f77744f09d6f646829b7033f0d4a3cb31c49c3c08f5c8390dc861e2dc1",
+      "match": true,
+      "path": "LICENSE"
+    },
+    {
+      "actual": "feeceec40d38d77a447c7a8799b61cd4fe7453e28f01bd525143f277c824438a",
+      "expected": "c60b5ce8760a16557fe0e5e48f929c66c69cd8ca2ed7eacc24b72101cbd22133",
+      "match": false,
+      "path": "README.md"
+    },
+    {
+      "actual": "a7b280c5323f9de1006e1c3f9bd16731139ea0a3203f652dd96072fca9f96159",
+      "expected": "a7b280c5323f9de1006e1c3f9bd16731139ea0a3203f652dd96072fca9f96159",
+      "match": true,
+      "path": "data/ablation/train.parquet"
+    },
+    {
+      "actual": "e0825f9f18bbb1228abd05db9839f1dd4d85ee4ef99ec8e26acd538701f81396",
+      "expected": "e0825f9f18bbb1228abd05db9839f1dd4d85ee4ef99ec8e26acd538701f81396",
+      "match": true,
+      "path": "data/aggregate_summary/train.parquet"
+    },
+    {
+      "actual": "9023d83cb4376dda8d6208afddaff8b046cc4d5a5bf32ff3f4014590f89e75e2",
+      "expected": "9023d83cb4376dda8d6208afddaff8b046cc4d5a5bf32ff3f4014590f89e75e2",
+      "match": true,
+      "path": "data/application_case/train.parquet"
+    },
+    {
+      "actual": "e7b5d8538f53612091ac8a4d28e8020d8d9342cf5a77d3a8d0d7f7779b4b5077",
+      "expected": "e7b5d8538f53612091ac8a4d28e8020d8d9342cf5a77d3a8d0d7f7779b4b5077",
+      "match": true,
+      "path": "data/budget_curve/train.parquet"
+    },
+    {
+      "actual": "85c913f44fa01cc6f5e3ae602c752b6c48070371cc4388ef8b8ed14789846e19",
+      "expected": "85c913f44fa01cc6f5e3ae602c752b6c48070371cc4388ef8b8ed14789846e19",
+      "match": true,
+      "path": "data/core_benchmark/train.parquet"
+    },
+    {
+      "actual": "4888d6ed82366210853fef72d2133844a3306ccca98ce20e543d0e31bf488be5",
+      "expected": "4888d6ed82366210853fef72d2133844a3306ccca98ce20e543d0e31bf488be5",
+      "match": true,
+      "path": "data/exact_small/train.parquet"
+    },
+    {
+      "actual": "4a2879a11c11804ac7d2d579492ee915d506acf6a66ee05306330c1bd6738a91",
+      "expected": "4a2879a11c11804ac7d2d579492ee915d506acf6a66ee05306330c1bd6738a91",
+      "match": true,
+      "path": "data/external_baselines/train.parquet"
+    },
+    {
+      "actual": "280368a5fe62698d8ca0809efac3f30cf61d1744f2edb9f8683087f7313da4d2",
+      "expected": "280368a5fe62698d8ca0809efac3f30cf61d1744f2edb9f8683087f7313da4d2",
+      "match": true,
+      "path": "data/lolib_dense/train.parquet"
+    },
+    {
+      "actual": "e9d366ce4ab012aa0b7b97cf8125e32252b7671106cd8b2f48ddc26e66c664f1",
+      "expected": "e9d366ce4ab012aa0b7b97cf8125e32252b7671106cd8b2f48ddc26e66c664f1",
+      "match": true,
+      "path": "data/medium_mip_baseline/train.parquet"
+    },
+    {
+      "actual": "bd57fb2581b32d7e3afb014106567801031af4697000b2eaca091dd7e506cb7e",
+      "expected": "bd57fb2581b32d7e3afb014106567801031af4697000b2eaca091dd7e506cb7e",
+      "match": true,
+      "path": "data/plain_local_search/train.parquet"
+    },
+    {
+      "actual": "b09278df79d05f5dd9f97eb25c4b0fa5340cb379ad6cf8f725c49de219b6944b",
+      "expected": "b09278df79d05f5dd9f97eb25c4b0fa5340cb379ad6cf8f725c49de219b6944b",
+      "match": true,
+      "path": "data/robustness/train.parquet"
+    },
+    {
+      "actual": "eee58ccbdff9b646aa37d40ee395391cd66eb687b289500d7d5a94c8fc83b6ac",
+      "expected": "eee58ccbdff9b646aa37d40ee395391cd66eb687b289500d7d5a94c8fc83b6ac",
+      "match": true,
+      "path": "data/run_metrics/train.parquet"
+    },
+    {
+      "actual": "c23491aebba2fa17ffcdba0c0dda42fbae1cc7951398c733638eea590326ac31",
+      "expected": "c23491aebba2fa17ffcdba0c0dda42fbae1cc7951398c733638eea590326ac31",
+      "match": true,
+      "path": "data/sensitivity/train.parquet"
+    },
+    {
+      "actual": "1948a58ebd68b81c4356b7dc09c577a3bac978c82541a428c0b9572f77660147",
+      "expected": "1948a58ebd68b81c4356b7dc09c577a3bac978c82541a428c0b9572f77660147",
+      "match": true,
+      "path": "data/topological_extraction_sensitivity/train.parquet"
+    },
+    {
+      "actual": "4c28210da200e7d1c14fcdf39f5fa14a94c7f3a569e909fbc235891c5405bab1",
+      "expected": "4c28210da200e7d1c14fcdf39f5fa14a94c7f3a569e909fbc235891c5405bab1",
+      "match": true,
+      "path": "metadata/algorithm_provenance.json"
+    },
+    {
+      "actual": "de9ca1cb2e2b465bce7a88d0ac477a5867c7e9676d7ebbb2b8e2a7a476b74db6",
+      "expected": "de9ca1cb2e2b465bce7a88d0ac477a5867c7e9676d7ebbb2b8e2a7a476b74db6",
+      "match": true,
+      "path": "metadata/benchmark_provenance.json"
+    },
+    {
+      "actual": "ab56b43645ae4895c421a5d024fa54fce41e6c12ed8c631a7a32b3ab1494c50d",
+      "expected": "ab56b43645ae4895c421a5d024fa54fce41e6c12ed8c631a7a32b3ab1494c50d",
+      "match": true,
+      "path": "metadata/build_validation_report.json"
+    },
+    {
+      "actual": "afccdc65a1bd98c14ab137820d9cb4bdec72c6611c69ea442590ddcc4747da91",
+      "expected": "afccdc65a1bd98c14ab137820d9cb4bdec72c6611c69ea442590ddcc4747da91",
+      "match": true,
+      "path": "metadata/canonical_experiment_registry.json"
+    },
+    {
+      "actual": "e8200e65e74b0650c428274843ef478c3f7874308e385ce0097e4d736557dcf9",
+      "expected": "e8200e65e74b0650c428274843ef478c3f7874308e385ce0097e4d736557dcf9",
+      "match": true,
+      "path": "metadata/citation.bib"
+    },
+    {
+      "actual": "77e1bd889418cb70d03e09d1287934ab37f2218750f215f555462b8440de4bd2",
+      "expected": "77e1bd889418cb70d03e09d1287934ab37f2218750f215f555462b8440de4bd2",
+      "match": true,
+      "path": "metadata/file_inventory.json"
+    },
+    {
+      "actual": "e923ecc384c9b5271c1cc8bf6368dfd985b2dd1ff2b54293d6899917bc375b6e",
+      "expected": "e923ecc384c9b5271c1cc8bf6368dfd985b2dd1ff2b54293d6899917bc375b6e",
+      "match": true,
+      "path": "metadata/release_manifest.json"
+    },
+    {
+      "actual": "8d0e9963fcb3a07592687caac389172d89593ed6f93691ae156d7e31b8147bfb",
+      "expected": "8d0e9963fcb3a07592687caac389172d89593ed6f93691ae156d7e31b8147bfb",
+      "match": true,
+      "path": "metadata/schema.json"
+    },
+    {
+      "actual": "a8853a46b29c0279631919e000e2f174ad9843397e2bd1c598960754686fe32d",
+      "expected": "a8853a46b29c0279631919e000e2f174ad9843397e2bd1c598960754686fe32d",
+      "match": true,
+      "path": "metadata/security_scan_report.json"
+    },
+    {
+      "actual": "ee8a4851feff6ec4aab5f3c15b4847ccd09e1eedcf20035dece5e5e584f1b63b",
+      "expected": "ee8a4851feff6ec4aab5f3c15b4847ccd09e1eedcf20035dece5e5e584f1b63b",
+      "match": true,
+      "path": "metadata/statistics.json"
+    }
+  ],
+  "checksum_mismatches": [
+    {
+      "actual": "feeceec40d38d77a447c7a8799b61cd4fe7453e28f01bd525143f277c824438a",
+      "expected": "c60b5ce8760a16557fe0e5e48f929c66c69cd8ca2ed7eacc24b72101cbd22133",
+      "match": false,
+      "path": "README.md"
+    }
+  ],
+  "configs": {
+    "ablation": {
+      "algorithm_variant_values": [
+        "best_seed_no_lns",
+        "ipsns_100iters",
+        "ipsns_50iters",
+        "ipsns_full",
+        "ipsns_no_scc_priority",
+        "lr_no_addback",
+        "lrta_full",
+        "wmsf_seed"
+      ],
+      "benchmark_resource_values": [
+        "alidasdan/graph-benchmarks"
+      ],
+      "columns": {
+        "acquisition_date": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "algorithm_variant": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 8
+        },
+        "backward_weight": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 19
+        },
+        "benchmark_resource": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "experiment_family": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "instance_id": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 10
+        },
+        "runtime_seconds": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 49
+        },
+        "source_commit": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "source_experiment": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "status": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        }
+      },
+      "duplicate_rows": 0,
+      "rows": 80,
+      "source_commit_values": [
+        "40209c26966247d9bf9ad34764de4ac4181f98c2"
+      ],
+      "status_values": [
+        "ok"
+      ],
+      "unique_instances": 10
+    },
+    "aggregate_summary": {
+      "algorithm_values": [
+        "DRMacIver/FAS",
+        "IPSNS"
+      ],
+      "benchmark_resource_values": [
+        "alidasdan/graph-benchmarks"
+      ],
+      "columns": {
+        "algorithm": {
+          "dtype": "string",
+          "nulls": 0,
+          "unique": 2
+        },
+        "benchmark_resource": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "configuration_id": {
+          "dtype": "string",
+          "nulls": 0,
+          "unique": 22
+        },
+        "experiment_family": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 3
+        },
+        "instance_family": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 6
+        },
+        "n_instances": {
+          "dtype": "int64",
+          "nulls": 0,
+          "unique": 11
+        },
+        "n_runs": {
+          "dtype": "int64",
+          "nulls": 0,
+          "unique": 13
+        },
+        "normalized_objective_mean": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 36
+        },
+        "objective_weight_mean": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 35
+        },
+        "objective_weight_median": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 28
+        },
+        "runtime_seconds_mean": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 96
+        },
+        "runtime_seconds_median": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 96
+        },
+        "source_config": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 3
+        },
+        "split": {
+          "dtype": "string",
+          "nulls": 54,
+          "unique": 2
+        },
+        "success_rate": {
+          "dtype": "double[pyarrow]",
+          "nulls": 0,
+          "unique": 1
+        },
+        "validation_rate": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 1
+        }
+      },
+      "configuration_id_values": [
+        "addback_0.15",
+        "addback_0.25",
+        "addback_0.35",
+        "baseline_default",
+        "drmaciver_robustness_20_reps",
+        "ipsns_robustness_20_reps",
+        "iters_10",
+        "iters_100",
+        "iters_200",
+        "iters_400",
+        "iters_50",
+        "iters_50_addback25",
+        "iters_50_topk5",
+        "iters_600",
+        "remove_0.01",
+        "remove_0.05",
+        "rng_2",
+        "rng_3",
+        "seed_only",
+        "topk_10",
+        "topk_20",
+        "topk_5"
+      ],
+      "duplicate_rows": 0,
+      "instance_family_values": [
+        "core",
+        "core-bad",
+        "core-big",
+        "iscas",
+        "iscas-small",
+        "tests"
+      ],
+      "rows": 96,
+      "split_values": [
+        "holdout",
+        "tuning"
+      ]
+    },
+    "application_case": {
+      "algorithm_values": [
+        "DRMacIver/FAS",
+        "IPSNS",
+        "LR-TA",
+        "WMSF",
+        "igraph_eades",
+        "weighted_eades"
+      ],
+      "benchmark_resource_values": [
+        "wikipedia_adminship_vote"
+      ],
+      "columns": {
+        "acquisition_date": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "algorithm": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 6
+        },
+        "backward_weight": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 5
+        },
+        "benchmark_resource": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "density": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 1
+        },
+        "experiment_family": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "instance_id": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "m": {
+          "dtype": "int64",
+          "nulls": 0,
+          "unique": 1
+        },
+        "n": {
+          "dtype": "int64",
+          "nulls": 0,
+          "unique": 1
+        },
+        "runtime_seconds": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 6
+        },
+        "source_commit": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "source_experiment": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "status": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "top_n": {
+          "dtype": "int64",
+          "nulls": 0,
+          "unique": 1
+        },
+        "total_weight": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 1
+        }
+      },
+      "duplicate_rows": 0,
+      "rows": 6,
+      "source_commit_values": [
+        "40209c26966247d9bf9ad34764de4ac4181f98c2"
+      ],
+      "status_values": [
+        "ok"
+      ],
+      "unique_instances": 1
+    },
+    "budget_curve": {
+      "algorithm_values": [
+        "ipsns_budget_10",
+        "ipsns_budget_100",
+        "ipsns_budget_200",
+        "ipsns_budget_25",
+        "ipsns_budget_400",
+        "ipsns_budget_50"
+      ],
+      "benchmark_resource_values": [
+        "alidasdan/graph-benchmarks"
+      ],
+      "columns": {
+        "acquisition_date": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "algorithm": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 6
+        },
+        "backward_weight": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 20
+        },
+        "benchmark_resource": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "budget": {
+          "dtype": "int64",
+          "nulls": 0,
+          "unique": 6
+        },
+        "experiment_family": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "forward_ratio": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 20
+        },
+        "forward_weight": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 20
+        },
+        "instance_id": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 20
+        },
+        "m": {
+          "dtype": "int64",
+          "nulls": 0,
+          "unique": 18
+        },
+        "n": {
+          "dtype": "int64",
+          "nulls": 0,
+          "unique": 18
+        },
+        "runtime": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 117
+        },
+        "seed": {
+          "dtype": "int64",
+          "nulls": 0,
+          "unique": 1
+        },
+        "source_commit": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "source_experiment": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "status": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "total_weight": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 19
+        },
+        "wmsf_seed_mode": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        }
+      },
+      "duplicate_rows": 0,
+      "rows": 120,
+      "seed_summary": {
+        "max": "1",
+        "min": "1",
+        "unique": 1
+      },
+      "source_commit_values": [
+        "40209c26966247d9bf9ad34764de4ac4181f98c2"
+      ],
+      "status_values": [
+        "ok"
+      ],
+      "unique_instances": 20
+    },
+    "core_benchmark": {
+      "algorithm_values": [
+        "ipsns",
+        "lrta",
+        "wmsf"
+      ],
+      "benchmark_resource_values": [
+        "alidasdan/graph-benchmarks"
+      ],
+      "columns": {
+        "acquisition_date": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "algorithm": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 3
+        },
+        "backward_weight": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 140
+        },
+        "benchmark_resource": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "experiment_family": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "forward_ratio": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 137
+        },
+        "forward_weight": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 143
+        },
+        "instance_id": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 105
+        },
+        "m": {
+          "dtype": "int64",
+          "nulls": 0,
+          "unique": 63
+        },
+        "n": {
+          "dtype": "int64",
+          "nulls": 0,
+          "unique": 55
+        },
+        "runtime_seconds": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 369
+        },
+        "source_commit": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "source_experiment": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "total_weight": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 93
+        }
+      },
+      "duplicate_rows": 0,
+      "rows": 369,
+      "source_commit_values": [
+        "40209c26966247d9bf9ad34764de4ac4181f98c2"
+      ],
+      "unique_instances": 105
+    },
+    "exact_small": {
+      "benchmark_resource_values": [
+        "alidasdan/graph-benchmarks"
+      ],
+      "columns": {
+        "acquisition_date": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "benchmark_resource": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "exact_bw": {
+          "dtype": "float64",
+          "nulls": 3,
+          "unique": 48
+        },
+        "exact_status": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 2
+        },
+        "exact_time": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 59
+        },
+        "experiment_family": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "instance_id": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 67
+        },
+        "ipsns_bw": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 51
+        },
+        "ipsns_gap_abs": {
+          "dtype": "float64",
+          "nulls": 5,
+          "unique": 5
+        },
+        "ipsns_gap_rel": {
+          "dtype": "float64",
+          "nulls": 5,
+          "unique": 5
+        },
+        "ipsns_is_optimal": {
+          "dtype": "boolean",
+          "nulls": 3,
+          "unique": 2
+        },
+        "ipsns_status": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "ipsns_time": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 66
+        },
+        "lrta_bw": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 51
+        },
+        "lrta_gap_abs": {
+          "dtype": "float64",
+          "nulls": 5,
+          "unique": 6
+        },
+        "lrta_gap_rel": {
+          "dtype": "float64",
+          "nulls": 5,
+          "unique": 6
+        },
+        "lrta_is_optimal": {
+          "dtype": "boolean",
+          "nulls": 3,
+          "unique": 2
+        },
+        "lrta_status": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "lrta_time": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 50
+        },
+        "m": {
+          "dtype": "int64",
+          "nulls": 0,
+          "unique": 25
+        },
+        "n": {
+          "dtype": "int64",
+          "nulls": 0,
+          "unique": 17
+        },
+        "source_commit": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "source_experiment": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "total_weight": {
+          "dtype": "float64",
+          "nulls": 3,
+          "unique": 52
+        },
+        "wmsf_bw": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 51
+        },
+        "wmsf_gap_abs": {
+          "dtype": "float64",
+          "nulls": 5,
+          "unique": 10
+        },
+        "wmsf_gap_rel": {
+          "dtype": "float64",
+          "nulls": 5,
+          "unique": 10
+        },
+        "wmsf_is_optimal": {
+          "dtype": "boolean",
+          "nulls": 3,
+          "unique": 2
+        },
+        "wmsf_status": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "wmsf_time": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 61
+        }
+      },
+      "duplicate_rows": 0,
+      "rows": 67,
+      "source_commit_values": [
+        "40209c26966247d9bf9ad34764de4ac4181f98c2"
+      ],
+      "unique_instances": 67
+    },
+    "external_baselines": {
+      "algorithm_values": [
+        "borda_net_score",
+        "drmaciver_fas",
+        "igraph_approx_eades",
+        "ipsns_full",
+        "lrta_full",
+        "random_multistart",
+        "weighted_eades",
+        "wmsf_seed"
+      ],
+      "benchmark_resource_values": [
+        "alidasdan/graph-benchmarks"
+      ],
+      "columns": {
+        "acquisition_date": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "algorithm": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 8
+        },
+        "backward_weight": {
+          "dtype": "float64",
+          "nulls": 12,
+          "unique": 406
+        },
+        "benchmark_resource": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "error": {
+          "dtype": "str",
+          "nulls": 972,
+          "unique": 3
+        },
+        "experiment_family": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "external_version_or_commit": {
+          "dtype": "str",
+          "nulls": 742,
+          "unique": 2
+        },
+        "forward_ratio": {
+          "dtype": "float64",
+          "nulls": 12,
+          "unique": 401
+        },
+        "forward_weight": {
+          "dtype": "float64",
+          "nulls": 12,
+          "unique": 410
+        },
+        "instance_id": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 105
+        },
+        "m": {
+          "dtype": "int64",
+          "nulls": 0,
+          "unique": 63
+        },
+        "n": {
+          "dtype": "int64",
+          "nulls": 0,
+          "unique": 55
+        },
+        "runtime": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 943
+        },
+        "source_commit": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "source_experiment": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "source_type": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 2
+        },
+        "status": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 3
+        },
+        "total_weight": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 93
+        }
+      },
+      "duplicate_rows": 0,
+      "rows": 984,
+      "source_commit_values": [
+        "40209c26966247d9bf9ad34764de4ac4181f98c2"
+      ],
+      "status_values": [
+        "error",
+        "ok",
+        "timeout"
+      ],
+      "unique_instances": 105
+    },
+    "lolib_dense": {
+      "algorithm_values": [
+        "borda_net_score",
+        "drmaciver_fas",
+        "igraph_approx_eades",
+        "ipsns_full",
+        "lrta_full",
+        "random_multistart",
+        "weighted_eades",
+        "wmsf_seed"
+      ],
+      "benchmark_resource_values": [
+        "LOLIB 2010 Archive"
+      ],
+      "columns": {
+        "acquisition_date": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "algorithm": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 8
+        },
+        "backward_weight": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 346
+        },
+        "benchmark_resource": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "experiment_family": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "external_version_or_commit": {
+          "dtype": "str",
+          "nulls": 300,
+          "unique": 2
+        },
+        "forward_ratio": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 346
+        },
+        "forward_weight": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 346
+        },
+        "instance_family": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 3
+        },
+        "instance_id": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 50
+        },
+        "m": {
+          "dtype": "int64",
+          "nulls": 0,
+          "unique": 47
+        },
+        "n": {
+          "dtype": "int64",
+          "nulls": 0,
+          "unique": 9
+        },
+        "runtime": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 399
+        },
+        "source_commit": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "source_experiment": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "source_type": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 2
+        },
+        "status": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "total_weight": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 50
+        }
+      },
+      "duplicate_rows": 0,
+      "instance_family_values": [
+        "IO",
+        "RandA1",
+        "SGB"
+      ],
+      "rows": 400,
+      "source_commit_values": [
+        "40209c26966247d9bf9ad34764de4ac4181f98c2"
+      ],
+      "status_values": [
+        "ok"
+      ],
+      "unique_instances": 50
+    },
+    "medium_mip_baseline": {
+      "benchmark_resource_values": [
+        "alidasdan/graph-benchmarks"
+      ],
+      "columns": {
+        "acquisition_date": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "benchmark_resource": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "density": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 15
+        },
+        "drmaciver_bw": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 15
+        },
+        "experiment_family": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "instance_id": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 15
+        },
+        "ipsns_bw": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 15
+        },
+        "ipsns_gap_to_bound_pct": {
+          "dtype": "float64",
+          "nulls": 14,
+          "unique": 1
+        },
+        "ipsns_gap_to_incumbent_pct": {
+          "dtype": "float64",
+          "nulls": 14,
+          "unique": 1
+        },
+        "lrta_bw": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 15
+        },
+        "m": {
+          "dtype": "int64",
+          "nulls": 0,
+          "unique": 15
+        },
+        "mip_bw_incumbent": {
+          "dtype": "float64",
+          "nulls": 8,
+          "unique": 7
+        },
+        "mip_dual_bound_bw": {
+          "dtype": "float64",
+          "nulls": 8,
+          "unique": 7
+        },
+        "mip_gap_pct": {
+          "dtype": "float64",
+          "nulls": 15,
+          "unique": 0
+        },
+        "mip_objective": {
+          "dtype": "float64",
+          "nulls": 8,
+          "unique": 7
+        },
+        "mode": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 2
+        },
+        "n": {
+          "dtype": "int64",
+          "nulls": 0,
+          "unique": 14
+        },
+        "proven_optimal": {
+          "dtype": "bool",
+          "nulls": 0,
+          "unique": 2
+        },
+        "runtime_seconds": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 15
+        },
+        "solver": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "source_commit": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "source_experiment": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "status": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 2
+        },
+        "status_message": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 2
+        },
+        "time_limit_seconds": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 1
+        },
+        "wmsf_bw": {
+          "dtype": "float64",
+          "nulls": 15,
+          "unique": 0
+        }
+      },
+      "duplicate_rows": 0,
+      "rows": 15,
+      "source_commit_values": [
+        "40209c26966247d9bf9ad34764de4ac4181f98c2"
+      ],
+      "status_values": [
+        "optimal",
+        "time_limit"
+      ],
+      "unique_instances": 15
+    },
+    "plain_local_search": {
+      "benchmark_resource_values": [
+        "alidasdan/graph-benchmarks"
+      ],
+      "columns": {
+        "accepted_moves": {
+          "dtype": "int64",
+          "nulls": 0,
+          "unique": 5
+        },
+        "acquisition_date": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "backward_weight": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 30
+        },
+        "benchmark_resource": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "budget_label": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 2
+        },
+        "experiment_family": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "improvement_over_seed": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 8
+        },
+        "instance_id": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 20
+        },
+        "ls_runtime_seconds": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 54
+        },
+        "m": {
+          "dtype": "int64",
+          "nulls": 0,
+          "unique": 18
+        },
+        "method": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 3
+        },
+        "n": {
+          "dtype": "int64",
+          "nulls": 0,
+          "unique": 18
+        },
+        "passes_completed": {
+          "dtype": "int64",
+          "nulls": 0,
+          "unique": 3
+        },
+        "runtime_seconds": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 58
+        },
+        "seed_bw": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 25
+        },
+        "seed_method": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 2
+        },
+        "seed_runtime_seconds": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 31
+        },
+        "source_commit": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "source_experiment": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "status": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "stopped_reason": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "total_weight": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 19
+        }
+      },
+      "duplicate_rows": 0,
+      "rows": 60,
+      "source_commit_values": [
+        "40209c26966247d9bf9ad34764de4ac4181f98c2"
+      ],
+      "status_values": [
+        "ok"
+      ],
+      "unique_instances": 20
+    },
+    "robustness": {
+      "algorithm_values": [
+        "DRMacIver/FAS",
+        "IPSNS"
+      ],
+      "algorithm_variant_values": [
+        "drmaciver",
+        "ipsns"
+      ],
+      "benchmark_resource_values": [
+        "alidasdan/graph-benchmarks"
+      ],
+      "columns": {
+        "accepted_moves": {
+          "dtype": "float64",
+          "nulls": 1860,
+          "unique": 5
+        },
+        "acquisition_date": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 2
+        },
+        "acyclicity_valid": {
+          "dtype": "boolean",
+          "nulls": 0,
+          "unique": 1
+        },
+        "algorithm": {
+          "dtype": "string",
+          "nulls": 0,
+          "unique": 2
+        },
+        "algorithm_variant": {
+          "dtype": "string",
+          "nulls": 0,
+          "unique": 2
+        },
+        "benchmark_resource": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "best_iteration": {
+          "dtype": "float64",
+          "nulls": 1860,
+          "unique": 19
+        },
+        "configuration_id": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 2
+        },
+        "density": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 63
+        },
+        "experiment_family": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "failed_repairs": {
+          "dtype": "float64",
+          "nulls": 1860,
+          "unique": 1
+        },
+        "forward_weight": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 718
+        },
+        "improved_incumbent": {
+          "dtype": "boolean",
+          "nulls": 1860,
+          "unique": 2
+        },
+        "initial_incumbent_objective": {
+          "dtype": "float64",
+          "nulls": 1860,
+          "unique": 80
+        },
+        "instance_family": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 6
+        },
+        "instance_id": {
+          "dtype": "string",
+          "nulls": 0,
+          "unique": 93
+        },
+        "iterations_executed": {
+          "dtype": "float64",
+          "nulls": 1860,
+          "unique": 2
+        },
+        "lrta_seed_objective": {
+          "dtype": "float64",
+          "nulls": 1860,
+          "unique": 80
+        },
+        "n_edges": {
+          "dtype": "Int64",
+          "nulls": 0,
+          "unique": 60
+        },
+        "n_vertices": {
+          "dtype": "Int64",
+          "nulls": 0,
+          "unique": 52
+        },
+        "noop_moves": {
+          "dtype": "float64",
+          "nulls": 1860,
+          "unique": 2
+        },
+        "normalized_objective": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 714
+        },
+        "objective_match": {
+          "dtype": "boolean",
+          "nulls": 0,
+          "unique": 1
+        },
+        "objective_recomputed": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 713
+        },
+        "objective_weight": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 713
+        },
+        "ordering_valid": {
+          "dtype": "boolean",
+          "nulls": 0,
+          "unique": 1
+        },
+        "rejected_moves": {
+          "dtype": "float64",
+          "nulls": 1860,
+          "unique": 6
+        },
+        "run_index": {
+          "dtype": "Int64",
+          "nulls": 0,
+          "unique": 20
+        },
+        "runtime_seconds": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 3720
+        },
+        "seed": {
+          "dtype": "Int64",
+          "nulls": 1860,
+          "unique": 20
+        },
+        "source_commit": {
+          "dtype": "string",
+          "nulls": 0,
+          "unique": 1
+        },
+        "source_experiment": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "source_run_id": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 3720
+        },
+        "status": {
+          "dtype": "string",
+          "nulls": 0,
+          "unique": 1
+        },
+        "time_to_best_seconds": {
+          "dtype": "float64",
+          "nulls": 1860,
+          "unique": 241
+        },
+        "timeout_seconds": {
+          "dtype": "float64",
+          "nulls": 1860,
+          "unique": 1
+        },
+        "total_edge_weight": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 85
+        },
+        "validated": {
+          "dtype": "bool",
+          "nulls": 0,
+          "unique": 1
+        },
+        "wmsf_seed_objective": {
+          "dtype": "float64",
+          "nulls": 1860,
+          "unique": 80
+        }
+      },
+      "configuration_id_values": [
+        "drmaciver_robustness_20_reps",
+        "ipsns_robustness_20_reps"
+      ],
+      "duplicate_rows": 0,
+      "instance_family_values": [
+        "core",
+        "core-bad",
+        "core-big",
+        "iscas",
+        "iscas-small",
+        "tests"
+      ],
+      "rows": 3720,
+      "seed_summary": {
+        "max": "19",
+        "min": "0",
+        "unique": 20
+      },
+      "source_commit_values": [
+        "80b3144d5fdbbe250faed8a4fe671dde2da76c89"
+      ],
+      "status_values": [
+        "ok"
+      ],
+      "unique_instances": 93
+    },
+    "run_metrics": {
+      "algorithm_values": [
+        "IPSNS"
+      ],
+      "algorithm_variant_values": [
+        "iters_10",
+        "iters_400",
+        "iters_50",
+        "iters_50_addback25",
+        "iters_50_topk5",
+        "seed_only"
+      ],
+      "benchmark_resource_values": [
+        "alidasdan/graph-benchmarks"
+      ],
+      "columns": {
+        "acquisition_date": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 2
+        },
+        "algorithm": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "algorithm_variant": {
+          "dtype": "string",
+          "nulls": 0,
+          "unique": 6
+        },
+        "benchmark_resource": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "configuration_id": {
+          "dtype": "string",
+          "nulls": 0,
+          "unique": 6
+        },
+        "density": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 42
+        },
+        "destroy_addback_fraction": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 2
+        },
+        "destroy_remove_fraction": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 1
+        },
+        "experiment_family": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "forward_weight": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 71
+        },
+        "improved_incumbent": {
+          "dtype": "boolean",
+          "nulls": 0,
+          "unique": 2
+        },
+        "improvement_absolute": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 29
+        },
+        "improvement_relative": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 29
+        },
+        "initial_incumbent_objective": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 43
+        },
+        "instance_family": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 4
+        },
+        "instance_id": {
+          "dtype": "string",
+          "nulls": 0,
+          "unique": 43
+        },
+        "iteration_budget": {
+          "dtype": "Int64",
+          "nulls": 0,
+          "unique": 4
+        },
+        "iterations_executed": {
+          "dtype": "Int64",
+          "nulls": 0,
+          "unique": 5
+        },
+        "lrta_seed_objective": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 43
+        },
+        "n_edges": {
+          "dtype": "Int64",
+          "nulls": 0,
+          "unique": 42
+        },
+        "n_vertices": {
+          "dtype": "Int64",
+          "nulls": 0,
+          "unique": 40
+        },
+        "normalized_objective": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 71
+        },
+        "objective_weight": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 71
+        },
+        "runtime_seconds": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 1250
+        },
+        "scc_select_mode": {
+          "dtype": "string",
+          "nulls": 0,
+          "unique": 1
+        },
+        "seed": {
+          "dtype": "Int64",
+          "nulls": 0,
+          "unique": 5
+        },
+        "seed_ordering": {
+          "dtype": "string",
+          "nulls": 0,
+          "unique": 1
+        },
+        "source_commit": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "source_experiment": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "source_run_id": {
+          "dtype": "string",
+          "nulls": 0,
+          "unique": 1290
+        },
+        "split": {
+          "dtype": "string",
+          "nulls": 0,
+          "unique": 2
+        },
+        "status": {
+          "dtype": "string",
+          "nulls": 0,
+          "unique": 1
+        },
+        "tolerance": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 1
+        },
+        "topk_scc": {
+          "dtype": "Int64",
+          "nulls": 0,
+          "unique": 2
+        },
+        "total_edge_weight": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 43
+        },
+        "validated": {
+          "dtype": "bool",
+          "nulls": 0,
+          "unique": 1
+        },
+        "wmsf_seed_mode": {
+          "dtype": "string",
+          "nulls": 0,
+          "unique": 1
+        },
+        "wmsf_seed_objective": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 43
+        }
+      },
+      "configuration_id_values": [
+        "iters_10",
+        "iters_400",
+        "iters_50",
+        "iters_50_addback25",
+        "iters_50_topk5",
+        "seed_only"
+      ],
+      "duplicate_rows": 0,
+      "instance_family_values": [
+        "core",
+        "core-big",
+        "iscas",
+        "iscas-small"
+      ],
+      "rows": 1290,
+      "seed_summary": {
+        "max": "5",
+        "min": "1",
+        "unique": 5
+      },
+      "source_commit_values": [
+        "40209c26966247d9bf9ad34764de4ac4181f98c2"
+      ],
+      "split_values": [
+        "holdout",
+        "tuning"
+      ],
+      "status_values": [
+        "ok"
+      ],
+      "unique_instances": 43
+    },
+    "sensitivity": {
+      "algorithm_values": [
+        "IPSNS"
+      ],
+      "algorithm_variant_values": [
+        "addback_0.15",
+        "addback_0.25",
+        "addback_0.35",
+        "baseline_default",
+        "iters_100",
+        "iters_200",
+        "iters_600",
+        "remove_0.01",
+        "remove_0.05",
+        "rng_2",
+        "rng_3",
+        "topk_10",
+        "topk_20",
+        "topk_5"
+      ],
+      "benchmark_resource_values": [
+        "alidasdan/graph-benchmarks"
+      ],
+      "columns": {
+        "accepted_moves": {
+          "dtype": "float64",
+          "nulls": 140,
+          "unique": 0
+        },
+        "algorithm": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "algorithm_variant": {
+          "dtype": "string",
+          "nulls": 0,
+          "unique": 14
+        },
+        "attempted_moves": {
+          "dtype": "float64",
+          "nulls": 140,
+          "unique": 0
+        },
+        "baseline_default_objective": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 10
+        },
+        "benchmark_resource": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "configuration_id": {
+          "dtype": "string",
+          "nulls": 0,
+          "unique": 14
+        },
+        "density": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 9
+        },
+        "destroy_addback_fraction": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 4
+        },
+        "destroy_remove_fraction": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 3
+        },
+        "experiment_family": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "first_improvement_iteration": {
+          "dtype": "float64",
+          "nulls": 140,
+          "unique": 0
+        },
+        "improvement_absolute_vs_default": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 7
+        },
+        "improvement_absolute_vs_incumbent": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 8
+        },
+        "improvement_relative_vs_default": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 7
+        },
+        "improvement_relative_vs_incumbent": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 8
+        },
+        "initial_incumbent_objective": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 10
+        },
+        "initial_seed_method": {
+          "dtype": "string",
+          "nulls": 0,
+          "unique": 1
+        },
+        "instance_family": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 3
+        },
+        "instance_id": {
+          "dtype": "string",
+          "nulls": 0,
+          "unique": 10
+        },
+        "iteration_budget": {
+          "dtype": "Int64",
+          "nulls": 0,
+          "unique": 4
+        },
+        "largest_scc_fraction": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 4
+        },
+        "last_improvement_iteration": {
+          "dtype": "float64",
+          "nulls": 140,
+          "unique": 0
+        },
+        "n_edges": {
+          "dtype": "Int64",
+          "nulls": 0,
+          "unique": 9
+        },
+        "n_vertices": {
+          "dtype": "Int64",
+          "nulls": 0,
+          "unique": 8
+        },
+        "nontrivial_scc_node_fraction": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 4
+        },
+        "objective_weight": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 16
+        },
+        "quality_per_runtime": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 8
+        },
+        "runtime_seconds": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 139
+        },
+        "runtime_trace_available": {
+          "dtype": "boolean",
+          "nulls": 0,
+          "unique": 1
+        },
+        "scc_count_nontrivial": {
+          "dtype": "Int64",
+          "nulls": 0,
+          "unique": 2
+        },
+        "scc_select_mode": {
+          "dtype": "string",
+          "nulls": 0,
+          "unique": 1
+        },
+        "seed": {
+          "dtype": "Int64",
+          "nulls": 0,
+          "unique": 3
+        },
+        "seed_ordering": {
+          "dtype": "string",
+          "nulls": 0,
+          "unique": 1
+        },
+        "sensitivity_parameter": {
+          "dtype": "string",
+          "nulls": 0,
+          "unique": 6
+        },
+        "source_commit": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "source_experiment": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "source_run_id": {
+          "dtype": "string",
+          "nulls": 0,
+          "unique": 140
+        },
+        "status": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "termination_reason": {
+          "dtype": "string",
+          "nulls": 0,
+          "unique": 1
+        },
+        "tolerance": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 1
+        },
+        "topk_scc": {
+          "dtype": "Int64",
+          "nulls": 0,
+          "unique": 4
+        },
+        "validated": {
+          "dtype": "bool",
+          "nulls": 0,
+          "unique": 1
+        },
+        "wmsf_seed_mode": {
+          "dtype": "string",
+          "nulls": 0,
+          "unique": 1
+        }
+      },
+      "configuration_id_values": [
+        "addback_0.15",
+        "addback_0.25",
+        "addback_0.35",
+        "baseline_default",
+        "iters_100",
+        "iters_200",
+        "iters_600",
+        "remove_0.01",
+        "remove_0.05",
+        "rng_2",
+        "rng_3",
+        "topk_10",
+        "topk_20",
+        "topk_5"
+      ],
+      "duplicate_rows": 0,
+      "instance_family_values": [
+        "core",
+        "core-bad",
+        "core-big"
+      ],
+      "rows": 140,
+      "seed_summary": {
+        "max": "3",
+        "min": "1",
+        "unique": 3
+      },
+      "sensitivity_parameter_values": [
+        "baseline",
+        "destroy_addback_frac",
+        "destroy_remove_frac",
+        "iters",
+        "rng_seed",
+        "topk_scc"
+      ],
+      "source_commit_values": [
+        "40209c26966247d9bf9ad34764de4ac4181f98c2"
+      ],
+      "status_values": [
+        "ok"
+      ],
+      "unique_instances": 10
+    },
+    "topological_extraction_sensitivity": {
+      "algorithm_values": [
+        "lrta"
+      ],
+      "benchmark_resource_values": [
+        "alidasdan/graph-benchmarks"
+      ],
+      "columns": {
+        "acquisition_date": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "algorithm": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "backward_weight": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 6
+        },
+        "benchmark_resource": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "experiment_family": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "extraction_rule": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 4
+        },
+        "forward_weight": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 6
+        },
+        "gap": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 1
+        },
+        "instance_id": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 6
+        },
+        "rel_improve_vs_current": {
+          "dtype": "float64",
+          "nulls": 0,
+          "unique": 1
+        },
+        "source_commit": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        },
+        "source_experiment": {
+          "dtype": "str",
+          "nulls": 0,
+          "unique": 1
+        }
+      },
+      "duplicate_rows": 0,
+      "rows": 24,
+      "source_commit_values": [
+        "40209c26966247d9bf9ad34764de4ac4181f98c2"
+      ],
+      "unique_instances": 6
+    }
+  },
+  "families": {
+    "IO": 10,
+    "RandA1": 15,
+    "SGB": 25,
+    "core": 49,
+    "core-bad": 7,
+    "core-big": 4,
+    "iscas": 15,
+    "iscas-small": 18,
+    "tests": 2,
+    "unknown": 106
+  },
+  "unique_instance_ids": 156
+}

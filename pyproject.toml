@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling==1.27.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mwfas-data-paper"
+version = "0.1.0"
+description = "Reproducible audit tooling for the MWFAS Heuristic Metrics dataset"
+requires-python = ">=3.12,<3.13"
+dependencies = ["pyarrow==24.0.0", "networkx==3.6.1", "pandas==3.0.2"]
+
+[dependency-groups]
+dev = ["pytest==9.0.3"]
+
+[project.scripts]
+mwfas-data = "mwfas_data.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mwfas_data"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

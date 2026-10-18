@@ -1,0 +1,11 @@
+{
+  "status": "PLANNED",
+  "selection_seed": 20261017,
+  "target_unique_instances": 30,
+  "strata": {"core": 8, "core-bad": 4, "core-big": 4, "iscas": 4, "iscas-small": 4, "eligible_exact_small_additional": 6},
+  "algorithms": ["lrta", "wmsf", "ipsns"],
+  "exact_max_vertices": 20,
+  "ipsns": {"seed": 1, "iterations": 400, "topk_scc": 15, "destroy_addback_fraction": 0.30, "destroy_remove_fraction": 0.02, "tolerance": 1e-12, "wmsf_seed_mode": "full"},
+  "runtime_comparison": "Report hardware and software; compare distributions and orders of magnitude, not exact seconds",
+  "timeout_seconds_per_run": 3600
+}

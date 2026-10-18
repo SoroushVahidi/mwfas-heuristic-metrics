@@ -1,0 +1,10 @@
+{
+  "status": "PLANNED",
+  "selection_seed": 20261017,
+  "target_unique_instances": 55,
+  "families": {"erdos_renyi_directed": 15, "directed_scale_free": 15, "directed_community": 15, "licensed_real_network": 10},
+  "positive_integer_weight_range": [1, 100],
+  "split_policy": "Group by underlying graph identity and generation seed before train/test assignment",
+  "required_properties": ["n_vertices", "n_edges", "density", "scc_count", "largest_scc_size", "weight_min", "weight_max", "weight_mean", "weight_std", "graph_sha256"],
+  "external_real_network_sources": "Pending license and attribution review; no real network redistributed until cleared"
+}
