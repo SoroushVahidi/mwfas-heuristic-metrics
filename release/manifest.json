@@ -41,8 +41,8 @@
     },
     {
       "path": "README.md",
-      "size_bytes": 5927,
-      "sha256": "f88934fbe131c2464c227fc6e894e632648fc9ed08a68e8812f0d8b2015ddb46",
+      "size_bytes": 6284,
+      "sha256": "b316fc1d3c0dbd0bb7ec77a6ddd365f32cf1d7323c38391d7127ec052d7a51ae",
       "origin": "new_public_release_material",
       "license_scope": "CC-BY-4.0-author-controlled"
     },
@@ -141,8 +141,8 @@
       "path": "release/public_reproducibility/README.md",
       "origin": "author_owned_table45_public_replay",
       "license_scope": "CC-BY-4.0-author-controlled",
-      "size_bytes": 9517,
-      "sha256": "3b90dddd68936c8697a4841f19753341f11f4a546052d81680122ca488a8016a"
+      "size_bytes": 5608,
+      "sha256": "49d2a6d7b1ee72f5f98a0d88e136840e336da1ca0c2ec7826510f5a6dfb45d3d"
     },
     {
       "path": "release/public_reproducibility/anonymous_exp28.py",
@@ -169,8 +169,8 @@
       "path": "release/public_reproducibility/coverage.json",
       "origin": "exp28-public-reproduction",
       "license_scope": "CC-BY-4.0-author-controlled",
-      "size_bytes": 6258,
-      "sha256": "3035dc5c44660a506cda9c10fe71039c8c167b6f0071a6fc5bf2fa57b389b8cf"
+      "size_bytes": 6483,
+      "sha256": "37c3e48695a61978d0408dbe1b013388de710d3a543a0c258639104aad34d895"
     },
     {
       "path": "release/public_reproducibility/exp28_checks.py",
@@ -414,8 +414,8 @@
       "path": "release/public_reproducibility/remaining/README.md",
       "origin": "remaining-public-reproduction",
       "license_scope": "CC-BY-4.0-author-controlled",
-      "size_bytes": 2206,
-      "sha256": "d39cb19d0e38c882e5dbe1e88b0e05ed6088ada5cc26d73c0d2aafd436f0757b"
+      "size_bytes": 3764,
+      "sha256": "9a4edc1be16550012e51511a6b21c0bff0925437041ea351c74365aed8f196a7"
     },
     {
       "path": "release/public_reproducibility/remaining/anonymous.py",
@@ -439,6 +439,41 @@
       "sha256": "c1490ddc7742040740dc02a9e2ef8633b926c4ac62a134b70cf3686b3fb3e61c"
     },
     {
+      "path": "release/public_reproducibility/remaining/public_receipts/J1.json",
+      "origin": "remaining-public-reproduction",
+      "license_scope": "CC-BY-4.0-author-controlled",
+      "size_bytes": 21418,
+      "sha256": "464327901474f1a49c9dd6d05c10450c1abf5f833c40f60b81b89075e3421a2f"
+    },
+    {
+      "path": "release/public_reproducibility/remaining/public_receipts/J2.json",
+      "origin": "remaining-public-reproduction",
+      "license_scope": "CC-BY-4.0-author-controlled",
+      "size_bytes": 6133,
+      "sha256": "a62f07dd0ea9e93ccca5cb574456e485216c5f1ac28cb8504d897b486aaa905f"
+    },
+    {
+      "path": "release/public_reproducibility/remaining/public_receipts/J3.json",
+      "origin": "remaining-public-reproduction",
+      "license_scope": "CC-BY-4.0-author-controlled",
+      "size_bytes": 11711,
+      "sha256": "d93d3929c1387c7b35b48adf107842ab6ebc43d46b864fece6addd7a3fd4b28d"
+    },
+    {
+      "path": "release/public_reproducibility/remaining/public_receipts/J4.json",
+      "origin": "remaining-public-reproduction",
+      "license_scope": "CC-BY-4.0-author-controlled",
+      "size_bytes": 25718,
+      "sha256": "93a8c0de584b4b2dbb787f26160ef7573b50f18367a694d2ff631b14c5a8d977"
+    },
+    {
+      "path": "release/public_reproducibility/remaining/publication.json",
+      "origin": "remaining-public-reproduction",
+      "license_scope": "CC-BY-4.0-author-controlled",
+      "size_bytes": 1434,
+      "sha256": "28e0ab08d74d04efcc96ddbf9bd9fe40e48ec167b81c94c2bdd97cd43fb92088"
+    },
+    {
       "path": "release/public_reproducibility/remaining/replay.py",
       "origin": "remaining-public-reproduction",
       "license_scope": "MIT",
@@ -451,6 +486,13 @@
       "license_scope": "MIT",
       "size_bytes": 4288,
       "sha256": "0e1d5af60065551476ffa9a91f1009e6aacac2a6a0cf83bccb36f3a4efe5eca1"
+    },
+    {
+      "path": "release/public_reproducibility/remaining/summary.json",
+      "origin": "remaining-public-reproduction",
+      "license_scope": "CC-BY-4.0-author-controlled",
+      "size_bytes": 2444,
+      "sha256": "b238b5673220ed8e5a58a2adf635362fa4c5defdc20b556d66577f3f3bf243fd"
     },
     {
       "path": "release/public_reproducibility/remaining/table_stats.py",

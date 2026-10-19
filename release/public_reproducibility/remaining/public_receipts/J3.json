@@ -1,0 +1,312 @@
+{
+  "status": "PASS",
+  "scope": "J3",
+  "classification": "PUBLIC_REPLAYABLE",
+  "code_revision": "4a89ffe5d0b8d9a0510ac0e715b9baef84e3c62f",
+  "data_revision": "667e164d0768d635a73692cd594801f10fe12382",
+  "urls": {
+    "package_receipt": "https://huggingface.co/datasets/SoroushVahidi/mwfas-benchmark-extension/resolve/667e164d0768d635a73692cd594801f10fe12382/releases/remaining-v1-20261019/package.json",
+    "archive": "https://huggingface.co/datasets/SoroushVahidi/mwfas-benchmark-extension/resolve/667e164d0768d635a73692cd594801f10fe12382/releases/remaining-v1-20261019/remaining.tar.gz",
+    "code": "https://codeload.github.com/SoroushVahidi/mwfas-heuristic-metrics/tar.gz/4a89ffe5d0b8d9a0510ac0e715b9baef84e3c62f"
+  },
+  "download_sha256": {
+    "package_receipt": "5836e7b386df1c317774a1a2e7ff42162eca1159b7b9e7b5e0a543e367439cc7",
+    "archive": "152b8ac7917eebaa66d9df4facc3500911ff67ce65f5c50df3c3e2bd1609d6c7",
+    "code": "128c4a8636b359b40b527605fc8c76b31b4a7be99a7ab7ab33e066fd390c1d2f"
+  },
+  "anonymous": true,
+  "fresh_directory": true,
+  "private_path_rejection_probes": "PASS",
+  "read_guard": "PASS",
+  "interpreter_standard_library": "/mmfs1/apps/easybuild/el9_5.x86_64/software/Python/3.12.3-GCCcore-13.3.0/lib/python3.12",
+  "subprocesses": "FORBIDDEN",
+  "hardware": "Linux-5.14.0-503.11.1.el9_5.x86_64-x86_64-with-glibc2.34",
+  "replay": {
+    "package": "J3",
+    "mode": "public",
+    "started_utc": "2026-10-19T23:00:43.940760+00:00",
+    "slurm_job_id": "1430799",
+    "python": "3.12.3",
+    "hostname": "n0011",
+    "optimization_runs": 0,
+    "status": "PASS",
+    "complete_public_table": true,
+    "source_downloads": [
+      {
+        "url": "https://raw.githubusercontent.com/alidasdan/graph-benchmarks/77e5b8b4f1e1a1b8e80cfb9430f90492ffee3675/core-bad/bad1.d",
+        "sha256": "4befdc5c74d924fc7b325c8c05d3cf942b0fd262a573b5e93f4bd68dedcce2ed",
+        "bytes": 220,
+        "anonymous": true
+      },
+      {
+        "url": "https://raw.githubusercontent.com/alidasdan/graph-benchmarks/77e5b8b4f1e1a1b8e80cfb9430f90492ffee3675/core-bad/bad3.d",
+        "sha256": "074b0739c24ab26c5b5b25c1018d07fb507a3164ba654bbd1a29526094c46ab2",
+        "bytes": 91,
+        "anonymous": true
+      },
+      {
+        "url": "https://raw.githubusercontent.com/alidasdan/graph-benchmarks/77e5b8b4f1e1a1b8e80cfb9430f90492ffee3675/core-bad/bad7.d",
+        "sha256": "8195cb09d0214ca3243f026b1abc795c39ea381b015880b2abdae873a12c099f",
+        "bytes": 328,
+        "anonymous": true
+      },
+      {
+        "url": "https://raw.githubusercontent.com/alidasdan/graph-benchmarks/77e5b8b4f1e1a1b8e80cfb9430f90492ffee3675/core/complete5.d",
+        "sha256": "d0fe54c6bc05f5a082e94b02ef1418eef2154f90e0c56b3743103856f680c9bb",
+        "bytes": 216,
+        "anonymous": true
+      },
+      {
+        "url": "https://raw.githubusercontent.com/alidasdan/graph-benchmarks/77e5b8b4f1e1a1b8e80cfb9430f90492ffee3675/core/complete9.d",
+        "sha256": "f7796b545abc3e51a4b860a7729f1a172e1f67cbc3587a1303d26bb248ec32b6",
+        "bytes": 737,
+        "anonymous": true
+      },
+      {
+        "url": "https://raw.githubusercontent.com/alidasdan/graph-benchmarks/77e5b8b4f1e1a1b8e80cfb9430f90492ffee3675/core/gr1.d",
+        "sha256": "a807889ab69a7ddc0b78aa12ec9fdfa4cdd83e904441d16864559484afdc56b9",
+        "bytes": 247,
+        "anonymous": true
+      },
+      {
+        "url": "https://raw.githubusercontent.com/alidasdan/graph-benchmarks/77e5b8b4f1e1a1b8e80cfb9430f90492ffee3675/core/gr1-acyclic.d",
+        "sha256": "ff4d7a55d9071466d2f9348c5fe109f14d4efe6ea5c19a85e687ba9e24e4c272",
+        "bytes": 234,
+        "anonymous": true
+      },
+      {
+        "url": "https://raw.githubusercontent.com/alidasdan/graph-benchmarks/77e5b8b4f1e1a1b8e80cfb9430f90492ffee3675/core/r20_60.d",
+        "sha256": "89214060ba2844884e5fd4d23b406387765ad803b20d0585f5f7c86a0ff89c65",
+        "bytes": 838,
+        "anonymous": true
+      },
+      {
+        "url": "https://raw.githubusercontent.com/alidasdan/graph-benchmarks/77e5b8b4f1e1a1b8e80cfb9430f90492ffee3675/core/stg.d",
+        "sha256": "03f7f9ab6d2b8c03d6430f900e3d3a2da27c7123bd2d1b6bc4bba97d7dca53dc",
+        "bytes": 393,
+        "anonymous": true
+      },
+      {
+        "url": "https://raw.githubusercontent.com/alidasdan/graph-benchmarks/77e5b8b4f1e1a1b8e80cfb9430f90492ffee3675/tests/small.d",
+        "sha256": "3b1868dd4647432799877bcd0f3f8c4711bed2211c0bd52b091e08f724fd922b",
+        "bytes": 129,
+        "anonymous": true
+      },
+      {
+        "url": "https://raw.githubusercontent.com/alidasdan/graph-benchmarks/77e5b8b4f1e1a1b8e80cfb9430f90492ffee3675/iscas-small/s208.d",
+        "sha256": "da57e85369b009ddaa264ec1d0637f071bf45d60a4a7c3f87776fa39a36dba87",
+        "bytes": 1832,
+        "anonymous": true
+      },
+      {
+        "url": "https://raw.githubusercontent.com/alidasdan/graph-benchmarks/77e5b8b4f1e1a1b8e80cfb9430f90492ffee3675/iscas-small/mm4a.d",
+        "sha256": "1338be6fa09efb2129dca29716d87fa6d857433387b950614ec81e0277c4b162",
+        "bytes": 7342,
+        "anonymous": true
+      },
+      {
+        "url": "https://raw.githubusercontent.com/alidasdan/graph-benchmarks/77e5b8b4f1e1a1b8e80cfb9430f90492ffee3675/iscas/s344.d",
+        "sha256": "10505d5db62693dc62db54911fd46701783f8191e8920064d54787d6a523c2fe",
+        "bytes": 6521,
+        "anonymous": true
+      },
+      {
+        "url": "https://raw.githubusercontent.com/alidasdan/graph-benchmarks/77e5b8b4f1e1a1b8e80cfb9430f90492ffee3675/iscas/s382.d",
+        "sha256": "9e91f18e67fc76bca984703dd279c3eeb0b444220d2f8a53426c60a69b1376ac",
+        "bytes": 7274,
+        "anonymous": true
+      },
+      {
+        "url": "https://raw.githubusercontent.com/alidasdan/graph-benchmarks/77e5b8b4f1e1a1b8e80cfb9430f90492ffee3675/iscas/s400.d",
+        "sha256": "f0374701238756931ed2abf49e22db0effd3ff60aed08c2a175eb718ce4fc2e6",
+        "bytes": 7720,
+        "anonymous": true
+      },
+      {
+        "url": "https://raw.githubusercontent.com/alidasdan/graph-benchmarks/77e5b8b4f1e1a1b8e80cfb9430f90492ffee3675/iscas/s526n.d",
+        "sha256": "bacc6fd43a2925448f23aaa20e046fbab2890f1d2dec6c7d4a6d5cacbe359a08",
+        "bytes": 9302,
+        "anonymous": true
+      },
+      {
+        "url": "https://raw.githubusercontent.com/alidasdan/graph-benchmarks/77e5b8b4f1e1a1b8e80cfb9430f90492ffee3675/iscas/s641.d",
+        "sha256": "7d46e43e6da4d15f174129f6ca1247bdcc3f06bc5001cb934ace67601f9779e3",
+        "bytes": 10467,
+        "anonymous": true
+      },
+      {
+        "url": "https://raw.githubusercontent.com/alidasdan/graph-benchmarks/77e5b8b4f1e1a1b8e80cfb9430f90492ffee3675/iscas/s713.d",
+        "sha256": "0ff86ebf69d3cb8bdb48032053c9edc644ff164584c2f677aeba75e1f692cecc",
+        "bytes": 11782,
+        "anonymous": true
+      },
+      {
+        "url": "https://raw.githubusercontent.com/alidasdan/graph-benchmarks/77e5b8b4f1e1a1b8e80cfb9430f90492ffee3675/iscas/s838.d",
+        "sha256": "80c350fa85439959156a2e942aab855350f4b957321ce92dcc0fba228dce158f",
+        "bytes": 16087,
+        "anonymous": true
+      },
+      {
+        "url": "https://raw.githubusercontent.com/alidasdan/graph-benchmarks/77e5b8b4f1e1a1b8e80cfb9430f90492ffee3675/iscas/mm9a.d",
+        "sha256": "df60ee0b3040cdad76b213f22a67e401224e3fcb0f983705c7c003018afbf258",
+        "bytes": 20086,
+        "anonymous": true
+      },
+      {
+        "url": "https://raw.githubusercontent.com/jpatokal/openflights/56a3cce4d50309cb79948103a48c7f87d09b3056/data/routes.dat",
+        "sha256": "bd373706238134f619c624c606dccc74c05c2582a977c489c81de501735f2390",
+        "bytes": 2377148,
+        "anonymous": true
+      },
+      {
+        "url": "https://raw.githubusercontent.com/jpatokal/openflights/56a3cce4d50309cb79948103a48c7f87d09b3056/data/airports.dat",
+        "sha256": "9387cdb38df5bd664da823f8ccb69fdd9b33a1888f5b7cca09c34a3cd9ff59f9",
+        "bytes": 1127225,
+        "anonymous": true
+      },
+      {
+        "url": "https://lehd.ces.census.gov/data/lodes/LODES8/de/od/de_od_main_JT00_2022.csv.gz",
+        "sha256": "e06febfcd48accb2266fb928e1b2f51cdb16481964d2b5b71b99119ce6d8120e",
+        "bytes": 1702429,
+        "anonymous": true
+      },
+      {
+        "url": "https://www.irs.gov/pub/irs-soi/countyoutflow2122.csv",
+        "sha256": "51b988a3b170e37a45f1598bfbe18e136ef3236dcda7227b458e6714cf0535e4",
+        "bytes": 4468798,
+        "anonymous": true
+      }
+    ],
+    "manifest_files_verified": 4390,
+    "invalid_original_orders": [],
+    "state": "COMPLETED_SUCCESS",
+    "tables": [
+      "10"
+    ],
+    "displayed_cells": [
+      {
+        "table": "10",
+        "row": "Ali collection",
+        "column": 1,
+        "value": "20",
+        "status": "PASS"
+      },
+      {
+        "table": "10",
+        "row": "Ali collection",
+        "column": 2,
+        "value": "140/140",
+        "status": "PASS"
+      },
+      {
+        "table": "10",
+        "row": "Ali collection",
+        "column": 3,
+        "value": "18/20 graphs: best-family ties",
+        "status": "PASS"
+      },
+      {
+        "table": "10",
+        "row": "OpenFlights",
+        "column": 1,
+        "value": "1",
+        "status": "PASS"
+      },
+      {
+        "table": "10",
+        "row": "OpenFlights",
+        "column": 2,
+        "value": "7/7",
+        "status": "PASS"
+      },
+      {
+        "table": "10",
+        "row": "OpenFlights",
+        "column": 3,
+        "value": "5,099 (RASstar seed 1)",
+        "status": "PASS"
+      },
+      {
+        "table": "10",
+        "row": "Census LODES",
+        "column": 1,
+        "value": "1",
+        "status": "PASS"
+      },
+      {
+        "table": "10",
+        "row": "Census LODES",
+        "column": 2,
+        "value": "7/7",
+        "status": "PASS"
+      },
+      {
+        "table": "10",
+        "row": "Census LODES",
+        "column": 3,
+        "value": "65,397 (WMSF insertion)",
+        "status": "PASS"
+      },
+      {
+        "table": "10",
+        "row": "Census LODES",
+        "column": 4,
+        "value": "Loop constant 18,628",
+        "status": "PASS"
+      },
+      {
+        "table": "10",
+        "row": "IRS SOI",
+        "column": 1,
+        "value": "1",
+        "status": "PASS"
+      },
+      {
+        "table": "10",
+        "row": "IRS SOI",
+        "column": 2,
+        "value": "5/7",
+        "status": "PASS"
+      },
+      {
+        "table": "10",
+        "row": "IRS SOI",
+        "column": 3,
+        "value": "2,770,227 (LR-TA)",
+        "status": "PASS"
+      }
+    ],
+    "graph_checks": 23,
+    "available_order_checks": 159,
+    "original_statuses": {
+      "PASS": 159,
+      "TIMEOUT": 2
+    },
+    "classification": "PUBLIC_REPLAYABLE",
+    "limitations": [
+      "Numerical solver certificates are not exact-arithmetic proofs.",
+      "Ali historical Hugging Face graph-byte identity remains unverified; EXP12 replay uses its pinned recorded input bytes.",
+      "Third-party graphs are retrieved from pinned upstream files; no substituted sources."
+    ],
+    "finished_utc": "2026-10-19T23:00:51.683878+00:00",
+    "elapsed_seconds": 7.744032621383667,
+    "outputs": [
+      {
+        "path": "graph_checks.json",
+        "sha256": "36203b3af0785c16fb3cb8560f0da595ef3ba2fae654143c602bf3e499e19a6e"
+      },
+      {
+        "path": "order_checks.json",
+        "sha256": "385967599871a974be3d5f77683d846dd57edfd30dde7882665c7ab0923f46e8"
+      },
+      {
+        "path": "statistical_inputs.json",
+        "sha256": "aaa81f2bd92e6c1cdcc27ca18ca9d7e852768dad14218fd44e6bbd5b73e74482"
+      },
+      {
+        "path": "table_cells.json",
+        "sha256": "147a85e8e5fafb9fa3970f1596eb87ac19edef17014d32cc5342870a0c6ee06a"
+      }
+    ]
+  }
+}

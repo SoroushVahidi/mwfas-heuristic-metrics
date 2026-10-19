@@ -31,4 +31,32 @@ EXP07 certificates remain numerical solver certificates, not exact-arithmetic
 proofs. The Ali inputs reproduce the recorded EXP12 run, not earlier Hugging Face
 runs for which historical graph-byte identity remains unverified.
 
-No new coverage is claimed until a complete fresh anonymous public replay passes.
+Complete public replay passed for all four packages on 2026-10-19. The dataset
+revision is `667e164d0768d635a73692cd594801f10fe12382` and the tested verifier revision is
+`4a89ffe5d0b8d9a0510ac0e715b9baef84e3c62f`. All numerical table cells match the frozen manuscript.
+See `public_receipts/J1.json` through `J4.json` and `summary.json`.
+
+For each scope, use a new directory and the public bootstrap from the pinned code:
+
+```sh
+env -i PATH="$PATH" python3.12 -I -B -S anonymous.py \
+  --code-revision 4a89ffe5d0b8d9a0510ac0e715b9baef84e3c62f \
+  --data-revision 667e164d0768d635a73692cd594801f10fe12382 \
+  --scope J1 --directory /tmp/mwfas-public-J1-new
+```
+
+Run J2, J3 and J4 in separate new directories for the other packages. Do not reuse
+an existing replay directory. The guard permits only downloaded artifacts, the
+active interpreter standard library, and necessary operating-system/TLS files.
+No credentials, private caches or optimizer processes are permitted. The package
+contains 4,390 hash-manifested files (including its index) plus the manifest itself;
+objects are deduplicated. Eleven invalid original EXP05 order files retain FAIL
+and are independently rejected as incomplete permutations. The inventory replay
+additionally reconstructs the existing public EXP04/06 and Wikimedia graph
+identities; its 442 graph rows are normalization-contract scoped, not a global
+independent-source count.
+
+Original private Slurm archival jobs and the accepted 5,007-witness audit were
+not repeated. GitHub Actions could not start due to billing restrictions; 25
+local tests, manifest validation and the four Slurm public replays passed.
+

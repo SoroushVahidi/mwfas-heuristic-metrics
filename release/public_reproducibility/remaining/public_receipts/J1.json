@@ -1,0 +1,900 @@
+{
+  "status": "PASS",
+  "scope": "J1",
+  "classification": "PUBLIC_REPLAYABLE",
+  "code_revision": "4a89ffe5d0b8d9a0510ac0e715b9baef84e3c62f",
+  "data_revision": "667e164d0768d635a73692cd594801f10fe12382",
+  "urls": {
+    "package_receipt": "https://huggingface.co/datasets/SoroushVahidi/mwfas-benchmark-extension/resolve/667e164d0768d635a73692cd594801f10fe12382/releases/remaining-v1-20261019/package.json",
+    "archive": "https://huggingface.co/datasets/SoroushVahidi/mwfas-benchmark-extension/resolve/667e164d0768d635a73692cd594801f10fe12382/releases/remaining-v1-20261019/remaining.tar.gz",
+    "code": "https://codeload.github.com/SoroushVahidi/mwfas-heuristic-metrics/tar.gz/4a89ffe5d0b8d9a0510ac0e715b9baef84e3c62f"
+  },
+  "download_sha256": {
+    "package_receipt": "5836e7b386df1c317774a1a2e7ff42162eca1159b7b9e7b5e0a543e367439cc7",
+    "archive": "152b8ac7917eebaa66d9df4facc3500911ff67ce65f5c50df3c3e2bd1609d6c7",
+    "code": "128c4a8636b359b40b527605fc8c76b31b4a7be99a7ab7ab33e066fd390c1d2f"
+  },
+  "anonymous": true,
+  "fresh_directory": true,
+  "private_path_rejection_probes": "PASS",
+  "read_guard": "PASS",
+  "interpreter_standard_library": "/mmfs1/apps/easybuild/el9_5.x86_64/software/Python/3.12.3-GCCcore-13.3.0/lib/python3.12",
+  "subprocesses": "FORBIDDEN",
+  "hardware": "Linux-5.14.0-503.11.1.el9_5.x86_64-x86_64-with-glibc2.34",
+  "replay": {
+    "package": "J1",
+    "mode": "public",
+    "started_utc": "2026-10-19T23:00:44.461628+00:00",
+    "slurm_job_id": "1430800",
+    "python": "3.12.3",
+    "hostname": "n0011",
+    "optimization_runs": 0,
+    "status": "PASS",
+    "complete_public_table": true,
+    "source_downloads": [
+      {
+        "url": "https://snap.stanford.edu/data/CollegeMsg.txt.gz",
+        "sha256": "50ae2d98ed3bad9ddb18dbd495a89e5e10cfb8f7e86932827db29fc41b41f9fa",
+        "bytes": 345339,
+        "anonymous": true
+      },
+      {
+        "url": "https://snap.stanford.edu/data/email-Eu-core.txt.gz",
+        "sha256": "4b47acdb80197b085fe63c819c357ae488131ee904ed93d1b219a68b0f9e245f",
+        "bytes": 79754,
+        "anonymous": true
+      },
+      {
+        "url": "https://zenodo.org/api/records/20554376/files/exiobase.zip/content",
+        "sha256": "50fb3c947a540087cc307cfec3ec61ffd6b241e2959f846f50ff72de8b815707",
+        "bytes": 5412831,
+        "anonymous": true
+      },
+      {
+        "url": "https://snap.stanford.edu/data/wiki-Vote.txt.gz",
+        "sha256": "7d3e53626e14b8b09fb3b396bece9d481ad606bd64ceab066349ff57d4ada7fc",
+        "bytes": 290339,
+        "anonymous": true
+      }
+    ],
+    "manifest_files_verified": 4390,
+    "invalid_original_orders": [
+      {
+        "run_id": "exp05_email_full__ipsns_b001_s1",
+        "status": "FAIL_PRESERVED",
+        "reason": "incomplete or duplicate vertices",
+        "sha256": "6a494087f1564d470f9ea20826d88b20926223efb09e7ea33773679d3683cdba"
+      },
+      {
+        "run_id": "exp05_email_full__ipsns_b001_s2",
+        "status": "FAIL_PRESERVED",
+        "reason": "incomplete or duplicate vertices",
+        "sha256": "6a494087f1564d470f9ea20826d88b20926223efb09e7ea33773679d3683cdba"
+      },
+      {
+        "run_id": "exp05_email_full__ipsns_b001_s3",
+        "status": "FAIL_PRESERVED",
+        "reason": "incomplete or duplicate vertices",
+        "sha256": "6a494087f1564d470f9ea20826d88b20926223efb09e7ea33773679d3683cdba"
+      },
+      {
+        "run_id": "exp05_email_full__ipsns_b003_s1",
+        "status": "FAIL_PRESERVED",
+        "reason": "incomplete or duplicate vertices",
+        "sha256": "6a494087f1564d470f9ea20826d88b20926223efb09e7ea33773679d3683cdba"
+      },
+      {
+        "run_id": "exp05_email_full__ipsns_b003_s2",
+        "status": "FAIL_PRESERVED",
+        "reason": "incomplete or duplicate vertices",
+        "sha256": "6a494087f1564d470f9ea20826d88b20926223efb09e7ea33773679d3683cdba"
+      },
+      {
+        "run_id": "exp05_email_full__ipsns_b003_s3",
+        "status": "FAIL_PRESERVED",
+        "reason": "incomplete or duplicate vertices",
+        "sha256": "6a494087f1564d470f9ea20826d88b20926223efb09e7ea33773679d3683cdba"
+      },
+      {
+        "run_id": "exp05_email_full__ipsns_b010_s1",
+        "status": "FAIL_PRESERVED",
+        "reason": "incomplete or duplicate vertices",
+        "sha256": "6a494087f1564d470f9ea20826d88b20926223efb09e7ea33773679d3683cdba"
+      },
+      {
+        "run_id": "exp05_email_full__ipsns_b010_s2",
+        "status": "FAIL_PRESERVED",
+        "reason": "incomplete or duplicate vertices",
+        "sha256": "6a494087f1564d470f9ea20826d88b20926223efb09e7ea33773679d3683cdba"
+      },
+      {
+        "run_id": "exp05_email_full__ipsns_b010_s3",
+        "status": "FAIL_PRESERVED",
+        "reason": "incomplete or duplicate vertices",
+        "sha256": "6a494087f1564d470f9ea20826d88b20926223efb09e7ea33773679d3683cdba"
+      },
+      {
+        "run_id": "exp05_email_full__lrta",
+        "status": "FAIL_PRESERVED",
+        "reason": "incomplete or duplicate vertices",
+        "sha256": "6a494087f1564d470f9ea20826d88b20926223efb09e7ea33773679d3683cdba"
+      },
+      {
+        "run_id": "exp05_email_full__wmsf_l2",
+        "status": "FAIL_PRESERVED",
+        "reason": "incomplete or duplicate vertices",
+        "sha256": "fd08a2dfc323d7d7c84099617e5ddc9d42d6206e391ebe0e4e2b459a73e74e6b"
+      }
+    ],
+    "state": "COMPLETED_SUCCESS",
+    "tables": [
+      "5",
+      "8",
+      "12"
+    ],
+    "displayed_cells": [
+      {
+        "table": "5",
+        "row": "CollegeMsg",
+        "column": 1,
+        "value": "4",
+        "status": "PASS"
+      },
+      {
+        "table": "5",
+        "row": "CollegeMsg",
+        "column": 2,
+        "value": "1,086--1,899",
+        "status": "PASS"
+      },
+      {
+        "table": "5",
+        "row": "CollegeMsg",
+        "column": 3,
+        "value": "8,111--20,296",
+        "status": "PASS"
+      },
+      {
+        "table": "5",
+        "row": "CollegeMsg",
+        "column": 4,
+        "value": "0.00563--0.01137",
+        "status": "PASS"
+      },
+      {
+        "table": "5",
+        "row": "Email-Eu-core",
+        "column": 1,
+        "value": "2",
+        "status": "PASS"
+      },
+      {
+        "table": "5",
+        "row": "Email-Eu-core",
+        "column": 2,
+        "value": "803--1,005",
+        "status": "PASS"
+      },
+      {
+        "table": "5",
+        "row": "Email-Eu-core",
+        "column": 3,
+        "value": "24,138--24,929",
+        "status": "PASS"
+      },
+      {
+        "table": "5",
+        "row": "Email-Eu-core",
+        "column": 4,
+        "value": "0.02471--0.03748",
+        "status": "PASS"
+      },
+      {
+        "table": "5",
+        "row": "Wiki-Vote",
+        "column": 1,
+        "value": "2",
+        "status": "PASS"
+      },
+      {
+        "table": "5",
+        "row": "Wiki-Vote",
+        "column": 2,
+        "value": "1,300--7,115",
+        "status": "PASS"
+      },
+      {
+        "table": "5",
+        "row": "Wiki-Vote",
+        "column": 3,
+        "value": "39,456--103,689",
+        "status": "PASS"
+      },
+      {
+        "table": "5",
+        "row": "Wiki-Vote",
+        "column": 4,
+        "value": "0.00205--0.02336",
+        "status": "PASS"
+      },
+      {
+        "table": "5",
+        "row": "EXIOBASE matrices",
+        "column": 1,
+        "value": "30",
+        "status": "PASS"
+      },
+      {
+        "table": "5",
+        "row": "EXIOBASE matrices",
+        "column": 2,
+        "value": "10--300",
+        "status": "PASS"
+      },
+      {
+        "table": "5",
+        "row": "EXIOBASE matrices",
+        "column": 3,
+        "value": "43--44,356",
+        "status": "PASS"
+      },
+      {
+        "table": "5",
+        "row": "EXIOBASE matrices",
+        "column": 4,
+        "value": "0.32696--0.50000",
+        "status": "PASS"
+      },
+      {
+        "table": "8",
+        "row": "CollegeMsg",
+        "column": 1,
+        "value": "WMSF/L2",
+        "status": "PASS"
+      },
+      {
+        "table": "8",
+        "row": "CollegeMsg",
+        "column": 2,
+        "value": "4/4",
+        "status": "PASS"
+      },
+      {
+        "table": "8",
+        "row": "CollegeMsg",
+        "column": 3,
+        "value": "3/0/1",
+        "status": "PASS"
+      },
+      {
+        "table": "8",
+        "row": "CollegeMsg",
+        "column": 4,
+        "value": "-0.000169",
+        "status": "PASS"
+      },
+      {
+        "table": "8",
+        "row": "CollegeMsg",
+        "column": 2,
+        "value": "4/4",
+        "status": "PASS"
+      },
+      {
+        "table": "8",
+        "row": "CollegeMsg",
+        "column": 3,
+        "value": "0/0/4",
+        "status": "PASS"
+      },
+      {
+        "table": "8",
+        "row": "CollegeMsg",
+        "column": 4,
+        "value": "+0.018635",
+        "status": "PASS"
+      },
+      {
+        "table": "8",
+        "row": "CollegeMsg",
+        "column": 2,
+        "value": "4/4",
+        "status": "PASS"
+      },
+      {
+        "table": "8",
+        "row": "CollegeMsg",
+        "column": 3,
+        "value": "4/0/0",
+        "status": "PASS"
+      },
+      {
+        "table": "8",
+        "row": "CollegeMsg",
+        "column": 4,
+        "value": "-0.005467",
+        "status": "PASS"
+      },
+      {
+        "table": "8",
+        "row": "CollegeMsg",
+        "column": 2,
+        "value": "4/4",
+        "status": "PASS"
+      },
+      {
+        "table": "8",
+        "row": "CollegeMsg",
+        "column": 3,
+        "value": "4/0/0",
+        "status": "PASS"
+      },
+      {
+        "table": "8",
+        "row": "CollegeMsg",
+        "column": 4,
+        "value": "-0.006156",
+        "status": "PASS"
+      },
+      {
+        "table": "8",
+        "row": "Email-Eu-core",
+        "column": 1,
+        "value": "WMSF/L2",
+        "status": "PASS"
+      },
+      {
+        "table": "8",
+        "row": "Email-Eu-core",
+        "column": 2,
+        "value": "1/2",
+        "status": "PASS"
+      },
+      {
+        "table": "8",
+        "row": "Email-Eu-core",
+        "column": 3,
+        "value": "0/0/1",
+        "status": "PASS"
+      },
+      {
+        "table": "8",
+        "row": "Email-Eu-core",
+        "column": 4,
+        "value": "+0.042174",
+        "status": "PASS"
+      },
+      {
+        "table": "8",
+        "row": "Email-Eu-core",
+        "column": 2,
+        "value": "1/2",
+        "status": "PASS"
+      },
+      {
+        "table": "8",
+        "row": "Email-Eu-core",
+        "column": 3,
+        "value": "1/0/0",
+        "status": "PASS"
+      },
+      {
+        "table": "8",
+        "row": "Email-Eu-core",
+        "column": 4,
+        "value": "-0.006546",
+        "status": "PASS"
+      },
+      {
+        "table": "8",
+        "row": "Email-Eu-core",
+        "column": 2,
+        "value": "1/2",
+        "status": "PASS"
+      },
+      {
+        "table": "8",
+        "row": "Email-Eu-core",
+        "column": 3,
+        "value": "1/0/0",
+        "status": "PASS"
+      },
+      {
+        "table": "8",
+        "row": "Email-Eu-core",
+        "column": 4,
+        "value": "-0.021584",
+        "status": "PASS"
+      },
+      {
+        "table": "8",
+        "row": "Email-Eu-core",
+        "column": 2,
+        "value": "1/2",
+        "status": "PASS"
+      },
+      {
+        "table": "8",
+        "row": "Email-Eu-core",
+        "column": 3,
+        "value": "1/0/0",
+        "status": "PASS"
+      },
+      {
+        "table": "8",
+        "row": "Email-Eu-core",
+        "column": 4,
+        "value": "-0.020300",
+        "status": "PASS"
+      },
+      {
+        "table": "8",
+        "row": "Wiki-Vote",
+        "column": 1,
+        "value": "WMSF/L2",
+        "status": "PASS"
+      },
+      {
+        "table": "8",
+        "row": "Wiki-Vote",
+        "column": 2,
+        "value": "2/2",
+        "status": "PASS"
+      },
+      {
+        "table": "8",
+        "row": "Wiki-Vote",
+        "column": 3,
+        "value": "0/0/2",
+        "status": "PASS"
+      },
+      {
+        "table": "8",
+        "row": "Wiki-Vote",
+        "column": 4,
+        "value": "+0.013473",
+        "status": "PASS"
+      },
+      {
+        "table": "8",
+        "row": "Wiki-Vote",
+        "column": 2,
+        "value": "2/2",
+        "status": "PASS"
+      },
+      {
+        "table": "8",
+        "row": "Wiki-Vote",
+        "column": 3,
+        "value": "0/0/2",
+        "status": "PASS"
+      },
+      {
+        "table": "8",
+        "row": "Wiki-Vote",
+        "column": 4,
+        "value": "+0.011787",
+        "status": "PASS"
+      },
+      {
+        "table": "8",
+        "row": "Wiki-Vote",
+        "column": 2,
+        "value": "2/2",
+        "status": "PASS"
+      },
+      {
+        "table": "8",
+        "row": "Wiki-Vote",
+        "column": 3,
+        "value": "2/0/0",
+        "status": "PASS"
+      },
+      {
+        "table": "8",
+        "row": "Wiki-Vote",
+        "column": 4,
+        "value": "-0.007067",
+        "status": "PASS"
+      },
+      {
+        "table": "8",
+        "row": "Wiki-Vote",
+        "column": 2,
+        "value": "2/2",
+        "status": "PASS"
+      },
+      {
+        "table": "8",
+        "row": "Wiki-Vote",
+        "column": 3,
+        "value": "1/0/1",
+        "status": "PASS"
+      },
+      {
+        "table": "8",
+        "row": "Wiki-Vote",
+        "column": 4,
+        "value": "+0.001079",
+        "status": "PASS"
+      },
+      {
+        "table": "8",
+        "row": "EXIOBASE",
+        "column": 1,
+        "value": "WMSF/L2",
+        "status": "PASS"
+      },
+      {
+        "table": "8",
+        "row": "EXIOBASE",
+        "column": 2,
+        "value": "30/30",
+        "status": "PASS"
+      },
+      {
+        "table": "8",
+        "row": "EXIOBASE",
+        "column": 3,
+        "value": "6/9/15",
+        "status": "PASS"
+      },
+      {
+        "table": "8",
+        "row": "EXIOBASE",
+        "column": 4,
+        "value": "+0.000032",
+        "status": "PASS"
+      },
+      {
+        "table": "8",
+        "row": "EXIOBASE",
+        "column": 2,
+        "value": "30/30",
+        "status": "PASS"
+      },
+      {
+        "table": "8",
+        "row": "EXIOBASE",
+        "column": 3,
+        "value": "0/2/28",
+        "status": "PASS"
+      },
+      {
+        "table": "8",
+        "row": "EXIOBASE",
+        "column": 4,
+        "value": "+0.029486",
+        "status": "PASS"
+      },
+      {
+        "table": "8",
+        "row": "EXIOBASE",
+        "column": 2,
+        "value": "30/30",
+        "status": "PASS"
+      },
+      {
+        "table": "8",
+        "row": "EXIOBASE",
+        "column": 3,
+        "value": "19/11/0",
+        "status": "PASS"
+      },
+      {
+        "table": "8",
+        "row": "EXIOBASE",
+        "column": 4,
+        "value": "-0.000578",
+        "status": "PASS"
+      },
+      {
+        "table": "8",
+        "row": "EXIOBASE",
+        "column": 2,
+        "value": "30/30",
+        "status": "PASS"
+      },
+      {
+        "table": "8",
+        "row": "EXIOBASE",
+        "column": 3,
+        "value": "19/10/1",
+        "status": "PASS"
+      },
+      {
+        "table": "8",
+        "row": "EXIOBASE",
+        "column": 4,
+        "value": "-0.000400",
+        "status": "PASS"
+      },
+      {
+        "table": "12",
+        "row": "LR-TA",
+        "column": 1,
+        "value": "38",
+        "status": "PASS"
+      },
+      {
+        "table": "12",
+        "row": "LR-TA",
+        "column": 2,
+        "value": "37",
+        "status": "PASS"
+      },
+      {
+        "table": "12",
+        "row": "LR-TA",
+        "column": 3,
+        "value": "1",
+        "status": "PASS"
+      },
+      {
+        "table": "12",
+        "row": "LR-TA",
+        "column": 4,
+        "value": "0",
+        "status": "PASS"
+      },
+      {
+        "table": "12",
+        "row": "LR-TA",
+        "column": 5,
+        "value": "0",
+        "status": "PASS"
+      },
+      {
+        "table": "12",
+        "row": "WMSF/L2",
+        "column": 0,
+        "value": "WMSF/L2",
+        "status": "PASS"
+      },
+      {
+        "table": "12",
+        "row": "WMSF/L2",
+        "column": 1,
+        "value": "38",
+        "status": "PASS"
+      },
+      {
+        "table": "12",
+        "row": "WMSF/L2",
+        "column": 2,
+        "value": "37",
+        "status": "PASS"
+      },
+      {
+        "table": "12",
+        "row": "WMSF/L2",
+        "column": 3,
+        "value": "1",
+        "status": "PASS"
+      },
+      {
+        "table": "12",
+        "row": "WMSF/L2",
+        "column": 4,
+        "value": "0",
+        "status": "PASS"
+      },
+      {
+        "table": "12",
+        "row": "WMSF/L2",
+        "column": 5,
+        "value": "0",
+        "status": "PASS"
+      },
+      {
+        "table": "12",
+        "row": "Weighted Eades",
+        "column": 1,
+        "value": "38",
+        "status": "PASS"
+      },
+      {
+        "table": "12",
+        "row": "Weighted Eades",
+        "column": 2,
+        "value": "38",
+        "status": "PASS"
+      },
+      {
+        "table": "12",
+        "row": "Weighted Eades",
+        "column": 3,
+        "value": "0",
+        "status": "PASS"
+      },
+      {
+        "table": "12",
+        "row": "Weighted Eades",
+        "column": 4,
+        "value": "0",
+        "status": "PASS"
+      },
+      {
+        "table": "12",
+        "row": "Weighted Eades",
+        "column": 5,
+        "value": "0",
+        "status": "PASS"
+      },
+      {
+        "table": "12",
+        "row": "Insertion from LR-TA",
+        "column": 1,
+        "value": "38",
+        "status": "PASS"
+      },
+      {
+        "table": "12",
+        "row": "Insertion from LR-TA",
+        "column": 2,
+        "value": "37",
+        "status": "PASS"
+      },
+      {
+        "table": "12",
+        "row": "Insertion from LR-TA",
+        "column": 3,
+        "value": "0",
+        "status": "PASS"
+      },
+      {
+        "table": "12",
+        "row": "Insertion from LR-TA",
+        "column": 4,
+        "value": "0",
+        "status": "PASS"
+      },
+      {
+        "table": "12",
+        "row": "Insertion from LR-TA",
+        "column": 5,
+        "value": "1",
+        "status": "PASS"
+      },
+      {
+        "table": "12",
+        "row": "Insertion from WMSF",
+        "column": 1,
+        "value": "38",
+        "status": "PASS"
+      },
+      {
+        "table": "12",
+        "row": "Insertion from WMSF",
+        "column": 2,
+        "value": "37",
+        "status": "PASS"
+      },
+      {
+        "table": "12",
+        "row": "Insertion from WMSF",
+        "column": 3,
+        "value": "0",
+        "status": "PASS"
+      },
+      {
+        "table": "12",
+        "row": "Insertion from WMSF",
+        "column": 4,
+        "value": "0",
+        "status": "PASS"
+      },
+      {
+        "table": "12",
+        "row": "Insertion from WMSF",
+        "column": 5,
+        "value": "1",
+        "status": "PASS"
+      },
+      {
+        "table": "12",
+        "row": "IPSNS",
+        "column": 1,
+        "value": "570",
+        "status": "PASS"
+      },
+      {
+        "table": "12",
+        "row": "IPSNS",
+        "column": 2,
+        "value": "453",
+        "status": "PASS"
+      },
+      {
+        "table": "12",
+        "row": "IPSNS",
+        "column": 3,
+        "value": "9",
+        "status": "PASS"
+      },
+      {
+        "table": "12",
+        "row": "IPSNS",
+        "column": 4,
+        "value": "108",
+        "status": "PASS"
+      },
+      {
+        "table": "12",
+        "row": "IPSNS",
+        "column": 5,
+        "value": "0",
+        "status": "PASS"
+      },
+      {
+        "table": "12",
+        "row": "All original tasks",
+        "column": 1,
+        "value": "760",
+        "status": "PASS"
+      },
+      {
+        "table": "12",
+        "row": "All original tasks",
+        "column": 2,
+        "value": "639",
+        "status": "PASS"
+      },
+      {
+        "table": "12",
+        "row": "All original tasks",
+        "column": 3,
+        "value": "11",
+        "status": "PASS"
+      },
+      {
+        "table": "12",
+        "row": "All original tasks",
+        "column": 4,
+        "value": "108",
+        "status": "PASS"
+      },
+      {
+        "table": "12",
+        "row": "All original tasks",
+        "column": 5,
+        "value": "2",
+        "status": "PASS"
+      }
+    ],
+    "graph_checks": 38,
+    "available_order_checks": 639,
+    "original_statuses": {
+      "PASS": 639,
+      "TIMEOUT": 108,
+      "SKIPPED_DEPENDENCY": 2,
+      "FAIL": 11
+    },
+    "classification": "PUBLIC_REPLAYABLE",
+    "limitations": [
+      "Numerical solver certificates are not exact-arithmetic proofs.",
+      "Ali historical Hugging Face graph-byte identity remains unverified; EXP12 replay uses its pinned recorded input bytes.",
+      "Third-party graphs are retrieved from pinned upstream files; no substituted sources."
+    ],
+    "finished_utc": "2026-10-19T23:00:57.257026+00:00",
+    "elapsed_seconds": 12.79637336730957,
+    "outputs": [
+      {
+        "path": "graph_checks.json",
+        "sha256": "595bf8d4856dc1847f9795a23aad594741ad7c25cc19f6f5d346c4930dbd5cc8"
+      },
+      {
+        "path": "order_checks.json",
+        "sha256": "8e908fd2383e5a940d1b508cb6fa1a1c9df2804df180f9f237f63464eb43a5bc"
+      },
+      {
+        "path": "statistical_inputs.json",
+        "sha256": "472160329aa81007577e200aa89905792ad8289b0be5e5dba5c6c5280b806496"
+      },
+      {
+        "path": "table_cells.json",
+        "sha256": "e2ea1961075f08fb777ef8472f5a7f168a039e59aabbf1b00d6547294713e545"
+      }
+    ]
+  }
+}

@@ -63,53 +63,16 @@ speed claim. Numerical solver evidence is not an exact mathematical proof.
 
 ## Current coverage and remaining work
 
-Coverage is **3/10 numerical tables and 4/17 central claim groups**, counting the
-previously public Wikimedia saved-objective group. [coverage.json](coverage.json)
-records the successful EXP28 public replay and preserves other historical classifications. No metadata-only check is counted
-as complete public graph/order replay. The manuscript availability statement was
-updated only after the successful public replay.
+Coverage is **10/10 numerical tables and 11/17 central claim groups**. All printed
+numerical tables (3–12) now have complete public replay. The remaining six claim
+groups retain their historical classifications in [coverage.json](coverage.json);
+table coverage does not establish historical Hugging Face graph identity or all
+broader research-question claims.
 
-| Priority/table | Current evidence and specific remaining delivery gap |
-|---|---|
-| Internal T1 / printed Table 3 inventory/joins | Public metadata reconstruction PASS: 416 weighted hashes, 317 topologies, 5,083 tasks; EXP07 matches 9 EXP03 + 36 EXP04, with no EXP06 overlap. Full byte coverage still needs 45 EXP03 inputs and 38 EXP05 inputs. Author EXP03 artifacts are in the accepted staging inventory; EXP05 needs exact SNAP/matrix-source retrieval and frozen transformations. |
-| Internal T10 / printed Table 9 matched clock | PUBLIC_REPLAYABLE, together with Figure 2. Fresh anonymous full replay passed 13 exact graphs, 117 effective identities, all 143,241 saved order references, 234 budget rows, 182 pairs, 20 displayed numeric cells and 26 figure points. See [EXP28 receipts](exp28_publication.json). |
-| Internal T3 / printed Table 5 empirical inventory | PR #21 original 38-view inventory exists. Need the exact public source bytes/frozen transformations for four parents and graph-derived range checks. |
-| Internal T6 / printed Table 8 empirical quality | PR #21 original complete-case statistics exist. Need original EXP05 orders/task records and source input retrieval to reproduce all 16 parent/comparator cells; retain incomplete pairs and separate derived recoveries. |
-| Internal T9 / printed Table 12 reliability | Original 760-task inventory exists (639 PASS, 11 FAIL, 108 TIMEOUT, 2 SKIP). Need its public checkpoint/order evidence and the invalid/dependency classifications; metadata totals alone do not establish all statuses. |
-| Internal T8 / printed Table 11 solver evidence | The 45 EXP07 references and original 20-certified/25-bounded classifications exist. Need public original solver/output records, historical heuristic selection witnesses, and byte-based comparisons of all regret/interval entries. Never relabel numerical certification as proof. |
-| Internal T2 / printed Table 4 extension inventory | Existing public metadata provides 442 graph rows, 5,254 outcomes and 243 references. Full replay still needs the remaining cohort graph/order/source contracts; count arithmetic is not promoted to full byte replay. |
-| Internal T7 / printed Table 10 additional sources | EXP12/13 audit outputs exist. Need 20 Ali inputs via pinned upstream downloads (no blanket collection redistribution grant), three empirical inputs via documented source-specific transformations, and original orders/status records. OpenFlights retains ODbL/contents terms; source-loop constants and the two IRS timeouts must remain explicit. |
+The [remaining-table dataset](https://huggingface.co/datasets/SoroushVahidi/mwfas-benchmark-extension/tree/667e164d0768d635a73692cd594801f10fe12382/releases/remaining-v1-20261019) and [tested verifier](https://github.com/SoroushVahidi/mwfas-heuristic-metrics/tree/4a89ffe5d0b8d9a0510ac0e715b9baef84e3c62f/release/public_reproducibility/remaining) reproduce printed
+Tables 3, 4, 5, 8, 10, 11 and 12. Four fresh anonymous Slurm replays passed;
+[receipts and instructions](remaining/README.md) record exact identities, original
+statuses, numerical comparisons, source downloads and isolation checks. The
+previously validated EXP04/06 and EXP28 immutable releases remain unchanged.
 
-These are remaining delivery/replay gaps, not evidence that the historical
-experiments need replacement. **No targeted replacement experiment is proposed:**
-no essential internal T4/T5 (printed Tables 6/7) evidence failed recovery, and the next original archive is
-available. Any later unrecoverable source must be identified specifically before
-proposing a new experiment. Historical bytes will never be regenerated and
-represented as originals.
-
-## Repository validation and orchestration
-
-`uv run --locked pytest -q`: 17 passed, including toy-data failure checks for
-invalid permutations, incomplete orders, duplicate arcs, altered summaries and
-mismatched displayed cells. `python scripts/check_manifests.py`: PASS, including
-paired project/provenance public revision pins and successful replay receipt.
-The public implementation's release ledger also passes (42 files).
-
-Draft PR: [#57](https://github.com/SoroushVahidi/mwfas-heuristic-metrics-data-paper/pull/57).
-The manuscript repository remains private; no journal submission or unrelated
-messages were sent. TMUX worker: `mwfas-public-release-20261019:0.0`. Operational
-checkpoint, exact job command, private logs and subsequent archival-job status
-are in the author-requested private orchestration directory. Large data, raw
-orders, graphs and logs remain outside manuscript Git.
-
-Completed archival job **1430243** ended with exit 0:0 and
-PASS_TRANSFER_INTEGRITY_ONLY: 117 effective tasks, 143,241 event/order references,
-286,754 files. It was not resubmitted. See [EXP28 delivery](EXP28.md) and its
-separate anonymous public replay receipt for current printed Table 9 coverage.
-
-The manuscript PDF rebuilt successfully after the availability update, with
-layout warnings only. Frozen internal T4/T5 (printed Tables 6/7) numerical contents are unchanged. The
-public GitHub [versioned release](https://github.com/SoroushVahidi/mwfas-heuristic-metrics/releases/tag/table45-v2.0.0)
-is published at the tested code revision; a subsequent metadata/documentation
-commit `b530ab40d8c8d1d27054c4a992f3b4fea8bb838a` adds the replay receipt and
-Table 1 metadata checker without changing the tested internal T4/T5 (printed Tables 6/7) verifier.
+Validation outputs and receipts: [immutable dataset revision 117cd82](https://huggingface.co/datasets/SoroushVahidi/mwfas-benchmark-extension/tree/117cd82e5b863238377c5effe7430ce771062cf4/releases/remaining-v1-20261019).

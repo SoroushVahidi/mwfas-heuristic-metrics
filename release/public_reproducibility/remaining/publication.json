@@ -1,0 +1,27 @@
+{
+  "dataset": {
+    "repo": "SoroushVahidi/mwfas-benchmark-extension",
+    "revision": "667e164d0768d635a73692cd594801f10fe12382",
+    "url": "https://huggingface.co/datasets/SoroushVahidi/mwfas-benchmark-extension/commit/667e164d0768d635a73692cd594801f10fe12382",
+    "parent_revision": "fe33b41711c6b2a3846969d585954d82719a49ff",
+    "path": "releases/remaining-v1-20261019",
+    "archive_sha256": "152b8ac7917eebaa66d9df4facc3500911ff67ce65f5c50df3c3e2bd1609d6c7",
+    "manifest_sha256": "a611690e32a6787623d0b24a8693bd7a595f3cfad19c7e241c35073cf2a94897",
+    "public_replay": "PASS_ALL_FOUR_PACKAGES"
+  },
+  "tested_verifier": {
+    "repo": "SoroushVahidi/mwfas-heuristic-metrics",
+    "revision": "4a89ffe5d0b8d9a0510ac0e715b9baef84e3c62f",
+    "url": "https://github.com/SoroushVahidi/mwfas-heuristic-metrics/tree/4a89ffe5d0b8d9a0510ac0e715b9baef84e3c62f",
+    "publication": "PUBLIC_REPLAY_VERIFIED"
+  },
+  "validation_reports": {
+    "repo": "SoroushVahidi/mwfas-benchmark-extension",
+    "revision": "117cd82e5b863238377c5effe7430ce771062cf4",
+    "url": "https://huggingface.co/datasets/SoroushVahidi/mwfas-benchmark-extension/commit/117cd82e5b863238377c5effe7430ce771062cf4",
+    "parent_revision": "667e164d0768d635a73692cd594801f10fe12382",
+    "payload_revision": "667e164d0768d635a73692cd594801f10fe12382",
+    "tested_code_revision": "4a89ffe5d0b8d9a0510ac0e715b9baef84e3c62f",
+    "payload_republished": false
+  }
+}

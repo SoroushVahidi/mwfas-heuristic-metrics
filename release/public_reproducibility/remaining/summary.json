@@ -1,0 +1,93 @@
+{
+  "state": "COMPLETED_SUCCESS",
+  "observed_utc": "2026-10-19T23:03:59.499786+00:00",
+  "printed_tables": [
+    3,
+    4,
+    5,
+    8,
+    10,
+    11,
+    12
+  ],
+  "total_public_tables": 10,
+  "total_numerical_tables": 10,
+  "public_claim_groups": 11,
+  "total_claim_groups": 17,
+  "data_revision": "667e164d0768d635a73692cd594801f10fe12382",
+  "code_revision": "4a89ffe5d0b8d9a0510ac0e715b9baef84e3c62f",
+  "packages": {
+    "J1": {
+      "slurm_id": "1430800",
+      "status": "PASS",
+      "tables": [
+        "5",
+        "8",
+        "12"
+      ],
+      "graphs_checked_directly": 38,
+      "available_order_checks": 639,
+      "invalid_original_order_checks": 11,
+      "original_statuses": {
+        "PASS": 639,
+        "TIMEOUT": 108,
+        "SKIPPED_DEPENDENCY": 2,
+        "FAIL": 11
+      }
+    },
+    "J2": {
+      "slurm_id": "1430801",
+      "status": "PASS",
+      "tables": [
+        "11"
+      ],
+      "graphs_checked_directly": 45,
+      "available_order_checks": 315,
+      "invalid_original_order_checks": 0,
+      "original_statuses": {
+        "CERTIFIED_OPTIMAL": 20,
+        "FEASIBLE_UNCERTIFIED": 25
+      }
+    },
+    "J3": {
+      "slurm_id": "1430799",
+      "status": "PASS",
+      "tables": [
+        "10"
+      ],
+      "graphs_checked_directly": 23,
+      "available_order_checks": 159,
+      "invalid_original_order_checks": 0,
+      "original_statuses": {
+        "PASS": 159,
+        "TIMEOUT": 2
+      }
+    },
+    "J4": {
+      "slurm_id": "1430798",
+      "status": "PASS",
+      "tables": [
+        "3",
+        "4"
+      ],
+      "graphs_checked_directly": 142,
+      "available_order_checks": 900,
+      "invalid_original_order_checks": 0,
+      "original_statuses": {
+        "PASS": 900
+      }
+    }
+  },
+  "scientific_discrepancies": [],
+  "unrecoverable_exact_sources": [],
+  "limitations": [
+    "Historical Hugging Face graph/order bytes remain unverified.",
+    "Ali input identity is verified for EXP12, not historical Hugging Face runs.",
+    "Original Wikimedia TSV snapshots remain unavailable; released saved graph/order bytes suffice for the inventory.",
+    "Six broader claim groups remain outside full public replay; no inferred promotion from table coverage.",
+    "Numerical solver certificates are not exact-arithmetic proofs.",
+    "GitHub Actions cannot start because of account billing restrictions."
+  ],
+  "private_archival_jobs_repeated": 0,
+  "optimization_runs": 0
+}

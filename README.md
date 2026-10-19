@@ -47,3 +47,7 @@ instructions. Existing v1.0.0 and v1.1.0 releases retain their original scope.
 ## EXP28: printed Table 9 / Figure 2
 
 See [the public replay instructions](release/public_reproducibility/EXP28.md) and its immutable publication receipt. Historical Table 4/5 filenames refer to internal T4/T5, printed Tables 6/7. EXP28 is internal T10, printed Table 9.
+
+## Complete printed-table replay
+
+All ten printed numerical tables are publicly replayable; 11/17 tracked claim groups are fully covered. See [the remaining-table replay instructions and receipts](release/public_reproducibility/remaining/README.md). Historical Hugging Face graph-byte identity and six broader claim groups retain their stated limitations.

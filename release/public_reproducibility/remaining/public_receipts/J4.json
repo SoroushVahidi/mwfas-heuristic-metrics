@@ -1,0 +1,701 @@
+{
+  "status": "PASS",
+  "scope": "J4",
+  "classification": "PUBLIC_REPLAYABLE",
+  "code_revision": "4a89ffe5d0b8d9a0510ac0e715b9baef84e3c62f",
+  "data_revision": "667e164d0768d635a73692cd594801f10fe12382",
+  "urls": {
+    "package_receipt": "https://huggingface.co/datasets/SoroushVahidi/mwfas-benchmark-extension/resolve/667e164d0768d635a73692cd594801f10fe12382/releases/remaining-v1-20261019/package.json",
+    "archive": "https://huggingface.co/datasets/SoroushVahidi/mwfas-benchmark-extension/resolve/667e164d0768d635a73692cd594801f10fe12382/releases/remaining-v1-20261019/remaining.tar.gz",
+    "code": "https://codeload.github.com/SoroushVahidi/mwfas-heuristic-metrics/tar.gz/4a89ffe5d0b8d9a0510ac0e715b9baef84e3c62f"
+  },
+  "download_sha256": {
+    "package_receipt": "5836e7b386df1c317774a1a2e7ff42162eca1159b7b9e7b5e0a543e367439cc7",
+    "archive": "152b8ac7917eebaa66d9df4facc3500911ff67ce65f5c50df3c3e2bd1609d6c7",
+    "code": "128c4a8636b359b40b527605fc8c76b31b4a7be99a7ab7ab33e066fd390c1d2f"
+  },
+  "anonymous": true,
+  "fresh_directory": true,
+  "private_path_rejection_probes": "PASS",
+  "read_guard": "PASS",
+  "interpreter_standard_library": "/mmfs1/apps/easybuild/el9_5.x86_64/software/Python/3.12.3-GCCcore-13.3.0/lib/python3.12",
+  "subprocesses": "FORBIDDEN",
+  "hardware": "Linux-5.14.0-503.11.1.el9_5.x86_64-x86_64-with-glibc2.34",
+  "replay": {
+    "package": "J4",
+    "mode": "public",
+    "started_utc": "2026-10-19T23:00:43.930339+00:00",
+    "slurm_job_id": "1430798",
+    "python": "3.12.3",
+    "hostname": "n0011",
+    "optimization_runs": 0,
+    "status": "PASS",
+    "complete_public_table": true,
+    "source_downloads": [
+      {
+        "url": "https://snap.stanford.edu/data/CollegeMsg.txt.gz",
+        "sha256": "50ae2d98ed3bad9ddb18dbd495a89e5e10cfb8f7e86932827db29fc41b41f9fa",
+        "bytes": 345339,
+        "anonymous": true
+      },
+      {
+        "url": "https://snap.stanford.edu/data/email-Eu-core.txt.gz",
+        "sha256": "4b47acdb80197b085fe63c819c357ae488131ee904ed93d1b219a68b0f9e245f",
+        "bytes": 79754,
+        "anonymous": true
+      },
+      {
+        "url": "https://zenodo.org/api/records/20554376/files/exiobase.zip/content",
+        "sha256": "50fb3c947a540087cc307cfec3ec61ffd6b241e2959f846f50ff72de8b815707",
+        "bytes": 5412831,
+        "anonymous": true
+      },
+      {
+        "url": "https://snap.stanford.edu/data/wiki-Vote.txt.gz",
+        "sha256": "7d3e53626e14b8b09fb3b396bece9d481ad606bd64ceab066349ff57d4ada7fc",
+        "bytes": 290339,
+        "anonymous": true
+      },
+      {
+        "url": "https://raw.githubusercontent.com/alidasdan/graph-benchmarks/77e5b8b4f1e1a1b8e80cfb9430f90492ffee3675/core-bad/bad1.d",
+        "sha256": "4befdc5c74d924fc7b325c8c05d3cf942b0fd262a573b5e93f4bd68dedcce2ed",
+        "bytes": 220,
+        "anonymous": true
+      },
+      {
+        "url": "https://raw.githubusercontent.com/alidasdan/graph-benchmarks/77e5b8b4f1e1a1b8e80cfb9430f90492ffee3675/core-bad/bad3.d",
+        "sha256": "074b0739c24ab26c5b5b25c1018d07fb507a3164ba654bbd1a29526094c46ab2",
+        "bytes": 91,
+        "anonymous": true
+      },
+      {
+        "url": "https://raw.githubusercontent.com/alidasdan/graph-benchmarks/77e5b8b4f1e1a1b8e80cfb9430f90492ffee3675/core-bad/bad7.d",
+        "sha256": "8195cb09d0214ca3243f026b1abc795c39ea381b015880b2abdae873a12c099f",
+        "bytes": 328,
+        "anonymous": true
+      },
+      {
+        "url": "https://raw.githubusercontent.com/alidasdan/graph-benchmarks/77e5b8b4f1e1a1b8e80cfb9430f90492ffee3675/core/complete5.d",
+        "sha256": "d0fe54c6bc05f5a082e94b02ef1418eef2154f90e0c56b3743103856f680c9bb",
+        "bytes": 216,
+        "anonymous": true
+      },
+      {
+        "url": "https://raw.githubusercontent.com/alidasdan/graph-benchmarks/77e5b8b4f1e1a1b8e80cfb9430f90492ffee3675/core/complete9.d",
+        "sha256": "f7796b545abc3e51a4b860a7729f1a172e1f67cbc3587a1303d26bb248ec32b6",
+        "bytes": 737,
+        "anonymous": true
+      },
+      {
+        "url": "https://raw.githubusercontent.com/alidasdan/graph-benchmarks/77e5b8b4f1e1a1b8e80cfb9430f90492ffee3675/core/gr1.d",
+        "sha256": "a807889ab69a7ddc0b78aa12ec9fdfa4cdd83e904441d16864559484afdc56b9",
+        "bytes": 247,
+        "anonymous": true
+      },
+      {
+        "url": "https://raw.githubusercontent.com/alidasdan/graph-benchmarks/77e5b8b4f1e1a1b8e80cfb9430f90492ffee3675/core/gr1-acyclic.d",
+        "sha256": "ff4d7a55d9071466d2f9348c5fe109f14d4efe6ea5c19a85e687ba9e24e4c272",
+        "bytes": 234,
+        "anonymous": true
+      },
+      {
+        "url": "https://raw.githubusercontent.com/alidasdan/graph-benchmarks/77e5b8b4f1e1a1b8e80cfb9430f90492ffee3675/core/r20_60.d",
+        "sha256": "89214060ba2844884e5fd4d23b406387765ad803b20d0585f5f7c86a0ff89c65",
+        "bytes": 838,
+        "anonymous": true
+      },
+      {
+        "url": "https://raw.githubusercontent.com/alidasdan/graph-benchmarks/77e5b8b4f1e1a1b8e80cfb9430f90492ffee3675/core/stg.d",
+        "sha256": "03f7f9ab6d2b8c03d6430f900e3d3a2da27c7123bd2d1b6bc4bba97d7dca53dc",
+        "bytes": 393,
+        "anonymous": true
+      },
+      {
+        "url": "https://raw.githubusercontent.com/alidasdan/graph-benchmarks/77e5b8b4f1e1a1b8e80cfb9430f90492ffee3675/tests/small.d",
+        "sha256": "3b1868dd4647432799877bcd0f3f8c4711bed2211c0bd52b091e08f724fd922b",
+        "bytes": 129,
+        "anonymous": true
+      },
+      {
+        "url": "https://raw.githubusercontent.com/alidasdan/graph-benchmarks/77e5b8b4f1e1a1b8e80cfb9430f90492ffee3675/iscas-small/s208.d",
+        "sha256": "da57e85369b009ddaa264ec1d0637f071bf45d60a4a7c3f87776fa39a36dba87",
+        "bytes": 1832,
+        "anonymous": true
+      },
+      {
+        "url": "https://raw.githubusercontent.com/alidasdan/graph-benchmarks/77e5b8b4f1e1a1b8e80cfb9430f90492ffee3675/iscas-small/mm4a.d",
+        "sha256": "1338be6fa09efb2129dca29716d87fa6d857433387b950614ec81e0277c4b162",
+        "bytes": 7342,
+        "anonymous": true
+      },
+      {
+        "url": "https://raw.githubusercontent.com/alidasdan/graph-benchmarks/77e5b8b4f1e1a1b8e80cfb9430f90492ffee3675/iscas/s344.d",
+        "sha256": "10505d5db62693dc62db54911fd46701783f8191e8920064d54787d6a523c2fe",
+        "bytes": 6521,
+        "anonymous": true
+      },
+      {
+        "url": "https://raw.githubusercontent.com/alidasdan/graph-benchmarks/77e5b8b4f1e1a1b8e80cfb9430f90492ffee3675/iscas/s382.d",
+        "sha256": "9e91f18e67fc76bca984703dd279c3eeb0b444220d2f8a53426c60a69b1376ac",
+        "bytes": 7274,
+        "anonymous": true
+      },
+      {
+        "url": "https://raw.githubusercontent.com/alidasdan/graph-benchmarks/77e5b8b4f1e1a1b8e80cfb9430f90492ffee3675/iscas/s400.d",
+        "sha256": "f0374701238756931ed2abf49e22db0effd3ff60aed08c2a175eb718ce4fc2e6",
+        "bytes": 7720,
+        "anonymous": true
+      },
+      {
+        "url": "https://raw.githubusercontent.com/alidasdan/graph-benchmarks/77e5b8b4f1e1a1b8e80cfb9430f90492ffee3675/iscas/s526n.d",
+        "sha256": "bacc6fd43a2925448f23aaa20e046fbab2890f1d2dec6c7d4a6d5cacbe359a08",
+        "bytes": 9302,
+        "anonymous": true
+      },
+      {
+        "url": "https://raw.githubusercontent.com/alidasdan/graph-benchmarks/77e5b8b4f1e1a1b8e80cfb9430f90492ffee3675/iscas/s641.d",
+        "sha256": "7d46e43e6da4d15f174129f6ca1247bdcc3f06bc5001cb934ace67601f9779e3",
+        "bytes": 10467,
+        "anonymous": true
+      },
+      {
+        "url": "https://raw.githubusercontent.com/alidasdan/graph-benchmarks/77e5b8b4f1e1a1b8e80cfb9430f90492ffee3675/iscas/s713.d",
+        "sha256": "0ff86ebf69d3cb8bdb48032053c9edc644ff164584c2f677aeba75e1f692cecc",
+        "bytes": 11782,
+        "anonymous": true
+      },
+      {
+        "url": "https://raw.githubusercontent.com/alidasdan/graph-benchmarks/77e5b8b4f1e1a1b8e80cfb9430f90492ffee3675/iscas/s838.d",
+        "sha256": "80c350fa85439959156a2e942aab855350f4b957321ce92dcc0fba228dce158f",
+        "bytes": 16087,
+        "anonymous": true
+      },
+      {
+        "url": "https://raw.githubusercontent.com/alidasdan/graph-benchmarks/77e5b8b4f1e1a1b8e80cfb9430f90492ffee3675/iscas/mm9a.d",
+        "sha256": "df60ee0b3040cdad76b213f22a67e401224e3fcb0f983705c7c003018afbf258",
+        "bytes": 20086,
+        "anonymous": true
+      },
+      {
+        "url": "https://raw.githubusercontent.com/jpatokal/openflights/56a3cce4d50309cb79948103a48c7f87d09b3056/data/routes.dat",
+        "sha256": "bd373706238134f619c624c606dccc74c05c2582a977c489c81de501735f2390",
+        "bytes": 2377148,
+        "anonymous": true
+      },
+      {
+        "url": "https://raw.githubusercontent.com/jpatokal/openflights/56a3cce4d50309cb79948103a48c7f87d09b3056/data/airports.dat",
+        "sha256": "9387cdb38df5bd664da823f8ccb69fdd9b33a1888f5b7cca09c34a3cd9ff59f9",
+        "bytes": 1127225,
+        "anonymous": true
+      },
+      {
+        "url": "https://lehd.ces.census.gov/data/lodes/LODES8/de/od/de_od_main_JT00_2022.csv.gz",
+        "sha256": "e06febfcd48accb2266fb928e1b2f51cdb16481964d2b5b71b99119ce6d8120e",
+        "bytes": 1702429,
+        "anonymous": true
+      },
+      {
+        "url": "https://www.irs.gov/pub/irs-soi/countyoutflow2122.csv",
+        "sha256": "51b988a3b170e37a45f1598bfbe18e136ef3236dcda7227b458e6714cf0535e4",
+        "bytes": 4468798,
+        "anonymous": true
+      },
+      {
+        "url": "https://huggingface.co/datasets/SoroushVahidi/mwfas-benchmark-extension/resolve/33902c7cc409794a43c17fc5428cf022f440da48/releases/table45-v2-20261019/table45.tar.gz",
+        "sha256": "b74e37bed3a91ec986fe8526a73f5a990a144ca931ee013cc1a8fe4f882f3e2d",
+        "bytes": 4046181,
+        "anonymous": true
+      },
+      {
+        "url": "https://huggingface.co/datasets/SoroushVahidi/mwfas-benchmark-extension/resolve/1e9db1daa5401b56398e9807d4e48d989d9f0eab/CC-BY-4.0.txt",
+        "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411",
+        "bytes": 18657,
+        "anonymous": true
+      },
+      {
+        "url": "https://huggingface.co/datasets/SoroushVahidi/mwfas-benchmark-extension/resolve/1e9db1daa5401b56398e9807d4e48d989d9f0eab/CITATION.cff",
+        "sha256": "204dbb454fe8d9306c3c41576693d0834bd67e9cfc9031b7e90120ef8b9284ba",
+        "bytes": 691,
+        "anonymous": true
+      },
+      {
+        "url": "https://huggingface.co/datasets/SoroushVahidi/mwfas-benchmark-extension/resolve/1e9db1daa5401b56398e9807d4e48d989d9f0eab/LICENSE_SCOPE.md",
+        "sha256": "54037a845c3b237645befc963a04f35e5ca0852cbf8bcf55c7af2ac953a4dffb",
+        "bytes": 1290,
+        "anonymous": true
+      },
+      {
+        "url": "https://huggingface.co/datasets/SoroushVahidi/mwfas-benchmark-extension/resolve/1e9db1daa5401b56398e9807d4e48d989d9f0eab/README.md",
+        "sha256": "038311176a5152430d7a407f7f40d2a2bde10e7ca818587428e8ed83ccd73022",
+        "bytes": 7150,
+        "anonymous": true
+      },
+      {
+        "url": "https://huggingface.co/datasets/SoroushVahidi/mwfas-benchmark-extension/resolve/1e9db1daa5401b56398e9807d4e48d989d9f0eab/data/wikimedia/arwiki202512.d",
+        "sha256": "1d1953b4dbd931cd9988e81adf145d59ee3098c6513c66be3311b8c55a3df176",
+        "bytes": 26376923,
+        "anonymous": true
+      },
+      {
+        "url": "https://huggingface.co/datasets/SoroushVahidi/mwfas-benchmark-extension/resolve/1e9db1daa5401b56398e9807d4e48d989d9f0eab/data/wikimedia/arwiki202512_dimacs_hybrid_ranking-48cpu.csv",
+        "sha256": "3c59f166f5278d0e6ccdcfc30e9e4a1bfd9f8fd97c1e36f8ba661278fa25f59f",
+        "bytes": 5125187,
+        "anonymous": true
+      },
+      {
+        "url": "https://huggingface.co/datasets/SoroushVahidi/mwfas-benchmark-extension/resolve/1e9db1daa5401b56398e9807d4e48d989d9f0eab/data/wikimedia/arwiki202512_dimacs_scc_init.csv",
+        "sha256": "216513b0a1cb5d499d5cbe5ab012226e4e33021664e709e7d6b1f2b191b69703",
+        "bytes": 5125187,
+        "anonymous": true
+      },
+      {
+        "url": "https://huggingface.co/datasets/SoroushVahidi/mwfas-benchmark-extension/resolve/1e9db1daa5401b56398e9807d4e48d989d9f0eab/data/wikimedia/arwiki202512_paper_fas_ranking.csv",
+        "sha256": "3285b796c2ccd119c3d5c240be6ae8db0a46c6eec51850609077c64707724d93",
+        "bytes": 5125187,
+        "anonymous": true
+      },
+      {
+        "url": "https://huggingface.co/datasets/SoroushVahidi/mwfas-benchmark-extension/resolve/1e9db1daa5401b56398e9807d4e48d989d9f0eab/data/wikimedia/arwiki202512_wmsf_ranking.csv",
+        "sha256": "9f8b5b521991c49d77f799169334cf5f7c4a76ebb444bf3077b9f42606d3c9c2",
+        "bytes": 5125187,
+        "anonymous": true
+      },
+      {
+        "url": "https://huggingface.co/datasets/SoroushVahidi/mwfas-benchmark-extension/resolve/1e9db1daa5401b56398e9807d4e48d989d9f0eab/data/wikimedia/arwiki202601.d",
+        "sha256": "4c14a3cb3ca542349b7ef0927be2f7e5ff7d5828d69ff614dddd9ed55ea95014",
+        "bytes": 26621437,
+        "anonymous": true
+      },
+      {
+        "url": "https://huggingface.co/datasets/SoroushVahidi/mwfas-benchmark-extension/resolve/1e9db1daa5401b56398e9807d4e48d989d9f0eab/data/wikimedia/arwiki202601_paper_fas_ranking.csv",
+        "sha256": "fbc737a60ceb8036e6a0523cd3a4f21166da2bbbaac4d32745b8f825cd7459c5",
+        "bytes": 5118883,
+        "anonymous": true
+      },
+      {
+        "url": "https://huggingface.co/datasets/SoroushVahidi/mwfas-benchmark-extension/resolve/1e9db1daa5401b56398e9807d4e48d989d9f0eab/data/wikimedia/arwiki202601_wmsf_ranking.csv",
+        "sha256": "5e5438f799ef12e7453427d8e14c103864f2c593202d539a939d7d288cb0e3df",
+        "bytes": 5118883,
+        "anonymous": true
+      },
+      {
+        "url": "https://huggingface.co/datasets/SoroushVahidi/mwfas-benchmark-extension/resolve/1e9db1daa5401b56398e9807d4e48d989d9f0eab/data/wikimedia/azwiki202512.d",
+        "sha256": "36ceb673d2d67f14a6d5839db949933cb823e7ae504244cff3f4edfdfe8f4e29",
+        "bytes": 994183,
+        "anonymous": true
+      },
+      {
+        "url": "https://huggingface.co/datasets/SoroushVahidi/mwfas-benchmark-extension/resolve/1e9db1daa5401b56398e9807d4e48d989d9f0eab/data/wikimedia/azwiki202512_dimacs_hybrid_ranking-48cpu.csv",
+        "sha256": "f2205ad3f24a4e612eb2ed3c1f936fd57479fb32e5ec0b3f85453b789c1e8481",
+        "bytes": 333394,
+        "anonymous": true
+      },
+      {
+        "url": "https://huggingface.co/datasets/SoroushVahidi/mwfas-benchmark-extension/resolve/1e9db1daa5401b56398e9807d4e48d989d9f0eab/data/wikimedia/azwiki202512_dimacs_scc_init.csv",
+        "sha256": "6e8e11b0a1d7e374ef7339a5e24b8e345f8f130e7506a02db9b6689356d3297c",
+        "bytes": 320985,
+        "anonymous": true
+      },
+      {
+        "url": "https://huggingface.co/datasets/SoroushVahidi/mwfas-benchmark-extension/resolve/1e9db1daa5401b56398e9807d4e48d989d9f0eab/data/wikimedia/azwiki202512_paper_fas_ranking.csv",
+        "sha256": "3ce80d2933c106bd7eef8f97e7d73d35cf36ec9949ea209fc0ae13cd5ba815e9",
+        "bytes": 320985,
+        "anonymous": true
+      },
+      {
+        "url": "https://huggingface.co/datasets/SoroushVahidi/mwfas-benchmark-extension/resolve/1e9db1daa5401b56398e9807d4e48d989d9f0eab/data/wikimedia/azwiki202512_wmsf_ranking.csv",
+        "sha256": "c80992c60967ace4967ded1950aae776a640824aa1ca3abeb05e8b5aedd18915",
+        "bytes": 320985,
+        "anonymous": true
+      },
+      {
+        "url": "https://huggingface.co/datasets/SoroushVahidi/mwfas-benchmark-extension/resolve/1e9db1daa5401b56398e9807d4e48d989d9f0eab/graph_inventory.csv",
+        "sha256": "c7cc4b2b3b38569d2f8da452b82bf7d68292ba17e7a9e36b09e035e39e3a6d3f",
+        "bytes": 1975,
+        "anonymous": true
+      },
+      {
+        "url": "https://huggingface.co/datasets/SoroushVahidi/mwfas-benchmark-extension/resolve/1e9db1daa5401b56398e9807d4e48d989d9f0eab/manifest.json",
+        "sha256": "fb0ee4f00540422c01a99093ebb874446d5ede3b79c17afb0cadd452055318b1",
+        "bytes": 8000,
+        "anonymous": true
+      },
+      {
+        "url": "https://huggingface.co/datasets/SoroushVahidi/mwfas-benchmark-extension/resolve/1e9db1daa5401b56398e9807d4e48d989d9f0eab/metadata/artifact_availability.csv",
+        "sha256": "7329059c37bad2b1fd0ffddcded6d9810916f8041f2ad8e0b56af5e72dd9d935",
+        "bytes": 521541,
+        "anonymous": true
+      },
+      {
+        "url": "https://huggingface.co/datasets/SoroushVahidi/mwfas-benchmark-extension/resolve/1e9db1daa5401b56398e9807d4e48d989d9f0eab/metadata/graphs.csv",
+        "sha256": "011897c485a55672055f282b9df3fa46d8fb8c4db5ce6f59417bbc3cc32a1cc3",
+        "bytes": 224744,
+        "anonymous": true
+      },
+      {
+        "url": "https://huggingface.co/datasets/SoroushVahidi/mwfas-benchmark-extension/resolve/1e9db1daa5401b56398e9807d4e48d989d9f0eab/metadata/numerical_references.csv",
+        "sha256": "856b690ba6cf6a6b5d6ae9a7dfd8d81ca8de0f61cd051678e06603d8e78d3a96",
+        "bytes": 120918,
+        "anonymous": true
+      },
+      {
+        "url": "https://huggingface.co/datasets/SoroushVahidi/mwfas-benchmark-extension/resolve/1e9db1daa5401b56398e9807d4e48d989d9f0eab/metadata/run_outcomes.csv",
+        "sha256": "e3782a7687fa3bae3487bab8df0abfa763e00a80d21f20e1adec5da697d8ebad",
+        "bytes": 2201315,
+        "anonymous": true
+      },
+      {
+        "url": "https://huggingface.co/datasets/SoroushVahidi/mwfas-benchmark-extension/resolve/1e9db1daa5401b56398e9807d4e48d989d9f0eab/metadata/schema.json",
+        "sha256": "e15a4fe3967c65d5c76da56b7da519bcd6ac51a828eaa92f111200b7a1202916",
+        "bytes": 6536,
+        "anonymous": true
+      },
+      {
+        "url": "https://huggingface.co/datasets/SoroushVahidi/mwfas-benchmark-extension/resolve/1e9db1daa5401b56398e9807d4e48d989d9f0eab/metadata/source_parents.csv",
+        "sha256": "f8a56a2d298d5e21ae3a1b7844597a846b8e18942f930506962859f0f0106f0e",
+        "bytes": 64610,
+        "anonymous": true
+      },
+      {
+        "url": "https://huggingface.co/datasets/SoroushVahidi/mwfas-benchmark-extension/resolve/1e9db1daa5401b56398e9807d4e48d989d9f0eab/witnesses.csv",
+        "sha256": "f0ac082b3a8633f6c296075dbdf9a723126770034ef9f0a2d58d4ec673e3b913",
+        "bytes": 5350,
+        "anonymous": true
+      }
+    ],
+    "manifest_files_verified": 4390,
+    "invalid_original_orders": [],
+    "state": "COMPLETED_SUCCESS",
+    "tables": [
+      "3",
+      "4"
+    ],
+    "displayed_cells": [
+      {
+        "table": "3",
+        "row": "EXP03",
+        "column": 0,
+        "value": "EXP03",
+        "status": "PASS"
+      },
+      {
+        "table": "3",
+        "row": "EXP03",
+        "column": 1,
+        "value": "45",
+        "status": "PASS"
+      },
+      {
+        "table": "3",
+        "row": "EXP03",
+        "column": 2,
+        "value": "45",
+        "status": "PASS"
+      },
+      {
+        "table": "3",
+        "row": "EXP03",
+        "column": 3,
+        "value": "900",
+        "status": "PASS"
+      },
+      {
+        "table": "3",
+        "row": "EXP04",
+        "column": 0,
+        "value": "EXP04",
+        "status": "PASS"
+      },
+      {
+        "table": "3",
+        "row": "EXP04",
+        "column": 1,
+        "value": "135",
+        "status": "PASS"
+      },
+      {
+        "table": "3",
+        "row": "EXP04",
+        "column": 2,
+        "value": "135",
+        "status": "PASS"
+      },
+      {
+        "table": "3",
+        "row": "EXP04",
+        "column": 3,
+        "value": "2,025",
+        "status": "PASS"
+      },
+      {
+        "table": "3",
+        "row": "EXP05",
+        "column": 0,
+        "value": "EXP05",
+        "status": "PASS"
+      },
+      {
+        "table": "3",
+        "row": "EXP05",
+        "column": 1,
+        "value": "38",
+        "status": "PASS"
+      },
+      {
+        "table": "3",
+        "row": "EXP05",
+        "column": 2,
+        "value": "38",
+        "status": "PASS"
+      },
+      {
+        "table": "3",
+        "row": "EXP05",
+        "column": 3,
+        "value": "760",
+        "status": "PASS"
+      },
+      {
+        "table": "3",
+        "row": "EXP06",
+        "column": 0,
+        "value": "EXP06",
+        "status": "PASS"
+      },
+      {
+        "table": "3",
+        "row": "EXP06",
+        "column": 1,
+        "value": "198",
+        "status": "PASS"
+      },
+      {
+        "table": "3",
+        "row": "EXP06",
+        "column": 2,
+        "value": "99",
+        "status": "PASS"
+      },
+      {
+        "table": "3",
+        "row": "EXP06",
+        "column": 3,
+        "value": "1,398",
+        "status": "PASS"
+      },
+      {
+        "table": "3",
+        "row": "EXP03--06 total",
+        "column": 0,
+        "value": "EXP03--06 total",
+        "status": "PASS"
+      },
+      {
+        "table": "3",
+        "row": "EXP03--06 total",
+        "column": 1,
+        "value": "416",
+        "status": "PASS"
+      },
+      {
+        "table": "3",
+        "row": "EXP03--06 total",
+        "column": 2,
+        "value": "317",
+        "status": "PASS"
+      },
+      {
+        "table": "3",
+        "row": "EXP03--06 total",
+        "column": 3,
+        "value": "5,083",
+        "status": "PASS"
+      },
+      {
+        "table": "3",
+        "row": "EXP07, reused",
+        "column": 0,
+        "value": "EXP07, reused",
+        "status": "PASS"
+      },
+      {
+        "table": "3",
+        "row": "EXP07, reused",
+        "column": 1,
+        "value": "45",
+        "status": "PASS"
+      },
+      {
+        "table": "3",
+        "row": "EXP07, reused",
+        "column": 2,
+        "value": "45",
+        "status": "PASS"
+      },
+      {
+        "table": "3",
+        "row": "EXP07, reused",
+        "column": 4,
+        "value": "9 EXP03 + 36 EXP04 matches",
+        "status": "PASS"
+      },
+      {
+        "table": "4",
+        "row": "EXP03--06 common contract",
+        "column": 0,
+        "value": "EXP03--06 common contract",
+        "status": "PASS"
+      },
+      {
+        "table": "4",
+        "row": "EXP03--06 common contract",
+        "column": 1,
+        "value": "416",
+        "status": "PASS"
+      },
+      {
+        "table": "4",
+        "row": "EXP03--06 common contract",
+        "column": 2,
+        "value": "5,083",
+        "status": "PASS"
+      },
+      {
+        "table": "4",
+        "row": "EXP03--06 common contract",
+        "column": 3,
+        "value": "317 topologies; four EXP05 empirical parents",
+        "status": "PASS"
+      },
+      {
+        "table": "4",
+        "row": "EXP12 Ali collection",
+        "column": 0,
+        "value": "EXP12 Ali collection",
+        "status": "PASS"
+      },
+      {
+        "table": "4",
+        "row": "EXP12 Ali collection",
+        "column": 1,
+        "value": "20",
+        "status": "PASS"
+      },
+      {
+        "table": "4",
+        "row": "EXP12 Ali collection",
+        "column": 2,
+        "value": "140",
+        "status": "PASS"
+      },
+      {
+        "table": "4",
+        "row": "EXP13 new empirical sources",
+        "column": 0,
+        "value": "EXP13 new empirical sources",
+        "status": "PASS"
+      },
+      {
+        "table": "4",
+        "row": "EXP13 new empirical sources",
+        "column": 1,
+        "value": "3",
+        "status": "PASS"
+      },
+      {
+        "table": "4",
+        "row": "EXP13 new empirical sources",
+        "column": 2,
+        "value": "21",
+        "status": "PASS"
+      },
+      {
+        "table": "4",
+        "row": "EXP14 Wikimedia history",
+        "column": 0,
+        "value": "EXP14 Wikimedia history",
+        "status": "PASS"
+      },
+      {
+        "table": "4",
+        "row": "EXP14 Wikimedia history",
+        "column": 1,
+        "value": "3",
+        "status": "PASS"
+      },
+      {
+        "table": "4",
+        "row": "EXP14 Wikimedia history",
+        "column": 2,
+        "value": "10",
+        "status": "PASS"
+      },
+      {
+        "table": "4",
+        "row": "Contract-scoped total",
+        "column": 1,
+        "value": "442",
+        "status": "PASS"
+      },
+      {
+        "table": "4",
+        "row": "Contract-scoped total",
+        "column": 2,
+        "value": "5,254",
+        "status": "PASS"
+      },
+      {
+        "table": "4",
+        "row": "EXP07 references, reused",
+        "column": 0,
+        "value": "EXP07 references, reused",
+        "status": "PASS"
+      },
+      {
+        "table": "4",
+        "row": "EXP07 references, reused",
+        "column": 1,
+        "value": "45",
+        "status": "PASS"
+      },
+      {
+        "table": "4",
+        "row": "EXP07 references, reused",
+        "column": 3,
+        "value": "20 numerical optima; 25 bounded cases",
+        "status": "PASS"
+      }
+    ],
+    "graph_checks": 142,
+    "available_order_checks": 900,
+    "original_statuses": {
+      "PASS": 900
+    },
+    "classification": "PUBLIC_REPLAYABLE",
+    "limitations": [
+      "Numerical solver certificates are not exact-arithmetic proofs.",
+      "Ali historical Hugging Face graph-byte identity remains unverified; EXP12 replay uses its pinned recorded input bytes.",
+      "Third-party graphs are retrieved from pinned upstream files; no substituted sources."
+    ],
+    "finished_utc": "2026-10-19T23:01:28.073280+00:00",
+    "elapsed_seconds": 44.143824100494385,
+    "outputs": [
+      {
+        "path": "graph_checks.json",
+        "sha256": "4f92847466492b95510207065bd2c263cf15c2d8381aebc478ea8b0f8330ad38"
+      },
+      {
+        "path": "order_checks.json",
+        "sha256": "7d32cc3e05ba1deadd90624658a92e916ab3e07919de64ef5208748f231ab515"
+      },
+      {
+        "path": "statistical_inputs.json",
+        "sha256": "78c7b5bb2b09500dc13a3962459a70d59438d30a96b740496b7950e305df9ec9"
+      },
+      {
+        "path": "table_cells.json",
+        "sha256": "fd1063d19bb5e1978795861d39095ff3c0bcb10d21f41a4fe7895c852035bfa2"
+      }
+    ]
+  }
+}
