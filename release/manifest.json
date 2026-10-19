@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "release_package": "MWFAS public reference, objective witness, internal T4/T5 (printed 6/7), and printed Table 9 / Figure 2 replay",
+  "release_package": "MWFAS public reference and objective witnesses; complete printed-table replay implementations",
   "source_snapshot_commit": "7317c4b6427e5afffa7a0df66c71b6827b898e63",
   "source_snapshot_access": "private provenance identifier; not a public access route",
   "files": [
@@ -402,6 +402,69 @@
       "license_scope": "MIT",
       "size_bytes": 6292,
       "sha256": "984b62e7f241cf44279713ecb54123ff61c8903658f8b43e69de00856658d950"
+    },
+    {
+      "path": "release/public_reproducibility/remaining/LICENSE_SCOPE.md",
+      "origin": "remaining-public-reproduction",
+      "license_scope": "CC-BY-4.0-author-controlled",
+      "size_bytes": 1961,
+      "sha256": "043ff57d9e193d7104ae90cc8d1c62064e58af9f412685b37254103e9de48e71"
+    },
+    {
+      "path": "release/public_reproducibility/remaining/README.md",
+      "origin": "remaining-public-reproduction",
+      "license_scope": "CC-BY-4.0-author-controlled",
+      "size_bytes": 2206,
+      "sha256": "d39cb19d0e38c882e5dbe1e88b0e05ed6088ada5cc26d73c0d2aafd436f0757b"
+    },
+    {
+      "path": "release/public_reproducibility/remaining/anonymous.py",
+      "origin": "remaining-public-reproduction",
+      "license_scope": "MIT",
+      "size_bytes": 4570,
+      "sha256": "a9985af49ac7b523d563e276abcf162f2a38b0c0d71c9647d558bd48c104aaf9"
+    },
+    {
+      "path": "release/public_reproducibility/remaining/evidence.py",
+      "origin": "remaining-public-reproduction",
+      "license_scope": "MIT",
+      "size_bytes": 5153,
+      "sha256": "4ac63d99df9011c4a03394ebb5ea2ff26a92b44544feb02a8cf660b4c2666e0d"
+    },
+    {
+      "path": "release/public_reproducibility/remaining/exp13_sources.py",
+      "origin": "remaining-public-reproduction",
+      "license_scope": "MIT",
+      "size_bytes": 8410,
+      "sha256": "c1490ddc7742040740dc02a9e2ef8633b926c4ac62a134b70cf3686b3fb3e61c"
+    },
+    {
+      "path": "release/public_reproducibility/remaining/replay.py",
+      "origin": "remaining-public-reproduction",
+      "license_scope": "MIT",
+      "size_bytes": 16397,
+      "sha256": "5575f9041f22b69882cc109ddd2e961bbd8ffa26ba9388b99592853ddd460fe1"
+    },
+    {
+      "path": "release/public_reproducibility/remaining/sources.py",
+      "origin": "remaining-public-reproduction",
+      "license_scope": "MIT",
+      "size_bytes": 4288,
+      "sha256": "0e1d5af60065551476ffa9a91f1009e6aacac2a6a0cf83bccb36f3a4efe5eca1"
+    },
+    {
+      "path": "release/public_reproducibility/remaining/table_stats.py",
+      "origin": "remaining-public-reproduction",
+      "license_scope": "MIT",
+      "size_bytes": 7278,
+      "sha256": "037d608c2e49ee638dbb3d5ac680b1c44c943f08ccc37d13f867a7e20980c589"
+    },
+    {
+      "path": "release/public_reproducibility/remaining/wikimedia.py",
+      "origin": "remaining-public-reproduction",
+      "license_scope": "MIT",
+      "size_bytes": 13660,
+      "sha256": "1d46945178f4631a643d88b0a3f2c0b2acfc6e895a53715261b68add5e228032"
     },
     {
       "path": "release/public_reproducibility/replay_exp28.py",
