@@ -1,0 +1,142 @@
+[
+  {
+    "actual": 9,
+    "column": "pairs",
+    "expected": 9,
+    "row": 1,
+    "status": "PASS"
+  },
+  {
+    "actual": "7/1/1",
+    "column": "wtl",
+    "expected": "7/1/1",
+    "row": 1,
+    "status": "PASS"
+  },
+  {
+    "actual": "+1.096",
+    "column": "median_gain_pp",
+    "expected": "+1.096",
+    "row": 1,
+    "status": "PASS"
+  },
+  {
+    "actual": "30/120",
+    "column": "horizon",
+    "expected": "30/120",
+    "row": 1,
+    "status": "PASS"
+  },
+  {
+    "actual": 9,
+    "column": "pairs",
+    "expected": 9,
+    "row": 2,
+    "status": "PASS"
+  },
+  {
+    "actual": "7/1/1",
+    "column": "wtl",
+    "expected": "7/1/1",
+    "row": 2,
+    "status": "PASS"
+  },
+  {
+    "actual": "+1.096",
+    "column": "median_gain_pp",
+    "expected": "+1.096",
+    "row": 2,
+    "status": "PASS"
+  },
+  {
+    "actual": "30/120",
+    "column": "horizon",
+    "expected": "30/120",
+    "row": 2,
+    "status": "PASS"
+  },
+  {
+    "actual": 4,
+    "column": "pairs",
+    "expected": 4,
+    "row": 3,
+    "status": "PASS"
+  },
+  {
+    "actual": "1/0/3",
+    "column": "wtl",
+    "expected": "1/0/3",
+    "row": 3,
+    "status": "PASS"
+  },
+  {
+    "actual": "-0.215",
+    "column": "median_gain_pp",
+    "expected": "-0.215",
+    "row": 3,
+    "status": "PASS"
+  },
+  {
+    "actual": "120/300",
+    "column": "horizon",
+    "expected": "120/300",
+    "row": 3,
+    "status": "PASS"
+  },
+  {
+    "actual": 4,
+    "column": "pairs",
+    "expected": 4,
+    "row": 4,
+    "status": "PASS"
+  },
+  {
+    "actual": "1/0/3",
+    "column": "wtl",
+    "expected": "1/0/3",
+    "row": 4,
+    "status": "PASS"
+  },
+  {
+    "actual": "-0.308",
+    "column": "median_gain_pp",
+    "expected": "-0.308",
+    "row": 4,
+    "status": "PASS"
+  },
+  {
+    "actual": "120",
+    "column": "horizon",
+    "expected": "120",
+    "row": 4,
+    "status": "PASS"
+  },
+  {
+    "actual": 4,
+    "column": "pairs",
+    "expected": 4,
+    "row": 5,
+    "status": "PASS"
+  },
+  {
+    "actual": "1/0/3",
+    "column": "wtl",
+    "expected": "1/0/3",
+    "row": 5,
+    "status": "PASS"
+  },
+  {
+    "actual": "-0.311",
+    "column": "median_gain_pp",
+    "expected": "-0.311",
+    "row": 5,
+    "status": "PASS"
+  },
+  {
+    "actual": "300",
+    "column": "horizon",
+    "expected": "300",
+    "row": 5,
+    "status": "PASS"
+  }
+]

@@ -53,7 +53,7 @@ independent system-call trace were both used. Trace/logs remain ignored/private;
 a path-redacted receipt is committed and published, with its original receipt
 hash retained. The trace is evidence of this run, not a general sandbox claim.
 
-The original 5,007-witness validation was **not repeated**. Packaging checked
+The original 5,007-witness validation was **not repeated**. EXP28 was separately replayed from newly published public evidence; that is not a repeat of the prior private audit. Packaging checked
 transfer hashes against Slurm 1428278 and the accepted PR #53 corrected seal;
 only the required new public replay rescored the released internal T4/T5 (printed Tables 6/7) witnesses.
 Original EXP04 has 2,025 PASS records; EXP06 has 1,200 PASS and 198
@@ -63,16 +63,16 @@ speed claim. Numerical solver evidence is not an exact mathematical proof.
 
 ## Current coverage and remaining work
 
-Coverage is **2/10 numerical tables and 3/17 central claim groups**, counting the
+Coverage is **3/10 numerical tables and 4/17 central claim groups**, counting the
 previously public Wikimedia saved-objective group. [coverage.json](coverage.json)
-preserves the other historical classifications. No metadata-only check is counted
+records the successful EXP28 public replay and preserves other historical classifications. No metadata-only check is counted
 as complete public graph/order replay. The manuscript availability statement was
 updated only after the successful public replay.
 
 | Priority/table | Current evidence and specific remaining delivery gap |
 |---|---|
 | Internal T1 / printed Table 3 inventory/joins | Public metadata reconstruction PASS: 416 weighted hashes, 317 topologies, 5,083 tasks; EXP07 matches 9 EXP03 + 36 EXP04, with no EXP06 overlap. Full byte coverage still needs 45 EXP03 inputs and 38 EXP05 inputs. Author EXP03 artifacts are in the accepted staging inventory; EXP05 needs exact SNAP/matrix-source retrieval and frozen transformations. |
-| Internal T10 / printed Table 9 matched clock | Original effective 117-task archive located: 98 PASS, 19 TIMEOUT, 143,241 events; 160 first/best witnesses and 234 budget rows were already independently validated. `stage_exp28.py` archives originals and nanosecond file timestamps without rescoring. Public replay still needs this archive, the original INVALID/recovery lineage, and exact retrieval/transformation for CollegeMsg, Email-Eu-core, EXIOBASE and OpenFlights inputs. Only the nine synthetic input views are already in the new public package. No RASstar binary will be redistributed. |
+| Internal T10 / printed Table 9 matched clock | PUBLIC_REPLAYABLE, together with Figure 2. Fresh anonymous full replay passed 13 exact graphs, 117 effective identities, all 143,241 saved order references, 234 budget rows, 182 pairs, 20 displayed numeric cells and 26 figure points. See [EXP28 receipts](exp28_publication.json). |
 | Internal T3 / printed Table 5 empirical inventory | PR #21 original 38-view inventory exists. Need the exact public source bytes/frozen transformations for four parents and graph-derived range checks. |
 | Internal T6 / printed Table 8 empirical quality | PR #21 original complete-case statistics exist. Need original EXP05 orders/task records and source input retrieval to reproduce all 16 parent/comparator cells; retain incomplete pairs and separate derived recoveries. |
 | Internal T9 / printed Table 12 reliability | Original 760-task inventory exists (639 PASS, 11 FAIL, 108 TIMEOUT, 2 SKIP). Need its public checkpoint/order evidence and the invalid/dependency classifications; metadata totals alone do not establish all statuses. |
@@ -102,16 +102,10 @@ checkpoint, exact job command, private logs and subsequent archival-job status
 are in the author-requested private orchestration directory. Large data, raw
 orders, graphs and logs remain outside manuscript Git.
 
-The next archival job is Slurm **1430243**, using packaging commit
-`b637add351ee763b50c88e466f9726799168ca0d` on `n0093` (AMD EPYC 7763,
-Python 3.12.3). It stages original EXP28 evidence privately and does not change
-public Table 10 coverage. Its input manifest is
-`639706bdcedcb02a89d1e145f62d65ca5072d738906bd0b1fe06d2c7d9611960`,
-protocol is `c389a6ffd31b3fd66c8a868e6cf95e95a61414b3e12648655f37573c807e8310`,
-and recovery provenance is
-`cf4b162dea4139b4f929a581914244190466b71ef5540018dfa4ddc78f7f055c`.
-The worker observes startup only and leaves completion inspection to a later
-requested status turn; successful startup is not reported as completed work.
+Completed archival job **1430243** ended with exit 0:0 and
+PASS_TRANSFER_INTEGRITY_ONLY: 117 effective tasks, 143,241 event/order references,
+286,754 files. It was not resubmitted. See [EXP28 delivery](EXP28.md) and its
+separate anonymous public replay receipt for current printed Table 9 coverage.
 
 The manuscript PDF rebuilt successfully after the availability update, with
 layout warnings only. Frozen internal T4/T5 (printed Tables 6/7) numerical contents are unchanged. The

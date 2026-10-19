@@ -1,0 +1,155 @@
+{
+  "anonymous": true,
+  "classification": "PUBLIC_REPLAYABLE",
+  "code_revision": "0762ae72219460953875d37424dc6c29c5d86d20",
+  "command": [
+    "PUBLIC_BOOTSTRAP/anonymous_exp28.py",
+    "--code-revision",
+    "0762ae72219460953875d37424dc6c29c5d86d20",
+    "--data-revision",
+    "3f4787defa7bb40ae6ee7359f0556446e0e18d07",
+    "--directory",
+    "PUBLIC_REPLAY_ROOT",
+    "--full"
+  ],
+  "data_revision": "3f4787defa7bb40ae6ee7359f0556446e0e18d07",
+  "download_sha256": {
+    "code": "e11acd088ef2493f2757ea0dcc15f8e8b9e00ab85856a4484973610405af2f8f",
+    "data": "f74575d59f986622ef50822897ddb76071c23e157e5c8c550842ceae82bc8680",
+    "exp28-full.tar.gz": "93f376cdbe5cafb5110d4c9ef900763362c800afa4d194e93df3d048a3bd1387",
+    "full_inventory.csv.gz": "6aca208a8a91de0b000535cdb78f0662a3b13bf4423b056effd98038a35308a7",
+    "receipt": "1223d4096e04eb0eb706e997ceccf29c18e61c7a23f0585e049b8c365ba40090"
+  },
+  "elapsed_seconds": 104.96859440673143,
+  "execution_command": [
+    "env",
+    "-i",
+    "PATH=/usr/bin:/bin",
+    "strace",
+    "-f",
+    "-e",
+    "trace=open,openat,execve",
+    "-o",
+    "PRIVATE_TRACE_PATH",
+    "python3",
+    "-I",
+    "-B",
+    "PUBLIC_BOOTSTRAP/anonymous_exp28.py",
+    "--code-revision",
+    "0762ae72219460953875d37424dc6c29c5d86d20",
+    "--data-revision",
+    "3f4787defa7bb40ae6ee7359f0556446e0e18d07",
+    "--directory",
+    "PUBLIC_REPLAY_ROOT",
+    "--full"
+  ],
+  "fresh_directory": true,
+  "hardware": {
+    "cpu_model": "12th Gen Intel(R) Core(TM) i7-12700K",
+    "platform": "Linux-7.0.0-29-generic-x86_64-with-glibc2.39",
+    "processor": "x86_64"
+  },
+  "input_manifest_sha256": "d65cf352eba40d70a1c7ae79dca67f224b1d9507f1c88f23adde54f9d9fb55bd",
+  "isolation_trace_sha256": "f32e4f70a9bde8d9977370148d334da62b0a9ede43ba0654a35e5f7b4f7d14e7",
+  "original_receipt_sha256": "dbf5b7d7e51450b35bd7a5358a4e0a4510e1d19cf5ae46f16124420b3e348392",
+  "private_path_rejection_probes": "PASS",
+  "private_repository_baseline": "ce57ed2f3876efe3087042699a015bce86831905",
+  "read_guard": "PASS",
+  "replay": {
+    "budget_rows": 234,
+    "events": 143241,
+    "figure2": "PASS",
+    "figure2_points": 26,
+    "full_archive": {
+      "events": 143241,
+      "files": 286750,
+      "orders": 143241,
+      "status": "PASS",
+      "unique_graph_order_encodings_scored": 118806
+    },
+    "graphs": 13,
+    "hardware_note": "Manifest login CPU is not verified per-task hardware; no cross-hardware speed claim.",
+    "paired_rows": 182,
+    "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+    "seeds": "Original task seeds retained (IPSNS 1 and 2); statistics bootstrap seed 28",
+    "selected_orders": 160,
+    "sources": [
+      {
+        "graph_id": "exp05_college_first_90_days_count",
+        "identity": "BYTE_IDENTICAL",
+        "inputs": [
+          {
+            "filename": "CollegeMsg.txt.gz",
+            "sha256": "50ae2d98ed3bad9ddb18dbd495a89e5e10cfb8f7e86932827db29fc41b41f9fa",
+            "url": "https://snap.stanford.edu/data/CollegeMsg.txt.gz"
+          }
+        ],
+        "sha256": "7a5e34e22f585d2063f1de62d8a9d07e4d12de8a43bb3a76738719d87bf00d16",
+        "status": "PASS"
+      },
+      {
+        "graph_id": "exp05_email_largest_scc",
+        "identity": "BYTE_IDENTICAL",
+        "inputs": [
+          {
+            "filename": "email-Eu-core.txt.gz",
+            "sha256": "4b47acdb80197b085fe63c819c357ae488131ee904ed93d1b219a68b0f9e245f",
+            "url": "https://snap.stanford.edu/data/email-Eu-core.txt.gz"
+          }
+        ],
+        "sha256": "c8199c4f5d20f966e798049e97e2e8365bf4f15d9806f6377011ff1ea2833eaf",
+        "status": "PASS"
+      },
+      {
+        "graph_id": "exp05_os300_us_2022",
+        "identity": "BYTE_IDENTICAL",
+        "inputs": [
+          {
+            "filename": "exiobase.zip",
+            "sha256": "50fb3c947a540087cc307cfec3ec61ffd6b241e2959f846f50ff72de8b815707",
+            "url": "https://zenodo.org/api/records/20554376/files/exiobase.zip/content"
+          }
+        ],
+        "sha256": "5efa66feb8861be9e322ddcba5097e1e3d0931f3f9c96ef275d111d735d1b691",
+        "status": "PASS"
+      },
+      {
+        "graph_id": "exp13_openflights_us_routes",
+        "identity": "BYTE_IDENTICAL",
+        "inputs": [
+          {
+            "filename": "routes.dat",
+            "sha256": "bd373706238134f619c624c606dccc74c05c2582a977c489c81de501735f2390",
+            "url": "https://raw.githubusercontent.com/jpatokal/openflights/56a3cce4d50309cb79948103a48c7f87d09b3056/data/routes.dat"
+          },
+          {
+            "filename": "airports.dat",
+            "sha256": "9387cdb38df5bd664da823f8ccb69fdd9b33a1888f5b7cca09c34a3cd9ff59f9",
+            "url": "https://raw.githubusercontent.com/jpatokal/openflights/56a3cce4d50309cb79948103a48c7f87d09b3056/data/airports.dat"
+          }
+        ],
+        "sha256": "402da14665bdc106995b7995ac6d8bf56af6659af46e82a097fd0ac655f5d893",
+        "status": "PASS"
+      }
+    ],
+    "status": "PASS",
+    "statuses": {
+      "PASS": 98,
+      "TIMEOUT": 19
+    },
+    "table9": "PASS",
+    "table9_displayed_numeric_cells": 20,
+    "tasks": 117,
+    "validation": "Graph identity; complete permutations; weighted objectives; retained DAGs; publication eligibility; historical selection; all cells/points"
+  },
+  "started_utc": "2026-10-19T22:12:01.392091+00:00",
+  "status": "PASS",
+  "subprocesses": "FORBIDDEN_AFTER_GUARD",
+  "urls": {
+    "code": "https://codeload.github.com/SoroushVahidi/mwfas-heuristic-metrics/tar.gz/0762ae72219460953875d37424dc6c29c5d86d20",
+    "data": "https://huggingface.co/datasets/SoroushVahidi/mwfas-benchmark-extension/resolve/3f4787defa7bb40ae6ee7359f0556446e0e18d07/releases/exp28-v1-20261019/exp28-light.tar.gz",
+    "exp28-full.tar.gz": "https://huggingface.co/datasets/SoroushVahidi/mwfas-benchmark-extension/resolve/3f4787defa7bb40ae6ee7359f0556446e0e18d07/releases/exp28-v1-20261019/exp28-full.tar.gz",
+    "full_inventory.csv.gz": "https://huggingface.co/datasets/SoroushVahidi/mwfas-benchmark-extension/resolve/3f4787defa7bb40ae6ee7359f0556446e0e18d07/releases/exp28-v1-20261019/full_inventory.csv.gz",
+    "receipt": "https://huggingface.co/datasets/SoroushVahidi/mwfas-benchmark-extension/resolve/3f4787defa7bb40ae6ee7359f0556446e0e18d07/releases/exp28-v1-20261019/package_receipt.json"
+  }
+}

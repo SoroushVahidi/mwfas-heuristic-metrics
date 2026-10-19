@@ -1,7 +1,7 @@
 {
-  "public_replayable_numerical_tables": 2,
+  "public_replayable_numerical_tables": 3,
   "numerical_tables": 10,
-  "public_replayable_claim_groups": 3,
+  "public_replayable_claim_groups": 4,
   "central_claim_groups": 17,
   "claims": [
     {
@@ -137,14 +137,14 @@
     {
       "claim_id": "T10_EXP28",
       "claim": "Matched-wall-clock EXP28 comparison on 13 selected graph views",
-      "classification": "INTERNALLY_VERIFIED",
-      "full_table_publicly_reproducible": false,
-      "evidence": "Prior pinned Phase B evidence retained; no new complete public replay",
+      "classification": "PUBLIC_REPLAYABLE",
+      "full_table_publicly_reproducible": true,
+      "evidence": "2026-10-19 full anonymous public replay: 13 graphs, 117 tasks, 143241 orders/events, 20 numeric cells and 26 figure points",
       "label": "tab:exp28-matched",
       "printed_table": 9
     }
   ],
   "historical_coverage_source": "analysis/phase_b/coverage_matrix.json",
-  "status": "PARTIAL_RELEASE_WITH_TWO_COMPLETE_TABLES",
+  "status": "PARTIAL_RELEASE_WITH_THREE_COMPLETE_NUMERICAL_TABLES",
   "table_numbering": "claim_id uses historical internal IDs; printed_table follows manuscript labels"
 }

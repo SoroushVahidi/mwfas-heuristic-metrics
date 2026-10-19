@@ -37,4 +37,28 @@ if "public_reproducibility" in config or "public_reproducibility" in manifest:
     assert receipt["download_sha256"]["data"] == public["archive_sha256"]
     assert public["fully_replayable_tables"] == [4, 5]
     assert receipt["replay"]["tables"] == {"4": "PUBLIC_REPLAYABLE", "5": "PUBLIC_REPLAYABLE"}
-    print("valid: public Table 4/5 immutable pins and anonymous replay receipt")
+    assert public.get("fully_replayable_printed_tables", [6, 7]) == [6, 7]
+    print("valid: public internal T4/T5 (printed Tables 6/7) immutable pins and anonymous replay receipt")
+if "exp28_public_reproducibility" in config or "exp28_public_reproducibility" in manifest:
+    public = config["exp28_public_reproducibility"]
+    assert public == manifest["exp28_public_reproducibility"]
+    assert public["dataset_repo"] == "SoroushVahidi/mwfas-benchmark-extension"
+    assert public["code_repo"] == "SoroushVahidi/mwfas-heuristic-metrics"
+    assert all(len(public[k]) == 40 and set(public[k]) <= set("0123456789abcdef")
+               for k in ("dataset_revision", "code_revision"))
+    receipt = json.loads((root / "release/public_reproducibility/exp28_public_replay_receipt.json").read_text())
+    assert receipt["status"] == "PASS" and receipt["classification"] == "PUBLIC_REPLAYABLE"
+    assert receipt["anonymous"] and receipt["fresh_directory"] and receipt["read_guard"] == "PASS"
+    assert receipt["code_revision"] == public["code_revision"] and receipt["data_revision"] == public["dataset_revision"]
+    assert receipt["download_sha256"]["data"] == public["light_archive_sha256"]
+    assert receipt["download_sha256"]["exp28-full.tar.gz"] == public["full_archive_sha256"]
+    assert receipt["replay"]["full_archive"]["status"] == "PASS"
+    assert receipt["replay"]["full_archive"]["orders"] == receipt["replay"]["events"] == 143241
+    assert receipt["replay"]["statuses"] == {"PASS": 98, "TIMEOUT": 19}
+    assert (receipt["replay"]["graphs"], receipt["replay"]["tasks"], receipt["replay"]["selected_orders"],
+            receipt["replay"]["budget_rows"], receipt["replay"]["paired_rows"],
+            receipt["replay"]["table9_displayed_numeric_cells"], receipt["replay"]["figure2_points"]) == (13,117,160,234,182,20,26)
+    trace = json.loads((root / "release/public_reproducibility/exp28_trace_receipt.json").read_text())
+    assert trace["status"] == "PASS" and trace["private_input_reads_outside_fresh_directory"] == 0
+    assert public["printed_table"] == 9 and public["printed_figure"] == 2
+    print("valid: printed Table 9 / Figure 2 full anonymous replay, hashes, counts and isolation trace")

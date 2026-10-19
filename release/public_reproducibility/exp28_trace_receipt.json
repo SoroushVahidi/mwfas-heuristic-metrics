@@ -1,0 +1,19 @@
+{
+  "bootstrap_sha256": "276963595cfc9da695d7a0991f13143dd2820cc8465b0f91c90aac740130b1b4",
+  "cpu_model": "12th Gen Intel(R) Core(TM) i7-12700K",
+  "execution_trace": [
+    "\"/usr/bin/python3\"",
+    "\"/usr/bin/uname\""
+  ],
+  "method": "strace successful open/openat paths; fresh download directory, exact bootstrap, system libraries/TLS/DNS/time configuration only; no authenticated client or private data paths allowed",
+  "pre_guard_subprocess": "uname -p for platform.processor; no subprocess after guard installation",
+  "private_input_reads_outside_fresh_directory": 0,
+  "reviewed_system_reads": {
+    "/etc/host.conf": "libc host resolution configuration",
+    "/etc/passwd": "public local account database used by system account lookup; no shadow or credential files read"
+  },
+  "status": "PASS",
+  "successful_unique_absolute_file_opens": 585,
+  "trace_sha256": "f32e4f70a9bde8d9977370148d334da62b0a9ede43ba0654a35e5f7b4f7d14e7",
+  "unexpected_file_opens": []
+}

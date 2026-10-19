@@ -1,5 +1,5 @@
 {
-  "method": "Read manuscript table labels in source order, expanding provenance_tables.tex; verified by compiled aux labels separately",
+  "method": "Read manuscript table labels in source order, expanding provenance_tables.tex; verified against compiled PDF caption numbers using pdftotext",
   "mapping": {
     "T1": {
       "label": "tab:cross-inventory",

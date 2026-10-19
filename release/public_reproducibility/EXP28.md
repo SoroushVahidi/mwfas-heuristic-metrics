@@ -4,7 +4,7 @@ The release preserves 117 effective task identities on 13 reused graph views:
 98 PASS and 19 TIMEOUT, with 143,241 original event/order references. Both IPSNS
 seeds and the separate RASstar single-run and restart arms remain distinguishable.
 The two horizons are observations of the same task, not independent experiments.
-Public-only replay status and immutable pins are recorded in `exp28_publication.json`.
+**Printed Table 9 and Figure 2 are PUBLIC_REPLAYABLE.** A fresh anonymous full replay passed on 2026-10-19 in 104.97 seconds, with 585 unique successful absolute file opens and no private research input reads. Public-only replay status and immutable pins are recorded in `exp28_publication.json`.
 Publication or transfer integrity alone does not establish numerical reproduction.
 
 ## Numbering
@@ -18,8 +18,7 @@ shift. The existing `releases/table45-v2-20261019` path is deliberately retained
 ## Public artifacts and extraction
 
 The existing Hugging Face dataset is `SoroushVahidi/mwfas-benchmark-extension`;
-the new path is `releases/exp28-v1-20261019`. Use the full immutable revisions in
-the publication receipt, not a moving branch. Existing releases are unchanged.
+the new path is `releases/exp28-v1-20261019`. The tested [dataset revision](https://huggingface.co/datasets/SoroushVahidi/mwfas-benchmark-extension/tree/3f4787defa7bb40ae6ee7359f0556446e0e18d07/releases/exp28-v1-20261019) is `3f4787defa7bb40ae6ee7359f0556446e0e18d07`; the tested [verifier revision](https://github.com/SoroushVahidi/mwfas-heuristic-metrics/tree/0762ae72219460953875d37424dc6c29c5d86d20) is `0762ae72219460953875d37424dc6c29c5d86d20`. Existing releases are unchanged.
 
 * `exp28-light.tar.gz`: all event metadata and nanosecond publication evidence,
   160 distinct first/best complete orders covering all 234 task/horizon rows,
@@ -45,20 +44,20 @@ is `1332cbacf81ad954dff853810687f4bb4a469966ca5639a913f104b8f80fe7f3`.
 ## Anonymous verification
 
 Download `anonymous_exp28.py` from the pinned public GitHub verifier revision.
-Run with Python 3.12, replacing the two revision placeholders from the receipt:
+Run with Python 3.12, using the tested immutable revisions:
 
 ```bash
-env -i PATH=/usr/bin:/bin HOME=/tmp/mwfas-exp28-anonymous \
+env -i PATH=/usr/bin:/bin \
   python3 -I -B anonymous_exp28.py \
-  --code-revision FULL_PUBLIC_CODE_COMMIT \
-  --data-revision FULL_PUBLIC_DATASET_COMMIT \
+  --code-revision 0762ae72219460953875d37424dc6c29c5d86d20 \
+  --data-revision 3f4787defa7bb40ae6ee7359f0556446e0e18d07 \
   --directory /tmp/mwfas-exp28-new --full
 ```
 
 The destination must not exist. No private inputs, credentials, old data cache,
 or optimization software are used. The runner freshly downloads public code,
 data, and upstream inputs, rejects file access outside its clean directory and
-system libraries, and forbids subprocesses. The recorded validation additionally
+system libraries, and forbids subprocesses after guard installation. The trace additionally records ordinary system account and DNS configuration reads (`/etc/passwd` and `/etc/host.conf`); no credential or private research file was read. Hardware discovery runs `uname -p` before the guard. The recorded validation additionally
 uses an independent OS file-access trace. Those are evidence of that execution,
 not a claim of container isolation or universally secure sandboxing.
 
@@ -130,3 +129,5 @@ and zero-based `u v weight` records; original weights are preserved (no `-w`).
 Output is a zero-based rank per vertex. Restart index i>0 uses
 `1 + ((seed*1000003 + i*104729) % 2147483646)`. This documents compatibility;
 no new algorithm run, benchmark, or journal submission is part of this release.
+
+The [published replay receipt, every cell comparison, figure coordinates, and trace review](https://huggingface.co/datasets/SoroushVahidi/mwfas-benchmark-extension/tree/2a0b536fbc2079d19244b1b092e925cbc84327b3/releases/exp28-v1-20261019/replay) are independently downloadable at revision `2a0b536fbc2079d19244b1b092e925cbc84327b3`. Total complete numerical-table coverage is **3/10** (printed Tables 6, 7, 9).

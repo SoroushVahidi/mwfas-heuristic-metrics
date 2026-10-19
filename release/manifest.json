@@ -62,8 +62,8 @@
     },
     {
       "path": "configs/project.json",
-      "size_bytes": 1008,
-      "sha256": "3e64621e6d84e701dadd109040804c987b3e63a377242f252264b746f8d89ea1",
+      "size_bytes": 2209,
+      "sha256": "2725b2d084b4f7d8f978848864b8da16767081dd469bd657fbaccbd41ae7007e",
       "origin": "exact_author_source_snapshot",
       "license_scope": "CC-BY-4.0-author-controlled"
     },
@@ -83,8 +83,8 @@
     },
     {
       "path": "data/manifests/provenance.json",
-      "size_bytes": 5816,
-      "sha256": "6f12064d6dbdc91e76ff8e0dc3967036cfeeb547402bb3f174fd52f584236d43",
+      "size_bytes": 7017,
+      "sha256": "83fc88dc3a0baeca28111124088961c729b038d9a427307ad1e89901bb07a09f",
       "origin": "exact_author_source_snapshot",
       "license_scope": "CC-BY-4.0-author-controlled"
     },
@@ -134,15 +134,15 @@
       "path": "release/public_reproducibility/EXP28.md",
       "origin": "exp28-public-reproduction",
       "license_scope": "CC-BY-4.0-author-controlled",
-      "size_bytes": 9423,
-      "sha256": "3bcf56fe903dae05e284e7d0dcbee23939768e23b0434efc2eb9d1ef046734c9"
+      "size_bytes": 10594,
+      "sha256": "00aed67d3cfdec0d45c934b8ba9e44ac5aa079ff7fd7db7cdbdebcdb894c1e1a"
     },
     {
       "path": "release/public_reproducibility/README.md",
       "origin": "author_owned_table45_public_replay",
       "license_scope": "CC-BY-4.0-author-controlled",
-      "size_bytes": 9985,
-      "sha256": "bb10997f8bc0a409278acaf25c64b274f8e6ba670a655696f300d44f58374932"
+      "size_bytes": 9517,
+      "sha256": "3b90dddd68936c8697a4841f19753341f11f4a546052d81680122ca488a8016a"
     },
     {
       "path": "release/public_reproducibility/anonymous_exp28.py",
@@ -169,8 +169,8 @@
       "path": "release/public_reproducibility/coverage.json",
       "origin": "exp28-public-reproduction",
       "license_scope": "CC-BY-4.0-author-controlled",
-      "size_bytes": 6196,
-      "sha256": "37e410d3d917b8f5e79a7c18aec111b03bcc1be98cb3232073f7a4ed69c51e38"
+      "size_bytes": 6258,
+      "sha256": "3035dc5c44660a506cda9c10fe71039c8c167b6f0071a6fc5bf2fa57b389b8cf"
     },
     {
       "path": "release/public_reproducibility/exp28_checks.py",
@@ -185,6 +185,20 @@
       "license_scope": "CC-BY-4.0-author-controlled",
       "size_bytes": 33391,
       "sha256": "95a73e79eda067cfcf5f0c2c053eec1f54e0d32496dd0b11197bbed11a86dcce"
+    },
+    {
+      "path": "release/public_reproducibility/exp28_figure2_points.json",
+      "origin": "exp28-public-reproduction",
+      "license_scope": "CC-BY-4.0-author-controlled",
+      "size_bytes": 6784,
+      "sha256": "949509604f2000da3358b6bd09bb723646ea36842d2699d9dd7c7087805fff2f"
+    },
+    {
+      "path": "release/public_reproducibility/exp28_integration_summary.json",
+      "origin": "exp28-public-reproduction",
+      "license_scope": "CC-BY-4.0-author-controlled",
+      "size_bytes": 20050,
+      "sha256": "d43d5a9303339d918e8fdd5775d892147db89eefd51331ac6ee845ccd95c8114"
     },
     {
       "path": "release/public_reproducibility/exp28_original/adapter/src/mwfas_data/__init__.py",
@@ -313,11 +327,18 @@
       "sha256": "47372d20a1436ca36c47e115521e724a9aeb000d9598adf50a07c7a69ed3a9c8"
     },
     {
+      "path": "release/public_reproducibility/exp28_public_replay_receipt.json",
+      "origin": "exp28-public-reproduction",
+      "license_scope": "CC-BY-4.0-author-controlled",
+      "size_bytes": 6308,
+      "sha256": "eb4506ed7abd77d36bc47c950935bd73b8e9058b3f6b15a6c441d7f6997ba68b"
+    },
+    {
       "path": "release/public_reproducibility/exp28_publication.json",
       "origin": "exp28-public-reproduction",
       "license_scope": "CC-BY-4.0-author-controlled",
-      "size_bytes": 404,
-      "sha256": "b56f3d2a8015c04ebc225ceb9d154f82a5592b6b41f124893ba604bf440830e3"
+      "size_bytes": 2175,
+      "sha256": "975553fb1ca581a9020b2f629f5a0c1a98a4471781526ef75249ccf3e557bccb"
     },
     {
       "path": "release/public_reproducibility/exp28_sources.json",
@@ -332,6 +353,20 @@
       "license_scope": "MIT",
       "size_bytes": 12264,
       "sha256": "8db9949fecbfc945779fbef3c8d380f7fa0cbc344c3984e8c2080334a5a130f5"
+    },
+    {
+      "path": "release/public_reproducibility/exp28_table9_cells.json",
+      "origin": "exp28-public-reproduction",
+      "license_scope": "CC-BY-4.0-author-controlled",
+      "size_bytes": 2298,
+      "sha256": "dc8325f38d023e7873d511a3d92aec49494082fc8a6e8d9a8936ce6c4a1b7c31"
+    },
+    {
+      "path": "release/public_reproducibility/exp28_trace_receipt.json",
+      "origin": "exp28-public-reproduction",
+      "license_scope": "CC-BY-4.0-author-controlled",
+      "size_bytes": 977,
+      "sha256": "9ff9ea37a92dd751d188398ccc671c0da0e060dec45512de3f35e87ca68a03f7"
     },
     {
       "path": "release/public_reproducibility/inventory_table1.py",
@@ -386,8 +421,8 @@
       "path": "release/public_reproducibility/table_number_mapping.json",
       "origin": "exp28-public-reproduction",
       "license_scope": "CC-BY-4.0-author-controlled",
-      "size_bytes": 988,
-      "sha256": "338220f8df4592ad3201ffac7b7eb84965e51867e8a0c3ea2339b7c1ec737210"
+      "size_bytes": 1007,
+      "sha256": "8534aa939923d40eedb2ab2cb547224ac3531c485e8070f6f4b9df91f76904a4"
     },
     {
       "path": "release/verify_objective_witnesses.py",
@@ -412,8 +447,8 @@
     },
     {
       "path": "scripts/check_manifests.py",
-      "size_bytes": 2584,
-      "sha256": "4ee0fbf6cdd4e1f8e7758bdcdb7937c1d642a87eef3c6586006427bd4e1ce074",
+      "size_bytes": 4719,
+      "sha256": "4c8a5690f8f290604438e3967cabb783f79ba9076c6487a6c7a9b5605eac4ccc",
       "origin": "exact_author_source_snapshot",
       "license_scope": "MIT"
     },

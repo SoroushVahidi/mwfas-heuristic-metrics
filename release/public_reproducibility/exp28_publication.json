@@ -1,12 +1,51 @@
 {
-  "state": "RUNNING_HEALTHY",
-  "stage": "PUBLICATION_PREPARED_REPLAY_PENDING",
+  "state": "COMPLETED_SUCCESS",
+  "stage": "COMPLETE_PUBLIC_ONLY_REPLAY",
   "dataset_repo": "SoroushVahidi/mwfas-benchmark-extension",
   "release_path": "releases/exp28-v1-20261019",
-  "table9_public_replay": "NOT VERIFIABLE: pending anonymous replay",
-  "figure2_public_replay": "NOT VERIFIABLE: pending anonymous replay",
+  "table9_public_replay": "PUBLIC_REPLAYABLE",
+  "figure2_public_replay": "PUBLIC_REPLAYABLE",
   "complete_table_coverage": {
-    "complete": 2,
+    "complete": 3,
     "total": 10
-  }
+  },
+  "code_repo": "SoroushVahidi/mwfas-heuristic-metrics",
+  "code_revision": "0762ae72219460953875d37424dc6c29c5d86d20",
+  "dataset_revision": "3f4787defa7bb40ae6ee7359f0556446e0e18d07",
+  "code_url": "https://github.com/SoroushVahidi/mwfas-heuristic-metrics/tree/0762ae72219460953875d37424dc6c29c5d86d20",
+  "dataset_url": "https://huggingface.co/datasets/SoroushVahidi/mwfas-benchmark-extension/tree/3f4787defa7bb40ae6ee7359f0556446e0e18d07/releases/exp28-v1-20261019",
+  "validation_counts": {
+    "budget_rows": 234,
+    "events": 143241,
+    "figure2_points": 26,
+    "full_archive": {
+      "events": 143241,
+      "files": 286750,
+      "orders": 143241,
+      "status": "PASS",
+      "unique_graph_order_encodings_scored": 118806
+    },
+    "graphs": 13,
+    "paired_rows": 182,
+    "selected_orders": 160,
+    "statuses": {
+      "PASS": 98,
+      "TIMEOUT": 19
+    },
+    "table9_displayed_numeric_cells": 20,
+    "tasks": 117
+  },
+  "trace_status": "PASS",
+  "unrecoverable_exact_sources": [],
+  "draft_pr": "https://github.com/SoroushVahidi/mwfas-heuristic-metrics-data-paper/pull/58",
+  "replay_evidence_revision": "2a0b536fbc2079d19244b1b092e925cbc84327b3",
+  "replay_evidence_url": "https://huggingface.co/datasets/SoroushVahidi/mwfas-benchmark-extension/tree/2a0b536fbc2079d19244b1b092e925cbc84327b3/releases/exp28-v1-20261019/replay",
+  "replay_receipt_sha256": "eb4506ed7abd77d36bc47c950935bd73b8e9058b3f6b15a6c441d7f6997ba68b",
+  "tests": {
+    "pytest": "22 passed",
+    "manifest_checks": "PASS",
+    "manuscript_provenance": "PASS; ten numerical tables unchanged",
+    "manuscript_build": "PASS; layout warnings only"
+  },
+  "next_shared_recovery_step": "Reuse exact upstream transformations for remaining EXP05 views and original order/status evidence for printed Tables 5/8/12; no new optimization."
 }

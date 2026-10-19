@@ -1,0 +1,262 @@
+[
+  {
+    "family": "directed_community",
+    "gain_pp": 0.7604762154507788,
+    "graph_id": "exp04_cm_n120_k03_r02",
+    "horizon_seconds": 30,
+    "ipsns_objective": 1669,
+    "rasstar_objective": 1814,
+    "status": "PASS",
+    "total_weight": 19067
+  },
+  {
+    "family": "directed_community",
+    "gain_pp": 0.7604762154507788,
+    "graph_id": "exp04_cm_n120_k03_r02",
+    "horizon_seconds": 120,
+    "ipsns_objective": 1669,
+    "rasstar_objective": 1814,
+    "status": "PASS",
+    "total_weight": 19067
+  },
+  {
+    "family": "directed_community",
+    "gain_pp": 2.3734731291325932,
+    "graph_id": "exp04_cm_n480_k08_r02",
+    "horizon_seconds": 30,
+    "ipsns_objective": 41309,
+    "rasstar_objective": 45918,
+    "status": "PASS",
+    "total_weight": 194188
+  },
+  {
+    "family": "directed_community",
+    "gain_pp": 2.3734731291325932,
+    "graph_id": "exp04_cm_n480_k08_r02",
+    "horizon_seconds": 120,
+    "ipsns_objective": 41309,
+    "rasstar_objective": 45918,
+    "status": "PASS",
+    "total_weight": 194188
+  },
+  {
+    "family": "erdos_renyi_directed",
+    "gain_pp": 3.2061880018894664,
+    "graph_id": "exp04_er_n120_k03_r02",
+    "horizon_seconds": 30,
+    "ipsns_objective": 1139,
+    "rasstar_objective": 1682,
+    "status": "PASS",
+    "total_weight": 16936
+  },
+  {
+    "family": "erdos_renyi_directed",
+    "gain_pp": 3.2061880018894664,
+    "graph_id": "exp04_er_n120_k03_r02",
+    "horizon_seconds": 120,
+    "ipsns_objective": 1139,
+    "rasstar_objective": 1682,
+    "status": "PASS",
+    "total_weight": 16936
+  },
+  {
+    "family": "erdos_renyi_directed",
+    "gain_pp": 2.7558370337023472,
+    "graph_id": "exp04_er_n480_k08_r02",
+    "horizon_seconds": 30,
+    "ipsns_objective": 37618,
+    "rasstar_objective": 43005,
+    "status": "PASS",
+    "total_weight": 195476
+  },
+  {
+    "family": "erdos_renyi_directed",
+    "gain_pp": 2.7558370337023472,
+    "graph_id": "exp04_er_n480_k08_r02",
+    "horizon_seconds": 120,
+    "ipsns_objective": 37618,
+    "rasstar_objective": 43005,
+    "status": "PASS",
+    "total_weight": 195476
+  },
+  {
+    "family": "directed_scale_free",
+    "gain_pp": 0.0,
+    "graph_id": "exp04_sf_n120_k03_r02",
+    "horizon_seconds": 30,
+    "ipsns_objective": 433,
+    "rasstar_objective": 433,
+    "status": "PASS",
+    "total_weight": 18368
+  },
+  {
+    "family": "directed_scale_free",
+    "gain_pp": 0.0,
+    "graph_id": "exp04_sf_n120_k03_r02",
+    "horizon_seconds": 120,
+    "ipsns_objective": 433,
+    "rasstar_objective": 433,
+    "status": "PASS",
+    "total_weight": 18368
+  },
+  {
+    "family": "directed_scale_free",
+    "gain_pp": 1.09633376000333,
+    "graph_id": "exp04_sf_n480_k08_r02",
+    "horizon_seconds": 30,
+    "ipsns_objective": 11013,
+    "rasstar_objective": 13120,
+    "status": "PASS",
+    "total_weight": 192186
+  },
+  {
+    "family": "directed_scale_free",
+    "gain_pp": 1.09633376000333,
+    "graph_id": "exp04_sf_n480_k08_r02",
+    "horizon_seconds": 120,
+    "ipsns_objective": 11013,
+    "rasstar_objective": 13120,
+    "status": "PASS",
+    "total_weight": 192186
+  },
+  {
+    "family": "college_msg",
+    "gain_pp": -0.1441250094819085,
+    "graph_id": "exp05_college_first_90_days_count",
+    "horizon_seconds": 120,
+    "ipsns_objective": 16669,
+    "rasstar_objective": 16593,
+    "status": "PASS",
+    "total_weight": 52732
+  },
+  {
+    "family": "college_msg",
+    "gain_pp": -0.1441250094819085,
+    "graph_id": "exp05_college_first_90_days_count",
+    "horizon_seconds": 300,
+    "ipsns_objective": 16669,
+    "rasstar_objective": 16593,
+    "status": "PASS",
+    "total_weight": 52732
+  },
+  {
+    "family": "email_eu_core",
+    "gain_pp": -2.1667080951197284,
+    "graph_id": "exp05_email_largest_scc",
+    "horizon_seconds": 120,
+    "ipsns_objective": 10107,
+    "rasstar_objective": 9584,
+    "status": "PASS",
+    "total_weight": 24138
+  },
+  {
+    "family": "email_eu_core",
+    "gain_pp": -2.1667080951197284,
+    "graph_id": "exp05_email_largest_scc",
+    "horizon_seconds": 300,
+    "ipsns_objective": 10107,
+    "rasstar_objective": 9584,
+    "status": "PASS",
+    "total_weight": 24138
+  },
+  {
+    "family": "exiobase_lop_benchmark",
+    "gain_pp": 1.4426886690527854,
+    "graph_id": "exp05_os300_us_2022",
+    "horizon_seconds": 120,
+    "ipsns_objective": 13838403,
+    "rasstar_objective": 14551799,
+    "status": "PASS",
+    "total_weight": 49449061
+  },
+  {
+    "family": "exiobase_lop_benchmark",
+    "gain_pp": 1.4426886690527854,
+    "graph_id": "exp05_os300_us_2022",
+    "horizon_seconds": 300,
+    "ipsns_objective": 13838403,
+    "rasstar_objective": 14551799,
+    "status": "PASS",
+    "total_weight": 49449061
+  },
+  {
+    "family": "directed_community",
+    "gain_pp": -0.3900709219858156,
+    "graph_id": "exp06_cm_n28_k04_r02__uniform_1_100",
+    "horizon_seconds": 30,
+    "ipsns_objective": 782,
+    "rasstar_objective": 760,
+    "status": "PASS",
+    "total_weight": 5640
+  },
+  {
+    "family": "directed_community",
+    "gain_pp": -0.3900709219858156,
+    "graph_id": "exp06_cm_n28_k04_r02__uniform_1_100",
+    "horizon_seconds": 120,
+    "ipsns_objective": 782,
+    "rasstar_objective": 760,
+    "status": "PASS",
+    "total_weight": 5640
+  },
+  {
+    "family": "erdos_renyi_directed",
+    "gain_pp": 1.4407582938388626,
+    "graph_id": "exp06_er_n28_k04_r02__uniform_1_100",
+    "horizon_seconds": 30,
+    "ipsns_objective": 750,
+    "rasstar_objective": 826,
+    "status": "PASS",
+    "total_weight": 5275
+  },
+  {
+    "family": "erdos_renyi_directed",
+    "gain_pp": 1.4407582938388626,
+    "graph_id": "exp06_er_n28_k04_r02__uniform_1_100",
+    "horizon_seconds": 120,
+    "ipsns_objective": 750,
+    "rasstar_objective": 826,
+    "status": "PASS",
+    "total_weight": 5275
+  },
+  {
+    "family": "directed_scale_free",
+    "gain_pp": 0.05078720162519045,
+    "graph_id": "exp06_sf_n28_k04_r02__uniform_1_100",
+    "horizon_seconds": 30,
+    "ipsns_objective": 374,
+    "rasstar_objective": 377,
+    "status": "PASS",
+    "total_weight": 5907
+  },
+  {
+    "family": "directed_scale_free",
+    "gain_pp": 0.05078720162519045,
+    "graph_id": "exp06_sf_n28_k04_r02__uniform_1_100",
+    "horizon_seconds": 120,
+    "ipsns_objective": 374,
+    "rasstar_objective": 377,
+    "status": "PASS",
+    "total_weight": 5907
+  },
+  {
+    "family": "openflights",
+    "gain_pp": -0.2853881278538813,
+    "graph_id": "exp13_openflights_us_routes",
+    "horizon_seconds": 120,
+    "ipsns_objective": 5129,
+    "rasstar_objective": 5099,
+    "status": "PASS",
+    "total_weight": 10512
+  },
+  {
+    "family": "openflights",
+    "gain_pp": -0.2853881278538813,
+    "graph_id": "exp13_openflights_us_routes",
+    "horizon_seconds": 300,
+    "ipsns_objective": 5129,
+    "rasstar_objective": 5099,
+    "status": "PASS",
+    "total_weight": 10512
+  }
+]
