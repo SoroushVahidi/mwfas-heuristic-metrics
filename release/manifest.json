@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "release_package": "MWFAS Heuristic Metrics public reference and validation package",
+  "release_package": "MWFAS public reference, objective witness and Table 4/5 replay package",
   "source_snapshot_commit": "7317c4b6427e5afffa7a0df66c71b6827b898e63",
   "source_snapshot_access": "private provenance identifier; not a public access route",
   "files": [
@@ -34,15 +34,15 @@
     },
     {
       "path": "LICENSE_SCOPE.md",
-      "size_bytes": 1461,
-      "sha256": "5a12a8edb96c2799caa99eccfdf93be00725805359d308a393060b79f3a2766d",
+      "size_bytes": 1978,
+      "sha256": "e44d556b1475dba9c90347c2475d6bbf4210274692a36689ff8e38311c271939",
       "origin": "new_public_release_material",
       "license_scope": "CC-BY-4.0-author-controlled"
     },
     {
       "path": "README.md",
-      "size_bytes": 5301,
-      "sha256": "0f79743e2663b371069fc6db43c2aeb77c8f04aaa878c0be09bf9dd16fcd3057",
+      "size_bytes": 5655,
+      "sha256": "e95d48b70a9a43f00efb894078ed8dc1468484b90b1f2d056f677d8698ae4066",
       "origin": "new_public_release_material",
       "license_scope": "CC-BY-4.0-author-controlled"
     },
@@ -129,6 +129,27 @@
       "sha256": "07a7f56366faf57284b5f5549eee51b7d41e640d17c56ae784c80af48ba8061c",
       "origin": "exact_author_source_snapshot",
       "license_scope": "CC-BY-4.0-author-controlled"
+    },
+    {
+      "path": "release/public_reproducibility/README.md",
+      "origin": "author_owned_table45_public_replay",
+      "license_scope": "CC-BY-4.0-author-controlled",
+      "size_bytes": 5923,
+      "sha256": "c0404237f40d9509ac89307c703d0825f2c70dc67c4bc6120eb916b17b51d46e"
+    },
+    {
+      "path": "release/public_reproducibility/anonymous_replay.py",
+      "origin": "author_owned_table45_public_replay",
+      "license_scope": "MIT",
+      "size_bytes": 6001,
+      "sha256": "d1e6616b3b9e457c321d941c4dc6cf39eed66f7364d081ffb1c3b59fca6d3751"
+    },
+    {
+      "path": "release/public_reproducibility/replay_table45.py",
+      "origin": "author_owned_table45_public_replay",
+      "license_scope": "MIT",
+      "size_bytes": 24547,
+      "sha256": "308e307853a62a9373dac6c0dc1adfb472e3b9cdd50dbf710896c44a26b08b1c"
     },
     {
       "path": "release/verify_objective_witnesses.py",
@@ -257,6 +278,13 @@
       "license_scope": "MIT"
     },
     {
+      "path": "tests/test_public_table45.py",
+      "origin": "author_owned_table45_public_replay",
+      "license_scope": "MIT",
+      "size_bytes": 1986,
+      "sha256": "5583acdfab5715773032a9965942416b959399fb333247e82331592c0077bbd1"
+    },
+    {
       "path": "tests/test_validate.py",
       "size_bytes": 985,
       "sha256": "68b8760e48619831cdbdd429faccb1484e9c87e41b927740121ba9cd07940391",
@@ -271,5 +299,7 @@
       "license_scope": "MIT"
     }
   ],
-  "external_references": "release/public_reference_manifest.csv"
+  "external_references": "release/public_reference_manifest.csv",
+  "release_version": "table45-v2-20261019",
+  "previous_public_code_revision": "787411fdd127d6a3196b3c5c0e0cc844797cecf5"
 }

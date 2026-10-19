@@ -36,3 +36,10 @@ The pinned [algorithm source repository](https://github.com/SoroushVahidi/minimu
 Cite Soroush Vahidi's original **MWFAS Heuristic Metrics** dataset at its pinned Hugging Face revision when using those data, and cite this repository's versioned release for its software and reference checks. [CITATION.cff](CITATION.cff) supplies machine-readable details. The eventual JDSA benchmark paper should be cited **only after it is published**; no manuscript DOI is assigned here. The prior [ranking article](https://doi.org/10.1007/s11227-026-08852-4) establishes related ranking–MWFAS results and is distinct from this benchmark package.
 
 The local release ledger can be checked with `python release/verify_package.py` and `sha256sum -c release/CHECKSUMS.sha256`.
+
+## Table 4/5 saved-output reproduction
+
+The [Table 4/5 replay implementation](release/public_reproducibility/README.md)
+checks complete EXP04 and EXP06 frozen graph/order packages and every displayed
+table cell. Use its immutable code/data pins and clean anonymous download
+instructions. Existing v1.0.0 and v1.1.0 releases retain their original scope.
