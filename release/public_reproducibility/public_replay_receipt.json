@@ -1,0 +1,69 @@
+{
+  "anonymous": true,
+  "code_revision": "d5fb6c885a6ae55b3d4d9c8acec98442f535a8b8",
+  "command": [
+    "-c",
+    "--code-revision",
+    "d5fb6c885a6ae55b3d4d9c8acec98442f535a8b8",
+    "--data-revision",
+    "33902c7cc409794a43c17fc5428cf022f440da48",
+    "--directory",
+    "$CLEAN"
+  ],
+  "data_revision": "33902c7cc409794a43c17fc5428cf022f440da48",
+  "download_sha256": {
+    "code": "6d2a65e8a2f0b6b1505b06fe75e42823c8d2f4295547c7c9db2c364a6af6d4c8",
+    "data": "b74e37bed3a91ec986fe8526a73f5a990a144ca931ee013cc1a8fe4f882f3e2d",
+    "receipt": "9d6b1efadc6b811965ad3635a5887ad7a5a9ce9b31bb2e829d1ae2b4c3a7c950"
+  },
+  "elapsed_seconds": 14.02721816021949,
+  "fresh_directory": true,
+  "hardware": {
+    "platform": "Linux-7.0.0-29-generic-x86_64-with-glibc2.39",
+    "processor": "x86_64"
+  },
+  "original_receipt_sha256": "eb1bd56595aadf81ae107c96d206b5543a17db7dd65259ab0e205e9a1f524d84",
+  "private_path_rejection_probes": "PASS",
+  "read_guard": "PASS",
+  "receipt_kind": "Path-redacted projection of the original independently executed public replay receipt; all scientific fields unchanged",
+  "replay": {
+    "bootstrap_replicates": 2000,
+    "bootstrap_seed": 20261017,
+    "displayed_cells": 41,
+    "exp06_topology_pairs": 99,
+    "graphs": 333,
+    "numeric_displayed_cells": 34,
+    "optimization_rerun": false,
+    "orders": 3423,
+    "original_statuses": {
+      "EXP04": {
+        "PASS": 2025
+      },
+      "EXP06": {
+        "CERTIFIED_OPTIMAL": 198,
+        "PASS": 1200
+      }
+    },
+    "package_manifest_sha256": "ab67aee168229b4ae19394732a7a3dedf4761b7e1e3ef75983e3028a56e41b51",
+    "platform": "Linux-7.0.0-29-generic-x86_64-with-glibc2.39",
+    "processor": "x86_64",
+    "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+    "solver_evidence_records": 210,
+    "solver_qualification": "Numerical status/bound consistency, not exact mathematical proof",
+    "status": "PASS",
+    "tables": {
+      "4": "PUBLIC_REPLAYABLE",
+      "5": "PUBLIC_REPLAYABLE"
+    },
+    "tasks": 3423,
+    "verifier_sha256": "308e307853a62a9373dac6c0dc1adfb472e3b9cdd50dbf710896c44a26b08b1c"
+  },
+  "started_utc": "2026-10-19T19:03:01.703711+00:00",
+  "status": "PASS",
+  "subprocesses": "FORBIDDEN_AFTER_GUARD",
+  "urls": {
+    "code": "https://codeload.github.com/SoroushVahidi/mwfas-heuristic-metrics/tar.gz/d5fb6c885a6ae55b3d4d9c8acec98442f535a8b8",
+    "data": "https://huggingface.co/datasets/SoroushVahidi/mwfas-benchmark-extension/resolve/33902c7cc409794a43c17fc5428cf022f440da48/releases/table45-v2-20261019/table45.tar.gz",
+    "receipt": "https://huggingface.co/datasets/SoroushVahidi/mwfas-benchmark-extension/resolve/33902c7cc409794a43c17fc5428cf022f440da48/releases/table45-v2-20261019/package_receipt.json"
+  }
+}

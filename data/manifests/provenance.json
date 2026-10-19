@@ -97,6 +97,19 @@
     "40209c26966247d9bf9ad34764de4ac4181f98c2",
     "80b3144d5fdbbe250faed8a4fe671dde2da76c89"
   ],
+  "public_reproducibility": {
+    "archive_sha256": "b74e37bed3a91ec986fe8526a73f5a990a144ca931ee013cc1a8fe4f882f3e2d",
+    "code_repo": "SoroushVahidi/mwfas-heuristic-metrics",
+    "code_revision": "d5fb6c885a6ae55b3d4d9c8acec98442f535a8b8",
+    "dataset_repo": "SoroushVahidi/mwfas-benchmark-extension",
+    "dataset_revision": "33902c7cc409794a43c17fc5428cf022f440da48",
+    "fully_replayable_tables": [
+      4,
+      5
+    ],
+    "manifest_sha256": "ab67aee168229b4ae19394732a7a3dedf4761b7e1e3ef75983e3028a56e41b51",
+    "release_path": "releases/table45-v2-20261019"
+  },
   "source_repo": "SoroushVahidi/minimum-weighted-fas-heuristics",
   "source_revision": "40209c26966247d9bf9ad34764de4ac4181f98c2"
 }

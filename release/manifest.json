@@ -62,8 +62,8 @@
     },
     {
       "path": "configs/project.json",
-      "size_bytes": 430,
-      "sha256": "5f7fc14e9d82441014e12d8f15954c67039d4384ec05965273706a8f4ed294b6",
+      "size_bytes": 1008,
+      "sha256": "3e64621e6d84e701dadd109040804c987b3e63a377242f252264b746f8d89ea1",
       "origin": "exact_author_source_snapshot",
       "license_scope": "CC-BY-4.0-author-controlled"
     },
@@ -83,8 +83,8 @@
     },
     {
       "path": "data/manifests/provenance.json",
-      "size_bytes": 5238,
-      "sha256": "60da1e803c59be9b1b4dbb25e5f092313055295e687f0992f9ab4c5d26ef71b1",
+      "size_bytes": 5816,
+      "sha256": "6f12064d6dbdc91e76ff8e0dc3967036cfeeb547402bb3f174fd52f584236d43",
       "origin": "exact_author_source_snapshot",
       "license_scope": "CC-BY-4.0-author-controlled"
     },
@@ -134,8 +134,8 @@
       "path": "release/public_reproducibility/README.md",
       "origin": "author_owned_table45_public_replay",
       "license_scope": "CC-BY-4.0-author-controlled",
-      "size_bytes": 5923,
-      "sha256": "c0404237f40d9509ac89307c703d0825f2c70dc67c4bc6120eb916b17b51d46e"
+      "size_bytes": 6793,
+      "sha256": "27e3e3b8849dcfa9c3e0043d7513382e55bd688979451073fcff5148f89aa61f"
     },
     {
       "path": "release/public_reproducibility/anonymous_replay.py",
@@ -143,6 +143,20 @@
       "license_scope": "MIT",
       "size_bytes": 6001,
       "sha256": "d1e6616b3b9e457c321d941c4dc6cf39eed66f7364d081ffb1c3b59fca6d3751"
+    },
+    {
+      "path": "release/public_reproducibility/inventory_table1.py",
+      "origin": "author_owned_table45_public_replay",
+      "license_scope": "MIT",
+      "size_bytes": 3784,
+      "sha256": "9f183c876e2946253b765a629178fa9dba0676340996dec4f9af6ec9a6286786"
+    },
+    {
+      "path": "release/public_reproducibility/public_replay_receipt.json",
+      "origin": "author_owned_table45_public_replay",
+      "license_scope": "CC-BY-4.0-author-controlled",
+      "size_bytes": 2754,
+      "sha256": "6816a8a935c5bf46798e2410e4308db1942f536a99bd93866c43940f84277701"
     },
     {
       "path": "release/public_reproducibility/replay_table45.py",
@@ -174,8 +188,8 @@
     },
     {
       "path": "scripts/check_manifests.py",
-      "size_bytes": 1385,
-      "sha256": "440632f258ad2ad9ee97bbf07f26cbf951aa45539e093ff007a8a3f6d18777e6",
+      "size_bytes": 2584,
+      "sha256": "4ee0fbf6cdd4e1f8e7758bdcdb7937c1d642a87eef3c6586006427bd4e1ce074",
       "origin": "exact_author_source_snapshot",
       "license_scope": "MIT"
     },

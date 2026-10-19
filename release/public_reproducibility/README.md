@@ -98,3 +98,17 @@ that certification. Other manuscript tables are outside this release's complete
 saved-output replay coverage.
 
 Copyright 2026 Soroush Vahidi. Replay scripts: MIT. Documentation: CC BY 4.0.
+
+## Published and independently replayed version
+
+The successful public replay used code
+`d5fb6c885a6ae55b3d4d9c8acec98442f535a8b8` and HF payload
+`33902c7cc409794a43c17fc5428cf022f440da48` (tag `table45-v2.0.0`).
+Its [public receipt and all cell comparisons](https://huggingface.co/datasets/SoroushVahidi/mwfas-benchmark-extension/tree/b66ce13298467a1f0b4928d55a7440e6ab948cb6/releases/table45-v2-20261019/replay)
+record PASS. Coverage is 2/10 numerical tables and 3/17 central claim groups,
+including the previously released Wikimedia saved-objective group.
+
+`inventory_table1.py table45 table1.json` additionally checks the public metadata
+inventory and graph/task/EXP07 reuse joins. It reports `PUBLIC_METADATA_ONLY`,
+not full graph-byte reproducibility: 45 EXP03 and 38 EXP05 input bytes remain
+outside this release. This script does not rerun ordering validation.
