@@ -1,0 +1,12 @@
+{
+  "state": "RUNNING_HEALTHY",
+  "stage": "PUBLICATION_PREPARED_REPLAY_PENDING",
+  "dataset_repo": "SoroushVahidi/mwfas-benchmark-extension",
+  "release_path": "releases/exp28-v1-20261019",
+  "table9_public_replay": "NOT VERIFIABLE: pending anonymous replay",
+  "figure2_public_replay": "NOT VERIFIABLE: pending anonymous replay",
+  "complete_table_coverage": {
+    "complete": 2,
+    "total": 10
+  }
+}

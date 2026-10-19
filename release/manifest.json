@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "release_package": "MWFAS public reference, objective witness and Table 4/5 replay package",
+  "release_package": "MWFAS public reference, objective witness, internal T4/T5 (printed 6/7), and printed Table 9 / Figure 2 replay",
   "source_snapshot_commit": "7317c4b6427e5afffa7a0df66c71b6827b898e63",
   "source_snapshot_access": "private provenance identifier; not a public access route",
   "files": [
@@ -34,15 +34,15 @@
     },
     {
       "path": "LICENSE_SCOPE.md",
-      "size_bytes": 1978,
-      "sha256": "e44d556b1475dba9c90347c2475d6bbf4210274692a36689ff8e38311c271939",
+      "size_bytes": 2609,
+      "sha256": "82c84f70685819fac7789b81f54c266208dcbee2ec642977b0fd28697a5f1d5d",
       "origin": "new_public_release_material",
       "license_scope": "CC-BY-4.0-author-controlled"
     },
     {
       "path": "README.md",
-      "size_bytes": 5655,
-      "sha256": "e95d48b70a9a43f00efb894078ed8dc1468484b90b1f2d056f677d8698ae4066",
+      "size_bytes": 5927,
+      "sha256": "f88934fbe131c2464c227fc6e894e632648fc9ed08a68e8812f0d8b2015ddb46",
       "origin": "new_public_release_material",
       "license_scope": "CC-BY-4.0-author-controlled"
     },
@@ -131,11 +131,25 @@
       "license_scope": "CC-BY-4.0-author-controlled"
     },
     {
+      "path": "release/public_reproducibility/EXP28.md",
+      "origin": "exp28-public-reproduction",
+      "license_scope": "CC-BY-4.0-author-controlled",
+      "size_bytes": 9423,
+      "sha256": "3bcf56fe903dae05e284e7d0dcbee23939768e23b0434efc2eb9d1ef046734c9"
+    },
+    {
       "path": "release/public_reproducibility/README.md",
       "origin": "author_owned_table45_public_replay",
       "license_scope": "CC-BY-4.0-author-controlled",
-      "size_bytes": 6793,
-      "sha256": "27e3e3b8849dcfa9c3e0043d7513382e55bd688979451073fcff5148f89aa61f"
+      "size_bytes": 9985,
+      "sha256": "bb10997f8bc0a409278acaf25c64b274f8e6ba670a655696f300d44f58374932"
+    },
+    {
+      "path": "release/public_reproducibility/anonymous_exp28.py",
+      "origin": "exp28-public-reproduction",
+      "license_scope": "MIT",
+      "size_bytes": 7022,
+      "sha256": "276963595cfc9da695d7a0991f13143dd2820cc8465b0f91c90aac740130b1b4"
     },
     {
       "path": "release/public_reproducibility/anonymous_replay.py",
@@ -145,11 +159,200 @@
       "sha256": "d1e6616b3b9e457c321d941c4dc6cf39eed66f7364d081ffb1c3b59fca6d3751"
     },
     {
+      "path": "release/public_reproducibility/build_exp28.py",
+      "origin": "exp28-public-reproduction",
+      "license_scope": "MIT",
+      "size_bytes": 11732,
+      "sha256": "c505498287a4de08a32259250608774b98541dca08a36fd62359f22764d4b9dc"
+    },
+    {
+      "path": "release/public_reproducibility/coverage.json",
+      "origin": "exp28-public-reproduction",
+      "license_scope": "CC-BY-4.0-author-controlled",
+      "size_bytes": 6196,
+      "sha256": "37e410d3d917b8f5e79a7c18aec111b03bcc1be98cb3232073f7a4ed69c51e38"
+    },
+    {
+      "path": "release/public_reproducibility/exp28_checks.py",
+      "origin": "exp28-public-reproduction",
+      "license_scope": "MIT",
+      "size_bytes": 3338,
+      "sha256": "57f47e9d44b50cbf165c134d4ae9f7e0e103ae54ae32367eb8ae365eabefb1aa"
+    },
+    {
+      "path": "release/public_reproducibility/exp28_execution.json",
+      "origin": "exp28-public-reproduction",
+      "license_scope": "CC-BY-4.0-author-controlled",
+      "size_bytes": 33391,
+      "sha256": "95a73e79eda067cfcf5f0c2c053eec1f54e0d32496dd0b11197bbed11a86dcce"
+    },
+    {
+      "path": "release/public_reproducibility/exp28_original/adapter/src/mwfas_data/__init__.py",
+      "origin": "exp28-public-reproduction",
+      "license_scope": "MIT",
+      "size_bytes": 65,
+      "sha256": "8a1c6d88399a6a7176d1175e3f695dc27c7a349e393db89a40d24cc522e8ad25"
+    },
+    {
+      "path": "release/public_reproducibility/exp28_original/adapter/src/mwfas_data/config.py",
+      "origin": "exp28-public-reproduction",
+      "license_scope": "MIT",
+      "size_bytes": 757,
+      "sha256": "415c6ef8b15540d6ac7a7b2411f90520424a4f5b8d4e225f04c7b297738eddf4"
+    },
+    {
+      "path": "release/public_reproducibility/exp28_original/adapter/src/mwfas_data/exp03.py",
+      "origin": "exp28-public-reproduction",
+      "license_scope": "MIT",
+      "size_bytes": 10256,
+      "sha256": "636bb3bf21ecf878de7f4ca4426dce2978115c1ded77f9fbfdfa1738579816a8"
+    },
+    {
+      "path": "release/public_reproducibility/exp28_original/adapter/src/mwfas_data/exp04.py",
+      "origin": "exp28-public-reproduction",
+      "license_scope": "MIT",
+      "size_bytes": 12576,
+      "sha256": "b037a02cf94b34e0cc70a16432955cb35984917baf301aaf98dac1021ac9f32c"
+    },
+    {
+      "path": "release/public_reproducibility/exp28_original/adapter/src/mwfas_data/exp05.py",
+      "origin": "exp28-public-reproduction",
+      "license_scope": "MIT",
+      "size_bytes": 15236,
+      "sha256": "20725bfa26a52caa2a90dfd01a5816d7462b1d47676e8b3c9df09bed6e1c143e"
+    },
+    {
+      "path": "release/public_reproducibility/exp28_original/adapter/src/mwfas_data/exp05_analysis.py",
+      "origin": "exp28-public-reproduction",
+      "license_scope": "MIT",
+      "size_bytes": 9403,
+      "sha256": "3392a6f92db20d9ccd43c19639d591a8f355a84c9245cb794d5cd111164d8952"
+    },
+    {
+      "path": "release/public_reproducibility/exp28_original/adapter/src/mwfas_data/exp05_insertion.py",
+      "origin": "exp28-public-reproduction",
+      "license_scope": "MIT",
+      "size_bytes": 2978,
+      "sha256": "1d360641e3a5e34d97ea6a285bafae6fba3901d953f52a5ceb3d45c63d6a1c12"
+    },
+    {
+      "path": "release/public_reproducibility/exp28_original/adapter/src/mwfas_data/exp05_runner.py",
+      "origin": "exp28-public-reproduction",
+      "license_scope": "MIT",
+      "size_bytes": 29723,
+      "sha256": "d6c385e6fc23379cd29da47044b24b86bde02840e85969d03c3526eb4fc686b7"
+    },
+    {
+      "path": "release/public_reproducibility/exp28_original/adapter/src/mwfas_data/generation.py",
+      "origin": "exp28-public-reproduction",
+      "license_scope": "MIT",
+      "size_bytes": 5710,
+      "sha256": "d15b01d843130e24ed32aad6baa47d9ab7886a3a86444573369fb6a9ff140ee9"
+    },
+    {
+      "path": "release/public_reproducibility/exp28_original/adapter/src/mwfas_data/graph.py",
+      "origin": "exp28-public-reproduction",
+      "license_scope": "MIT",
+      "size_bytes": 3523,
+      "sha256": "9856208e377ac6cd667492030d60b70f9383250be7e546867ad8a0039da78a1c"
+    },
+    {
+      "path": "release/public_reproducibility/exp28_original/experiments/exp28_anytime/__init__.py",
+      "origin": "exp28-public-reproduction",
+      "license_scope": "MIT",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "release/public_reproducibility/exp28_original/experiments/exp28_anytime/analyze.py",
+      "origin": "exp28-public-reproduction",
+      "license_scope": "MIT",
+      "size_bytes": 7070,
+      "sha256": "3daecd678e257b5e56a4d61c901638f8a16a9f13325af7674d019b8d097fd233"
+    },
+    {
+      "path": "release/public_reproducibility/exp28_original/experiments/exp28_anytime/audit.py",
+      "origin": "exp28-public-reproduction",
+      "license_scope": "MIT",
+      "size_bytes": 16747,
+      "sha256": "0aedd1836ae629efea5dac033306e2c93aea7d3af1ebebde11381d119949bb2b"
+    },
+    {
+      "path": "release/public_reproducibility/exp28_original/experiments/exp28_anytime/campaign.py",
+      "origin": "exp28-public-reproduction",
+      "license_scope": "MIT",
+      "size_bytes": 13734,
+      "sha256": "8ad6d4d54fb0050beca5ffdc54aad4ee87e5cb63cdc2cdd375935b554cde4346"
+    },
+    {
+      "path": "release/public_reproducibility/exp28_original/experiments/exp28_anytime/ipsns_pinned_instrumented.py",
+      "origin": "exp28-public-reproduction",
+      "license_scope": "MIT",
+      "size_bytes": 31127,
+      "sha256": "e939a9853725f810ce59fd5b369b14faba893a5ae099460fadc5fe280bd7ccba"
+    },
+    {
+      "path": "release/public_reproducibility/exp28_original/experiments/exp28_anytime/protocol_broad.json",
+      "origin": "exp28-public-reproduction",
+      "license_scope": "CC-BY-4.0-author-controlled",
+      "size_bytes": 41850,
+      "sha256": "c389a6ffd31b3fd66c8a868e6cf95e95a61414b3e12648655f37573c807e8310"
+    },
+    {
+      "path": "release/public_reproducibility/exp28_original/experiments/exp28_anytime/worker.py",
+      "origin": "exp28-public-reproduction",
+      "license_scope": "MIT",
+      "size_bytes": 12405,
+      "sha256": "1b1eb86f05b32df46f75daa17c33dcc40a75058ca5041fe7bd2ed4e3650d9460"
+    },
+    {
+      "path": "release/public_reproducibility/exp28_original/source_manifest.json",
+      "origin": "exp28-public-reproduction",
+      "license_scope": "CC-BY-4.0-author-controlled",
+      "size_bytes": 4501,
+      "sha256": "47372d20a1436ca36c47e115521e724a9aeb000d9598adf50a07c7a69ed3a9c8"
+    },
+    {
+      "path": "release/public_reproducibility/exp28_publication.json",
+      "origin": "exp28-public-reproduction",
+      "license_scope": "CC-BY-4.0-author-controlled",
+      "size_bytes": 404,
+      "sha256": "b56f3d2a8015c04ebc225ceb9d154f82a5592b6b41f124893ba604bf440830e3"
+    },
+    {
+      "path": "release/public_reproducibility/exp28_sources.json",
+      "origin": "exp28-public-reproduction",
+      "license_scope": "CC-BY-4.0-author-controlled",
+      "size_bytes": 3092,
+      "sha256": "5e6684b87a7aaa4c14f6d3ec37eb953779301c31b301d93efd0ec3ff75782c71"
+    },
+    {
+      "path": "release/public_reproducibility/exp28_statistics.py",
+      "origin": "exp28-public-reproduction",
+      "license_scope": "MIT",
+      "size_bytes": 12264,
+      "sha256": "8db9949fecbfc945779fbef3c8d380f7fa0cbc344c3984e8c2080334a5a130f5"
+    },
+    {
       "path": "release/public_reproducibility/inventory_table1.py",
       "origin": "author_owned_table45_public_replay",
       "license_scope": "MIT",
       "size_bytes": 3784,
       "sha256": "9f183c876e2946253b765a629178fa9dba0676340996dec4f9af6ec9a6286786"
+    },
+    {
+      "path": "release/public_reproducibility/licenses/CC-BY-4.0.txt",
+      "origin": "exp28-public-reproduction",
+      "license_scope": "CC-BY-4.0-author-controlled",
+      "size_bytes": 18657,
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411"
+    },
+    {
+      "path": "release/public_reproducibility/licenses/MIT.txt",
+      "origin": "exp28-public-reproduction",
+      "license_scope": "CC-BY-4.0-author-controlled",
+      "size_bytes": 1071,
+      "sha256": "7286933e7e07d579ef902ab64bcb9d83067b23876dd98f37638ae4c2fec6468f"
     },
     {
       "path": "release/public_reproducibility/public_replay_receipt.json",
@@ -159,11 +362,32 @@
       "sha256": "6816a8a935c5bf46798e2410e4308db1942f536a99bd93866c43940f84277701"
     },
     {
+      "path": "release/public_reproducibility/recover_exp28_sources.py",
+      "origin": "exp28-public-reproduction",
+      "license_scope": "MIT",
+      "size_bytes": 6292,
+      "sha256": "984b62e7f241cf44279713ecb54123ff61c8903658f8b43e69de00856658d950"
+    },
+    {
+      "path": "release/public_reproducibility/replay_exp28.py",
+      "origin": "exp28-public-reproduction",
+      "license_scope": "MIT",
+      "size_bytes": 18096,
+      "sha256": "2e52bdb5c869a99c0fe1fa2c052f96c5f673f35b5078954d5db50c197bdbf56f"
+    },
+    {
       "path": "release/public_reproducibility/replay_table45.py",
       "origin": "author_owned_table45_public_replay",
       "license_scope": "MIT",
       "size_bytes": 24547,
       "sha256": "308e307853a62a9373dac6c0dc1adfb472e3b9cdd50dbf710896c44a26b08b1c"
+    },
+    {
+      "path": "release/public_reproducibility/table_number_mapping.json",
+      "origin": "exp28-public-reproduction",
+      "license_scope": "CC-BY-4.0-author-controlled",
+      "size_bytes": 988,
+      "sha256": "338220f8df4592ad3201ffac7b7eb84965e51867e8a0c3ea2339b7c1ec737210"
     },
     {
       "path": "release/verify_objective_witnesses.py",
@@ -290,6 +514,13 @@
       "sha256": "585687152879bf0ebe02ca3a1e95328f12728d69f491a9b42343356eb43136b6",
       "origin": "exact_author_source_snapshot",
       "license_scope": "MIT"
+    },
+    {
+      "path": "tests/test_public_exp28.py",
+      "origin": "exp28-public-reproduction",
+      "license_scope": "MIT",
+      "size_bytes": 2261,
+      "sha256": "b66aa70dd12be075b906422edc0a4d29693aff2c701394ea8847923d1f55181d"
     },
     {
       "path": "tests/test_public_table45.py",

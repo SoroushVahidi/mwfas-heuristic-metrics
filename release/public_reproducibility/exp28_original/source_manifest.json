@@ -1,0 +1,104 @@
+[
+  {
+    "path": "experiments/exp28_anytime/campaign.py",
+    "source_revision": "a9aaa322b7d2446796e6b13406a67554661ca144",
+    "source_path": "experiments/exp28_anytime/campaign.py",
+    "sha256": "8ad6d4d54fb0050beca5ffdc54aad4ee87e5cb63cdc2cdd375935b554cde4346"
+  },
+  {
+    "path": "experiments/exp28_anytime/worker.py",
+    "source_revision": "a9aaa322b7d2446796e6b13406a67554661ca144",
+    "source_path": "experiments/exp28_anytime/worker.py",
+    "sha256": "1b1eb86f05b32df46f75daa17c33dcc40a75058ca5041fe7bd2ed4e3650d9460"
+  },
+  {
+    "path": "experiments/exp28_anytime/ipsns_pinned_instrumented.py",
+    "source_revision": "a9aaa322b7d2446796e6b13406a67554661ca144",
+    "source_path": "experiments/exp28_anytime/ipsns_pinned_instrumented.py",
+    "sha256": "e939a9853725f810ce59fd5b369b14faba893a5ae099460fadc5fe280bd7ccba"
+  },
+  {
+    "path": "experiments/exp28_anytime/audit.py",
+    "source_revision": "a9aaa322b7d2446796e6b13406a67554661ca144",
+    "source_path": "experiments/exp28_anytime/audit.py",
+    "sha256": "0aedd1836ae629efea5dac033306e2c93aea7d3af1ebebde11381d119949bb2b"
+  },
+  {
+    "path": "experiments/exp28_anytime/analyze.py",
+    "source_revision": "a9aaa322b7d2446796e6b13406a67554661ca144",
+    "source_path": "experiments/exp28_anytime/analyze.py",
+    "sha256": "3daecd678e257b5e56a4d61c901638f8a16a9f13325af7674d019b8d097fd233"
+  },
+  {
+    "path": "experiments/exp28_anytime/protocol_broad.json",
+    "source_revision": "a9aaa322b7d2446796e6b13406a67554661ca144",
+    "source_path": "experiments/exp28_anytime/protocol_broad.json",
+    "sha256": "c389a6ffd31b3fd66c8a868e6cf95e95a61414b3e12648655f37573c807e8310"
+  },
+  {
+    "path": "experiments/exp28_anytime/__init__.py",
+    "source_revision": "a9aaa322b7d2446796e6b13406a67554661ca144",
+    "source_path": "experiments/exp28_anytime/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "adapter/src/mwfas_data/__init__.py",
+    "source_revision": "0c8d88e2a045f5e791760b87e2f3b21fed53185c",
+    "source_path": "src/mwfas_data/__init__.py",
+    "sha256": "8a1c6d88399a6a7176d1175e3f695dc27c7a349e393db89a40d24cc522e8ad25"
+  },
+  {
+    "path": "adapter/src/mwfas_data/exp05_insertion.py",
+    "source_revision": "0c8d88e2a045f5e791760b87e2f3b21fed53185c",
+    "source_path": "src/mwfas_data/exp05_insertion.py",
+    "sha256": "1d360641e3a5e34d97ea6a285bafae6fba3901d953f52a5ceb3d45c63d6a1c12"
+  },
+  {
+    "path": "adapter/src/mwfas_data/graph.py",
+    "source_revision": "0c8d88e2a045f5e791760b87e2f3b21fed53185c",
+    "source_path": "src/mwfas_data/graph.py",
+    "sha256": "9856208e377ac6cd667492030d60b70f9383250be7e546867ad8a0039da78a1c"
+  },
+  {
+    "path": "adapter/src/mwfas_data/exp05_runner.py",
+    "source_revision": "0c8d88e2a045f5e791760b87e2f3b21fed53185c",
+    "source_path": "src/mwfas_data/exp05_runner.py",
+    "sha256": "d6c385e6fc23379cd29da47044b24b86bde02840e85969d03c3526eb4fc686b7"
+  },
+  {
+    "path": "adapter/src/mwfas_data/exp05_analysis.py",
+    "source_revision": "0c8d88e2a045f5e791760b87e2f3b21fed53185c",
+    "source_path": "src/mwfas_data/exp05_analysis.py",
+    "sha256": "3392a6f92db20d9ccd43c19639d591a8f355a84c9245cb794d5cd111164d8952"
+  },
+  {
+    "path": "adapter/src/mwfas_data/exp05.py",
+    "source_revision": "0c8d88e2a045f5e791760b87e2f3b21fed53185c",
+    "source_path": "src/mwfas_data/exp05.py",
+    "sha256": "20725bfa26a52caa2a90dfd01a5816d7462b1d47676e8b3c9df09bed6e1c143e"
+  },
+  {
+    "path": "adapter/src/mwfas_data/generation.py",
+    "source_revision": "0c8d88e2a045f5e791760b87e2f3b21fed53185c",
+    "source_path": "src/mwfas_data/generation.py",
+    "sha256": "d15b01d843130e24ed32aad6baa47d9ab7886a3a86444573369fb6a9ff140ee9"
+  },
+  {
+    "path": "adapter/src/mwfas_data/exp04.py",
+    "source_revision": "0c8d88e2a045f5e791760b87e2f3b21fed53185c",
+    "source_path": "src/mwfas_data/exp04.py",
+    "sha256": "b037a02cf94b34e0cc70a16432955cb35984917baf301aaf98dac1021ac9f32c"
+  },
+  {
+    "path": "adapter/src/mwfas_data/exp03.py",
+    "source_revision": "0c8d88e2a045f5e791760b87e2f3b21fed53185c",
+    "source_path": "src/mwfas_data/exp03.py",
+    "sha256": "636bb3bf21ecf878de7f4ca4426dce2978115c1ded77f9fbfdfa1738579816a8"
+  },
+  {
+    "path": "adapter/src/mwfas_data/config.py",
+    "source_revision": "0c8d88e2a045f5e791760b87e2f3b21fed53185c",
+    "source_path": "src/mwfas_data/config.py",
+    "sha256": "415c6ef8b15540d6ac7a7b2411f90520424a4f5b8d4e225f04c7b297738eddf4"
+  }
+]

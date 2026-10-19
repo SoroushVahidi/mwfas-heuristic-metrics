@@ -19,3 +19,7 @@ separately versioned HF release licenses its author-generated synthetic graph,
 order, task, numerical-evidence and metadata files under CC BY 4.0 and its
 original project/statistical code under MIT, as listed in its file manifest.
 These grants do not extend to dependency packages or external source software.
+
+## EXP28 public reproduction (2026-10-19)
+
+The new `release/public_reproducibility/*.py`, `exp28_original/**/*.py`, and tests are author-owned MIT code. The JSON provenance, numerical references, and documentation are CC BY 4.0 for author-controlled content. Frozen source snapshots retain their exact original bytes and revisions. Original third-party RASstar software is linked, not redistributed; empirical graph bytes are retrieved directly from upstream. Full license texts are in `release/public_reproducibility/licenses/`. Internal T4/T5 correspond to printed Tables 6/7; internal T10_EXP28 corresponds to printed Table 9.

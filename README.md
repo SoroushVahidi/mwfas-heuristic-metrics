@@ -43,3 +43,7 @@ The [Table 4/5 replay implementation](release/public_reproducibility/README.md)
 checks complete EXP04 and EXP06 frozen graph/order packages and every displayed
 table cell. Use its immutable code/data pins and clean anonymous download
 instructions. Existing v1.0.0 and v1.1.0 releases retain their original scope.
+
+## EXP28: printed Table 9 / Figure 2
+
+See [the public replay instructions](release/public_reproducibility/EXP28.md) and its immutable publication receipt. Historical Table 4/5 filenames refer to internal T4/T5, printed Tables 6/7. EXP28 is internal T10, printed Table 9.

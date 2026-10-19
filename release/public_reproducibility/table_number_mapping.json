@@ -1,0 +1,45 @@
+{
+  "method": "Read manuscript table labels in source order, expanding provenance_tables.tex; verified by compiled aux labels separately",
+  "mapping": {
+    "T1": {
+      "label": "tab:cross-inventory",
+      "printed_table": 3
+    },
+    "T2": {
+      "label": "tab:extension-inventory",
+      "printed_table": 4
+    },
+    "T3": {
+      "label": "tab:exp05-benchmark",
+      "printed_table": 5
+    },
+    "T4": {
+      "label": "tab:exp04-refinement",
+      "printed_table": 6
+    },
+    "T5": {
+      "label": "tab:exp06-weights",
+      "printed_table": 7
+    },
+    "T6": {
+      "label": "tab:exp05-paired",
+      "printed_table": 8
+    },
+    "T7": {
+      "label": "tab:exp12-13-comparison",
+      "printed_table": 10
+    },
+    "T8": {
+      "label": "tab:exp07-gaps",
+      "printed_table": 11
+    },
+    "T9": {
+      "label": "tab:exp05-reliability",
+      "printed_table": 12
+    },
+    "T10_EXP28": {
+      "label": "tab:exp28-matched",
+      "printed_table": 9
+    }
+  }
+}

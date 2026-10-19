@@ -1,0 +1,150 @@
+{
+  "public_replayable_numerical_tables": 2,
+  "numerical_tables": 10,
+  "public_replayable_claim_groups": 3,
+  "central_claim_groups": 17,
+  "claims": [
+    {
+      "claim_id": "T1",
+      "claim": "416 weighted graphs; 317 topologies; 5,083 original tasks; EXP07 9+36 reuse",
+      "classification": "PUBLIC_METADATA_ONLY",
+      "full_table_publicly_reproducible": false,
+      "evidence": "Prior pinned Phase B evidence retained; no new complete public replay",
+      "label": "tab:cross-inventory",
+      "printed_table": 3
+    },
+    {
+      "claim_id": "T2",
+      "claim": "442 contract rows; 5,254 outcomes; 45 reused EXP07 references",
+      "classification": "PUBLIC_METADATA_ONLY",
+      "full_table_publicly_reproducible": false,
+      "evidence": "Prior pinned Phase B evidence retained; no new complete public replay",
+      "label": "tab:extension-inventory",
+      "printed_table": 4
+    },
+    {
+      "claim_id": "T3",
+      "claim": "38 views from four source parents; n/m/d ranges",
+      "classification": "PUBLIC_METADATA_ONLY",
+      "full_table_publicly_reproducible": false,
+      "evidence": "Prior pinned Phase B evidence retained; no new complete public replay",
+      "label": "tab:exp05-benchmark",
+      "printed_table": 5
+    },
+    {
+      "claim_id": "T4",
+      "claim": "135 topologies; 3-seed IPSNS medians, bootstrap intervals and wall ratios",
+      "classification": "PUBLIC_REPLAYABLE",
+      "full_table_publicly_reproducible": true,
+      "evidence": "2026-10-19 anonymous Table 4/5 replay",
+      "label": "tab:exp04-refinement",
+      "printed_table": 6
+    },
+    {
+      "claim_id": "T5",
+      "claim": "99 paired topologies; relative regret and bootstrap",
+      "classification": "PUBLIC_REPLAYABLE",
+      "full_table_publicly_reproducible": true,
+      "evidence": "2026-10-19 anonymous Table 4/5 replay",
+      "label": "tab:exp06-weights",
+      "printed_table": 7
+    },
+    {
+      "claim_id": "T6",
+      "claim": "16 parent-comparator complete-case cells",
+      "classification": "RESTRICTED_SOURCE",
+      "full_table_publicly_reproducible": false,
+      "evidence": "Prior pinned Phase B evidence retained; no new complete public replay",
+      "label": "tab:exp05-paired",
+      "printed_table": 8
+    },
+    {
+      "claim_id": "T7",
+      "claim": "Ali 18/20 ties; EXP13 active best 5099/65397/2770227; 19/21 complete",
+      "classification": "PUBLIC_METADATA_ONLY",
+      "full_table_publicly_reproducible": false,
+      "evidence": "Prior pinned Phase B evidence retained; no new complete public replay",
+      "label": "tab:exp12-13-comparison",
+      "printed_table": 10
+    },
+    {
+      "claim_id": "T8",
+      "claim": "20 certified and 25 bounded cases, method-specific regret medians",
+      "classification": "INTERNALLY_VERIFIED",
+      "full_table_publicly_reproducible": false,
+      "evidence": "Prior pinned Phase B evidence retained; no new complete public replay",
+      "label": "tab:exp07-gaps",
+      "printed_table": 11
+    },
+    {
+      "claim_id": "T9",
+      "claim": "760 tasks: 639 PASS, 11 FAIL, 108 TIMEOUT, 2 SKIPPED",
+      "classification": "PUBLIC_METADATA_ONLY",
+      "full_table_publicly_reproducible": false,
+      "evidence": "Prior pinned Phase B evidence retained; no new complete public replay",
+      "label": "tab:exp05-reliability",
+      "printed_table": 12
+    },
+    {
+      "claim_id": "RQ1",
+      "claim": "Family-specific EXP04 refinement and EXP05/12/13 comparisons",
+      "classification": "INTERNALLY_VERIFIED",
+      "full_table_publicly_reproducible": false,
+      "evidence": "Prior pinned Phase B evidence retained; no new complete public replay"
+    },
+    {
+      "claim_id": "RQ3",
+      "claim": "Reference quality: numerical solver certificates versus feasible bound intervals",
+      "classification": "INTERNALLY_VERIFIED",
+      "full_table_publicly_reproducible": false,
+      "evidence": "Prior pinned Phase B evidence retained; no new complete public replay"
+    },
+    {
+      "claim_id": "RQ2",
+      "claim": "Benchmark variation: topology, weights, provenance and exploratory structural associations",
+      "classification": "SCIENTIFICALLY_UNRESOLVED",
+      "full_table_publicly_reproducible": false,
+      "evidence": "Prior pinned Phase B evidence retained; no new complete public replay"
+    },
+    {
+      "claim_id": "RQ4",
+      "claim": "EXP04 wall ratios; EXP05 failures/timeouts; EXP10 and EXP13 censored",
+      "classification": "INTERNALLY_VERIFIED",
+      "full_table_publicly_reproducible": false,
+      "evidence": "Prior pinned Phase B evidence retained; no new complete public replay"
+    },
+    {
+      "claim_id": "WIKI",
+      "claim": "10 saved Wikimedia ranking objectives across three graph views",
+      "classification": "PUBLIC_REPLAYABLE",
+      "full_table_publicly_reproducible": false,
+      "evidence": "Prior pinned Phase B evidence retained; no new complete public replay"
+    },
+    {
+      "claim_id": "HIST",
+      "claim": "7,371 historical rows; 14 configurations; audit 50 PASS/3 FAIL/22 NOT_VERIFIABLE",
+      "classification": "PUBLIC_METADATA_ONLY",
+      "full_table_publicly_reproducible": false,
+      "evidence": "Prior pinned Phase B evidence retained; no new complete public replay"
+    },
+    {
+      "claim_id": "EXP10",
+      "claim": "18/18 selected synthetic wins; six empirical IPSNS timeouts",
+      "classification": "INTERNALLY_VERIFIED",
+      "full_table_publicly_reproducible": false,
+      "evidence": "Prior pinned Phase B evidence retained; no new complete public replay"
+    },
+    {
+      "claim_id": "T10_EXP28",
+      "claim": "Matched-wall-clock EXP28 comparison on 13 selected graph views",
+      "classification": "INTERNALLY_VERIFIED",
+      "full_table_publicly_reproducible": false,
+      "evidence": "Prior pinned Phase B evidence retained; no new complete public replay",
+      "label": "tab:exp28-matched",
+      "printed_table": 9
+    }
+  ],
+  "historical_coverage_source": "analysis/phase_b/coverage_matrix.json",
+  "status": "PARTIAL_RELEASE_WITH_TWO_COMPLETE_TABLES",
+  "table_numbering": "claim_id uses historical internal IDs; printed_table follows manuscript labels"
+}

@@ -1,0 +1,1229 @@
+{
+  "format": "exp28-historical-execution-context-v1",
+  "source": "Slurm sacct historical completed-job query on 2026-10-19; no new jobs",
+  "accounting_sha256": "04b9d0becd03db1c5796f7cacfae5a36a3caca6ebb51906c436578602c1d0004",
+  "jobs": [
+    {
+      "job_id": "1427128_0",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0042",
+      "start": "2026-10-18T18:40:32",
+      "end": "2026-10-18T18:40:49",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_1",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0043",
+      "start": "2026-10-18T18:40:32",
+      "end": "2026-10-18T18:40:58",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_2",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0043",
+      "start": "2026-10-18T18:40:32",
+      "end": "2026-10-18T18:40:58",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_3",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0043",
+      "start": "2026-10-18T18:40:32",
+      "end": "2026-10-18T18:40:58",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_4",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0043",
+      "start": "2026-10-18T18:40:32",
+      "end": "2026-10-18T18:40:58",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_5",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0043",
+      "start": "2026-10-18T18:40:32",
+      "end": "2026-10-18T18:40:58",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_6",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0043",
+      "start": "2026-10-18T18:40:32",
+      "end": "2026-10-18T18:40:58",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_7",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0043",
+      "start": "2026-10-18T18:40:32",
+      "end": "2026-10-18T18:40:58",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_8",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0042",
+      "start": "2026-10-18T18:40:49",
+      "end": "2026-10-18T18:42:53",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_9",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0052",
+      "start": "2026-10-18T18:40:58",
+      "end": "2026-10-18T18:41:34",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_10",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0052",
+      "start": "2026-10-18T18:40:58",
+      "end": "2026-10-18T18:41:34",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_11",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0052",
+      "start": "2026-10-18T18:40:58",
+      "end": "2026-10-18T18:41:34",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_12",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0052",
+      "start": "2026-10-18T18:40:58",
+      "end": "2026-10-18T18:41:34",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_13",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0052",
+      "start": "2026-10-18T18:40:58",
+      "end": "2026-10-18T18:41:34",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_14",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0052",
+      "start": "2026-10-18T18:40:58",
+      "end": "2026-10-18T18:41:35",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_15",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0052",
+      "start": "2026-10-18T18:40:58",
+      "end": "2026-10-18T18:41:35",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_16",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0043",
+      "start": "2026-10-18T18:41:34",
+      "end": "2026-10-18T18:41:37",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_17",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0043",
+      "start": "2026-10-18T18:41:34",
+      "end": "2026-10-18T18:43:35",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_18",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0043",
+      "start": "2026-10-18T18:41:34",
+      "end": "2026-10-18T18:41:39",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_19",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0043",
+      "start": "2026-10-18T18:41:34",
+      "end": "2026-10-18T18:41:39",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_20",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0043",
+      "start": "2026-10-18T18:41:34",
+      "end": "2026-10-18T18:41:37",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_21",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0043",
+      "start": "2026-10-18T18:41:35",
+      "end": "2026-10-18T18:41:45",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_22",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0043",
+      "start": "2026-10-18T18:41:35",
+      "end": "2026-10-18T18:41:45",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_23",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0052",
+      "start": "2026-10-18T18:41:38",
+      "end": "2026-10-18T18:42:42",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_24",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0052",
+      "start": "2026-10-18T18:41:38",
+      "end": "2026-10-18T18:42:42",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_25",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0052",
+      "start": "2026-10-18T18:41:39",
+      "end": "2026-10-18T18:41:41",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_26",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0052",
+      "start": "2026-10-18T18:41:39",
+      "end": "2026-10-18T18:43:40",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_27",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0043",
+      "start": "2026-10-18T18:41:41",
+      "end": "2026-10-18T18:41:46",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_28",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0052",
+      "start": "2026-10-18T18:41:45",
+      "end": "2026-10-18T18:41:47",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_29",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0052",
+      "start": "2026-10-18T18:41:45",
+      "end": "2026-10-18T18:41:47",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_30",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0043",
+      "start": "2026-10-18T18:41:46",
+      "end": "2026-10-18T18:41:48",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_31",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0043",
+      "start": "2026-10-18T18:41:47",
+      "end": "2026-10-18T18:41:49",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_32",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0043",
+      "start": "2026-10-18T18:41:47",
+      "end": "2026-10-18T18:41:49",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_33",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0043",
+      "start": "2026-10-18T18:41:48",
+      "end": "2026-10-18T18:41:54",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_34",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0052",
+      "start": "2026-10-18T18:41:49",
+      "end": "2026-10-18T18:41:51",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_35",
+      "job_name": "exp28-anytime-broad",
+      "state": "FAILED",
+      "exit_code": "1:0",
+      "node": "n0052",
+      "start": "2026-10-18T18:41:49",
+      "end": "2026-10-18T18:43:50",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_36",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0043",
+      "start": "2026-10-18T18:41:51",
+      "end": "2026-10-18T18:41:54",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_37",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0043",
+      "start": "2026-10-18T18:41:54",
+      "end": "2026-10-18T18:41:57",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_38",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0043",
+      "start": "2026-10-18T18:41:55",
+      "end": "2026-10-18T18:42:00",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_39",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0043",
+      "start": "2026-10-18T18:41:58",
+      "end": "2026-10-18T18:42:03",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_40",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0043",
+      "start": "2026-10-18T18:42:00",
+      "end": "2026-10-18T18:42:05",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_41",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0043",
+      "start": "2026-10-18T18:42:03",
+      "end": "2026-10-18T18:42:06",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_42",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0043",
+      "start": "2026-10-18T18:42:05",
+      "end": "2026-10-18T18:42:08",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_43",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0043",
+      "start": "2026-10-18T18:42:07",
+      "end": "2026-10-18T18:42:10",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_44",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0043",
+      "start": "2026-10-18T18:42:08",
+      "end": "2026-10-18T18:44:09",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_45",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0043",
+      "start": "2026-10-18T18:42:10",
+      "end": "2026-10-18T18:42:13",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_46",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0043",
+      "start": "2026-10-18T18:42:13",
+      "end": "2026-10-18T18:42:17",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_47",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0052",
+      "start": "2026-10-18T18:42:17",
+      "end": "2026-10-18T18:42:19",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_48",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0043",
+      "start": "2026-10-18T18:42:19",
+      "end": "2026-10-18T18:42:22",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_49",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0043",
+      "start": "2026-10-18T18:42:22",
+      "end": "2026-10-18T18:42:30",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_50",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0043",
+      "start": "2026-10-18T18:42:30",
+      "end": "2026-10-18T18:42:55",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_51",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0043",
+      "start": "2026-10-18T18:42:42",
+      "end": "2026-10-18T18:43:07",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_52",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0043",
+      "start": "2026-10-18T18:42:42",
+      "end": "2026-10-18T18:42:47",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_53",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0043",
+      "start": "2026-10-18T18:42:47",
+      "end": "2026-10-18T18:44:50",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_54",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0042",
+      "start": "2026-10-18T18:42:53",
+      "end": "2026-10-18T18:43:15",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_55",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0043",
+      "start": "2026-10-18T18:42:55",
+      "end": "2026-10-18T18:43:00",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_56",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0043",
+      "start": "2026-10-18T18:43:00",
+      "end": "2026-10-18T18:43:02",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_57",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0043",
+      "start": "2026-10-18T18:43:02",
+      "end": "2026-10-18T18:43:04",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_58",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0043",
+      "start": "2026-10-18T18:43:04",
+      "end": "2026-10-18T18:43:07",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_59",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0043",
+      "start": "2026-10-18T18:43:07",
+      "end": "2026-10-18T18:43:09",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_60",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0043",
+      "start": "2026-10-18T18:43:08",
+      "end": "2026-10-18T18:43:10",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_61",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0043",
+      "start": "2026-10-18T18:43:09",
+      "end": "2026-10-18T18:43:12",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_62",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0043",
+      "start": "2026-10-18T18:43:10",
+      "end": "2026-10-18T18:45:13",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_63",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0043",
+      "start": "2026-10-18T18:43:12",
+      "end": "2026-10-18T18:43:14",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_64",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0043",
+      "start": "2026-10-18T18:43:15",
+      "end": "2026-10-18T18:43:17",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_65",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0042",
+      "start": "2026-10-18T18:43:15",
+      "end": "2026-10-18T18:43:17",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_66",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0043",
+      "start": "2026-10-18T18:43:17",
+      "end": "2026-10-18T18:43:19",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_67",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0043",
+      "start": "2026-10-18T18:43:17",
+      "end": "2026-10-18T18:43:19",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_68",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0042",
+      "start": "2026-10-18T18:43:19",
+      "end": "2026-10-18T18:43:22",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_69",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0043",
+      "start": "2026-10-18T18:43:19",
+      "end": "2026-10-18T18:43:24",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_70",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0042",
+      "start": "2026-10-18T18:43:22",
+      "end": "2026-10-18T18:43:24",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_71",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0042",
+      "start": "2026-10-18T18:43:24",
+      "end": "2026-10-18T18:45:33",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_72",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0052",
+      "start": "2026-10-18T18:43:24",
+      "end": "2026-10-18T18:43:27",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_73",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0043",
+      "start": "2026-10-18T18:43:27",
+      "end": "2026-10-18T18:43:31",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_74",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0043",
+      "start": "2026-10-18T18:43:31",
+      "end": "2026-10-18T18:43:33",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_75",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0043",
+      "start": "2026-10-18T18:43:34",
+      "end": "2026-10-18T18:43:40",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_76",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0043",
+      "start": "2026-10-18T18:43:36",
+      "end": "2026-10-18T18:43:45",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_77",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0043",
+      "start": "2026-10-18T18:43:40",
+      "end": "2026-10-18T18:45:00",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_78",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0043",
+      "start": "2026-10-18T18:43:40",
+      "end": "2026-10-18T18:45:00",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_79",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0043",
+      "start": "2026-10-18T18:43:45",
+      "end": "2026-10-18T18:43:47",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_80",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0043",
+      "start": "2026-10-18T18:43:47",
+      "end": "2026-10-18T18:45:59",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_81",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0043",
+      "start": "2026-10-18T18:43:50",
+      "end": "2026-10-18T18:43:56",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_82",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0043",
+      "start": "2026-10-18T18:43:57",
+      "end": "2026-10-18T18:44:03",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_83",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0043",
+      "start": "2026-10-18T18:44:04",
+      "end": "2026-10-18T18:44:05",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_84",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0043",
+      "start": "2026-10-18T18:44:06",
+      "end": "2026-10-18T18:47:34",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_85",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0043",
+      "start": "2026-10-18T18:44:10",
+      "end": "2026-10-18T18:48:01",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_86",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0038",
+      "start": "2026-10-18T18:44:50",
+      "end": "2026-10-18T18:50:03",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_87",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0038",
+      "start": "2026-10-18T18:45:00",
+      "end": "2026-10-18T18:50:08",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_88",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0038",
+      "start": "2026-10-18T18:45:00",
+      "end": "2026-10-18T18:45:19",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_89",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0038",
+      "start": "2026-10-18T18:45:13",
+      "end": "2026-10-18T18:50:18",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_90",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0038",
+      "start": "2026-10-18T18:45:19",
+      "end": "2026-10-18T18:45:27",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_91",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0038",
+      "start": "2026-10-18T18:45:27",
+      "end": "2026-10-18T18:45:45",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_92",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0038",
+      "start": "2026-10-18T18:45:33",
+      "end": "2026-10-18T18:45:35",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_93",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0038",
+      "start": "2026-10-18T18:45:35",
+      "end": "2026-10-18T18:46:34",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_94",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0038",
+      "start": "2026-10-18T18:45:45",
+      "end": "2026-10-18T18:47:20",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_95",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0038",
+      "start": "2026-10-18T18:45:59",
+      "end": "2026-10-18T18:51:02",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_96",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0038",
+      "start": "2026-10-18T18:46:34",
+      "end": "2026-10-18T18:51:35",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_97",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0038",
+      "start": "2026-10-18T18:47:20",
+      "end": "2026-10-18T18:47:24",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_98",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0038",
+      "start": "2026-10-18T18:47:24",
+      "end": "2026-10-18T18:52:25",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_99",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0038",
+      "start": "2026-10-18T18:47:35",
+      "end": "2026-10-18T18:47:58",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_100",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0038",
+      "start": "2026-10-18T18:47:58",
+      "end": "2026-10-18T18:48:10",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_101",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0038",
+      "start": "2026-10-18T18:48:01",
+      "end": "2026-10-18T18:48:05",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_102",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0038",
+      "start": "2026-10-18T18:48:06",
+      "end": "2026-10-18T18:48:42",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_103",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0038",
+      "start": "2026-10-18T18:48:11",
+      "end": "2026-10-18T18:48:27",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_104",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0038",
+      "start": "2026-10-18T18:48:27",
+      "end": "2026-10-18T18:53:28",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_105",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0038",
+      "start": "2026-10-18T18:48:43",
+      "end": "2026-10-18T18:53:45",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_106",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0038",
+      "start": "2026-10-18T18:50:03",
+      "end": "2026-10-18T18:50:09",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_107",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0038",
+      "start": "2026-10-18T18:50:08",
+      "end": "2026-10-18T18:55:09",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_108",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0038",
+      "start": "2026-10-18T18:50:09",
+      "end": "2026-10-18T18:50:11",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_109",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0038",
+      "start": "2026-10-18T18:50:12",
+      "end": "2026-10-18T18:50:14",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_110",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0038",
+      "start": "2026-10-18T18:50:14",
+      "end": "2026-10-18T18:50:18",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_111",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0042",
+      "start": "2026-10-18T18:50:18",
+      "end": "2026-10-18T18:50:23",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_112",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0038",
+      "start": "2026-10-18T18:50:18",
+      "end": "2026-10-18T18:50:24",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_113",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0038",
+      "start": "2026-10-18T18:50:23",
+      "end": "2026-10-18T18:51:18",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_114",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0038",
+      "start": "2026-10-18T18:50:24",
+      "end": "2026-10-18T18:51:18",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_115",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0038",
+      "start": "2026-10-18T18:51:02",
+      "end": "2026-10-18T18:51:04",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427128_116",
+      "job_name": "exp28-anytime-broad",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0038",
+      "start": "2026-10-18T18:51:04",
+      "end": "2026-10-18T18:56:05",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427493",
+      "job_name": "exp28-recovery-audit",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0012",
+      "start": "2026-10-18T19:52:52",
+      "end": "2026-10-18T20:01:44",
+      "allocated_cpus": "1"
+    },
+    {
+      "job_id": "1427492_35",
+      "job_name": "exp28-recovery35",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "n0012",
+      "start": "2026-10-18T19:50:45",
+      "end": "2026-10-18T19:52:52",
+      "allocated_cpus": "1"
+    }
+  ],
+  "cpu_caveat": "Original controller manifest records login02 CPU, not independently established per-task compute CPU. Original array node allocation and separate recovery retained; no hardware-normalized speed claim.",
+  "archive": {
+    "archive_sha256": "1332cbacf81ad954dff853810687f4bb4a469966ca5639a913f104b8f80fe7f3",
+    "cpu_model": "AMD EPYC 7763 64-Core Processor",
+    "events": 143241,
+    "files": 286754,
+    "finished_utc": "2026-10-19T19:14:40.765173+00:00",
+    "hostname": "n0093",
+    "inventory_sha256": "4b3d3e3b4a2f54c30fac4c596a6bca92a65c04dcb15dc95b1bfb78ee958300af",
+    "manifest_sha256": "639706bdcedcb02a89d1e145f62d65ca5072d738906bd0b1fe06d2c7d9611960",
+    "objective_validations_repeated": 0,
+    "order_references": 143241,
+    "original_bytes": 317022769,
+    "packaging_code_revision": "b637add351ee763b50c88e466f9726799168ca0d",
+    "packaging_script_sha256": "db01bf7ee0bf63d5028b0d187c437fd892d9f3611a531a3eef23fb1c213368a8",
+    "protocol_sha256": "c389a6ffd31b3fd66c8a868e6cf95e95a61414b3e12648655f37573c807e8310",
+    "public_release": false,
+    "publication_blocker": "Public packaging must provide source-specific empirical graph retrieval/transformation and attribution; this archive is private staging.",
+    "python": "3.12.3 (main, Jul 26 2025, 11:22:46) [GCC 13.3.0]",
+    "recovery_provenance_sha256": "cf4b162dea4139b4f929a581914244190466b71ef5540018dfa4ddc78f7f055c",
+    "seeds": "original per-task seed values retained; no new random sampling",
+    "slurm_job_id": "1430243",
+    "source_revision": "a9aaa322b7d2446796e6b13406a67554661ca144",
+    "stage": "archival_transfer_only",
+    "started_utc": "2026-10-19T19:09:40.452507+00:00",
+    "state": "COMPLETED_SUCCESS",
+    "task_statuses": {
+      "PASS": 98,
+      "TIMEOUT": 19
+    },
+    "validation": "PASS_TRANSFER_INTEGRITY_ONLY"
+  }
+}

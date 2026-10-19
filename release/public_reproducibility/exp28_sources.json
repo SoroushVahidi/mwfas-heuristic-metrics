@@ -1,0 +1,71 @@
+[
+  {
+    "graph_id": "exp05_college_first_90_days_count",
+    "graph_sha256": "7a5e34e22f585d2063f1de62d8a9d07e4d12de8a43bb3a76738719d87bf00d16",
+    "transformation": "college",
+    "files": [
+      {
+        "filename": "CollegeMsg.txt.gz",
+        "url": "https://snap.stanford.edu/data/CollegeMsg.txt.gz",
+        "sha256": "50ae2d98ed3bad9ddb18dbd495a89e5e10cfb8f7e86932827db29fc41b41f9fa"
+      }
+    ],
+    "attribution": "Pietro Panzarasa, Tore Opsahl, Kathleen M. Carley",
+    "source_page": "https://snap.stanford.edu/data/CollegeMsg.html",
+    "rights": "NOT VERIFIED; raw and derived graph files remain private",
+    "distribution": "UPSTREAM_DOWNLOAD_ONLY"
+  },
+  {
+    "graph_id": "exp05_email_largest_scc",
+    "graph_sha256": "c8199c4f5d20f966e798049e97e2e8365bf4f15d9806f6377011ff1ea2833eaf",
+    "transformation": "email",
+    "files": [
+      {
+        "filename": "email-Eu-core.txt.gz",
+        "url": "https://snap.stanford.edu/data/email-Eu-core.txt.gz",
+        "sha256": "4b47acdb80197b085fe63c819c357ae488131ee904ed93d1b219a68b0f9e245f"
+      }
+    ],
+    "attribution": "Hao Yin, Austin R. Benson, Jure Leskovec, David F. Gleich",
+    "source_page": "https://snap.stanford.edu/data/email-Eu-core.html",
+    "rights": "NOT VERIFIED; raw and derived graph files remain private",
+    "distribution": "UPSTREAM_DOWNLOAD_ONLY"
+  },
+  {
+    "graph_id": "exp05_os300_us_2022",
+    "graph_sha256": "5efa66feb8861be9e322ddcba5097e1e3d0931f3f9c96ef275d111d735d1b691",
+    "transformation": "exiobase",
+    "files": [
+      {
+        "filename": "exiobase.zip",
+        "url": "https://zenodo.org/api/records/20554376/files/exiobase.zip/content",
+        "sha256": "50fb3c947a540087cc307cfec3ec61ffd6b241e2959f846f50ff72de8b815707"
+      }
+    ],
+    "attribution": "Fabrizio Fagiolo, Marco Baioletti, Valentino Santucci",
+    "source_page": "https://zenodo.org/records/20554376",
+    "rights": "CC BY 4.0 permits redistribution with attribution and indication of changes",
+    "distribution": "UPSTREAM_DOWNLOAD_ONLY"
+  },
+  {
+    "graph_id": "exp13_openflights_us_routes",
+    "graph_sha256": "402da14665bdc106995b7995ac6d8bf56af6659af46e82a097fd0ac655f5d893",
+    "transformation": "openflights",
+    "files": [
+      {
+        "filename": "routes.dat",
+        "url": "https://raw.githubusercontent.com/jpatokal/openflights/56a3cce4d50309cb79948103a48c7f87d09b3056/data/routes.dat",
+        "sha256": "bd373706238134f619c624c606dccc74c05c2582a977c489c81de501735f2390"
+      },
+      {
+        "filename": "airports.dat",
+        "url": "https://raw.githubusercontent.com/jpatokal/openflights/56a3cce4d50309cb79948103a48c7f87d09b3056/data/airports.dat",
+        "sha256": "9387cdb38df5bd664da823f8ccb69fdd9b33a1888f5b7cca09c34a3cd9ff59f9"
+      }
+    ],
+    "attribution": "OpenFlights and contributors; Airline Route Mapper; airport contributors listed by publisher",
+    "source_page": "https://openflights.org/data",
+    "rights": "ODbL 1.0 and Database Contents License; no upstream or derived graph bytes mirrored",
+    "distribution": "UPSTREAM_DOWNLOAD_ONLY"
+  }
+]
