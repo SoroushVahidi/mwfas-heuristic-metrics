@@ -1,0 +1,1 @@
+Public table45 input: exp04/exp04_cm_n120_k03_r01. candidate.csv orders vertices by increasing integer ID; this is an interface example, not a benchmark performance finding. Use check_candidate.py with the downloaded table45 directory, that instance key and examples/candidate.csv. The graph bytes are unchanged from table45-v2.0.0.

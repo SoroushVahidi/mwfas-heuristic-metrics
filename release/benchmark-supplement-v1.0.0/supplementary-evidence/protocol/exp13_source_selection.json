@@ -1,0 +1,84 @@
+{
+  "format": "exp13-frozen-selection-v1",
+  "hf_revision": "5b6cd5620ca0a1c9b3be5e8d996bf8e3c467e79f",
+  "selected": [
+    {
+      "degree_cv": 0.27012049858975307,
+      "density": 0.5687348478046153,
+      "dimacs_sha256": "23b2e6cb3695caa4efc86cb2c0a17b036ede9aad235bf7e5df05610fe039a6c6",
+      "graph_file": "exp13_lodes_de_commute.d",
+      "graph_sha256": "05ee0be0bfa1badd9d8ecf029fc00baea203a28547f0c21dd0c959372fd9bf4c",
+      "instance_id": "exp13_lodes_de_commute",
+      "largest_scc": 259,
+      "largest_scc_fraction": 1.0,
+      "m": 38004,
+      "n": 259,
+      "node_map_file": "exp13_lodes_de_commute.node_map.json",
+      "node_map_sha256": "e32c239930ad724da324981fde313a38ea0893affc4e5e3b439d7b211c5a5b17",
+      "nontrivial_scc_count": 1,
+      "original_loop_weight_constant": 18628,
+      "original_objective_relation": "original weighted backward objective = normalized objective + original_loop_weight_constant",
+      "scc_count": 1,
+      "source_files": [
+        {
+          "name": "de_od_main_JT00_2022.csv.gz",
+          "sha256": "e06febfcd48accb2266fb928e1b2f51cdb16481964d2b5b71b99119ce6d8120e"
+        }
+      ],
+      "source_parent": "census_lodes",
+      "source_record_counts": {
+        "all_block_flow_rows": 306618,
+        "inter_tract_block_flow_rows": 291669,
+        "intra_tract_block_flow_rows": 14949
+      },
+      "top_decile_weight_share": 0.5348276199716928,
+      "total_weight": 337017,
+      "weight_cv": 2.1109397226846656,
+      "weight_max": 411,
+      "weight_median": 3.0,
+      "weight_min": 1
+    },
+    {
+      "degree_cv": 2.2447284526323967,
+      "density": 0.006649322798876828,
+      "dimacs_sha256": "da8cf409e6a9f99d287dac233d72baaa24ccc1b5a1d9560b184fdef8ee5de12f",
+      "graph_file": "exp13_irs_county_migration.d",
+      "graph_sha256": "f45513ab75aae51fec2df2268258fea44a68c760f55364a823cdca9078898d9b",
+      "instance_id": "exp13_irs_county_migration",
+      "largest_scc": 2737,
+      "largest_scc_fraction": 0.9556564245810056,
+      "m": 54522,
+      "n": 2864,
+      "node_map_file": "exp13_irs_county_migration.node_map.json",
+      "node_map_sha256": "b14657f9e74990473315c6ef0029e2f7bd3f519e5624679122b19d7f4bc1ae71",
+      "nontrivial_scc_count": 9,
+      "original_loop_weight_constant": 124358925,
+      "original_objective_relation": "original weighted backward objective = normalized objective + original_loop_weight_constant",
+      "scc_count": 120,
+      "source_files": [
+        {
+          "name": "countyoutflow2122.csv",
+          "sha256": "51b988a3b170e37a45f1598bfbe18e136ef3236dcda7227b458e6714cf0535e4"
+        }
+      ],
+      "source_parent": "irs_soi",
+      "source_record_counts": {
+        "aggregate_foreign_or_noncounty_rows": 32743,
+        "all_outflow_rows": 90409,
+        "nonmigrant_loop_rows": 3143,
+        "privacy_suppressed_rows": 1,
+        "retained_migrant_rows": 54522,
+        "source_counties_not_in_active_arc_graph": 280
+      },
+      "top_decile_weight_share": 0.6181860774799665,
+      "total_weight": 6654959,
+      "weight_cv": 3.7922303192879876,
+      "weight_max": 21267,
+      "weight_median": 41.0,
+      "weight_min": 20
+    }
+  ],
+  "selection_basis": "three independent original source parents; source provenance, rights and structural coverage before algorithm outcomes",
+  "selection_source_sha256": "cd01887224a5aaa620ba7e42f59a13887bd29cec9d5932f2a4c30324eb034a4f",
+  "package_transformation": "Retain only IRS and LODES entries from three-parent source selection."
+}

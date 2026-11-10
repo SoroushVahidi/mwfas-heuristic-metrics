@@ -1,0 +1,15 @@
+test_ali_annotation_not_weight (__main__.Tests.test_ali_annotation_not_weight) ... ok
+test_isolates_and_empty (__main__.Tests.test_isolates_and_empty) ... ok
+test_known_components (__main__.Tests.test_known_components) ... ok
+test_reject_invalid_graph (__main__.Tests.test_reject_invalid_graph) ... ok
+test_scc_exhaustive_reachability_oracle (__main__.Tests.test_scc_exhaustive_reachability_oracle) ... ok
+test_stats (__main__.Tests.test_stats) ... ok
+test_ties (__main__.Tests.test_ties) ... ok
+test_weight_validation (__main__.Tests.test_weight_validation) ... ok
+test_weight_variant_identity (__main__.Tests.test_weight_variant_identity) ... ok
+test_wiki_multiplicity_and_unicode (__main__.Tests.test_wiki_multiplicity_and_unicode) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.033s
+
+OK

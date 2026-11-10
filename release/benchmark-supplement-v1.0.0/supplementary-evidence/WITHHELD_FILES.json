@@ -1,0 +1,13 @@
+{
+  "reason": "Third-party RASstar executable has no established redistribution license; not needed for saved-output replay.",
+  "records": [
+    {
+      "bytes": 437832,
+      "disposition": "hash_only_external_binary",
+      "mode": 493,
+      "mtime_ns": 1792271879758427366,
+      "original_path": "source/mwfas-exp10-xiong/build/fas_alg",
+      "sha256": "f58c54bb41e6e896225df40fab52b4e8e747a0967aa80ea3583c8025f2b7a2a9"
+    }
+  ]
+}

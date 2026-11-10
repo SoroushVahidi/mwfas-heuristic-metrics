@@ -1,0 +1,9 @@
+{
+  "exit": 0,
+  "byte_identical": {
+    "BALANCED_SUBSET_MANIFEST.tsv": true,
+    "BALANCED_PROFILE_WEIGHTS.tsv": true,
+    "BIN_DEFINITIONS.json": true,
+    "PROFILE_ASSESSMENT.json": true
+  }
+}

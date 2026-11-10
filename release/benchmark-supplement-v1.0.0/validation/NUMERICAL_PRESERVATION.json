@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "table_files_byte_identical": {
+    "tables/S1.csv": "f2b45fd673f05685b5952667108d3b50ba2baf67edc34101feb97ab7157bf7b5",
+    "tables/S1_pairs_crosswalk.csv": "323649653125277aca6935f36e7cfff04f8f53aac307f22ffe2e20e88f7c146d",
+    "tables/manuscript_supplementary_evidence.tex": "0094ba7a57740a5e9a6127e18ddf9d04124f149913e79798f8eea94dfade58cf",
+    "tables/S1_S2_horizon_crosswalk.csv": "85ac9336ceb60085c83282a690b48269659784506b56a4c97e1858b14d0a6e43",
+    "tables/S3.csv": "9528629d9222c935aa42ff087c29eb87facc484d79f67b4bf38445c0455a6601",
+    "tables/S3_order_crosswalk.csv": "a094c0ef591e9f8a59a8145030398d598b546987280f8d0a5c3a5a83a0cac53e",
+    "tables/S2.csv": "1352418886d4498e1a17efe0b1a19341cb15e55a65961b77f90ecaeb26713e05"
+  },
+  "optimization_runs": 0,
+  "manuscript_changed": false,
+  "manuscript_commit": "bd81f3bbf0610817975e8384fd5002cd031d152c"
+}

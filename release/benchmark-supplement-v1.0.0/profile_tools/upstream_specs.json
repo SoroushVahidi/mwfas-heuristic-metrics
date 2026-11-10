@@ -1,0 +1,1067 @@
+{
+  "3655e12b28be9fb0960ed165a7f36d42a121a88797739762347b4a94d5c7f6de": {
+    "canonical": "3655e12b28be9fb0960ed165a7f36d42a121a88797739762347b4a94d5c7f6de",
+    "kind": "ali",
+    "path": "mwfas-exp12/inputs/77e5b8b/iscas-small/s208.d",
+    "sha256": "da57e85369b009ddaa264ec1d0637f071bf45d60a4a7c3f87776fa39a36dba87",
+    "spec": {
+      "annotation": "fifth_integer_annotation",
+      "density": 0.017484572436085807,
+      "graph_sha256": "3655e12b28be9fb0960ed165a7f36d42a121a88797739762347b4a94d5c7f6de",
+      "instance_id": "s208",
+      "largest_scc": 8,
+      "m": 119,
+      "matching_hf_rows": [
+        {
+          "configuration": "core_benchmark",
+          "instance_id": "s208",
+          "m": 119,
+          "n": 83,
+          "row_index": 252,
+          "total_weight": 170780
+        },
+        {
+          "configuration": "core_benchmark",
+          "instance_id": "s208",
+          "m": 119,
+          "n": 83,
+          "row_index": 253,
+          "total_weight": 170780
+        },
+        {
+          "configuration": "core_benchmark",
+          "instance_id": "s208",
+          "m": 119,
+          "n": 83,
+          "row_index": 254,
+          "total_weight": 170780
+        },
+        {
+          "configuration": "core_benchmark",
+          "instance_id": "s208",
+          "m": 119,
+          "n": 83,
+          "row_index": 324,
+          "total_weight": 170780
+        },
+        {
+          "configuration": "core_benchmark",
+          "instance_id": "s208",
+          "m": 119,
+          "n": 83,
+          "row_index": 325,
+          "total_weight": 170780
+        },
+        {
+          "configuration": "core_benchmark",
+          "instance_id": "s208",
+          "m": 119,
+          "n": 83,
+          "row_index": 326,
+          "total_weight": 170780
+        },
+        {
+          "configuration": "external_baselines",
+          "instance_id": "s208",
+          "m": 119,
+          "n": 83,
+          "row_index": 672,
+          "total_weight": 170780
+        },
+        {
+          "configuration": "external_baselines",
+          "instance_id": "s208",
+          "m": 119,
+          "n": 83,
+          "row_index": 673,
+          "total_weight": 170780
+        },
+        {
+          "configuration": "external_baselines",
+          "instance_id": "s208",
+          "m": 119,
+          "n": 83,
+          "row_index": 674,
+          "total_weight": 170780
+        },
+        {
+          "configuration": "external_baselines",
+          "instance_id": "s208",
+          "m": 119,
+          "n": 83,
+          "row_index": 675,
+          "total_weight": 170780
+        },
+        {
+          "configuration": "external_baselines",
+          "instance_id": "s208",
+          "m": 119,
+          "n": 83,
+          "row_index": 676,
+          "total_weight": 170780
+        },
+        {
+          "configuration": "external_baselines",
+          "instance_id": "s208",
+          "m": 119,
+          "n": 83,
+          "row_index": 677,
+          "total_weight": 170780
+        },
+        {
+          "configuration": "external_baselines",
+          "instance_id": "s208",
+          "m": 119,
+          "n": 83,
+          "row_index": 678,
+          "total_weight": 170780
+        },
+        {
+          "configuration": "external_baselines",
+          "instance_id": "s208",
+          "m": 119,
+          "n": 83,
+          "row_index": 679,
+          "total_weight": 170780
+        },
+        {
+          "configuration": "external_baselines",
+          "instance_id": "s208",
+          "m": 119,
+          "n": 83,
+          "row_index": 864,
+          "total_weight": 170780
+        },
+        {
+          "configuration": "external_baselines",
+          "instance_id": "s208",
+          "m": 119,
+          "n": 83,
+          "row_index": 865,
+          "total_weight": 170780
+        },
+        {
+          "configuration": "external_baselines",
+          "instance_id": "s208",
+          "m": 119,
+          "n": 83,
+          "row_index": 866,
+          "total_weight": 170780
+        },
+        {
+          "configuration": "external_baselines",
+          "instance_id": "s208",
+          "m": 119,
+          "n": 83,
+          "row_index": 867,
+          "total_weight": 170780
+        },
+        {
+          "configuration": "external_baselines",
+          "instance_id": "s208",
+          "m": 119,
+          "n": 83,
+          "row_index": 868,
+          "total_weight": 170780
+        },
+        {
+          "configuration": "external_baselines",
+          "instance_id": "s208",
+          "m": 119,
+          "n": 83,
+          "row_index": 869,
+          "total_weight": 170780
+        },
+        {
+          "configuration": "external_baselines",
+          "instance_id": "s208",
+          "m": 119,
+          "n": 83,
+          "row_index": 870,
+          "total_weight": 170780
+        },
+        {
+          "configuration": "external_baselines",
+          "instance_id": "s208",
+          "m": 119,
+          "n": 83,
+          "row_index": 871,
+          "total_weight": 170780
+        }
+      ],
+      "max_weight": 2992,
+      "min_weight": 41,
+      "n": 83,
+      "nontrivial_sccs": 5,
+      "prior_exact_graph_overlap": false,
+      "snapshot_status": "RECONSTRUCTED_REFERENCE_SNAPSHOT; HISTORICAL_BYTES_NOT_VERIFIED",
+      "source_byte_sha256": "da57e85369b009ddaa264ec1d0637f071bf45d60a4a7c3f87776fa39a36dba87",
+      "source_path": "iscas-small/s208.d",
+      "total_weight": 170780
+    }
+  },
+  "ed7b1618b6af19f19c5cf76d6f7f8e1bb12f8c7eb87690d1c2d88fc91b2b83b3": {
+    "canonical": "ed7b1618b6af19f19c5cf76d6f7f8e1bb12f8c7eb87690d1c2d88fc91b2b83b3",
+    "kind": "ali",
+    "path": "mwfas-exp12/inputs/77e5b8b/core-bad/bad1.d",
+    "sha256": "4befdc5c74d924fc7b325c8c05d3cf942b0fd262a573b5e93f4bd68dedcce2ed",
+    "spec": {
+      "annotation": "fifth_integer_annotation",
+      "density": 0.08974358974358974,
+      "graph_sha256": "ed7b1618b6af19f19c5cf76d6f7f8e1bb12f8c7eb87690d1c2d88fc91b2b83b3",
+      "instance_id": "bad1",
+      "largest_scc": 13,
+      "m": 14,
+      "matching_hf_rows": [
+        {
+          "configuration": "core_benchmark",
+          "instance_id": "bad1",
+          "m": 14,
+          "n": 13,
+          "row_index": 0,
+          "total_weight": 21821
+        },
+        {
+          "configuration": "core_benchmark",
+          "instance_id": "bad1",
+          "m": 14,
+          "n": 13,
+          "row_index": 1,
+          "total_weight": 21821
+        },
+        {
+          "configuration": "core_benchmark",
+          "instance_id": "bad1",
+          "m": 14,
+          "n": 13,
+          "row_index": 2,
+          "total_weight": 21821
+        },
+        {
+          "configuration": "external_baselines",
+          "instance_id": "bad1",
+          "m": 14,
+          "n": 13,
+          "row_index": 0,
+          "total_weight": 21821
+        },
+        {
+          "configuration": "external_baselines",
+          "instance_id": "bad1",
+          "m": 14,
+          "n": 13,
+          "row_index": 1,
+          "total_weight": 21821
+        },
+        {
+          "configuration": "external_baselines",
+          "instance_id": "bad1",
+          "m": 14,
+          "n": 13,
+          "row_index": 2,
+          "total_weight": 21821
+        },
+        {
+          "configuration": "external_baselines",
+          "instance_id": "bad1",
+          "m": 14,
+          "n": 13,
+          "row_index": 3,
+          "total_weight": 21821
+        },
+        {
+          "configuration": "external_baselines",
+          "instance_id": "bad1",
+          "m": 14,
+          "n": 13,
+          "row_index": 4,
+          "total_weight": 21821
+        },
+        {
+          "configuration": "external_baselines",
+          "instance_id": "bad1",
+          "m": 14,
+          "n": 13,
+          "row_index": 5,
+          "total_weight": 21821
+        },
+        {
+          "configuration": "external_baselines",
+          "instance_id": "bad1",
+          "m": 14,
+          "n": 13,
+          "row_index": 6,
+          "total_weight": 21821
+        },
+        {
+          "configuration": "external_baselines",
+          "instance_id": "bad1",
+          "m": 14,
+          "n": 13,
+          "row_index": 7,
+          "total_weight": 21821
+        },
+        {
+          "configuration": "exact_small",
+          "instance_id": "bad1",
+          "m": 14,
+          "n": 13,
+          "row_index": 60,
+          "total_weight": 21821
+        }
+      ],
+      "max_weight": 2980,
+      "min_weight": 32,
+      "n": 13,
+      "nontrivial_sccs": 1,
+      "prior_exact_graph_overlap": false,
+      "snapshot_status": "RECONSTRUCTED_REFERENCE_SNAPSHOT; HISTORICAL_BYTES_NOT_VERIFIED",
+      "source_byte_sha256": "4befdc5c74d924fc7b325c8c05d3cf942b0fd262a573b5e93f4bd68dedcce2ed",
+      "source_path": "core-bad/bad1.d",
+      "total_weight": 21821
+    }
+  },
+  "70179c3cee9c2f821ed22e80719eeb066df3a61c99fb9feb1e4415cdaf3bc9c1": {
+    "canonical": "70179c3cee9c2f821ed22e80719eeb066df3a61c99fb9feb1e4415cdaf3bc9c1",
+    "kind": "exp05",
+    "path": "mwfas-exp05/production-output/graphs/exp05_college_first_90_days_count.d",
+    "sha256": "7a5e34e22f585d2063f1de62d8a9d07e4d12de8a43bb3a76738719d87bf00d16",
+    "spec": {
+      "already_in_historical_dataset": false,
+      "config_sha256": "c6082e0195c764c98387e917bc6de3c21a9dea81b038c881ad4342ce06f96f02",
+      "cyclic_scc_count": 4,
+      "density": 0.005983860494590176,
+      "dimacs_sha256": "7a5e34e22f585d2063f1de62d8a9d07e4d12de8a43bb3a76738719d87bf00d16",
+      "excluded_self_loop_weight": 0,
+      "graph_file": "exp05_college_first_90_days_count.d",
+      "graph_sha256": "70179c3cee9c2f821ed22e80719eeb066df3a61c99fb9feb1e4415cdaf3bc9c1",
+      "in_degree_cv": 1.4103986173368317,
+      "instance_id": "exp05_college_first_90_days_count",
+      "largest_scc_size": 1222,
+      "n_edges": 18357,
+      "n_vertices": 1752,
+      "node_map_file": "exp05_college_first_90_days_count.json",
+      "node_map_sha256": "0fa687811477f62211be629b2656fa1a5ffceec79881d1d337714fdcfc33c467",
+      "out_degree_cv": 2.0010676933401443,
+      "scc_count": 528,
+      "source_category": "sparse_real_network",
+      "source_id": "snap_college_msg",
+      "source_member": null,
+      "source_member_sha256": null,
+      "source_parent": "college_msg",
+      "source_sha256": "50ae2d98ed3bad9ddb18dbd495a89e5e10cfb8f7e86932827db29fc41b41f9fa",
+      "source_url": "https://snap.stanford.edu/data/CollegeMsg.txt.gz",
+      "source_version": "unversioned SNAP parsed temporal download; content pinned by SHA-256",
+      "topology_sha256": "fff5188b704b4eb603cb6e3ca7f3213ed0b396c3c24beb4e739c8f4fcb4bac7e",
+      "total_graph_weight": 52732,
+      "transformation": "events_through_first_90_days_inclusive",
+      "weight_max": 98,
+      "weight_mean": 2.872582666012965,
+      "weight_min": 1,
+      "weight_semantics": "observed_message_count"
+    }
+  },
+  "b7ebb5725d7015fc9ddd4d50617afba61b1801b276449ef897a5a0c936d44819": {
+    "canonical": "b7ebb5725d7015fc9ddd4d50617afba61b1801b276449ef897a5a0c936d44819",
+    "kind": "ali",
+    "path": "mwfas-exp12/inputs/77e5b8b/iscas/s382.d",
+    "sha256": "9e91f18e67fc76bca984703dd279c3eeb0b444220d2f8a53426c60a69b1376ac",
+    "spec": {
+      "annotation": "fifth_integer_annotation",
+      "density": 0.005898513251454428,
+      "graph_sha256": "b7ebb5725d7015fc9ddd4d50617afba61b1801b276449ef897a5a0c936d44819",
+      "instance_id": "s382",
+      "largest_scc": 46,
+      "m": 438,
+      "matching_hf_rows": [
+        {
+          "configuration": "core_benchmark",
+          "instance_id": "s382",
+          "m": 438,
+          "n": 273,
+          "row_index": 264,
+          "total_weight": 668099
+        },
+        {
+          "configuration": "core_benchmark",
+          "instance_id": "s382",
+          "m": 438,
+          "n": 273,
+          "row_index": 265,
+          "total_weight": 668099
+        },
+        {
+          "configuration": "core_benchmark",
+          "instance_id": "s382",
+          "m": 438,
+          "n": 273,
+          "row_index": 266,
+          "total_weight": 668099
+        },
+        {
+          "configuration": "core_benchmark",
+          "instance_id": "s382",
+          "m": 438,
+          "n": 273,
+          "row_index": 336,
+          "total_weight": 668099
+        },
+        {
+          "configuration": "core_benchmark",
+          "instance_id": "s382",
+          "m": 438,
+          "n": 273,
+          "row_index": 337,
+          "total_weight": 668099
+        },
+        {
+          "configuration": "core_benchmark",
+          "instance_id": "s382",
+          "m": 438,
+          "n": 273,
+          "row_index": 338,
+          "total_weight": 668099
+        },
+        {
+          "configuration": "external_baselines",
+          "instance_id": "s382",
+          "m": 438,
+          "n": 273,
+          "row_index": 704,
+          "total_weight": 668099
+        },
+        {
+          "configuration": "external_baselines",
+          "instance_id": "s382",
+          "m": 438,
+          "n": 273,
+          "row_index": 705,
+          "total_weight": 668099
+        },
+        {
+          "configuration": "external_baselines",
+          "instance_id": "s382",
+          "m": 438,
+          "n": 273,
+          "row_index": 706,
+          "total_weight": 668099
+        },
+        {
+          "configuration": "external_baselines",
+          "instance_id": "s382",
+          "m": 438,
+          "n": 273,
+          "row_index": 707,
+          "total_weight": 668099
+        },
+        {
+          "configuration": "external_baselines",
+          "instance_id": "s382",
+          "m": 438,
+          "n": 273,
+          "row_index": 708,
+          "total_weight": 668099
+        },
+        {
+          "configuration": "external_baselines",
+          "instance_id": "s382",
+          "m": 438,
+          "n": 273,
+          "row_index": 709,
+          "total_weight": 668099
+        },
+        {
+          "configuration": "external_baselines",
+          "instance_id": "s382",
+          "m": 438,
+          "n": 273,
+          "row_index": 710,
+          "total_weight": 668099
+        },
+        {
+          "configuration": "external_baselines",
+          "instance_id": "s382",
+          "m": 438,
+          "n": 273,
+          "row_index": 711,
+          "total_weight": 668099
+        },
+        {
+          "configuration": "external_baselines",
+          "instance_id": "s382",
+          "m": 438,
+          "n": 273,
+          "row_index": 896,
+          "total_weight": 668099
+        },
+        {
+          "configuration": "external_baselines",
+          "instance_id": "s382",
+          "m": 438,
+          "n": 273,
+          "row_index": 897,
+          "total_weight": 668099
+        },
+        {
+          "configuration": "external_baselines",
+          "instance_id": "s382",
+          "m": 438,
+          "n": 273,
+          "row_index": 898,
+          "total_weight": 668099
+        },
+        {
+          "configuration": "external_baselines",
+          "instance_id": "s382",
+          "m": 438,
+          "n": 273,
+          "row_index": 899,
+          "total_weight": 668099
+        },
+        {
+          "configuration": "external_baselines",
+          "instance_id": "s382",
+          "m": 438,
+          "n": 273,
+          "row_index": 900,
+          "total_weight": 668099
+        },
+        {
+          "configuration": "external_baselines",
+          "instance_id": "s382",
+          "m": 438,
+          "n": 273,
+          "row_index": 901,
+          "total_weight": 668099
+        },
+        {
+          "configuration": "external_baselines",
+          "instance_id": "s382",
+          "m": 438,
+          "n": 273,
+          "row_index": 902,
+          "total_weight": 668099
+        },
+        {
+          "configuration": "external_baselines",
+          "instance_id": "s382",
+          "m": 438,
+          "n": 273,
+          "row_index": 903,
+          "total_weight": 668099
+        }
+      ],
+      "max_weight": 2992,
+      "min_weight": 1,
+      "n": 273,
+      "nontrivial_sccs": 6,
+      "prior_exact_graph_overlap": false,
+      "snapshot_status": "RECONSTRUCTED_REFERENCE_SNAPSHOT; HISTORICAL_BYTES_NOT_VERIFIED",
+      "source_byte_sha256": "9e91f18e67fc76bca984703dd279c3eeb0b444220d2f8a53426c60a69b1376ac",
+      "source_path": "iscas/s382.d",
+      "total_weight": 668099
+    }
+  },
+  "f45513ab75aae51fec2df2268258fea44a68c760f55364a823cdca9078898d9b": {
+    "canonical": "f45513ab75aae51fec2df2268258fea44a68c760f55364a823cdca9078898d9b",
+    "kind": "exp13",
+    "path": "mwfas-exp13/inputs/0c8d88e-v1/normalized/exp13_irs_county_migration.d",
+    "sha256": "da8cf409e6a9f99d287dac233d72baaa24ccc1b5a1d9560b184fdef8ee5de12f",
+    "spec": {
+      "degree_cv": 2.2447284526323967,
+      "density": 0.006649322798876828,
+      "dimacs_sha256": "da8cf409e6a9f99d287dac233d72baaa24ccc1b5a1d9560b184fdef8ee5de12f",
+      "graph_file": "exp13_irs_county_migration.d",
+      "graph_sha256": "f45513ab75aae51fec2df2268258fea44a68c760f55364a823cdca9078898d9b",
+      "instance_id": "exp13_irs_county_migration",
+      "largest_scc": 2737,
+      "largest_scc_fraction": 0.9556564245810056,
+      "m": 54522,
+      "n": 2864,
+      "node_map_file": "exp13_irs_county_migration.node_map.json",
+      "node_map_sha256": "b14657f9e74990473315c6ef0029e2f7bd3f519e5624679122b19d7f4bc1ae71",
+      "nontrivial_scc_count": 9,
+      "original_loop_weight_constant": 124358925,
+      "original_objective_relation": "original weighted backward objective = normalized objective + original_loop_weight_constant",
+      "scc_count": 120,
+      "source_files": [
+        {
+          "name": "countyoutflow2122.csv",
+          "sha256": "51b988a3b170e37a45f1598bfbe18e136ef3236dcda7227b458e6714cf0535e4"
+        }
+      ],
+      "source_parent": "irs_soi",
+      "source_record_counts": {
+        "aggregate_foreign_or_noncounty_rows": 32743,
+        "all_outflow_rows": 90409,
+        "nonmigrant_loop_rows": 3143,
+        "privacy_suppressed_rows": 1,
+        "retained_migrant_rows": 54522,
+        "source_counties_not_in_active_arc_graph": 280
+      },
+      "top_decile_weight_share": 0.6181860774799665,
+      "total_weight": 6654959,
+      "weight_cv": 3.7922303192879876,
+      "weight_max": 21267,
+      "weight_median": 41.0,
+      "weight_min": 20
+    }
+  },
+  "fa1685c462be05f3fa6ee64463ed3ccb53f1034d102d74f003dc69037c25b352": {
+    "canonical": "fa1685c462be05f3fa6ee64463ed3ccb53f1034d102d74f003dc69037c25b352",
+    "kind": "exp05",
+    "path": "mwfas-exp05/production-output/graphs/exp05_rxr_2020.d",
+    "sha256": "490eccac941832287577f21b056b995a3d6d9c76a1784f7c7efeb0b1a73d43b8",
+    "spec": {
+      "already_in_historical_dataset": false,
+      "config_sha256": "c6082e0195c764c98387e917bc6de3c21a9dea81b038c881ad4342ce06f96f02",
+      "cyclic_scc_count": 1,
+      "density": 0.49489795918367346,
+      "dimacs_sha256": "490eccac941832287577f21b056b995a3d6d9c76a1784f7c7efeb0b1a73d43b8",
+      "excluded_self_loop_weight": 0,
+      "graph_file": "exp05_rxr_2020.d",
+      "graph_sha256": "fa1685c462be05f3fa6ee64463ed3ccb53f1034d102d74f003dc69037c25b352",
+      "in_degree_cv": 0.57609867218518,
+      "instance_id": "exp05_rxr_2020",
+      "largest_scc_size": 46,
+      "matrix_family": "rxr",
+      "matrix_total_offdiagonal_weight": 432770,
+      "n_edges": 1164,
+      "n_vertices": 49,
+      "node_map_file": "exp05_rxr_2020.json",
+      "node_map_sha256": "68df47e9e2946ce8fc80f00150b56a54a0c5a78a23ae2e19995dc9ebace8aabd",
+      "omitted_zero_offdiagonal_entries": 1188,
+      "out_degree_cv": 0.5653900102168447,
+      "scc_count": 4,
+      "source_category": "dense_lop_matrix",
+      "source_group": "2020",
+      "source_id": "exiobase_lop_v001",
+      "source_member": "exiobase/rxr/rxr_2020_n49",
+      "source_member_sha256": "4d38359aa53f029c897de421382eedfbc6557015f2317e9dbe0e738a22da9475",
+      "source_parent": "exiobase_lop_benchmark",
+      "source_sha256": "50fb3c947a540087cc307cfec3ec61ffd6b241e2959f846f50ff72de8b815707",
+      "source_url": "https://zenodo.org/api/records/20554376/files/exiobase.zip/content",
+      "source_version": "Zenodo record 20554376, release 0.0.1, published 2026-06-05",
+      "topology_sha256": "c269cc61b052666abe6ea0be7f48126a4445a2460bee6077199bbe9186ca7e53",
+      "total_graph_weight": 432770,
+      "transformation": "positive_offdiagonal_entries_to_arcs; zero_entries_omitted; diagonal_excluded",
+      "weight_max": 11013,
+      "weight_mean": 371.7955326460481,
+      "weight_min": 1,
+      "weight_semantics": "published_integer_economic_LOP_matrix"
+    }
+  },
+  "05ee0be0bfa1badd9d8ecf029fc00baea203a28547f0c21dd0c959372fd9bf4c": {
+    "canonical": "05ee0be0bfa1badd9d8ecf029fc00baea203a28547f0c21dd0c959372fd9bf4c",
+    "kind": "exp13",
+    "path": "mwfas-exp13/inputs/0c8d88e-v1/normalized/exp13_lodes_de_commute.d",
+    "sha256": "23b2e6cb3695caa4efc86cb2c0a17b036ede9aad235bf7e5df05610fe039a6c6",
+    "spec": {
+      "degree_cv": 0.27012049858975307,
+      "density": 0.5687348478046153,
+      "dimacs_sha256": "23b2e6cb3695caa4efc86cb2c0a17b036ede9aad235bf7e5df05610fe039a6c6",
+      "graph_file": "exp13_lodes_de_commute.d",
+      "graph_sha256": "05ee0be0bfa1badd9d8ecf029fc00baea203a28547f0c21dd0c959372fd9bf4c",
+      "instance_id": "exp13_lodes_de_commute",
+      "largest_scc": 259,
+      "largest_scc_fraction": 1.0,
+      "m": 38004,
+      "n": 259,
+      "node_map_file": "exp13_lodes_de_commute.node_map.json",
+      "node_map_sha256": "e32c239930ad724da324981fde313a38ea0893affc4e5e3b439d7b211c5a5b17",
+      "nontrivial_scc_count": 1,
+      "original_loop_weight_constant": 18628,
+      "original_objective_relation": "original weighted backward objective = normalized objective + original_loop_weight_constant",
+      "scc_count": 1,
+      "source_files": [
+        {
+          "name": "de_od_main_JT00_2022.csv.gz",
+          "sha256": "e06febfcd48accb2266fb928e1b2f51cdb16481964d2b5b71b99119ce6d8120e"
+        }
+      ],
+      "source_parent": "census_lodes",
+      "source_record_counts": {
+        "all_block_flow_rows": 306618,
+        "inter_tract_block_flow_rows": 291669,
+        "intra_tract_block_flow_rows": 14949
+      },
+      "top_decile_weight_share": 0.5348276199716928,
+      "total_weight": 337017,
+      "weight_cv": 2.1109397226846656,
+      "weight_max": 411,
+      "weight_median": 3.0,
+      "weight_min": 1
+    }
+  },
+  "4994fecf79aa21d4adb9c19ab6c477f48fcc1cce8c4075008ea0b36ca09635e3": {
+    "canonical": "4994fecf79aa21d4adb9c19ab6c477f48fcc1cce8c4075008ea0b36ca09635e3",
+    "kind": "exp05",
+    "path": "mwfas-exp05/production-output/graphs/exp05_email_full.d",
+    "sha256": "0372e8fd791b0ad61651edd2b029035b50d9a84d5e39ac2a9cc81c84f2373b0b",
+    "spec": {
+      "already_in_historical_dataset": false,
+      "config_sha256": "c6082e0195c764c98387e917bc6de3c21a9dea81b038c881ad4342ce06f96f02",
+      "cyclic_scc_count": 1,
+      "density": 0.024706150522288955,
+      "dimacs_sha256": "0372e8fd791b0ad61651edd2b029035b50d9a84d5e39ac2a9cc81c84f2373b0b",
+      "excluded_self_loop_weight": 642,
+      "graph_file": "exp05_email_full.d",
+      "graph_sha256": "4994fecf79aa21d4adb9c19ab6c477f48fcc1cce8c4075008ea0b36ca09635e3",
+      "in_degree_cv": 1.1195399829994594,
+      "instance_id": "exp05_email_full",
+      "largest_scc_size": 803,
+      "n_edges": 24929,
+      "n_vertices": 1005,
+      "node_map_file": "exp05_email_full.json",
+      "node_map_sha256": "0e1aa0ee243ad93058a5fcadd489d107606d58832de5bbfa35b36d4d9d09b5c7",
+      "out_degree_cv": 1.3353399727827664,
+      "scc_count": 203,
+      "source_category": "sparse_real_network",
+      "source_id": "snap_email_eu_core",
+      "source_member": null,
+      "source_member_sha256": null,
+      "source_parent": "email_eu_core",
+      "source_sha256": "4b47acdb80197b085fe63c819c357ae488131ee904ed93d1b219a68b0f9e245f",
+      "source_url": "https://snap.stanford.edu/data/email-Eu-core.txt.gz",
+      "source_version": "unversioned SNAP download; content pinned by SHA-256",
+      "topology_sha256": "dae5f78a13120793bbd177a70bf8467fc7ff3cfa12e43fb8254b353723068d9e",
+      "total_graph_weight": 24929,
+      "transformation": "full",
+      "weight_max": 1,
+      "weight_mean": 1,
+      "weight_min": 1,
+      "weight_semantics": "unit"
+    }
+  },
+  "15c3eecbb2b9b91694d0f426e2c3d99cd0dcdb9013e774b15f1041bc31cebcbc": {
+    "canonical": "15c3eecbb2b9b91694d0f426e2c3d99cd0dcdb9013e774b15f1041bc31cebcbc",
+    "kind": "ali",
+    "path": "mwfas-exp12/inputs/77e5b8b/tests/small.d",
+    "sha256": "3b1868dd4647432799877bcd0f3f8c4711bed2211c0bd52b091e08f724fd922b",
+    "spec": {
+      "annotation": "fifth_integer_annotation",
+      "density": 0.19047619047619047,
+      "graph_sha256": "15c3eecbb2b9b91694d0f426e2c3d99cd0dcdb9013e774b15f1041bc31cebcbc",
+      "instance_id": "small",
+      "largest_scc": 1,
+      "m": 8,
+      "matching_hf_rows": [
+        {
+          "configuration": "core_benchmark",
+          "instance_id": "small",
+          "m": 8,
+          "n": 7,
+          "row_index": 366,
+          "total_weight": 13555
+        },
+        {
+          "configuration": "core_benchmark",
+          "instance_id": "small",
+          "m": 8,
+          "n": 7,
+          "row_index": 367,
+          "total_weight": 13555
+        },
+        {
+          "configuration": "core_benchmark",
+          "instance_id": "small",
+          "m": 8,
+          "n": 7,
+          "row_index": 368,
+          "total_weight": 13555
+        },
+        {
+          "configuration": "external_baselines",
+          "instance_id": "small",
+          "m": 8,
+          "n": 7,
+          "row_index": 976,
+          "total_weight": 13555
+        },
+        {
+          "configuration": "external_baselines",
+          "instance_id": "small",
+          "m": 8,
+          "n": 7,
+          "row_index": 977,
+          "total_weight": 13555
+        },
+        {
+          "configuration": "external_baselines",
+          "instance_id": "small",
+          "m": 8,
+          "n": 7,
+          "row_index": 978,
+          "total_weight": 13555
+        },
+        {
+          "configuration": "external_baselines",
+          "instance_id": "small",
+          "m": 8,
+          "n": 7,
+          "row_index": 979,
+          "total_weight": 13555
+        },
+        {
+          "configuration": "external_baselines",
+          "instance_id": "small",
+          "m": 8,
+          "n": 7,
+          "row_index": 980,
+          "total_weight": 13555
+        },
+        {
+          "configuration": "external_baselines",
+          "instance_id": "small",
+          "m": 8,
+          "n": 7,
+          "row_index": 981,
+          "total_weight": 13555
+        },
+        {
+          "configuration": "external_baselines",
+          "instance_id": "small",
+          "m": 8,
+          "n": 7,
+          "row_index": 982,
+          "total_weight": 13555
+        },
+        {
+          "configuration": "external_baselines",
+          "instance_id": "small",
+          "m": 8,
+          "n": 7,
+          "row_index": 983,
+          "total_weight": 13555
+        },
+        {
+          "configuration": "exact_small",
+          "instance_id": "small",
+          "m": 8,
+          "n": 7,
+          "row_index": 42,
+          "total_weight": 13555
+        }
+      ],
+      "max_weight": 2250,
+      "min_weight": 682,
+      "n": 7,
+      "nontrivial_sccs": 0,
+      "prior_exact_graph_overlap": false,
+      "snapshot_status": "RECONSTRUCTED_REFERENCE_SNAPSHOT; HISTORICAL_BYTES_NOT_VERIFIED",
+      "source_byte_sha256": "3b1868dd4647432799877bcd0f3f8c4711bed2211c0bd52b091e08f724fd922b",
+      "source_path": "tests/small.d",
+      "total_weight": 13555
+    }
+  },
+  "99961b54cf3bf54cee3d23d97984b33b85c38b387ece1a5edd1ef7c5a2bbaf48": {
+    "canonical": "99961b54cf3bf54cee3d23d97984b33b85c38b387ece1a5edd1ef7c5a2bbaf48",
+    "kind": "ali",
+    "path": "mwfas-exp12/inputs/77e5b8b/core/r20_60.d",
+    "sha256": "89214060ba2844884e5fd4d23b406387765ad803b20d0585f5f7c86a0ff89c65",
+    "spec": {
+      "annotation": "fifth_integer_annotation",
+      "density": 0.15789473684210525,
+      "graph_sha256": "99961b54cf3bf54cee3d23d97984b33b85c38b387ece1a5edd1ef7c5a2bbaf48",
+      "instance_id": "r20_60",
+      "largest_scc": 20,
+      "m": 60,
+      "matching_hf_rows": [
+        {
+          "configuration": "core_benchmark",
+          "instance_id": "r20_60",
+          "m": 60,
+          "n": 20,
+          "row_index": 186,
+          "total_weight": 9234
+        },
+        {
+          "configuration": "core_benchmark",
+          "instance_id": "r20_60",
+          "m": 60,
+          "n": 20,
+          "row_index": 187,
+          "total_weight": 9234
+        },
+        {
+          "configuration": "core_benchmark",
+          "instance_id": "r20_60",
+          "m": 60,
+          "n": 20,
+          "row_index": 188,
+          "total_weight": 9234
+        },
+        {
+          "configuration": "external_baselines",
+          "instance_id": "r20_60",
+          "m": 60,
+          "n": 20,
+          "row_index": 496,
+          "total_weight": 9234
+        },
+        {
+          "configuration": "external_baselines",
+          "instance_id": "r20_60",
+          "m": 60,
+          "n": 20,
+          "row_index": 497,
+          "total_weight": 9234
+        },
+        {
+          "configuration": "external_baselines",
+          "instance_id": "r20_60",
+          "m": 60,
+          "n": 20,
+          "row_index": 498,
+          "total_weight": 9234
+        },
+        {
+          "configuration": "external_baselines",
+          "instance_id": "r20_60",
+          "m": 60,
+          "n": 20,
+          "row_index": 499,
+          "total_weight": 9234
+        },
+        {
+          "configuration": "external_baselines",
+          "instance_id": "r20_60",
+          "m": 60,
+          "n": 20,
+          "row_index": 500,
+          "total_weight": 9234
+        },
+        {
+          "configuration": "external_baselines",
+          "instance_id": "r20_60",
+          "m": 60,
+          "n": 20,
+          "row_index": 501,
+          "total_weight": 9234
+        },
+        {
+          "configuration": "external_baselines",
+          "instance_id": "r20_60",
+          "m": 60,
+          "n": 20,
+          "row_index": 502,
+          "total_weight": 9234
+        },
+        {
+          "configuration": "external_baselines",
+          "instance_id": "r20_60",
+          "m": 60,
+          "n": 20,
+          "row_index": 503,
+          "total_weight": 9234
+        },
+        {
+          "configuration": "exact_small",
+          "instance_id": "r20_60",
+          "m": 60,
+          "n": 20,
+          "row_index": 66,
+          "total_weight": 9234
+        }
+      ],
+      "max_weight": 298,
+      "min_weight": 4,
+      "n": 20,
+      "nontrivial_sccs": 1,
+      "prior_exact_graph_overlap": false,
+      "snapshot_status": "RECONSTRUCTED_REFERENCE_SNAPSHOT; HISTORICAL_BYTES_NOT_VERIFIED",
+      "source_byte_sha256": "89214060ba2844884e5fd4d23b406387765ad803b20d0585f5f7c86a0ff89c65",
+      "source_path": "core/r20_60.d",
+      "total_weight": 9234
+    }
+  },
+  "2d63f94dba020fdc03250ae45798f124eff8e979bdf767b511146703a7894341": {
+    "canonical": "2d63f94dba020fdc03250ae45798f124eff8e979bdf767b511146703a7894341",
+    "kind": "exp13",
+    "path": "mwfas-exp13/inputs/0c8d88e-v1/normalized/exp13_openflights_us_routes.d",
+    "sha256": "402da14665bdc106995b7995ac6d8bf56af6659af46e82a097fd0ac655f5d893",
+    "spec": {
+      "degree_cv": 2.121163374846296,
+      "density": 0.018115219443447277,
+      "dimacs_sha256": "402da14665bdc106995b7995ac6d8bf56af6659af46e82a097fd0ac655f5d893",
+      "graph_file": "exp13_openflights_us_routes.d",
+      "graph_sha256": "2d63f94dba020fdc03250ae45798f124eff8e979bdf767b511146703a7894341",
+      "instance_id": "exp13_openflights_us_routes",
+      "largest_scc": 525,
+      "largest_scc_fraction": 0.9562841530054644,
+      "m": 5450,
+      "n": 549,
+      "node_map_file": "exp13_openflights_us_routes.node_map.json",
+      "node_map_sha256": "1f2d6c4bf33974eaa18e3b279b3cb00c852eebaf987f99ec0bfd3e82216af5e5",
+      "nontrivial_scc_count": 3,
+      "original_loop_weight_constant": 0,
+      "original_objective_relation": "original weighted backward objective = normalized objective + original_loop_weight_constant",
+      "scc_count": 19,
+      "source_files": [
+        {
+          "name": "openflights-routes.dat",
+          "sha256": "bd373706238134f619c624c606dccc74c05c2582a977c489c81de501735f2390"
+        },
+        {
+          "name": "openflights-airports.dat",
+          "sha256": "9387cdb38df5bd664da823f8ccb69fdd9b33a1888f5b7cca09c34a3cd9ff59f9"
+        }
+      ],
+      "source_parent": "openflights",
+      "source_record_counts": {
+        "airport_id_absent_in_pinned_airport_table": 469,
+        "all_route_rows": 67663,
+        "nonstop_field_not_zero": 6,
+        "outside_us_domestic_projection": 56253,
+        "retained_route_rows": 10512,
+        "unresolved_airport_id_rows": 423
+      },
+      "top_decile_weight_share": 0.2677891933028919,
+      "total_weight": 10512,
+      "weight_cv": 0.73389126673964,
+      "weight_max": 20,
+      "weight_median": 2.0,
+      "weight_min": 1
+    }
+  },
+  "155ce1495c86a9293183b3ee7c330df17008a9c9e4173d8b9ed3c93e4f18dc73": {
+    "canonical": "155ce1495c86a9293183b3ee7c330df17008a9c9e4173d8b9ed3c93e4f18dc73",
+    "kind": "exp05",
+    "path": "mwfas-exp05/production-output/graphs/exp05_wiki_vote_full_reference.d",
+    "sha256": "7d0b8c35e840e6448adaaa8b4a9333ada6c768d5b26870ec645d88ea52a3e03d",
+    "spec": {
+      "already_in_historical_dataset": true,
+      "config_sha256": "c6082e0195c764c98387e917bc6de3c21a9dea81b038c881ad4342ce06f96f02",
+      "cyclic_scc_count": 1,
+      "density": 0.0020485375110809584,
+      "dimacs_sha256": "7d0b8c35e840e6448adaaa8b4a9333ada6c768d5b26870ec645d88ea52a3e03d",
+      "excluded_self_loop_weight": 0,
+      "graph_file": "exp05_wiki_vote_full_reference.d",
+      "graph_sha256": "155ce1495c86a9293183b3ee7c330df17008a9c9e4173d8b9ed3c93e4f18dc73",
+      "in_degree_cv": 2.1771826294547374,
+      "instance_id": "exp05_wiki_vote_full_reference",
+      "largest_scc_size": 1300,
+      "n_edges": 103689,
+      "n_vertices": 7115,
+      "node_map_file": "exp05_wiki_vote_full_reference.json",
+      "node_map_sha256": "1927f84257d493a004caaf92ed29f7d9f8404fc48af5925e0bf7db16bcf616b9",
+      "out_degree_cv": 2.901136161807286,
+      "scc_count": 5816,
+      "source_category": "sparse_real_network",
+      "source_id": "snap_wiki_vote",
+      "source_member": null,
+      "source_member_sha256": null,
+      "source_parent": "wiki_vote",
+      "source_sha256": "7d3e53626e14b8b09fb3b396bece9d481ad606bd64ceab066349ff57d4ada7fc",
+      "source_url": "https://snap.stanford.edu/data/wiki-Vote.txt.gz",
+      "source_version": "through January 2008; unversioned SNAP download pinned by SHA-256",
+      "topology_sha256": "9f61a5ae43f40dd3aba5852a83d306e15de475bb2db1c3e07e85c7050bab367b",
+      "total_graph_weight": 103689,
+      "transformation": "full",
+      "weight_max": 1,
+      "weight_mean": 1,
+      "weight_min": 1,
+      "weight_semantics": "unit"
+    }
+  }
+}

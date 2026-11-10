@@ -1,0 +1,12 @@
+{
+  "instance": "exp04/exp04_cm_n120_k03_r01",
+  "saved_reference_run": "exp04_cm_n120_k03_r01__ipsns_b010_s1",
+  "objective": 9391,
+  "feedback_arcs": 187,
+  "retained_dag": true,
+  "valid_order": true,
+  "reference": 1854,
+  "reference_kind": "best_saved_feasible_not_optimality_proof",
+  "absolute_gap": 7537,
+  "relative_gap": 4.0652642934196335
+}

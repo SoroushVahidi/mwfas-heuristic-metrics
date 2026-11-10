@@ -1,0 +1,54 @@
+\section{Supplemental protocol-specific evidence}\label{sec:supplement}
+\setcounter{table}{0}
+\renewcommand{\thetable}{S\arabic{table}}
+\renewcommand{\theHtable}{S\arabic{table}}
+The following tables keep the later protocols separate from the original main-text numerical tables. All objectives are active backward weights on loop-free optimization graphs. Smaller is better. These private-review summaries are derived from the completed independent validation, not from new optimization runs.
+
+\begin{table}[htbp]
+\caption{Post hoc EXP29 comparison: IPSNS seed 2901 versus single-run RASstar seed 1, original controller v1, 120-second horizon. All 90 selected tasks pass witness/deadline checks. The full 180-task campaign remains failed because five restart observations are invalid. Counts concern these configurations and retain all 45 inputs in the two selected arms.}\label{tab:s-exp29}
+\centering\small
+\begin{tabular}{lrrrr}\toprule
+Generated family & Pairs & IPSNS wins & Ties & Losses\\\midrule
+Erd\H{o}s--R\'enyi & 15 & 12 & 0 & 3\\
+Community & 15 & 14 & 0 & 1\\
+Scale-free & 15 & 7 & 5 & 3\\
+\midrule All & 45 & 33 & 5 & 7\\\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\caption{EXP30 selected observations and controller lineage. PASS denotes a completed valid run; TO denotes a valid timeout with order, not an optimum certificate. Each row supplies two dependent horizons of one task. Seven observations use v1 and five v2. There are no insertion observations at matched 300-second horizons for these parents.}\label{tab:s-exp30}
+\centering\small
+\begin{tabular}{llrlrrl}\toprule
+Parent & Arm & Seed & Controller & $B_{120}$ & $B_{300}$ & Status\\\midrule
+Wiki-Vote & IPSNS & 2901 & v1 & 6999 & 6999 & TO\\
+Wiki-Vote & IPSNS & 2902 & v1 & 6999 & 6999 & TO\\
+Wiki-Vote & RASstar restarts & 1 & v1 & 6621 & 6612 & TO\\
+Wiki-Vote & RASstar single & 1 & v1 & 6660 & 6660 & PASS\\
+IRS SOI & IPSNS & 2901 & v2 & 2770227 & 2770227 & TO\\
+IRS SOI & IPSNS & 2902 & v2 & 2770227 & 2770227 & TO\\
+IRS SOI & RASstar restarts & 1 & v2 & 2776547 & 2776544 & TO\\
+IRS SOI & RASstar single & 1 & v2 & 2776679 & 2776679 & PASS\\
+Census LODES & IPSNS & 2901 & v1 & 67046 & 67046 & TO\\
+Census LODES & IPSNS & 2902 & v1 & 67046 & 67046 & TO\\
+Census LODES & RASstar restarts & 1 & v2 & 66285 & 66285 & TO\\
+Census LODES & RASstar single & 1 & v1 & 66330 & 66330 & PASS\\
+\bottomrule\end{tabular}
+\end{table}
+
+Wiki-Vote uses v1 throughout, IRS SOI uses v2 throughout, and the LODES restart observation crosses from original v1 to recovery v2. The excluded source-loop constants are 0 for Wiki-Vote, 18,628 for LODES, and 124,358,925 for IRS. The source graphs are reused; these are additional parents relative to EXP28, not newly collected independent sources for the benchmark as a whole. Controller revisions, seed discrepancies, allocation differences, and preserved historical statuses are described in Section~\ref{sec:supp-protocol}.
+
+\begin{table}[htbp]
+\caption{EXP05 descriptive weighting sensitivity on the same 37 original complete views and five deterministic arms. Means of $B/T$ are displayed to six decimals; ranks use unrounded values. Parent counts are CollegeMsg 4, Email-Eu-core 1, EXIOBASE 30, and Wiki-Vote 2. The full Email-Eu-core view is excluded from every arm. No recovery or IPSNS outcome enters these means.}\label{tab:s-parent}
+\centering\small
+\begin{tabular}{lrrrr}\toprule
+Arm & Equal-view mean & Equal-parent mean & View rank & Parent rank\\\midrule
+Insertion from LR-TA & 0.085449 & 0.216708 & 1 & 1\\
+Insertion from WMSF/L2 & 0.085833 & 0.218959 & 2 & 2\\
+LR-TA & 0.090835 & 0.226481 & 3 & 3\\
+WMSF/L2 & 0.092092 & 0.240204 & 4 & 5\\
+Weighted Eades & 0.115093 & 0.239209 & 5 & 4\\
+\bottomrule\end{tabular}
+\end{table}
+
+The leading three arms retain their order in all equal-parent leave-one-out analyses. WMSF/L2 precedes weighted Eades only when Email-Eu-core is omitted. Under equal-view leave-one-out weighting, omitting Wiki-Vote reverses the two insertion arms. The full-cohort leading order is therefore stable for the two displayed means, not for every possible parent deletion and weighting rule. The original 200-iteration IPSNS complete-case population remains 18 of 38 views, all from EXIOBASE.

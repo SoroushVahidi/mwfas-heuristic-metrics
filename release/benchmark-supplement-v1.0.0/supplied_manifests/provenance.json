@@ -1,0 +1,5 @@
+{
+  "source_audit": "mwfas-record-availability-audit-20261109 (supplied metadata snapshot)",
+  "graph_ledger_sha256": "716ebd79a0f6a4378bc938314b8934a2a76c3b063568be4a68de5b4231a4194a",
+  "scope": "Supplied historical metadata only; no graph bytes or saved orderings"
+}

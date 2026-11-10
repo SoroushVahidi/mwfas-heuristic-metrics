@@ -1,0 +1,3 @@
+# Additive topology metadata correction
+
+graphs-v1.1.csv retains all 442 original rows and scientific numerical fields. Only 23 blank topology hashes and their corresponding explicit topology-contract fields are completed. Twenty are EXP12 Ali collection records and three are EXP13. Each was rehashed from exact original recorded graph bytes by the feature parser and a separate header/edge serializer, and matched the previously supplied audit. topology-corrections.tsv and INDEPENDENT_TOPOLOGY_CHECKS.json record the changes. The pinned old public metadata remains unchanged. No new independent source or non-isomorphism claim follows from a new identity field.

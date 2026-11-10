@@ -1,0 +1,7 @@
+{
+  "records": 442,
+  "status": "PASS",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]"
+}

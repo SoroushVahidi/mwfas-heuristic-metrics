@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "authoritative_records": 442,
+  "complete_features": 442,
+  "registered_parent_joins": 288,
+  "traceable_empirical_parent_lineages": 8,
+  "unresolved_collection": 1,
+  "topology_identities": 343,
+  "weighted_identities": 442,
+  "profile_checks": "PASS",
+  "coverage_weights": "PASS",
+  "independent_consistency_records": 442
+}

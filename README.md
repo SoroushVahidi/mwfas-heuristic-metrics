@@ -51,3 +51,7 @@ See [the public replay instructions](release/public_reproducibility/EXP28.md) an
 ## Complete printed-table replay
 
 All ten printed numerical tables are publicly replayable; 11/17 tracked claim groups are fully covered. See [the remaining-table replay instructions and receipts](release/public_reproducibility/remaining/README.md). Historical Hugging Face graph-byte identity and six broader claim groups retain their stated limitations.
+
+## MWFAS benchmark supplementary release (November 2026)
+
+[Public verifier, benchmark profiles and instructions](release/benchmark-supplement-v1.0.0/README.md) accompany the [versioned Hugging Face supplementary evidence](https://huggingface.co/datasets/SoroushVahidi/mwfas-benchmark-extension/tree/benchmark-supplement-v1.0.0/releases/benchmark-supplement-v1.0.0). This additive release supports saved-output verification of supplementary Tables S1–S3 and preserves every earlier release. It does not rerun optimization or imply journal acceptance.

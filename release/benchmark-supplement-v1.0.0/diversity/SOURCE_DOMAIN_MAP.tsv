@@ -1,0 +1,10 @@
+parent_id	application_domain	records	origin_class	domain_classification
+Wikimedia_clickstream	web_navigation	3	traceable_empirical	curated from authoritative source description; not a statistical independence claim
+alidasdan/graph-benchmarks	mixed_collection_origins_unresolved	20	unresolved_collection	curated from authoritative source description; not a statistical independence claim
+census_lodes	transport_and_mobility	1	traceable_empirical	curated from authoritative source description; not a statistical independence claim
+college_msg	communication	4	traceable_empirical	curated from authoritative source description; not a statistical independence claim
+email_eu_core	communication	2	traceable_empirical	curated from authoritative source description; not a statistical independence claim
+exiobase_lop_benchmark	economic_input_output	30	traceable_empirical	curated from authoritative source description; not a statistical independence claim
+irs_soi	transport_and_mobility	1	traceable_empirical	curated from authoritative source description; not a statistical independence claim
+openflights	transport_and_mobility	1	traceable_empirical	curated from authoritative source description; not a statistical independence claim
+wiki_vote	online_governance	2	traceable_empirical	curated from authoritative source description; not a statistical independence claim

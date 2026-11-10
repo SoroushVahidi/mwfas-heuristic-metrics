@@ -1,0 +1,363 @@
+{
+  "records": 442,
+  "cohorts": {
+    "EXP05": 38,
+    "EXP04": 135,
+    "EXP06": 198,
+    "EXP03": 45,
+    "EXP12": 20,
+    "EXP14_EXP15": 3,
+    "EXP13": 3
+  },
+  "origins": {
+    "traceable_empirical": 44,
+    "generated": 378,
+    "unresolved_collection": 20
+  },
+  "families": {
+    "exiobase_lop_benchmark": 30,
+    "directed_scale_free": 114,
+    "planted_order": 36,
+    "directed_community": 114,
+    "erdos_renyi_directed": 114,
+    "college_msg": 4,
+    "core-bad": 3,
+    "iscas": 8,
+    "navigation": 3,
+    "core": 6,
+    "iscas-small": 2,
+    "real_world": 3,
+    "email_eu_core": 2,
+    "tests": 1,
+    "wiki_vote": 2
+  },
+  "traceable_empirical_parents": 8,
+  "registered_parents": 288,
+  "topologies": 343,
+  "records_n_gt_1000": 11,
+  "records_n_gt_10000": 3,
+  "parents_n_gt_10000": [
+    "Wikimedia_clickstream"
+  ],
+  "acyclic_records": [
+    {
+      "graph_id": "g_8ac02aadd02592f76a3a6d64",
+      "instance_id": "small",
+      "cohort": "EXP12",
+      "n": 7.0
+    },
+    {
+      "graph_id": "g_bde5a15a44f0cf9c4a0881e3",
+      "instance_id": "gr1-acyclic",
+      "cohort": "EXP12",
+      "n": 10.0
+    }
+  ],
+  "timeout_graphs": 21,
+  "timeout_tasks": 110,
+  "reference_classes": {
+    "NO_NUMERICAL_REFERENCE": 199,
+    "NUMERICAL_SOLVER_CERTIFIED": 218,
+    "FEASIBLE_WITH_BOUND": 25
+  },
+  "difficulty_regimes": {
+    "feasible_without_certificate": 178,
+    "certified_reference_hit": 118,
+    "certified_reference_gap": 100,
+    "bounded_reference": 25,
+    "observed_timeout": 21
+  },
+  "certified_n_range": [
+    12.0,
+    480.0
+  ],
+  "unit_weight_records": 7,
+  "all_integer_positive": true,
+  "parallel_record_excess": 0,
+  "isolated_vertex_graphs": 1,
+  "profiles": {
+    "table45_core": {
+      "records": 34,
+      "topologies": 34,
+      "traceable_empirical_parents": 0,
+      "cohorts": {
+        "EXP06": 24,
+        "EXP04": 10
+      },
+      "origins": {
+        "generated": 34
+      },
+      "public_access": {
+        "PUBLIC_RELEASE_BYTES": 34
+      },
+      "uncovered_marginal_tokens": [],
+      "n_range": [
+        12.0,
+        480.0
+      ]
+    },
+    "existing_source_diverse": {
+      "records": 47,
+      "topologies": 47,
+      "traceable_empirical_parents": 8,
+      "cohorts": {
+        "EXP06": 24,
+        "EXP04": 10,
+        "EXP14_EXP15": 1,
+        "EXP13": 3,
+        "EXP05": 4,
+        "EXP12": 5
+      },
+      "origins": {
+        "generated": 34,
+        "traceable_empirical": 8,
+        "unresolved_collection": 5
+      },
+      "public_access": {
+        "PUBLIC_RELEASE_BYTES": 35,
+        "PUBLIC_RECONSTRUCTIBLE": 12
+      },
+      "uncovered_marginal_tokens": [],
+      "n_range": [
+        7.0,
+        142627.0
+      ]
+    }
+  },
+  "all": {
+    "records": 442,
+    "topologies": 343,
+    "size_range": [
+      4.0,
+      143006.0
+    ],
+    "feature_ranges": {
+      "n": [
+        4.0,
+        49.0,
+        143006.0
+      ],
+      "density": [
+        1.955598013871399e-05,
+        0.10347903657448707,
+        1.0
+      ],
+      "largest_scc_fraction": [
+        0.010526315789473684,
+        0.9166666666666666,
+        1.0
+      ],
+      "cyclic_edge_fraction": [
+        0.0,
+        0.9,
+        1.0
+      ],
+      "cyclic_vertex_fraction": [
+        0.0,
+        0.9166666666666666,
+        1.0
+      ],
+      "reciprocal_edge_fraction": [
+        0.0,
+        0.05555555555555555,
+        1.0
+      ],
+      "total_degree_gini": [
+        0.0,
+        0.18212499999999998,
+        0.7520001630368698
+      ],
+      "weight_top_decile_share": [
+        0.1,
+        0.1933609092957112,
+        0.8542950943807357
+      ],
+      "weight_cv": [
+        0.0,
+        0.5828864894435342,
+        5.907833015133549
+      ]
+    },
+    "cyclic_edges_eq_one": 118,
+    "cyclic_edges_ge_09": 222,
+    "reciprocity_zero": 81,
+    "density_half": 8
+  },
+  "table45": {
+    "records": 333,
+    "topologies": 234,
+    "size_range": [
+      12.0,
+      480.0
+    ],
+    "feature_ranges": {
+      "n": [
+        12.0,
+        28.0,
+        480.0
+      ],
+      "density": [
+        0.006263048016701462,
+        0.10526315789473684,
+        0.5454545454545454
+      ],
+      "largest_scc_fraction": [
+        0.08333333333333333,
+        0.9166666666666666,
+        1.0
+      ],
+      "cyclic_edge_fraction": [
+        0.08333333333333333,
+        0.8972222222222223,
+        1.0
+      ],
+      "cyclic_vertex_fraction": [
+        0.14583333333333334,
+        0.9166666666666666,
+        1.0
+      ],
+      "reciprocal_edge_fraction": [
+        0.0,
+        0.071875,
+        0.7083333333333334
+      ],
+      "total_degree_gini": [
+        0.0625,
+        0.18562499999999993,
+        0.5519328703703703
+      ],
+      "weight_top_decile_share": [
+        0.16535776614310646,
+        0.19321458863443597,
+        0.6140446379967338
+      ],
+      "weight_cv": [
+        0.44161833023035946,
+        0.5819960768603698,
+        2.352905201813112
+      ]
+    },
+    "cyclic_edges_eq_one": 92,
+    "cyclic_edges_ge_09": 166,
+    "reciprocity_zero": 36,
+    "density_half": 0
+  },
+  "traceable_empirical": {
+    "records": 44,
+    "topologies": 44,
+    "size_range": [
+      10.0,
+      143006.0
+    ],
+    "feature_ranges": {
+      "n": [
+        10.0,
+        159.0,
+        143006.0
+      ],
+      "density": [
+        1.955598013871399e-05,
+        0.4270829129899306,
+        0.5687348478046153
+      ],
+      "largest_scc_fraction": [
+        0.15369116698903934,
+        0.9240022172949003,
+        1.0
+      ],
+      "cyclic_edge_fraction": [
+        0.2,
+        0.923789721448214,
+        1.0
+      ],
+      "cyclic_vertex_fraction": [
+        0.18271257905832747,
+        0.9240022172949003,
+        1.0
+      ],
+      "reciprocal_edge_fraction": [
+        0.0,
+        0.0,
+        0.9772477064220183
+      ],
+      "total_degree_gini": [
+        0.0,
+        0.09660010306781952,
+        0.7520001630368698
+      ],
+      "weight_top_decile_share": [
+        0.10000096442245561,
+        0.5378978694385068,
+        0.8542950943807357
+      ],
+      "weight_cv": [
+        0.0,
+        1.87303255405044,
+        5.907833015133549
+      ]
+    },
+    "cyclic_edges_eq_one": 8,
+    "cyclic_edges_ge_09": 23,
+    "reciprocity_zero": 30,
+    "density_half": 8
+  },
+  "EXP05": {
+    "records": 38,
+    "topologies": 38,
+    "size_range": [
+      10.0,
+      7115.0
+    ],
+    "feature_ranges": {
+      "n": [
+        10.0,
+        150.0,
+        7115.0
+      ],
+      "density": [
+        0.0020485375110809584,
+        0.48333333333333334,
+        0.5
+      ],
+      "largest_scc_fraction": [
+        0.18271257905832747,
+        0.9240022172949003,
+        1.0
+      ],
+      "cyclic_edge_fraction": [
+        0.2,
+        0.923789721448214,
+        1.0
+      ],
+      "cyclic_vertex_fraction": [
+        0.18271257905832747,
+        0.9240022172949003,
+        1.0
+      ],
+      "reciprocal_edge_fraction": [
+        0.0,
+        0.0,
+        0.7345264727815063
+      ],
+      "total_degree_gini": [
+        0.0,
+        0.026532769556025237,
+        0.7520001630368698
+      ],
+      "weight_top_decile_share": [
+        0.10000096442245561,
+        0.5427831832013594,
+        0.8542950943807357
+      ],
+      "weight_cv": [
+        0.0,
+        1.8194244957880406,
+        5.907833015133549
+      ]
+    },
+    "cyclic_edges_eq_one": 7,
+    "cyclic_edges_ge_09": 20,
+    "reciprocity_zero": 30,
+    "density_half": 8
+  }
+}

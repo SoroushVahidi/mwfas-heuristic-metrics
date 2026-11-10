@@ -1,0 +1,7 @@
+{
+  "source_files": {
+    "recover_exp28_sources.py": "984b62e7f241cf44279713ecb54123ff61c8903658f8b43e69de00856658d950",
+    "sources.py": "0e1d5af60065551476ffa9a91f1009e6aacac2a6a0cf83bccb36f3a4efe5eca1"
+  },
+  "adaptation": "Extract existing largest_scc, Fetcher and exp05 transformation functions; add package-relative driver. No new optimization."
+}

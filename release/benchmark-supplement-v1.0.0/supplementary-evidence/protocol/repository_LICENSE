@@ -1,0 +1,19 @@
+File-scoped license status for this private research repository
+
+There is no repository-wide license grant. The author has approved MIT as the
+intended license for verified author-owned original code and Creative Commons
+Attribution 4.0 International (CC BY 4.0) as the intended license for verified
+author-controlled research metadata, result tables, and documentation. Exact
+file lists and applicable ownership or agreement conditions still require
+review before those grants are applied or this repository is made public.
+
+See LICENSE_SCOPE.md for the candidate file classes and excluded materials.
+This notice does not relicense third-party code, graph data, source archives,
+solver logs, Springer template files, or the separately pinned Hugging Face
+dataset. The original dataset's own limited CC BY 4.0 grant remains unchanged.
+
+MIT reference: https://opensource.org/license/mit
+CC BY 4.0 reference: https://creativecommons.org/licenses/by/4.0/legalcode
+
+Citation and academic credit are requested separately in CITATION.cff and
+README.md. MIT does not itself require scholarly citation.

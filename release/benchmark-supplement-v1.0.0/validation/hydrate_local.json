@@ -1,0 +1,105 @@
+{
+  "status": "PASS",
+  "objects": [
+    {
+      "logical_path": "source/mwfas-exp05/production-output/graphs/exp05_college_first_30_days_count.d",
+      "sha256": "e88498ba42262a77856a89c3625293d8640fa30bc9a118b2d6b3cc42d3fc709c",
+      "status": "PASS"
+    },
+    {
+      "logical_path": "source/mwfas-exp05/production-output/graphs/exp05_college_first_90_days_count.d",
+      "sha256": "7a5e34e22f585d2063f1de62d8a9d07e4d12de8a43bb3a76738719d87bf00d16",
+      "status": "PASS"
+    },
+    {
+      "logical_path": "source/mwfas-exp05/production-output/graphs/exp05_college_full_count.d",
+      "sha256": "8bb658456ae0aae7e5fed90078f42fedac5d45feccef8ea2d993fa4588b42e60",
+      "status": "PASS"
+    },
+    {
+      "logical_path": "source/mwfas-exp05/production-output/graphs/exp05_college_largest_scc_count.d",
+      "sha256": "b35c0ff4570779d991a3414d5a02cca2f06c1515b0de6bbe198b3759c3f9b282",
+      "status": "PASS"
+    },
+    {
+      "logical_path": "source/mwfas-exp05/production-output/graphs/exp05_email_largest_scc.d",
+      "sha256": "c8199c4f5d20f966e798049e97e2e8365bf4f15d9806f6377011ff1ea2833eaf",
+      "status": "PASS"
+    },
+    {
+      "logical_path": "source/mwfas-exp05/production-output/graphs/exp05_wiki_vote_full_reference.d",
+      "sha256": "7d0b8c35e840e6448adaaa8b4a9333ada6c768d5b26870ec645d88ea52a3e03d",
+      "status": "PASS"
+    },
+    {
+      "logical_path": "source/mwfas-exp05/production-output/graphs/exp05_wiki_vote_largest_scc_reference.d",
+      "sha256": "31c2c821be7371f032d7dcd8445b6b022caedff7e480265eb3c2f1a0b3572d2b",
+      "status": "PASS"
+    },
+    {
+      "logical_path": "source/mwfas-overnight-20261019/output/exp30-2bbff1c-v1/tasks/exp05_wiki_vote_largest_scc_reference__b300__xiong_restarts__s1/input.w",
+      "sha256": "d50304a1f772840519b0d58a3797ef87ce55b0bcf980693215341a538e5ed228",
+      "status": "PASS"
+    },
+    {
+      "logical_path": "source/mwfas-overnight-20261019/output/exp30-2bbff1c-v1/tasks/exp05_wiki_vote_largest_scc_reference__b300__xiong_single__s1/input.w",
+      "sha256": "d50304a1f772840519b0d58a3797ef87ce55b0bcf980693215341a538e5ed228",
+      "status": "PASS"
+    },
+    {
+      "logical_path": "source/mwfas-exp05/production-output/node_maps/exp05_college_first_30_days_count.json",
+      "sha256": "e43f27c4625f584d840b819a6706774fba6a5bc11b9b21bdfa0ea4c07326865e",
+      "status": "PASS"
+    },
+    {
+      "logical_path": "source/mwfas-exp05/production-output/node_maps/exp05_college_first_90_days_count.json",
+      "sha256": "0fa687811477f62211be629b2656fa1a5ffceec79881d1d337714fdcfc33c467",
+      "status": "PASS"
+    },
+    {
+      "logical_path": "source/mwfas-exp05/production-output/node_maps/exp05_college_full_count.json",
+      "sha256": "f96baa03ba29dc8bd0cf45923a0028ba3673ff345fa49c006053409a860a1721",
+      "status": "PASS"
+    },
+    {
+      "logical_path": "source/mwfas-exp05/production-output/node_maps/exp05_college_largest_scc_count.json",
+      "sha256": "afa639a2ce3d0de3818ade856e8625f26b2223d927fead651153f7ae02a6a814",
+      "status": "PASS"
+    },
+    {
+      "logical_path": "source/mwfas-exp05/production-output/node_maps/exp05_email_largest_scc.json",
+      "sha256": "05537eaa5f3411921376188296446e80d2675648fe4df5b3f30add3bb49f5281",
+      "status": "PASS"
+    },
+    {
+      "logical_path": "source/mwfas-exp05/production-output/node_maps/exp05_wiki_vote_full_reference.json",
+      "sha256": "1927f84257d493a004caaf92ed29f7d9f8404fc48af5925e0bf7db16bcf616b9",
+      "status": "PASS"
+    },
+    {
+      "logical_path": "source/mwfas-exp05/production-output/node_maps/exp05_wiki_vote_largest_scc_reference.json",
+      "sha256": "e1a0fce223ee9e542d3c9d0303ee3e7ae05ae9c784585274afe5777d18f29402",
+      "status": "PASS"
+    }
+  ],
+  "downloads": [
+    {
+      "url": "https://snap.stanford.edu/data/email-Eu-core.txt.gz",
+      "sha256": "4b47acdb80197b085fe63c819c357ae488131ee904ed93d1b219a68b0f9e245f",
+      "bytes": 79754,
+      "anonymous": true
+    },
+    {
+      "url": "https://snap.stanford.edu/data/CollegeMsg.txt.gz",
+      "sha256": "50ae2d98ed3bad9ddb18dbd495a89e5e10cfb8f7e86932827db29fc41b41f9fa",
+      "bytes": 345339,
+      "anonymous": true
+    },
+    {
+      "url": "https://snap.stanford.edu/data/wiki-Vote.txt.gz",
+      "sha256": "7d3e53626e14b8b09fb3b396bece9d481ad606bd64ceab066349ff57d4ada7fc",
+      "bytes": 290339,
+      "anonymous": true
+    }
+  ]
+}

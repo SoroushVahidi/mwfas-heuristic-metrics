@@ -1,0 +1,49 @@
+{
+  "table45_core": {
+    "records": 34,
+    "topologies": 34,
+    "traceable_empirical_parents": 0,
+    "cohorts": {
+      "EXP06": 24,
+      "EXP04": 10
+    },
+    "origins": {
+      "generated": 34
+    },
+    "public_access": {
+      "PUBLIC_RELEASE_BYTES": 34
+    },
+    "uncovered_marginal_tokens": [],
+    "n_range": [
+      12.0,
+      480.0
+    ]
+  },
+  "existing_source_diverse": {
+    "records": 47,
+    "topologies": 47,
+    "traceable_empirical_parents": 8,
+    "cohorts": {
+      "EXP06": 24,
+      "EXP04": 10,
+      "EXP14_EXP15": 1,
+      "EXP13": 3,
+      "EXP05": 4,
+      "EXP12": 5
+    },
+    "origins": {
+      "generated": 34,
+      "traceable_empirical": 8,
+      "unresolved_collection": 5
+    },
+    "public_access": {
+      "PUBLIC_RELEASE_BYTES": 35,
+      "PUBLIC_RECONSTRUCTIBLE": 12
+    },
+    "uncovered_marginal_tokens": [],
+    "n_range": [
+      7.0,
+      142627.0
+    ]
+  }
+}

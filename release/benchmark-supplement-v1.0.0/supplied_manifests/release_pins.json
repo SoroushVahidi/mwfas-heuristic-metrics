@@ -1,0 +1,14 @@
+{
+  "urls": {
+    "code": "https://codeload.github.com/SoroushVahidi/mwfas-heuristic-metrics/tar.gz/d5fb6c885a6ae55b3d4d9c8acec98442f535a8b8",
+    "data": "https://huggingface.co/datasets/SoroushVahidi/mwfas-benchmark-extension/resolve/33902c7cc409794a43c17fc5428cf022f440da48/releases/table45-v2-20261019/table45.tar.gz",
+    "receipt": "https://huggingface.co/datasets/SoroushVahidi/mwfas-benchmark-extension/resolve/33902c7cc409794a43c17fc5428cf022f440da48/releases/table45-v2-20261019/package_receipt.json"
+  },
+  "download_sha256": {
+    "code": "6d2a65e8a2f0b6b1505b06fe75e42823c8d2f4295547c7c9db2c364a6af6d4c8",
+    "data": "b74e37bed3a91ec986fe8526a73f5a990a144ca931ee013cc1a8fe4f882f3e2d",
+    "receipt": "9d6b1efadc6b811965ad3635a5887ad7a5a9ce9b31bb2e829d1ae2b4c3a7c950"
+  },
+  "data_revision": "33902c7cc409794a43c17fc5428cf022f440da48",
+  "code_revision": "d5fb6c885a6ae55b3d4d9c8acec98442f535a8b8"
+}

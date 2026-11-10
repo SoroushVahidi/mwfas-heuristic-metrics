@@ -1,0 +1,139 @@
+{
+  "original_outcome_statuses": {
+    "PASS": 4933,
+    "CERTIFIED_OPTIMAL": 198,
+    "TIMEOUT": 110,
+    "SKIPPED_DEPENDENCY": 2,
+    "FAIL": 11
+  },
+  "reference_graphs_by_cohort": {
+    "EXP03": {
+      "NO_NUMERICAL_REFERENCE": 36,
+      "NUMERICAL_SOLVER_CERTIFIED": 9
+    },
+    "EXP04": {
+      "NO_NUMERICAL_REFERENCE": 99,
+      "FEASIBLE_WITH_BOUND": 25,
+      "NUMERICAL_SOLVER_CERTIFIED": 11
+    },
+    "EXP05": {
+      "NO_NUMERICAL_REFERENCE": 38
+    },
+    "EXP06": {
+      "NUMERICAL_SOLVER_CERTIFIED": 198
+    },
+    "EXP12": {
+      "NO_NUMERICAL_REFERENCE": 20
+    },
+    "EXP13": {
+      "NO_NUMERICAL_REFERENCE": 3
+    },
+    "EXP14_EXP15": {
+      "NO_NUMERICAL_REFERENCE": 3
+    }
+  },
+  "timeout_graphs_by_parent": {
+    "college_msg": 4,
+    "exiobase_lop_benchmark": 12,
+    "irs_soi": 1,
+    "email_eu_core": 2,
+    "wiki_vote": 2
+  },
+  "solver_effort_EXP06_process_wall_by_n": {
+    "12": {
+      "records": 66,
+      "min": 1.341759615985211,
+      "median": 2.1708763700153213,
+      "max": 61.756070307979826
+    },
+    "20": {
+      "records": 66,
+      "min": 1.4205343449721113,
+      "median": 1.9921141164959408,
+      "max": 4.578077315003611
+    },
+    "28": {
+      "records": 66,
+      "min": 1.2762763309874572,
+      "median": 2.046533800486941,
+      "max": 61.813156776013784
+    }
+  },
+  "heuristic_certified_gaps_by_cohort": {
+    "EXP03": {
+      "graphs": 9,
+      "best_observed_heuristic_hits": 0,
+      "relative_gap_median": 0.08027522935779817,
+      "relative_gap_max": 0.22787427626137305
+    },
+    "EXP04": {
+      "graphs": 11,
+      "best_observed_heuristic_hits": 2,
+      "relative_gap_median": 0.026970954356846474,
+      "relative_gap_max": 0.11192538307794804
+    },
+    "EXP06": {
+      "graphs": 198,
+      "best_observed_heuristic_hits": 116,
+      "relative_gap_median": 0.0,
+      "relative_gap_max": 0.15357561547479484
+    }
+  },
+  "EXP05": {
+    "views": 38,
+    "parent_counts": {
+      "exiobase_lop_benchmark": 30,
+      "college_msg": 4,
+      "email_eu_core": 2,
+      "wiki_vote": 2
+    },
+    "largest_parent_share": 0.7894736842105263,
+    "inverse_parent_share_HHI": 1.5627705627705628,
+    "complete_five_arm_views": 37,
+    "complete_parent_counts": {
+      "exiobase_lop_benchmark": 30,
+      "college_msg": 4,
+      "email_eu_core": 1,
+      "wiki_vote": 2
+    },
+    "historical_weighting_table_reproduced": true
+  },
+  "traceable_empirical": {
+    "views": 44,
+    "parent_counts": {
+      "exiobase_lop_benchmark": 30,
+      "college_msg": 4,
+      "Wikimedia_clickstream": 3,
+      "irs_soi": 1,
+      "census_lodes": 1,
+      "email_eu_core": 2,
+      "openflights": 1,
+      "wiki_vote": 2
+    },
+    "inverse_parent_share_HHI": 2.0683760683760686,
+    "interpretation": "composition concentration index, not statistical effective sample size"
+  },
+  "bounded_reference_relative_width": {
+    "n": 25,
+    "min": 0.17363882095507788,
+    "median": 0.6519942949884424,
+    "max": 0.9051484725486008
+  },
+  "EXP06_saved_solver_runtime_by_n": {
+    "12": {
+      "records": 66,
+      "median": 0.2827021745033562,
+      "max": 0.5393781610182486
+    },
+    "20": {
+      "records": 66,
+      "median": 0.35101914146798663,
+      "max": 0.6490120270173065
+    },
+    "28": {
+      "records": 66,
+      "median": 0.5123731674975716,
+      "max": 1.9659145540208556
+    }
+  }
+}

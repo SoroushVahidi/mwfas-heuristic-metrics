@@ -1,0 +1,130 @@
+{
+  "status": "PASS",
+  "compared_outputs": [
+    {
+      "path": "GRAPH_DIVERSITY_FEATURES.tsv",
+      "sha256": "1ee6beff1c47598bc6bb03b1e3a09396d47d8965d68cf7ace55d76c59505f9c9",
+      "byte_identical": true
+    },
+    {
+      "path": "GRAPH_INPUT_VERIFICATION.tsv",
+      "sha256": "6546fe7ce9c47e6c381eed46432be1d2e25c7dbf60ff2e57d6953f90bc91680c",
+      "byte_identical": true
+    },
+    {
+      "path": "SOURCE_PARENT_DIVERSITY.tsv",
+      "sha256": "808ed44219dc12ac229da3a5770d196e308c2751f5186e2d7cd642afdfa46222",
+      "byte_identical": true
+    },
+    {
+      "path": "STRUCTURAL_COVERAGE_MATRIX.tsv",
+      "sha256": "164015c3ddb723d421c551032df86890e59ceb4c171fbd511a1ced3dd066f060",
+      "byte_identical": true
+    },
+    {
+      "path": "STRUCTURAL_CROSS_COVERAGE.tsv",
+      "sha256": "bd5ea03d7fbeb378ef702782ae6b1597dbae9fb3e8b4d88eb76ef65231b3dd60",
+      "byte_identical": true
+    },
+    {
+      "path": "BALANCED_SUBSET_MANIFEST.tsv",
+      "sha256": "36abe5d3b7ffc9388d934a48d3a4cf72547467b8b61e9090c9962ac82d6da4af",
+      "byte_identical": true
+    },
+    {
+      "path": "BALANCED_PROFILE_WEIGHTS.tsv",
+      "sha256": "089d46811018ad3cad8014cfec3ba9fab2ab3d298b2d16b08fa23612fc83d04a",
+      "byte_identical": true
+    },
+    {
+      "path": "DIFFICULTY_SOLVER_EFFORT.tsv",
+      "sha256": "c67ed6db3bbf5f946038a1f12c7694a8dd96fe7ef2f0ff3f3e9fefe715f5d61e",
+      "byte_identical": true
+    },
+    {
+      "path": "DIFFICULTY_STATUS_COUNTS.tsv",
+      "sha256": "c45053ce552a4854cb3b8989e1b4b34da3cee18c1b9ab39530aa1135863793d0",
+      "byte_identical": true
+    },
+    {
+      "path": "EXISTING_EXP05_COMPOSITION_CHECK.tsv",
+      "sha256": "880da7d36a8bff45fd4c5a9ac15bcba0d3a647adad947eca839f9c752183bc95",
+      "byte_identical": true
+    },
+    {
+      "path": "DIVERSITY_SUMMARY.json",
+      "sha256": "ecd6a749c85629f7cf41de2fbf73a05e9cf3ab697089f08bc49ac1ea035f5254",
+      "byte_identical": true
+    },
+    {
+      "path": "DIFFICULTY_SUMMARY.json",
+      "sha256": "bafe87fdf84cf61e167c9441d47751879f2d2554dd9cf603d9119843a7e83fdb",
+      "byte_identical": true
+    },
+    {
+      "path": "BIN_DEFINITIONS.json",
+      "sha256": "7070d6f814c9af5173247df3464dfcf710d291790fa5147ce8f17a2ed698e5b5",
+      "byte_identical": true
+    },
+    {
+      "path": "PROFILE_ASSESSMENT.json",
+      "sha256": "2cf881b0039120885ccc5551a97b9cea0c7e2abb712f8235d3876d46e704462c",
+      "byte_identical": true
+    },
+    {
+      "path": "figures/structural_coverage.svg",
+      "sha256": "ad8c80c0ed8207ad5d483c30340a1d1011083dadb94043b875a40cf1c8b82637",
+      "byte_identical": true
+    },
+    {
+      "path": "figures/weight_and_reference_coverage.svg",
+      "sha256": "ab8b791dd55744adc4820c99f5dde67ae7288a50f2ae5a578577c45ed67a8967",
+      "byte_identical": true
+    },
+    {
+      "path": "figures/source_dependence.png",
+      "sha256": "4e592af5eca489edd00e54ccdaa75d7eacb2c0c40c8f3fd6c0266ee9601fcdc9",
+      "byte_identical": true
+    },
+    {
+      "path": "figures/source_dependence.pdf",
+      "sha256": "ca11b52056ad1ad5e6a99ef864dcdfe616d456fa724a56733ae584050ca0bd62",
+      "byte_identical": true
+    },
+    {
+      "path": "figures/weight_and_reference_coverage.png",
+      "sha256": "4310e629ee70e33d626bd08b9b3c03a3efa8ed410fd3631cccde7cc8feb61997",
+      "byte_identical": true
+    },
+    {
+      "path": "figures/structural_coverage.png",
+      "sha256": "bbfe3bc63020850a1f6c829cac2ab5949326ec07f1d5769f403a65a1eccf0ce0",
+      "byte_identical": true
+    },
+    {
+      "path": "figures/structural_coverage.pdf",
+      "sha256": "52571642176c05889c81c9d77dac43ee65ad3db12eadec3bed47aad72d1b638e",
+      "byte_identical": true
+    },
+    {
+      "path": "figures/source_dependence.svg",
+      "sha256": "e15f8f0d7f858238dc9acc3bc1d3073c0c662b85fb3e3b0ae6195571ec171beb",
+      "byte_identical": true
+    },
+    {
+      "path": "figures/weight_and_reference_coverage.pdf",
+      "sha256": "b8c2d12d830fbedc62cb497d2196bf474a23ec1c6ea7ae75a8d0289340ad7792",
+      "byte_identical": true
+    },
+    {
+      "path": "SOURCE_DOMAIN_MAP.tsv",
+      "sha256": "fa65df549fe4d48ce8870c86ba5c8e792a0c44d414e966a9b6a0fa3830005b98",
+      "byte_identical": true
+    },
+    {
+      "path": "DIFFICULTY_STRUCTURAL_ASSOCIATIONS.tsv",
+      "sha256": "d4727add999d4875c29ff0941b5ff0733bec801d90c4d1ff1f51cc97a43ccf36",
+      "byte_identical": true
+    }
+  ]
+}

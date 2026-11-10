@@ -1,0 +1,92 @@
+{
+  "n": {
+    "cuts": [
+      28.0,
+      240.0
+    ],
+    "method": "inverse topology multiplicity weighted empirical terciles; ties never split",
+    "population": "all 442 records / 343 labeled topology identities",
+    "min": 4.0,
+    "max": 143006.0
+  },
+  "density": {
+    "cuts": [
+      0.025210084033613446,
+      0.14814814814814814
+    ],
+    "method": "inverse topology multiplicity weighted empirical terciles; ties never split",
+    "population": "all 442 records / 343 labeled topology identities",
+    "min": 1.955598013871399e-05,
+    "max": 1.0
+  },
+  "largest_scc_fraction": {
+    "cuts": [
+      0.8,
+      0.9833333333333333
+    ],
+    "method": "inverse topology multiplicity weighted empirical terciles; ties never split",
+    "population": "all 442 records / 343 labeled topology identities",
+    "min": 0.010526315789473684,
+    "max": 1.0
+  },
+  "cyclic_edge_fraction": {
+    "cuts": [
+      0.7916666666666666,
+      0.9883333333333333
+    ],
+    "method": "inverse topology multiplicity weighted empirical terciles; ties never split",
+    "population": "all 442 records / 343 labeled topology identities",
+    "min": 0.0,
+    "max": 1.0
+  },
+  "cyclic_vertex_fraction": {
+    "cuts": [
+      0.8,
+      0.9833333333333333
+    ],
+    "method": "inverse topology multiplicity weighted empirical terciles; ties never split",
+    "population": "all 442 records / 343 labeled topology identities",
+    "min": 0.0,
+    "max": 1.0
+  },
+  "reciprocal_edge_fraction": {
+    "cuts": [
+      0.022222222222222223,
+      0.07916666666666666
+    ],
+    "method": "inverse topology multiplicity weighted empirical terciles; ties never split",
+    "population": "all 442 records / 343 labeled topology identities",
+    "min": 0.0,
+    "max": 1.0
+  },
+  "total_degree_gini": {
+    "cuts": [
+      0.1527777777777779,
+      0.23611111111111116
+    ],
+    "method": "inverse topology multiplicity weighted empirical terciles; ties never split",
+    "population": "all 442 records / 343 labeled topology identities",
+    "min": 0.0,
+    "max": 0.7520001630368698
+  },
+  "weight_top_decile_share": {
+    "cuts": [
+      0.18916335463098052,
+      0.2001415261233636
+    ],
+    "method": "inverse topology multiplicity weighted empirical terciles; ties never split",
+    "population": "all 442 records / 343 labeled topology identities",
+    "min": 0.1,
+    "max": 0.8542950943807357
+  },
+  "weight_cv": {
+    "cuts": [
+      0.5703252796910329,
+      0.598356138948084
+    ],
+    "method": "inverse topology multiplicity weighted empirical terciles; ties never split",
+    "population": "all 442 records / 343 labeled topology identities",
+    "min": 0.0,
+    "max": 5.907833015133549
+  }
+}
