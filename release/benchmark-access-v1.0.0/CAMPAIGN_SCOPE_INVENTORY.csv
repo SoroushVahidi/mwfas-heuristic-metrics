@@ -1,0 +1,29 @@
+scope,availability_class,description
+EXP03,PUBLIC_INDEPENDENTLY_VERIFIED,45 registered inputs and 900 outcomes; remaining-table package
+EXP04,PUBLIC_INDEPENDENTLY_VERIFIED,135 inputs / 2025 outcomes; table45
+EXP05,PUBLIC_INDEPENDENTLY_VERIFIED,38 views; 639 feasible orders; 121 other status records; exact source transformations
+EXP06,PUBLIC_INDEPENDENTLY_VERIFIED,198 weighted inputs / 1398 outcomes; table45 including 198 numerical references
+EXP07,PUBLIC_INDEPENDENTLY_VERIFIED,45 generated-input numerical references; 20 numerical optima / 25 unresolved bounds; separate from 5254 outcomes
+EXP08,PUBLIC_HISTORICAL_CONTEXT_NOT_FULL_CAMPAIGN_REPLAY,"Seed-sensitivity reports, code and frozen configs; original full event trees not locally present"
+EXP09,PUBLIC_HISTORICAL_CONTEXT_NOT_FULL_CAMPAIGN_REPLAY,External-component pilot code/reports; third-party library not bundled; not full Rocket-Crane
+EXP10,PUBLIC_HISTORICAL_CONTEXT_NOT_FULL_CAMPAIGN_REPLAY,Independent audits and source/graph/task summaries plus 8 rescored author-generated fidelity cases; original-author executable excluded
+EXP11,PUBLIC_HISTORICAL_CONTEXT_NOT_FULL_CAMPAIGN_REPLAY,"Equal-budget protocol, startup/input records and code; complete outputs not locally present"
+EXP12,PUBLIC_INDEPENDENTLY_VERIFIED,20 Ali inputs retrieved at pinned revision; saved orders in remaining-table package
+EXP13,PUBLIC_INDEPENDENTLY_VERIFIED,3 empirical views; saved orders in remaining-table package; newly licensed graph copies in supplement
+EXP14,PUBLIC_INDEPENDENTLY_VERIFIED,10 saved order witnesses on three Wikimedia views; original monthly raw snapshots unavailable
+EXP15,PUBLIC_INDEPENDENTLY_VERIFIED,Source reconstruction investigation; historical raw snapshots remain unavailable
+EXP16,PUBLIC_INDEPENDENTLY_VERIFIED,442 input / 5254 outcome / 243 reference linked inventory
+EXP17,PUBLIC_PROVENANCE_PROJECTION_LOCAL_CUSTODY_ORIGINALS,Public source-parent/provenance metadata; unsanitized private custody inventories retained locally
+EXP18,PUBLIC_INDEPENDENTLY_VERIFIED,Existing path-free metadata release; new topology completion preserved additively
+EXP19,MANUSCRIPT_OR_RELEASE_INTEGRATION_NOT_ADDITIONAL_BENCHMARK,"Manuscript evidence integration, not a separate data campaign"
+EXP20,PUBLIC_INDEPENDENTLY_VERIFIED,Existing Wikimedia objective evidence publication staging
+EXP21,PUBLIC_INDEPENDENTLY_VERIFIED,Existing Wikimedia public release verification staging
+EXP22,PUBLIC_HISTORICAL_CONTEXT_NOT_FULL_CAMPAIGN_REPLAY,Controlled-pilot protocol and status reports; no new campaign
+EXP23,MANUSCRIPT_OR_RELEASE_INTEGRATION_NOT_ADDITIONAL_BENCHMARK,"Manuscript corrections, not a separate data campaign"
+EXP24,PUBLIC_HISTORICAL_CONTEXT_NOT_FULL_CAMPAIGN_REPLAY,Frozen pilot analysis records and scripts; not rerun as a new experiment
+EXP25,PUBLIC_HISTORICAL_CONTEXT_NOT_FULL_CAMPAIGN_REPLAY,Preflight candidate identifiers and criteria; not executed population evidence
+EXP26,MANUSCRIPT_OR_RELEASE_INTEGRATION_NOT_ADDITIONAL_BENCHMARK,"Manuscript strengthening, not a separate data campaign"
+EXP27,PUBLIC_HISTORICAL_CONTEXT_NOT_FULL_CAMPAIGN_REPLAY,Compatibility-pilot protocol/adapter/auditor source; complete raw campaign outputs not locally present
+EXP28,PUBLIC_INDEPENDENTLY_VERIFIED,Public matched-budget release; existing anonymous replay receipts; separate from 5254 outcome register
+EXP29,PUBLIC_INDEPENDENTLY_VERIFIED,Public original-v1 selected 90 tasks/45 pairs; 203 event-order checks; failed full180 status retained
+EXP30,PUBLIC_INDEPENDENTLY_VERIFIED,Public 12 selected observations/24 horizons; 17860 event orders; 7 v1 and 5 v2 controller observations

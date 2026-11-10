@@ -1,0 +1,29 @@
+{
+  "schema": "mwfas-exp08-seed-diagnostic-v1",
+  "status": "FROZEN_PILOT",
+  "selection_rule": "EXP04 replicate 1, mean outdegree 5, vertices 120 and 240, one of each size in each family; selected without IPSNS outcomes",
+  "source_revision": "40209c26966247d9bf9ad34764de4ac4181f98c2",
+  "source_experiment": "EXP04",
+  "seeds": [1, 2, 3, 4, 5],
+  "iteration_budget": 50,
+  "objective_checkpoints": [10, 50],
+  "run_cap_seconds": 15,
+  "campaign_cpu_cap_seconds": 1800,
+  "ipsns_parameters": {
+    "seed_ordering": "L2",
+    "topK_scc": 15,
+    "destroy_addback_frac": 0.3,
+    "destroy_remove_frac": 0.02,
+    "tol": 1e-12,
+    "wmsf_seed_mode": "full",
+    "scc_select_mode": "weighted"
+  },
+  "instances": [
+    {"instance_id": "exp04_er_n120_k05_r01", "family": "erdos_renyi_directed", "n_vertices": 120, "n_edges": 600, "dimacs_sha256": "fd08b9ed5a9f0836c27510add64613a14d045b20b2d6593cad01af91194ce4c0", "graph_sha256": "87fa70b1df5569438ae5c434b8e828aa128017011c75b7ceb054a023eefccd92"},
+    {"instance_id": "exp04_er_n240_k05_r01", "family": "erdos_renyi_directed", "n_vertices": 240, "n_edges": 1200, "dimacs_sha256": "7b09303e4905c6f64e20f34ddd1abac3276c624026494c1d527f65011fa6e779", "graph_sha256": "86ad10ac0856bfcac4b904f8694cc966f1835d991fd29c0a98c1889960f4a531"},
+    {"instance_id": "exp04_sf_n120_k05_r01", "family": "directed_scale_free", "n_vertices": 120, "n_edges": 600, "dimacs_sha256": "11ea3a299b3b9290e9ee4f4411c0dc17a74f19f5370f7560b64306cf7b6d83d0", "graph_sha256": "2c699a905f9fc6da0f9d6832725860d1069983b700f43fb8bf54c278d160f551"},
+    {"instance_id": "exp04_sf_n240_k05_r01", "family": "directed_scale_free", "n_vertices": 240, "n_edges": 1200, "dimacs_sha256": "436fb85f4b04d7bd436bf76f4b9c882b3dfe6e56a4f0126690001642b35a52ac", "graph_sha256": "133b7ffd4627460f3a004df99ec6b407fd0c3d09fb0f3c70758734790205dbaa"},
+    {"instance_id": "exp04_cm_n120_k05_r01", "family": "directed_community", "n_vertices": 120, "n_edges": 600, "dimacs_sha256": "06021961f0e33ffc587a0b9ddcd8cc8bf3724cdd48b64b1cdc144e8e44aad384", "graph_sha256": "e9b5aa453cfa83c92af3d69db085c488f41078e88d27725dded8091ded2ac462"},
+    {"instance_id": "exp04_cm_n240_k05_r01", "family": "directed_community", "n_vertices": 240, "n_edges": 1200, "dimacs_sha256": "3e64bc1ab3d473c614662086b9d9e8d0bbcef3b223fc19fe88e410c4a9252cef", "graph_sha256": "fa4d2590ae3211c652cff35f400c2270b7790974123143e570919f6d451b4c61"}
+  ]
+}

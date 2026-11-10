@@ -1,0 +1,5 @@
+# License and scope
+
+Author-created source code is MIT; author-created metadata, reports and saved outcomes are CC BY 4.0. Copyright/attribution: Soroush Vahidi (2026). See LICENSE-MIT.txt and https://creativecommons.org/licenses/by/4.0/ . Underlying graph inputs retain the component licenses and restrictions of the linked benchmark-supplement-v1.0.0 and older releases. This access index does not relicense them.
+
+The historical C file is a project input/output driver, not the third-party Rocket-Crane library. External headers, original-author implementations, RASstar binaries and proprietary solvers are not bundled. Their source/version identities in the records do not grant redistribution rights. Historical code snapshots are for interpreting experiments, not a promise of a complete optimizer execution environment. Internal filesystem prefixes and execution identifiers are sanitized with original/published digest bridges; no graph, solution, objective, timing value or numerical table is altered.

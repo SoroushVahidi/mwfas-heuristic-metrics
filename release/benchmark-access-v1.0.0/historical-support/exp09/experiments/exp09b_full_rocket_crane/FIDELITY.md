@@ -1,0 +1,95 @@
+# EXP09B fidelity audit — 2026-10-17
+
+**Decision: FIDELITY_BLOCKED. No EXP09B scientific run was submitted.** The
+published method cannot be reproduced faithfully from the pinned source within
+the authorized protocol. The original Rocket source and some separate Crane
+components exist, but no source connects them into the published adaptive
+SA → MIP → MC sequence. The only Gurobi program is a standalone exact
+cycle-enumeration program without the published warm-started, time-limited MIP
+heuristic. The paper's 20–40 minute MIP step also exceeds the authorized
+600-second cap for an entire two-stage run, and EXP09B prohibits Gurobi license
+use. Substituting an invented MIP or omitting it would make a different method.
+
+## Evidence and preservation
+
+* Published [Rocket-Crane article](https://link.springer.com/article/10.1007/s13278-025-01491-2) and the [authors' full PDF](https://davidbader.net/publication/2025-bebtscd/2025-bebtscd.pdf), downloaded PDF SHA-256 `b8a2ca3467e1d67ff7b043f5962cf0386892d20021b50138eaa7dc66fe082031`.
+* Official [Bader-Research repository](https://github.com/Bader-Research/MinimumFeedbackArcSet): immutable commit `c30a6ac857c44e05833a8495781d97e2829deb44`, Git tree `c2297257c232a7629de0c970d16f9acd8f246a73`, clean checkout; root MIT LICENSE SHA-256 `d714ef4b0ebc451476a9958235a6ace058896c4b847e3580c9fc44eb6c3f03ef`. A read-only `git ls-remote` check found that the upstream `master`/HEAD was still this commit.
+* EXP09 source checkout and both completed jobs `1424474` and `1424484` remained untouched. Read-only Slurm checks reconfirmed both `COMPLETED 0:0`. EXP05 job `1423922` and EXP07 job `1424108` also read `COMPLETED 0:0`; their separate production manifests currently say `INCOMPLETE` and `COMPLETE`, respectively. No inference about their scientific validity is made here. All EXP03–EXP09 worktrees were clean when checked.
+* This audit is on an isolated branch stacked on EXP09. The six-graph [conditional candidate](../../configs/exp09b_candidate.json) copies only frozen EXP09 manifest rows and is explicitly marked **not executed**. Its SHA-256 is `661ded04b62d7bf15f319317b2144a37416c824b2420c4406f17584c96591655`. No EXP09B graph or algorithm outcome exists.
+
+## Paper-to-source trace
+
+| Published element | Pinned author-provided source | Finding |
+|---|---|---|
+| Rocket continuous phase | `original_code/justin-gert/reorder_cluster.py` SHA `898384dfd92c1e78fdb156a15540795554eefe818d658c8cc8b6f247f89ee1e8`; `functions.py` SHA `381f2cb5964725f530f7afb3d1a81358bb886bde5c1df7dff6700c976cd41ee6` | JAX/Optax optimizes continuous positions on weighted directed arcs and writes `Node ID,Order` plus positions to `checkpoints/`. It is a standalone, connectome-path-specific script, not an end-to-end driver. |
+| Crane TopoShuffle + SA | `original_code/bader/simanneal_finetune_parallel_with_toposhuffle.go` SHA `1f3ed45e767be7e04e01a1bb39ea1f860c8d72b3474b6acbeed6c16d11b5bd33`; `performance/` and `productivity/` C libraries | Go program accepts a CSV graph and initial `Node ID,Order` CSV; C libraries offer TopoShuffle/annealing functions. These are independently runnable **components**. No source couples their output to the paper's MIP and MC stages or implements the adaptive switching policy. |
+| Crane MIP intensification | `original_code/bader/ip3.py` SHA `7600f45b9781598237e22b33864e0c90bba57b3d91bf71074411fdc4d923f620` | Standalone Gurobi model enumerates simple cycles and solves a binary edge-removal problem. It neither reads a supplied ordering nor sets a MIP start, time limit, or heuristic focus. It is not the paper's warm-started linear-arrangement MIP module. No alternative implementing that module was found in the pinned tracked tree. |
+| Crane Monte Carlo | `original_code/justin-gert/reorder_cluster_montecarlo.py` SHA `b942c07a96c5fd0bdafcdea6d1b5d6408dc85550106d6b84bc82845c9156edb6`; `functions.py` | Separate graph reader initializes a new random ordering with fixed key 17; its MC helper uses key 0 and greedily accepts improving swaps. It does not consume the Rocket or MIP output. |
+| Complete pipeline / published final output | No author-provided orchestration file in the pinned Git tree | No reproducible Rocket → TopoShuffle/SA → warm-started MIP → MC → repeat workflow, final checkpoint contract, adaptive stagnation threshold, or end-to-end parameter manifest. The C `test_script.py` (SHA `39f6e24f5fa16140e32370b713c1fae1b6167dc6f8efca14e0bee428ee22641b`) starts from a new random C ordering, so it is not a Rocket handoff. |
+
+The paper's Algorithm 1 starts from unique random real positions, smooths the
+weighted forward objective, and updates positions with Adam. The available JAX
+script uses `PRNGKey(run_idx + 220)`, a normal random position vector, max-edge
+weight normalization, 20,000 epochs, five beta cycles, clipped AdamW and a
+learning-rate schedule. It computes a weighted forward percentage after every
+epoch, retains the best positions, and writes the order generated by sorting
+them. The graph is read from the hard-coded `./connectome_graph.csv`; nodes
+absent from the edge list are absent from its output. Its random `noise` draw
+inside the loop is unused. CPU execution is supported by JAX and by the paper;
+GPU is an acceleration option, not an algorithmic requirement. No matching
+dependency lockfile or whole-pipeline launch command is in the pinned tree:
+the JAX code imports JAX, Optax, Polars, NumPy and Pandas; the C bindings
+require CFFI; the standalone MIP script imports Gurobi. The repository has
+no tracked `requirements.txt`, Python lockfile, or `go.mod`, so exact
+dependency hashes for a published end-to-end environment cannot be recorded.
+No such environment was installed for EXP09B.
+
+The Rocket CSV has `Node ID,Order` columns, and the standalone Go annealer
+parses that format. Thus a **possible file-format bridge** exists. It does not
+establish that the paper used that Go program for its complete Crane phase or
+specify how its output was passed through MIP and MC. The Go graph reader uses
+numeric IDs and integer weights; its adjacency maps overwrite parallel arcs by
+endpoint, while its score iterates the graph rows. Any adapter would need to
+prove graph/weight identity, handle isolates, and test this discrepancy before
+benchmarking. Its published-source seed protocol is also incomplete: the
+Rocket script accepts `run_idx`, the MC script uses fixed keys, and the C
+random initializer mixes wall-clock time into its seed.
+
+The paper's Algorithm 2 specifies TopoShuffle, SA, MIP, MC, and repetition
+until convergence or an external stopping rule. Its text gives SA cooling
+`α = 0.95`; its reported connectome experiment used `N_SA = 1,000,000`,
+`N_MC = 1,000,000`, and a 20–40 minute Gurobi MIP budget, with roughly 20
+days for Crane. The stagnation criterion and several choices in the MIP/MC
+handoff remain insufficiently specified for a faithful independent build.
+The C example instead uses three Okubo epochs, five million annealing
+iterations and a fresh random start; those are **not** the paper's complete
+Crane parameters or Rocket-generated initialization. The paper's full result
+is the best ordering after the entire refinement sequence, not the Rocket
+ordering or the EXP09 C-component output.
+
+## Wulver feasibility gate
+
+Read-only Wulver checks found `general` CPU nodes and `gpu` A100/L40 nodes
+available in Slurm, with account `ikoutis` and `low` QoS. A CPU-only JAX
+Rocket stage is technically possible. No allocation was requested because
+the fidelity gate fails first. In particular, a paper-equivalent 20–40 minute
+MIP stage cannot fit inside the allowed 600 seconds for **both** stages and
+would consume Gurobi, which EXP09B disallows. A shortened or omitted MIP
+would be a **bounded variant**, and its performance could not be attributed
+to the published full algorithm. No startup check, checkpoint, hardware
+measurement, stage objective, or matched comparison can honestly be reported
+for EXP09B because no job ran.
+
+## Decision and next step
+
+**NO-GO for an EXP09B scientific pilot or 378-graph production benchmark.**
+The existing EXP09 result still applies only to the serial C component:
+0 wins, 2 ties, 10 losses versus insertion refinement on its 12 graphs.
+It says nothing about full Rocket-Crane quality. The highest-value next step
+is to obtain from the authors the exact Rocket-to-Crane driver, MIP heuristic
+implementation and license/dependency instructions, stage checkpoint
+contract, seed protocol, adaptive stopping rule, and parameter manifest. If
+these become available, re-evaluate the resource and Gurobi constraints
+before considering a clearly labeled bounded two-stage pilot. Do not infer
+competitive quality, inferior quality, or practical runtime for full
+Rocket-Crane from this source audit.

@@ -1,0 +1,3856 @@
+{
+  "algorithm": "Bader-Research serial C Okubo + Toposhuffle component; not full Rocket-Crane",
+  "anneal_go_back_window": 10000,
+  "anneal_iterations": 100000,
+  "anneal_tmax": 0.1,
+  "anneal_tmin": 0.001,
+  "anneal_toposhuffle_frequency": 5000,
+  "campaign_cpu_cap_seconds": 22680,
+  "cancel_conditions": [
+    "Pilot external best wins at most 2 of 12 against prior best and median relative deficit exceeds 5 percent: observed, so do not launch this proposal",
+    "Any unvalidated order/hash/objective in a follow-up smoke test",
+    "More than 10 percent censoring or memory above 4 GB in a staged pilot",
+    "Full Rocket-Crane becomes available and supersedes this component-only comparison"
+  ],
+  "code_revision_pilot": "f73ecde849ef72d2928fd7de2665388cb47f62cf",
+  "cost": "worst case 756 x 30 seconds = 22680 CPU-seconds (6.3 CPU-hours) plus I/O, within an 8-hour one-core allocation; 24-run pilot used 0.657 child CPU-seconds but filesystem startup added about two minutes",
+  "exact_identity_rule": "graph IDs and DIMACS/weighted-graph SHA-256 values are the instance_id, dimacs_sha256, and graph_sha256 fields of every row in each pinned source manifest; no additional graph generation",
+  "expected_tasks": 756,
+  "external_source_revision": "c30a6ac857c44e05833a8495781d97e2829deb44",
+  "graph_set": [
+    {
+      "experiment": "EXP03",
+      "graph_count": 45,
+      "rule": "all instance rows in frozen manifest",
+      "selection_manifest": "data/manifests/exp03_selection.json",
+      "selection_manifest_sha256": "b86acc0fcc225e70d0fc51451dab081ffb335a6d89b4fd38763d17b5e4ba6ed7"
+    },
+    {
+      "experiment": "EXP04",
+      "graph_count": 135,
+      "rule": "all instance rows in frozen manifest",
+      "selection_manifest": "data/manifests/exp04_selection.json",
+      "selection_manifest_sha256": "59621f5f5a0ed9b9b1712b83aff9de51de79659386f4d623e7dc3814f54379f1"
+    },
+    {
+      "experiment": "EXP06",
+      "graph_count": 198,
+      "rule": "all instance rows in frozen manifest",
+      "selection_manifest": "data/manifests/exp06_selection.json",
+      "selection_manifest_sha256": "2f974b7452d24cba87cf36e1e418b1cf45d3e3f2af714705da935a96af84d872"
+    }
+  ],
+  "hypotheses": [
+    "C component can improve prior best on some scale-free/community graphs at 60 vertices",
+    "Any gains persist across both prespecified seeds and independently validated weighted objectives"
+  ],
+  "instances": [
+    {
+      "dimacs_sha256": "531546afd2f313b1e0ce5ae89b8ad55833bf57d38ed6b62ed90fd2d8b0b0b7cb",
+      "family": "erdos_renyi_directed",
+      "graph_file": "er_n060_k03.d",
+      "graph_sha256": "e6fb84e9ae5ff2cf58f187280f16b597e4a8333a9f34f9c15077d76d195d2e42",
+      "instance_id": "er_n060_k03",
+      "n_edges": 180,
+      "n_vertices": 60,
+      "source_experiment": "EXP03"
+    },
+    {
+      "dimacs_sha256": "0e057a13f01254b2f2313011286ee6e92bfa57401ff0ff18cf00da4c4863350c",
+      "family": "directed_scale_free",
+      "graph_file": "sf_n060_k03.d",
+      "graph_sha256": "972846029a591327d6bf376ab0513b64af3ae97c57bfc4089de2a50dae2e4020",
+      "instance_id": "sf_n060_k03",
+      "n_edges": 180,
+      "n_vertices": 60,
+      "source_experiment": "EXP03"
+    },
+    {
+      "dimacs_sha256": "60282f025e49f9d3edf94cf1598e8800ada5ed6815f6c0a53ee9f333205f97a4",
+      "family": "directed_community",
+      "graph_file": "cm_n060_k03.d",
+      "graph_sha256": "975577972f1b0f6f095816e58ceecac213a60cbb21b91c67df139c364ff09006",
+      "instance_id": "cm_n060_k03",
+      "n_edges": 180,
+      "n_vertices": 60,
+      "source_experiment": "EXP03"
+    },
+    {
+      "dimacs_sha256": "bb524d04c81bbf620ae252c68b2b479e135f494af1fa549f39fcfb6c35ec3bf5",
+      "family": "erdos_renyi_directed",
+      "graph_file": "er_n120_k03.d",
+      "graph_sha256": "aa57bc487ed0477a4253880dec03a2b4620651cf0f307fba7a3fc92ebb0b21b0",
+      "instance_id": "er_n120_k03",
+      "n_edges": 360,
+      "n_vertices": 120,
+      "source_experiment": "EXP03"
+    },
+    {
+      "dimacs_sha256": "4d54d35544a60a7851a98dbe1fd3c3d9b3a73a35b262c76d8770edb71289840e",
+      "family": "directed_scale_free",
+      "graph_file": "sf_n120_k03.d",
+      "graph_sha256": "649069744b71aa36e52df780a04e928c7f75f79d8eda593dcb004f553b983746",
+      "instance_id": "sf_n120_k03",
+      "n_edges": 360,
+      "n_vertices": 120,
+      "source_experiment": "EXP03"
+    },
+    {
+      "dimacs_sha256": "9aca43b0c81d0ab4f8fea30d1d11c8906bc5193fc8791ef04ad48ea3a3e35ceb",
+      "family": "directed_community",
+      "graph_file": "cm_n120_k03.d",
+      "graph_sha256": "2ac56e902e6d67efc6ad987b96aae8a5788f01bbe0593572e072a2aabc7adf34",
+      "instance_id": "cm_n120_k03",
+      "n_edges": 360,
+      "n_vertices": 120,
+      "source_experiment": "EXP03"
+    },
+    {
+      "dimacs_sha256": "b642e370d2a580aad024cb9fb696b3b71b1874f5223873d5233f4104f34b66b4",
+      "family": "erdos_renyi_directed",
+      "graph_file": "er_n240_k03.d",
+      "graph_sha256": "488b44a8df9931b434bc7fa509371c1197cc4948029f77dfcaf7092bdb1d0a09",
+      "instance_id": "er_n240_k03",
+      "n_edges": 720,
+      "n_vertices": 240,
+      "source_experiment": "EXP03"
+    },
+    {
+      "dimacs_sha256": "b413468cb3b955c7d8a47082c65268b0444d93c02f412210149ce275bedde82c",
+      "family": "directed_scale_free",
+      "graph_file": "sf_n240_k03.d",
+      "graph_sha256": "3ab248b22b798cac291c2b60789569f054d008a3ed37c2c2570543e951e3c649",
+      "instance_id": "sf_n240_k03",
+      "n_edges": 720,
+      "n_vertices": 240,
+      "source_experiment": "EXP03"
+    },
+    {
+      "dimacs_sha256": "a395888474793483cfdcf1a9ce1b112373d15c99a226cb4b83e4c31b45b1efaf",
+      "family": "directed_community",
+      "graph_file": "cm_n240_k03.d",
+      "graph_sha256": "fd403ce3841453ed2ffe928b29e99b0c1abd2bd88aa1b49d965096700107f69e",
+      "instance_id": "cm_n240_k03",
+      "n_edges": 720,
+      "n_vertices": 240,
+      "source_experiment": "EXP03"
+    },
+    {
+      "dimacs_sha256": "3af607a5ec2d7a78c18c19f03915213aefa40170e5483c54a67e47c418401fab",
+      "family": "erdos_renyi_directed",
+      "graph_file": "er_n060_k04.d",
+      "graph_sha256": "13bfeb36d82844ade0dc04639480bd8724bf65e5951d604a6694b88dd370f907",
+      "instance_id": "er_n060_k04",
+      "n_edges": 240,
+      "n_vertices": 60,
+      "source_experiment": "EXP03"
+    },
+    {
+      "dimacs_sha256": "8dac86da541567c74bc8204609be3244d182c00dcfdad5d8741e0362109ae86d",
+      "family": "directed_scale_free",
+      "graph_file": "sf_n060_k04.d",
+      "graph_sha256": "fa82c5821b4825980f22c38e8d7b31ad5be88e72df7890a7f65d33585377cf8b",
+      "instance_id": "sf_n060_k04",
+      "n_edges": 240,
+      "n_vertices": 60,
+      "source_experiment": "EXP03"
+    },
+    {
+      "dimacs_sha256": "41f36a4f1eb56a5ddceeda72b6df9d933d88bdcb1ad16dbaeae7f77688b9a95c",
+      "family": "directed_community",
+      "graph_file": "cm_n060_k04.d",
+      "graph_sha256": "1275813bc6e3f5b99dfead671c6fca0daa1ae8c5ec5931c6262a0989255f1620",
+      "instance_id": "cm_n060_k04",
+      "n_edges": 240,
+      "n_vertices": 60,
+      "source_experiment": "EXP03"
+    },
+    {
+      "dimacs_sha256": "be5f1cf21c6fa7c5e9c03069b19740233918ca7be7bc27cfc12b53baba235bc4",
+      "family": "erdos_renyi_directed",
+      "graph_file": "er_n120_k04.d",
+      "graph_sha256": "0b86a49bb61c508a61348905b04cf20856e78f88345c9e6e6f4fe4077318325b",
+      "instance_id": "er_n120_k04",
+      "n_edges": 480,
+      "n_vertices": 120,
+      "source_experiment": "EXP03"
+    },
+    {
+      "dimacs_sha256": "f3e8c8a375d191886bb9fab4bb3fc73ca33fd9a9d5535cbbd36521b217a1bae9",
+      "family": "directed_scale_free",
+      "graph_file": "sf_n120_k04.d",
+      "graph_sha256": "74161c2ca54482ebaa064fedd95761b629df77c8691d37b14f890abd8ca231b9",
+      "instance_id": "sf_n120_k04",
+      "n_edges": 480,
+      "n_vertices": 120,
+      "source_experiment": "EXP03"
+    },
+    {
+      "dimacs_sha256": "db2e03e8eb5cca8d53069aee97d4a0130d67848a5649c8b6213b6cecfad0becd",
+      "family": "directed_community",
+      "graph_file": "cm_n120_k04.d",
+      "graph_sha256": "aa45f53bd3d085ef7c705fbe444c66baa3e3727ca99c0cfcb5320dec7ed9ee55",
+      "instance_id": "cm_n120_k04",
+      "n_edges": 480,
+      "n_vertices": 120,
+      "source_experiment": "EXP03"
+    },
+    {
+      "dimacs_sha256": "576c5196bf8e47120fa149366f415b79d1d30b4e9b95ab3899c59aba8bd5dafe",
+      "family": "erdos_renyi_directed",
+      "graph_file": "er_n240_k04.d",
+      "graph_sha256": "4e7e0d75e40bf494f98fed51fe7316d72a0664dbf5f22805ca26316914dc5f8c",
+      "instance_id": "er_n240_k04",
+      "n_edges": 960,
+      "n_vertices": 240,
+      "source_experiment": "EXP03"
+    },
+    {
+      "dimacs_sha256": "5935114c679831169c5c2b65842fadec1a136e92861c8c0bb435338e6ad0a263",
+      "family": "directed_scale_free",
+      "graph_file": "sf_n240_k04.d",
+      "graph_sha256": "c0670a552e5c7bfbf8d72e72db6f7b30ad1e5fc8f9195150f20397875af48e43",
+      "instance_id": "sf_n240_k04",
+      "n_edges": 960,
+      "n_vertices": 240,
+      "source_experiment": "EXP03"
+    },
+    {
+      "dimacs_sha256": "7361559450b9adbd0ac98b08cada549ff15bb62012f420e5a2de50eb80277e94",
+      "family": "directed_community",
+      "graph_file": "cm_n240_k04.d",
+      "graph_sha256": "6735d8b88328d5beedd70b3c9f8e64fc05933c72d613ad55fbbe7487393d85a6",
+      "instance_id": "cm_n240_k04",
+      "n_edges": 960,
+      "n_vertices": 240,
+      "source_experiment": "EXP03"
+    },
+    {
+      "dimacs_sha256": "3a7afb8207f553a13df7fa3cd09d8422bc1c7ec3f62bc35d47dc4e4253b23df1",
+      "family": "erdos_renyi_directed",
+      "graph_file": "er_n060_k05.d",
+      "graph_sha256": "662242235548b573d3e271cd2522cf57b1b1483b49f55a9129e2653727c4fb65",
+      "instance_id": "er_n060_k05",
+      "n_edges": 300,
+      "n_vertices": 60,
+      "source_experiment": "EXP03"
+    },
+    {
+      "dimacs_sha256": "f831044e7a2fd461e84f477c21867c8da59f5569515d1885d9f709f18e6c320e",
+      "family": "directed_scale_free",
+      "graph_file": "sf_n060_k05.d",
+      "graph_sha256": "0ec440e599ad3766d80e038e24a32d9256fed81ef8e65e4c6b79066de43e078a",
+      "instance_id": "sf_n060_k05",
+      "n_edges": 300,
+      "n_vertices": 60,
+      "source_experiment": "EXP03"
+    },
+    {
+      "dimacs_sha256": "a3921f678d58d9b3883c756d4b4076465adb5fd9e2333796ec40e8caddd26f54",
+      "family": "directed_community",
+      "graph_file": "cm_n060_k05.d",
+      "graph_sha256": "b70f2bda94ec228c7cd27738ea7e611056e44aa1976f830b47e07d59696cbecd",
+      "instance_id": "cm_n060_k05",
+      "n_edges": 300,
+      "n_vertices": 60,
+      "source_experiment": "EXP03"
+    },
+    {
+      "dimacs_sha256": "9d53183aecabaf83f61a9b065871cd175f775da7f8a13d59f7fdb33b975f32b2",
+      "family": "erdos_renyi_directed",
+      "graph_file": "er_n120_k05.d",
+      "graph_sha256": "135af262aee8c16b89ea33d70745ab64efe87763c1d9ba70bbcae0e5b49a20c9",
+      "instance_id": "er_n120_k05",
+      "n_edges": 600,
+      "n_vertices": 120,
+      "source_experiment": "EXP03"
+    },
+    {
+      "dimacs_sha256": "55f5c2ff51430a73bfc06fb1eda83aa20394e52765a4b000ac269234499c1833",
+      "family": "directed_scale_free",
+      "graph_file": "sf_n120_k05.d",
+      "graph_sha256": "7900690dafb553c4588a26188f02c8ad1e982cb12cbd072629d3e7e72b628ab9",
+      "instance_id": "sf_n120_k05",
+      "n_edges": 600,
+      "n_vertices": 120,
+      "source_experiment": "EXP03"
+    },
+    {
+      "dimacs_sha256": "b5998e3e6aead0ea92ff2a324e85eaf3aaaaaa78e75365b98640d7fc5d84466c",
+      "family": "directed_community",
+      "graph_file": "cm_n120_k05.d",
+      "graph_sha256": "199945046b70b4b846764ca1c9b212878fab4022170d7f90995e05cedb45f024",
+      "instance_id": "cm_n120_k05",
+      "n_edges": 600,
+      "n_vertices": 120,
+      "source_experiment": "EXP03"
+    },
+    {
+      "dimacs_sha256": "430dbe645bc1ff33cc232b161966b0bc3daeb998b6dc711d160bb819583ec416",
+      "family": "erdos_renyi_directed",
+      "graph_file": "er_n240_k05.d",
+      "graph_sha256": "258bb0917f9b660275eda423dd3bc308fd45bc92dc5f45940f4f84a8267b5d18",
+      "instance_id": "er_n240_k05",
+      "n_edges": 1200,
+      "n_vertices": 240,
+      "source_experiment": "EXP03"
+    },
+    {
+      "dimacs_sha256": "a7c2e736073e7a213d372deb97a166e22aa363062e0ebb07efb6f7156041cc5b",
+      "family": "directed_scale_free",
+      "graph_file": "sf_n240_k05.d",
+      "graph_sha256": "ca828c05770daab8490f9ae14b053e239f9aed4b39b3471c882f39ee31ddaa33",
+      "instance_id": "sf_n240_k05",
+      "n_edges": 1200,
+      "n_vertices": 240,
+      "source_experiment": "EXP03"
+    },
+    {
+      "dimacs_sha256": "17ac286ad65beef40b146c9963c4f1e9ffc4e3bae4e75696a1f8865d46c8c717",
+      "family": "directed_community",
+      "graph_file": "cm_n240_k05.d",
+      "graph_sha256": "344ad9090b2ef50be0a88f32768cb975884b5ba84df9d4fa294eed0ea0d8eeb2",
+      "instance_id": "cm_n240_k05",
+      "n_edges": 1200,
+      "n_vertices": 240,
+      "source_experiment": "EXP03"
+    },
+    {
+      "dimacs_sha256": "c3d95d7d08078d709c2b8db0ea7c9218c2ce99dd327b1deb53e2e3f786536575",
+      "family": "erdos_renyi_directed",
+      "graph_file": "er_n060_k06.d",
+      "graph_sha256": "3c9651eb4cce78dd402c81e58a9801293a92dfc0aff97fe99f04771161a4e3df",
+      "instance_id": "er_n060_k06",
+      "n_edges": 360,
+      "n_vertices": 60,
+      "source_experiment": "EXP03"
+    },
+    {
+      "dimacs_sha256": "288ee29fd95d355879aa134d13d407d01e554e18d760ab984a65984e25543745",
+      "family": "directed_scale_free",
+      "graph_file": "sf_n060_k06.d",
+      "graph_sha256": "fe16d1bad18673ae32e355909cbf9f3c6cb285eade6eef8bc0daff89c73f355a",
+      "instance_id": "sf_n060_k06",
+      "n_edges": 360,
+      "n_vertices": 60,
+      "source_experiment": "EXP03"
+    },
+    {
+      "dimacs_sha256": "6e34f39eea22a9d000d17c931ac0ddb2f8b55719438e234a020c8339584ff1f1",
+      "family": "directed_community",
+      "graph_file": "cm_n060_k06.d",
+      "graph_sha256": "c5e81559c1ba87ad7cb043658578c7a5037e5cd5e52f70fe4879ca31e585c75d",
+      "instance_id": "cm_n060_k06",
+      "n_edges": 360,
+      "n_vertices": 60,
+      "source_experiment": "EXP03"
+    },
+    {
+      "dimacs_sha256": "06e09e24ae00b8520d220ae0b5deaddd1d7c8d62589b03cebc0d70fad7fa4e0b",
+      "family": "erdos_renyi_directed",
+      "graph_file": "er_n120_k06.d",
+      "graph_sha256": "3b50716a7a855077e2ccb154b3b5eda5920589dedc307bdfb8a0b12b291a7d78",
+      "instance_id": "er_n120_k06",
+      "n_edges": 720,
+      "n_vertices": 120,
+      "source_experiment": "EXP03"
+    },
+    {
+      "dimacs_sha256": "c9c51cda0229a9b6bcfbff711086c8c871103e293493ae9b2b1f06b2265d8863",
+      "family": "directed_scale_free",
+      "graph_file": "sf_n120_k06.d",
+      "graph_sha256": "5f9d6d4d0ebee751a81e0af858fd25a5a3ed412c7bbe209bfcd1f472da94bf55",
+      "instance_id": "sf_n120_k06",
+      "n_edges": 720,
+      "n_vertices": 120,
+      "source_experiment": "EXP03"
+    },
+    {
+      "dimacs_sha256": "d354b1884c999947545fae4657cbdb7e86208fabfb16bb37d91ebee91b66a165",
+      "family": "directed_community",
+      "graph_file": "cm_n120_k06.d",
+      "graph_sha256": "bcb0a4def15bd85457570e0755b3ae80e50c827526677813894ee3776fc0bccf",
+      "instance_id": "cm_n120_k06",
+      "n_edges": 720,
+      "n_vertices": 120,
+      "source_experiment": "EXP03"
+    },
+    {
+      "dimacs_sha256": "159f5422d2483fc27c7bf254fc59419d1ff5b17c23380e18b86b76ead65c5c7d",
+      "family": "erdos_renyi_directed",
+      "graph_file": "er_n240_k06.d",
+      "graph_sha256": "ce53939fe9eb883b941f64b4de78f5756ccdc988dd673132cdc84f5c58242ba0",
+      "instance_id": "er_n240_k06",
+      "n_edges": 1440,
+      "n_vertices": 240,
+      "source_experiment": "EXP03"
+    },
+    {
+      "dimacs_sha256": "86be09509d41d8ebe7f50b90e0b81dd789a2d3f70b9e3563c1a0791f9caa9391",
+      "family": "directed_scale_free",
+      "graph_file": "sf_n240_k06.d",
+      "graph_sha256": "4432524d58d6b4c8069bd112f4c8f795adc62afeae53746833861f05632b1b50",
+      "instance_id": "sf_n240_k06",
+      "n_edges": 1440,
+      "n_vertices": 240,
+      "source_experiment": "EXP03"
+    },
+    {
+      "dimacs_sha256": "14cd9d802a9f39c52fa592ffc2e274fef7d9b91c14cf978db339166e3de847f2",
+      "family": "directed_community",
+      "graph_file": "cm_n240_k06.d",
+      "graph_sha256": "233e093ba18622a7a548523e7f4bdde5eede905fe2d0eb9edeee46e4d97c9985",
+      "instance_id": "cm_n240_k06",
+      "n_edges": 1440,
+      "n_vertices": 240,
+      "source_experiment": "EXP03"
+    },
+    {
+      "dimacs_sha256": "ebad681ba99b2188c60ae18bd84a02128946c281d6a0eed8414e6a7f5ada2cba",
+      "family": "erdos_renyi_directed",
+      "graph_file": "er_n060_k08.d",
+      "graph_sha256": "a406e963adde156d0dd56396f0b4788647c30b56054bb6531dd41d96a142cb7d",
+      "instance_id": "er_n060_k08",
+      "n_edges": 480,
+      "n_vertices": 60,
+      "source_experiment": "EXP03"
+    },
+    {
+      "dimacs_sha256": "ab281ce2289f5828614f25aa1dffca6317da8c4f06137cf24063ecedb31c0205",
+      "family": "directed_scale_free",
+      "graph_file": "sf_n060_k08.d",
+      "graph_sha256": "36b358eea63186cf139556a522f3e316b94fda1b870af9740004395e325278cd",
+      "instance_id": "sf_n060_k08",
+      "n_edges": 480,
+      "n_vertices": 60,
+      "source_experiment": "EXP03"
+    },
+    {
+      "dimacs_sha256": "3392bb568a9a2af86570a19847f4b6d2f251cea69fe8cc96e27b6fab7b12d5ba",
+      "family": "directed_community",
+      "graph_file": "cm_n060_k08.d",
+      "graph_sha256": "159a5e07546230599462d71ab63203d1314d356cbbbfe23f983eb72ad2556fc8",
+      "instance_id": "cm_n060_k08",
+      "n_edges": 480,
+      "n_vertices": 60,
+      "source_experiment": "EXP03"
+    },
+    {
+      "dimacs_sha256": "c262efdd31aeb340a5501f281120d1fd2ad9b0ec99ce55e260e072134e4a9bce",
+      "family": "erdos_renyi_directed",
+      "graph_file": "er_n120_k08.d",
+      "graph_sha256": "153cb475c2531f0141c8a07aee1f32cf6b9264a9e6c1430241d0154ad28745d9",
+      "instance_id": "er_n120_k08",
+      "n_edges": 960,
+      "n_vertices": 120,
+      "source_experiment": "EXP03"
+    },
+    {
+      "dimacs_sha256": "03b92194d903952e6dfe51b79206478484c570585dca0eac1769f976d1071c33",
+      "family": "directed_scale_free",
+      "graph_file": "sf_n120_k08.d",
+      "graph_sha256": "34ec6e9bc43712dbad5dd4ab60fb5aa241710ed619372ea9050f9779267e20f4",
+      "instance_id": "sf_n120_k08",
+      "n_edges": 960,
+      "n_vertices": 120,
+      "source_experiment": "EXP03"
+    },
+    {
+      "dimacs_sha256": "99e12bd94c4b10cfd18b9137bbcfdaf41446acf60a2a52c37a698d98b4375c94",
+      "family": "directed_community",
+      "graph_file": "cm_n120_k08.d",
+      "graph_sha256": "e208ab37457764a45b3e2970fa8309b567483c439feb0d22f2241d6cb9aa1576",
+      "instance_id": "cm_n120_k08",
+      "n_edges": 960,
+      "n_vertices": 120,
+      "source_experiment": "EXP03"
+    },
+    {
+      "dimacs_sha256": "407632857b4021a6eebb0fab971330e54b6eaa529e15d78fedfddea2d7de1821",
+      "family": "erdos_renyi_directed",
+      "graph_file": "er_n240_k08.d",
+      "graph_sha256": "0eef47efdbb206aa3e4fe7013070a601fc7a15ea708d5ec5122edfe7383e833a",
+      "instance_id": "er_n240_k08",
+      "n_edges": 1920,
+      "n_vertices": 240,
+      "source_experiment": "EXP03"
+    },
+    {
+      "dimacs_sha256": "b10ce545d637eef11fbb0ee2b0e647b95bc2eb5dd9bee6cfced5b42b213893d2",
+      "family": "directed_scale_free",
+      "graph_file": "sf_n240_k08.d",
+      "graph_sha256": "92758643a7fcbc0c713a5e3ee6e7167777280e338c2e414fba70b6b164d847ec",
+      "instance_id": "sf_n240_k08",
+      "n_edges": 1920,
+      "n_vertices": 240,
+      "source_experiment": "EXP03"
+    },
+    {
+      "dimacs_sha256": "fda4ce523f2fb6ef000e44b8871aa5feb7381adbf2555c4c97d203d343e9747e",
+      "family": "directed_community",
+      "graph_file": "cm_n240_k08.d",
+      "graph_sha256": "db7b5d49634cac51b25dd9fa739e37c417ad182a070f25e1597a91d00cca4d11",
+      "instance_id": "cm_n240_k08",
+      "n_edges": 1920,
+      "n_vertices": 240,
+      "source_experiment": "EXP03"
+    },
+    {
+      "dimacs_sha256": "a169b69182416340adc1e08a4d535b8af055cb87862d1316ad6c43b88c0af1fe",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp04_er_n120_k03_r01.d",
+      "graph_sha256": "728193e2e7efc7099de4aecd9f9674c8bac1a6de10c1d185c9e23f8d1202b450",
+      "instance_id": "exp04_er_n120_k03_r01",
+      "n_edges": 360,
+      "n_vertices": 120,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "8951ea20f8b7a5bac4417430459420b8693a16998350f8fcf38462fed0c471b4",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp04_er_n120_k03_r02.d",
+      "graph_sha256": "8cce1468192f8ba1bd789641af3771df0eab53151ede295621aa04182093a5cb",
+      "instance_id": "exp04_er_n120_k03_r02",
+      "n_edges": 360,
+      "n_vertices": 120,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "0c59ef048bf104e3df72f65dd4cc90e2a412ce0c137c1dbad85a262ffba20337",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp04_er_n120_k03_r03.d",
+      "graph_sha256": "69021d48fa097d6a1553470abd093d36e9969cf6cab20fd76832da4efd391c3d",
+      "instance_id": "exp04_er_n120_k03_r03",
+      "n_edges": 360,
+      "n_vertices": 120,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "246a8429c608697832850fe2b199cce9381e3ef6e2d8759bbb5567d11dcacddc",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp04_er_n120_k03_r04.d",
+      "graph_sha256": "7c17cd1375c0da803a5e636e2a105320cc341d9fad9178c3d70bc298dd00d074",
+      "instance_id": "exp04_er_n120_k03_r04",
+      "n_edges": 360,
+      "n_vertices": 120,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "d133c0b436f34282b673b220c0d8e90a82ccc48f76b37f74041e89eae1eeb769",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp04_er_n120_k03_r05.d",
+      "graph_sha256": "53b40b22141df041f68448fa19dcde522878f146dc1f4c9748a589ed7ca0c9cf",
+      "instance_id": "exp04_er_n120_k03_r05",
+      "n_edges": 360,
+      "n_vertices": 120,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "a35772f5de9723e5df75a395d0ce9bd5e461d97049d78f1ea81ca3825d7c6bae",
+      "family": "directed_scale_free",
+      "graph_file": "exp04_sf_n120_k03_r01.d",
+      "graph_sha256": "3e39d0a73a5dca745c631fb58f545f1c2be3a0cc76fccee8cebdfada44564587",
+      "instance_id": "exp04_sf_n120_k03_r01",
+      "n_edges": 360,
+      "n_vertices": 120,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "7f1c257757a2cdaa2b92aefe4030e4bf1f518fdb7e3a994efb0d952ae544d997",
+      "family": "directed_scale_free",
+      "graph_file": "exp04_sf_n120_k03_r02.d",
+      "graph_sha256": "2ca5b1911d375972cc9a736fcde64e53f0d80d3f63c9d5f801043da553541873",
+      "instance_id": "exp04_sf_n120_k03_r02",
+      "n_edges": 360,
+      "n_vertices": 120,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "f57c445213bb3258b2b22bbc399118b2caf9540a7f7916b3a57c40dd33c9d136",
+      "family": "directed_scale_free",
+      "graph_file": "exp04_sf_n120_k03_r03.d",
+      "graph_sha256": "5f6754b0c3fb5982c59d445f8b50953ceb30d8e504e01bbca18b0a948294c5df",
+      "instance_id": "exp04_sf_n120_k03_r03",
+      "n_edges": 360,
+      "n_vertices": 120,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "4f3e7f555f5f46df3e0a8877bfd137cae995b23139ed29230ebc3e80a5b4756f",
+      "family": "directed_scale_free",
+      "graph_file": "exp04_sf_n120_k03_r04.d",
+      "graph_sha256": "1868a7c88dd8a6040e443f3cb06a53f27745efbe71192e9ba4b71ec19b457c14",
+      "instance_id": "exp04_sf_n120_k03_r04",
+      "n_edges": 360,
+      "n_vertices": 120,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "26c969ed0965efc53a196ca17c10e1a83043b8be6c49037b6d80f67cda2d61ed",
+      "family": "directed_scale_free",
+      "graph_file": "exp04_sf_n120_k03_r05.d",
+      "graph_sha256": "eb88da8063ebf9e55e332c70dc9e418c418ba9e2acc2a0f7dc306694d6dbf0d1",
+      "instance_id": "exp04_sf_n120_k03_r05",
+      "n_edges": 360,
+      "n_vertices": 120,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "28a442739d4008c9dc32295ab16cc312c8cd362e8d93fb8f516d342769831576",
+      "family": "directed_community",
+      "graph_file": "exp04_cm_n120_k03_r01.d",
+      "graph_sha256": "a07e2685e2f99b7cc466cef675591ce9822a39b51e08c47fdeab34e8f16620f5",
+      "instance_id": "exp04_cm_n120_k03_r01",
+      "n_edges": 360,
+      "n_vertices": 120,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "42109dbf4100dfc0707a74af5aba3ed88a1be461ac5d156ce4950f71e4ce34c1",
+      "family": "directed_community",
+      "graph_file": "exp04_cm_n120_k03_r02.d",
+      "graph_sha256": "ef72873a9d057fe5d3dba99c3daa2123fb17c5e1dd23d78fbe5c7057f98ddf1c",
+      "instance_id": "exp04_cm_n120_k03_r02",
+      "n_edges": 360,
+      "n_vertices": 120,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "863799fbce8343aab17c96ba72e8d3b47295587006c5469b2a3a6e8122e789ce",
+      "family": "directed_community",
+      "graph_file": "exp04_cm_n120_k03_r03.d",
+      "graph_sha256": "294049b3434ff37bd188c793969cb2d9b271fda644a8c484ad3819bfc07a676b",
+      "instance_id": "exp04_cm_n120_k03_r03",
+      "n_edges": 360,
+      "n_vertices": 120,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "ec3590ce171f9daba561574d9a8f5157ba3652b961e20cf5ae8f19cbfa5bdb45",
+      "family": "directed_community",
+      "graph_file": "exp04_cm_n120_k03_r04.d",
+      "graph_sha256": "068755c90cafb0505d313eabcf0e42ce1ece1568e67a5a704c760184ae6ca783",
+      "instance_id": "exp04_cm_n120_k03_r04",
+      "n_edges": 360,
+      "n_vertices": 120,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "68488e8622eaa1a1e16d8c217e6274839785496dcb6362c476a73f3770a590ba",
+      "family": "directed_community",
+      "graph_file": "exp04_cm_n120_k03_r05.d",
+      "graph_sha256": "0ae10a4abf63342ab8524bccdecf6bec979a68039478f57163976a530190f08a",
+      "instance_id": "exp04_cm_n120_k03_r05",
+      "n_edges": 360,
+      "n_vertices": 120,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "b65f85c1d51cf094cff38dda881c095c03c20cdf3115eea9071774fec4855459",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp04_er_n240_k03_r01.d",
+      "graph_sha256": "a377c58f1647943a13fbd9c4ea7adb218a167bbaaf1e6c4e22dfcb7aa5d4a868",
+      "instance_id": "exp04_er_n240_k03_r01",
+      "n_edges": 720,
+      "n_vertices": 240,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "e5bf27edf11926143165b3dff1d5bf20a23d95bd6a68227c5d23b93aa90718ea",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp04_er_n240_k03_r02.d",
+      "graph_sha256": "c904266dba7a41ec4c197323726b9ae15ca794aa9eb67446d70ac334e9c0440c",
+      "instance_id": "exp04_er_n240_k03_r02",
+      "n_edges": 720,
+      "n_vertices": 240,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "dad642df9cc4ab1a3db33a65e713b162f796899ba1d945c06568f87355ac4605",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp04_er_n240_k03_r03.d",
+      "graph_sha256": "d5153db705975c12896f6aec7c7f716396cbf71b1041433c11e7f2a53168ea09",
+      "instance_id": "exp04_er_n240_k03_r03",
+      "n_edges": 720,
+      "n_vertices": 240,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "df2dbba60500c21b86d3fd9f08dc722d4205a6d00bf3e9aefab6b32f3453e1a6",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp04_er_n240_k03_r04.d",
+      "graph_sha256": "a665f72a9c6a47344e090ab517e901450d671ad518a1eae9307735cedb69052a",
+      "instance_id": "exp04_er_n240_k03_r04",
+      "n_edges": 720,
+      "n_vertices": 240,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "33835faeac23616a93615898fbdffebd56141bde89148e8b45a34147f0b409fd",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp04_er_n240_k03_r05.d",
+      "graph_sha256": "9fe35dbb2c8e4236bdb55687d882109db4672ea34298f7e101434af4ff638aff",
+      "instance_id": "exp04_er_n240_k03_r05",
+      "n_edges": 720,
+      "n_vertices": 240,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "4e92ec7a6a985775eab59f257d350287bd3b75d985daf3efeb4871e730688ed0",
+      "family": "directed_scale_free",
+      "graph_file": "exp04_sf_n240_k03_r01.d",
+      "graph_sha256": "b685385f556c74d7c950ec60a1606207f810ec39488384b356f2a7855ba8d303",
+      "instance_id": "exp04_sf_n240_k03_r01",
+      "n_edges": 720,
+      "n_vertices": 240,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "8bab0cef390c2fb07ef6355f4f19381952be7bf53194d70110f38ed52b74af4e",
+      "family": "directed_scale_free",
+      "graph_file": "exp04_sf_n240_k03_r02.d",
+      "graph_sha256": "41c120a79462278cefbecd018ec40725c8090943d747cee1f002a4f836b6424f",
+      "instance_id": "exp04_sf_n240_k03_r02",
+      "n_edges": 720,
+      "n_vertices": 240,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "ca33dd4683e19024964e56b8eea934e2a4479b209a8afaeff3edbba6cf969573",
+      "family": "directed_scale_free",
+      "graph_file": "exp04_sf_n240_k03_r03.d",
+      "graph_sha256": "051d6c3e9a909ee479620a4bfef07de114420b98e18086c3abdd9682d0667c37",
+      "instance_id": "exp04_sf_n240_k03_r03",
+      "n_edges": 720,
+      "n_vertices": 240,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "41a0e0c12b1980b856445c629e93dc2736ce36620fa1c5830e7f7d3490ebc0fe",
+      "family": "directed_scale_free",
+      "graph_file": "exp04_sf_n240_k03_r04.d",
+      "graph_sha256": "9f380f420118fdebd7c90ce1e01b84e1f0fd189ddcb24f4c43b55ae7cdfde6d7",
+      "instance_id": "exp04_sf_n240_k03_r04",
+      "n_edges": 720,
+      "n_vertices": 240,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "c0f03777c905906413aab742e116598f93247a115c1b9fc2474f63ffe70fced4",
+      "family": "directed_scale_free",
+      "graph_file": "exp04_sf_n240_k03_r05.d",
+      "graph_sha256": "68a55031722142be22ae928ee89b86e2c17cb6218640d0af502bfea331a0ba88",
+      "instance_id": "exp04_sf_n240_k03_r05",
+      "n_edges": 720,
+      "n_vertices": 240,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "c21d2930cb85463a49c85874756f4c24df6c2fbe7c4dba14e7c13b530d241b39",
+      "family": "directed_community",
+      "graph_file": "exp04_cm_n240_k03_r01.d",
+      "graph_sha256": "c412d932cb656b0d295c1843e86b4f2e0fa1379184022035d02936dcf5654ca8",
+      "instance_id": "exp04_cm_n240_k03_r01",
+      "n_edges": 720,
+      "n_vertices": 240,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "962ebba5f336618b5084384d9ffdb8453b4367c1471299c3096444fcb949fb27",
+      "family": "directed_community",
+      "graph_file": "exp04_cm_n240_k03_r02.d",
+      "graph_sha256": "bd6a906873620a2861df3060d8e36bcb2433435ba39ee484750bb4afd34cfb2c",
+      "instance_id": "exp04_cm_n240_k03_r02",
+      "n_edges": 720,
+      "n_vertices": 240,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "c158d455d35df3458d610dbf6536d78ce5f71eb92d5c06d57126553b2feda63a",
+      "family": "directed_community",
+      "graph_file": "exp04_cm_n240_k03_r03.d",
+      "graph_sha256": "61e73a6549908ce89a1eac907fd53ebea9bb92a23f928483ba6cef90fa50e98f",
+      "instance_id": "exp04_cm_n240_k03_r03",
+      "n_edges": 720,
+      "n_vertices": 240,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "8dbe4bcbe455a8387b807e90c145e30f2de037120b07a679e0e2326f6a6ec5ca",
+      "family": "directed_community",
+      "graph_file": "exp04_cm_n240_k03_r04.d",
+      "graph_sha256": "f31440f596143cf14a69a15c3e92791aaff8c2cb527be18f6e2d75e8f28b8c3e",
+      "instance_id": "exp04_cm_n240_k03_r04",
+      "n_edges": 720,
+      "n_vertices": 240,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "a023c0effa26395438effd584e1cd966c5bd0108528d2d76a1a5201a08ed9b3d",
+      "family": "directed_community",
+      "graph_file": "exp04_cm_n240_k03_r05.d",
+      "graph_sha256": "9037cc9a4b8abda611fdd305b4e8d0ecb546dbf046aa5ecb8b7dacfaf0839007",
+      "instance_id": "exp04_cm_n240_k03_r05",
+      "n_edges": 720,
+      "n_vertices": 240,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "9349dd1a20e9304447e881cb33e8c9afb666e33ab2f1f964e70414b5be829218",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp04_er_n480_k03_r01.d",
+      "graph_sha256": "16bd0d401a39be88699fdc9ce1556e05c1cf8fbaaef15634eb88ab357d5a2c6f",
+      "instance_id": "exp04_er_n480_k03_r01",
+      "n_edges": 1440,
+      "n_vertices": 480,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "e2ba238ec0cdcb8046aab8edd263759b1bacc866410d9b610f62c42163cae63e",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp04_er_n480_k03_r02.d",
+      "graph_sha256": "1358f8fd44b88e84c3deef0e78290e8f20b3822eaacfc0b2d71954a7079a580b",
+      "instance_id": "exp04_er_n480_k03_r02",
+      "n_edges": 1440,
+      "n_vertices": 480,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "6eaf5a43fe12865dc82dd3281b85dfe1ab96a4182c5ffb3d48afe1a7cebb7824",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp04_er_n480_k03_r03.d",
+      "graph_sha256": "5172b14269ebe06c49aa7e11f4c04ef1792c45e093f451282d7ab3ea94b0c49c",
+      "instance_id": "exp04_er_n480_k03_r03",
+      "n_edges": 1440,
+      "n_vertices": 480,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "ac7330694b113178eab13a2588a379a45de820a19117b264cb447b329a8dda13",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp04_er_n480_k03_r04.d",
+      "graph_sha256": "d39082edde5e2e37879328cd2a5371d24ac9b424f558c09180bd8fad1f3d6b82",
+      "instance_id": "exp04_er_n480_k03_r04",
+      "n_edges": 1440,
+      "n_vertices": 480,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "c8ce81b9bdf6ba4cf12d0e6a7d92510a54a58f3e67add5090b99342179b1486c",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp04_er_n480_k03_r05.d",
+      "graph_sha256": "c700b7c82353c912d6f57b583fdd67f4c623921bad3033e4176c0358f7919460",
+      "instance_id": "exp04_er_n480_k03_r05",
+      "n_edges": 1440,
+      "n_vertices": 480,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "a5474a812f27c484abbb836ab22b0d70532cd91298da65adbd1634a4b2f7ca21",
+      "family": "directed_scale_free",
+      "graph_file": "exp04_sf_n480_k03_r01.d",
+      "graph_sha256": "7d813b112042cac3be5a3b01dfe3876dac02ed185c7078c7c89cd71ee6f20eb6",
+      "instance_id": "exp04_sf_n480_k03_r01",
+      "n_edges": 1440,
+      "n_vertices": 480,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "087d73a3bf7c131e9dedf9539c7e40df6372d95b03b16ec53f4d5f996395145a",
+      "family": "directed_scale_free",
+      "graph_file": "exp04_sf_n480_k03_r02.d",
+      "graph_sha256": "d48c817dfe5c39243338755b6533ca5c9581205f42350e6c9bb74cd78fca0491",
+      "instance_id": "exp04_sf_n480_k03_r02",
+      "n_edges": 1440,
+      "n_vertices": 480,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "55911a1fe76f7c539119983312cfe266457a9ed8d9adfefd1e76828f528f999a",
+      "family": "directed_scale_free",
+      "graph_file": "exp04_sf_n480_k03_r03.d",
+      "graph_sha256": "150ca7eb351ed2fea4a63c41e745d91deec329494d39551ed40dcab9124833d2",
+      "instance_id": "exp04_sf_n480_k03_r03",
+      "n_edges": 1440,
+      "n_vertices": 480,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "f49df2d85a371a8e4fc8faed3f6037ef341a7da3f2ffd3c921530803c2ad2072",
+      "family": "directed_scale_free",
+      "graph_file": "exp04_sf_n480_k03_r04.d",
+      "graph_sha256": "380dadcf4d3dc3a0786139af51b4737f3947a248901c83550f692953605cc391",
+      "instance_id": "exp04_sf_n480_k03_r04",
+      "n_edges": 1440,
+      "n_vertices": 480,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "cc17e198a86504ca0e00e2af5335f6c1d09b647c371fedfee5c1195824acbc2d",
+      "family": "directed_scale_free",
+      "graph_file": "exp04_sf_n480_k03_r05.d",
+      "graph_sha256": "5f59be9234057d8c3d50d8024ffc12fed1c80200f71e61af7186b0d369309d3e",
+      "instance_id": "exp04_sf_n480_k03_r05",
+      "n_edges": 1440,
+      "n_vertices": 480,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "25e1fddb9412b5e4b635e9e761225ff86372a7e798f9ee9d21c9415fdf8a062d",
+      "family": "directed_community",
+      "graph_file": "exp04_cm_n480_k03_r01.d",
+      "graph_sha256": "fac2cb9cf63fb38ed07a5fd95bb720a1f39da389d641a61b14f146f90872dd94",
+      "instance_id": "exp04_cm_n480_k03_r01",
+      "n_edges": 1440,
+      "n_vertices": 480,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "f18f0b87957baa2a28dbc554d4c19265372307df1094efce9a375d562bc49704",
+      "family": "directed_community",
+      "graph_file": "exp04_cm_n480_k03_r02.d",
+      "graph_sha256": "99854db7eabc346fdf9b94893ff02a496b519bbf52270bb3b188d31fecb013ab",
+      "instance_id": "exp04_cm_n480_k03_r02",
+      "n_edges": 1440,
+      "n_vertices": 480,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "f52218cdf50100ac651a97473b6f2aaac705df914f930a4d9e28e86069287265",
+      "family": "directed_community",
+      "graph_file": "exp04_cm_n480_k03_r03.d",
+      "graph_sha256": "adea7375677c1115c9deb07cfae5e9bf1f0a439463992222963451dee82cda92",
+      "instance_id": "exp04_cm_n480_k03_r03",
+      "n_edges": 1440,
+      "n_vertices": 480,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "56490773881be24a27daac23564f49033905a7189d222ff79ada65c907584ad4",
+      "family": "directed_community",
+      "graph_file": "exp04_cm_n480_k03_r04.d",
+      "graph_sha256": "db4c05119accc37be469fe70ebb8d87cc4b3c8d085acdf7981383f35940aed2b",
+      "instance_id": "exp04_cm_n480_k03_r04",
+      "n_edges": 1440,
+      "n_vertices": 480,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "c4cc62966da1c1a0f92a5386db50504f0eaa9a3980223da37fa2e7726ee34a43",
+      "family": "directed_community",
+      "graph_file": "exp04_cm_n480_k03_r05.d",
+      "graph_sha256": "183b13921400b78d8a514cfbc58eadaa015d4e1c4be0614e3f307beb27b9fbd9",
+      "instance_id": "exp04_cm_n480_k03_r05",
+      "n_edges": 1440,
+      "n_vertices": 480,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "fd08b9ed5a9f0836c27510add64613a14d045b20b2d6593cad01af91194ce4c0",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp04_er_n120_k05_r01.d",
+      "graph_sha256": "87fa70b1df5569438ae5c434b8e828aa128017011c75b7ceb054a023eefccd92",
+      "instance_id": "exp04_er_n120_k05_r01",
+      "n_edges": 600,
+      "n_vertices": 120,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "f43046e25e6b7466bf0e9c09e5b72eb9b099fddea25f1e2161c01ff6de903f70",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp04_er_n120_k05_r02.d",
+      "graph_sha256": "dc0bb5a63b67333c6aced2a7e4687d8d5af7fb63d0ff9ea3849d6c8edf3a4165",
+      "instance_id": "exp04_er_n120_k05_r02",
+      "n_edges": 600,
+      "n_vertices": 120,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "f143ba4d13b2a90df4692b557a9c48f27966d99c4ed848de308fd3a1266d03a3",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp04_er_n120_k05_r03.d",
+      "graph_sha256": "6e1436b9be8610421770d42d5a07362a2e37c977337010f0002725bf17e5a7b6",
+      "instance_id": "exp04_er_n120_k05_r03",
+      "n_edges": 600,
+      "n_vertices": 120,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "3fe08bbce167ec914afffbf9c631ae91f0b28f669d51addec6d2badc0edbba9f",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp04_er_n120_k05_r04.d",
+      "graph_sha256": "8ce6bbd8a7f87971b022b969bc2556267c48530d8ac98a9bb82fef7b41c97171",
+      "instance_id": "exp04_er_n120_k05_r04",
+      "n_edges": 600,
+      "n_vertices": 120,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "7d15dacdbeac1fb8d78820e924ee33577db0159c11dff782a5ba23230c406a84",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp04_er_n120_k05_r05.d",
+      "graph_sha256": "de849b55c978555b92f647a0a4fc791c2de88e66289fb0209768b78c42ca511a",
+      "instance_id": "exp04_er_n120_k05_r05",
+      "n_edges": 600,
+      "n_vertices": 120,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "11ea3a299b3b9290e9ee4f4411c0dc17a74f19f5370f7560b64306cf7b6d83d0",
+      "family": "directed_scale_free",
+      "graph_file": "exp04_sf_n120_k05_r01.d",
+      "graph_sha256": "2c699a905f9fc6da0f9d6832725860d1069983b700f43fb8bf54c278d160f551",
+      "instance_id": "exp04_sf_n120_k05_r01",
+      "n_edges": 600,
+      "n_vertices": 120,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "0acde8372b55f1f16a9ac990c23f49477813b5b8fd658cd65ee2fd8b03b47c8e",
+      "family": "directed_scale_free",
+      "graph_file": "exp04_sf_n120_k05_r02.d",
+      "graph_sha256": "2e9f56337fd1c9a11a31c702bc29380316c7196aa5246bf15eb3fc9a993e7a6e",
+      "instance_id": "exp04_sf_n120_k05_r02",
+      "n_edges": 600,
+      "n_vertices": 120,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "e3af6b8a7050aad66bc991fb4a4d3b2585ce44505293327335880fa27c5d2086",
+      "family": "directed_scale_free",
+      "graph_file": "exp04_sf_n120_k05_r03.d",
+      "graph_sha256": "3ae1b3bca6c932be3a0d857894f855e9b858e61a8ef90858504623712a99bc7a",
+      "instance_id": "exp04_sf_n120_k05_r03",
+      "n_edges": 600,
+      "n_vertices": 120,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "54dae19b99954c9da4cb96fc2d5bcbb62518e26dd731c54528f95784078d57c6",
+      "family": "directed_scale_free",
+      "graph_file": "exp04_sf_n120_k05_r04.d",
+      "graph_sha256": "2b08d3ddbec9ed97423316c2434e461bdcd7e31ea1e3b72b89c74794e8f1a271",
+      "instance_id": "exp04_sf_n120_k05_r04",
+      "n_edges": 600,
+      "n_vertices": 120,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "09e4659636699190d519524b5a6401a2b4671c251f4c6341fe92e9f0fb551ae4",
+      "family": "directed_scale_free",
+      "graph_file": "exp04_sf_n120_k05_r05.d",
+      "graph_sha256": "7e38523ba393882b5edfe6ee2da4d1b56587c8b0fd1e06611479299237b2df23",
+      "instance_id": "exp04_sf_n120_k05_r05",
+      "n_edges": 600,
+      "n_vertices": 120,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "06021961f0e33ffc587a0b9ddcd8cc8bf3724cdd48b64b1cdc144e8e44aad384",
+      "family": "directed_community",
+      "graph_file": "exp04_cm_n120_k05_r01.d",
+      "graph_sha256": "e9b5aa453cfa83c92af3d69db085c488f41078e88d27725dded8091ded2ac462",
+      "instance_id": "exp04_cm_n120_k05_r01",
+      "n_edges": 600,
+      "n_vertices": 120,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "cd0a4b01c7ea112156efe8e48eacf89b36821ed07e580f5c438f2d3c097cc776",
+      "family": "directed_community",
+      "graph_file": "exp04_cm_n120_k05_r02.d",
+      "graph_sha256": "ebec72c6a7e3a284fd6a9629602869602d1750b24d09d2c63e8c5818a166da48",
+      "instance_id": "exp04_cm_n120_k05_r02",
+      "n_edges": 600,
+      "n_vertices": 120,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "685a4181658d69ad08d67b8c020dad3ea59153bb19829dbed1dbbdee91ac5cb2",
+      "family": "directed_community",
+      "graph_file": "exp04_cm_n120_k05_r03.d",
+      "graph_sha256": "b8f1ebb5beb9c4fbafdf9fe4af2473c0e086f93a9061ef5cac4f42c781c5385b",
+      "instance_id": "exp04_cm_n120_k05_r03",
+      "n_edges": 600,
+      "n_vertices": 120,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "803d29b782b2546068c7f04b681613eb0a7f89362e96b3218af0186df8d113aa",
+      "family": "directed_community",
+      "graph_file": "exp04_cm_n120_k05_r04.d",
+      "graph_sha256": "d0b809068d2418532cfbfe1a33dce394d25f5c935a6e2ebb3d1c2d5f396ea926",
+      "instance_id": "exp04_cm_n120_k05_r04",
+      "n_edges": 600,
+      "n_vertices": 120,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "f92a099c91be05c5f7a5b8f61524e8c11f98180eb4ccfde0cc1839bc00890dd5",
+      "family": "directed_community",
+      "graph_file": "exp04_cm_n120_k05_r05.d",
+      "graph_sha256": "df2419ec5765def691d5edc35bff01d9843de4cf9b98f0051628b3113823fa59",
+      "instance_id": "exp04_cm_n120_k05_r05",
+      "n_edges": 600,
+      "n_vertices": 120,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "7b09303e4905c6f64e20f34ddd1abac3276c624026494c1d527f65011fa6e779",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp04_er_n240_k05_r01.d",
+      "graph_sha256": "86ad10ac0856bfcac4b904f8694cc966f1835d991fd29c0a98c1889960f4a531",
+      "instance_id": "exp04_er_n240_k05_r01",
+      "n_edges": 1200,
+      "n_vertices": 240,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "b2941a9ad1c2e87a35a1f51589b09b98bc10d857290dd0891cbee61b628db6be",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp04_er_n240_k05_r02.d",
+      "graph_sha256": "a446f9dcd0d1278fa611ccf717661bc7eb5aa5ec6b670c91e5cc0a85f8babcb8",
+      "instance_id": "exp04_er_n240_k05_r02",
+      "n_edges": 1200,
+      "n_vertices": 240,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "9d8ecc3dc6a204f65c30150e5e44891fe60a809d50d135b72ec4c7d61e3ef2bc",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp04_er_n240_k05_r03.d",
+      "graph_sha256": "97613e187937c5d26695385e80e3b18d25209a5712659812ddfac7d44b851ef8",
+      "instance_id": "exp04_er_n240_k05_r03",
+      "n_edges": 1200,
+      "n_vertices": 240,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "e9f7152456c511156278b7cf93387527c06328894692f591530bb84e7fd3581a",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp04_er_n240_k05_r04.d",
+      "graph_sha256": "d41804cb1428a1dd69f18c640aebe40c41c3b3cd85036a9657e89bb0ccf033be",
+      "instance_id": "exp04_er_n240_k05_r04",
+      "n_edges": 1200,
+      "n_vertices": 240,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "401e5674b31f8d5744c8ae0457263ee757a6c6f1014766f045aa14c2bd7b9755",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp04_er_n240_k05_r05.d",
+      "graph_sha256": "68b7cef9f38f69b5ae1c4a1bc4f622001b8f7add29c51f1598a04ae99b9c2ac8",
+      "instance_id": "exp04_er_n240_k05_r05",
+      "n_edges": 1200,
+      "n_vertices": 240,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "436fb85f4b04d7bd436bf76f4b9c882b3dfe6e56a4f0126690001642b35a52ac",
+      "family": "directed_scale_free",
+      "graph_file": "exp04_sf_n240_k05_r01.d",
+      "graph_sha256": "133b7ffd4627460f3a004df99ec6b407fd0c3d09fb0f3c70758734790205dbaa",
+      "instance_id": "exp04_sf_n240_k05_r01",
+      "n_edges": 1200,
+      "n_vertices": 240,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "c0dfc9a3a3e20a4ff2e694dbeedc507ec2522c2c8a3591afc301d7bd4717ef14",
+      "family": "directed_scale_free",
+      "graph_file": "exp04_sf_n240_k05_r02.d",
+      "graph_sha256": "8da3460cd20c94a5ff471bd7d66c919d178cd27ccc1e94e1b7fde47614bcbb7d",
+      "instance_id": "exp04_sf_n240_k05_r02",
+      "n_edges": 1200,
+      "n_vertices": 240,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "e7ec4ff5dbbb7d1805f9c4bf5881d0d6eb07a3a2cb705e8746405dfd02c45fb9",
+      "family": "directed_scale_free",
+      "graph_file": "exp04_sf_n240_k05_r03.d",
+      "graph_sha256": "c70549bda13d89efde3708135ae69c8779d87dce406c77b11fc7a8ad435eaf5d",
+      "instance_id": "exp04_sf_n240_k05_r03",
+      "n_edges": 1200,
+      "n_vertices": 240,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "9b8adf4ff659e13647c8e6dddb6eabd1beee07d99a74b389c5406ecd75e4ca99",
+      "family": "directed_scale_free",
+      "graph_file": "exp04_sf_n240_k05_r04.d",
+      "graph_sha256": "c9489df16984a69e527fc69d58169255681dede70a505be51cc56b001b84fa13",
+      "instance_id": "exp04_sf_n240_k05_r04",
+      "n_edges": 1200,
+      "n_vertices": 240,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "e8c79639525598cc23144559ce39f82de545e6da6b2db097708dfa83361d4ca0",
+      "family": "directed_scale_free",
+      "graph_file": "exp04_sf_n240_k05_r05.d",
+      "graph_sha256": "55c29b4ffe9b8a52ddf33603ab48e1c6791ecdc1d69fbbf6912d115e1c6c46ec",
+      "instance_id": "exp04_sf_n240_k05_r05",
+      "n_edges": 1200,
+      "n_vertices": 240,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "3e64bc1ab3d473c614662086b9d9e8d0bbcef3b223fc19fe88e410c4a9252cef",
+      "family": "directed_community",
+      "graph_file": "exp04_cm_n240_k05_r01.d",
+      "graph_sha256": "fa4d2590ae3211c652cff35f400c2270b7790974123143e570919f6d451b4c61",
+      "instance_id": "exp04_cm_n240_k05_r01",
+      "n_edges": 1200,
+      "n_vertices": 240,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "7920335ba1f81fc344e6352bc535fe8eb10d19ab9db5ed0bc55978f114a5f6fa",
+      "family": "directed_community",
+      "graph_file": "exp04_cm_n240_k05_r02.d",
+      "graph_sha256": "20bd2644fac2fdab8cfe58183f05f51bcf7c7718351057745bed51b3ddc8bae2",
+      "instance_id": "exp04_cm_n240_k05_r02",
+      "n_edges": 1200,
+      "n_vertices": 240,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "caf248a176d89e243071fdc18f532110edfc58855d6ab5d5d0c1f5b00338a72f",
+      "family": "directed_community",
+      "graph_file": "exp04_cm_n240_k05_r03.d",
+      "graph_sha256": "a549bf1507dd94bb719681d2e782f53081697842b4f1ec87ca37903c7a3c21cb",
+      "instance_id": "exp04_cm_n240_k05_r03",
+      "n_edges": 1200,
+      "n_vertices": 240,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "6586d183051adb0ef678b1a5da283faa3e56a0871e9cb3bfc5f5cfe291f899bc",
+      "family": "directed_community",
+      "graph_file": "exp04_cm_n240_k05_r04.d",
+      "graph_sha256": "f37812b77fa08d14baf3d3be24385876174ab40d90ee868924f264ec193c7d9c",
+      "instance_id": "exp04_cm_n240_k05_r04",
+      "n_edges": 1200,
+      "n_vertices": 240,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "f3dd0b7cb015f13e0b12323f7173d564ae529b2f705e47ee6e8e6d742b7453c6",
+      "family": "directed_community",
+      "graph_file": "exp04_cm_n240_k05_r05.d",
+      "graph_sha256": "efd647d9a7d71a2523d1c02b8dea83e4ecb1f1a4cff4322c734ced119d02f04f",
+      "instance_id": "exp04_cm_n240_k05_r05",
+      "n_edges": 1200,
+      "n_vertices": 240,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "01d5f4e99a36f286bd4c15e387dddc99f1dbea0f627501b0b671a5670be8efd8",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp04_er_n480_k05_r01.d",
+      "graph_sha256": "637dd7693ac79a8ebefd094654ccd0fe717873cbc451711b454ee6cbf4c47983",
+      "instance_id": "exp04_er_n480_k05_r01",
+      "n_edges": 2400,
+      "n_vertices": 480,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "23475f7c23a5cb743d9595b381c2bc549c51a9c625a8790b0f36597e6a98ec2f",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp04_er_n480_k05_r02.d",
+      "graph_sha256": "6465a70ee151b5aadbc72e10ad2ef02e2931d581fc881a3cb91b349674c5bba6",
+      "instance_id": "exp04_er_n480_k05_r02",
+      "n_edges": 2400,
+      "n_vertices": 480,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "3b17706e36e45885ade205604f445eb11197cf3c44309618b7d226a18095931d",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp04_er_n480_k05_r03.d",
+      "graph_sha256": "81affd326e7959f6e4abe4ea19f357edc39c1ee3b24e81455d342d4b87538982",
+      "instance_id": "exp04_er_n480_k05_r03",
+      "n_edges": 2400,
+      "n_vertices": 480,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "175acfb1c0b5e9fdb94c76fbe0bca60bba623b598548658af06d866f2ffdadff",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp04_er_n480_k05_r04.d",
+      "graph_sha256": "edbcbc1d77d307cd33e5fa791aba88f082a8eb70b908b8e2befdfd6d95ad565f",
+      "instance_id": "exp04_er_n480_k05_r04",
+      "n_edges": 2400,
+      "n_vertices": 480,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "5e044e16b07ad5be863b41f91c95193d6babab2a1bfb1250192afd327bb301f8",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp04_er_n480_k05_r05.d",
+      "graph_sha256": "7dfe9b6ebe7c3a9ed3bbc93c3baa567d0ed8dd902d29397082b7aebc43e22112",
+      "instance_id": "exp04_er_n480_k05_r05",
+      "n_edges": 2400,
+      "n_vertices": 480,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "6fe73253539ff8a17c9f72e86e13513488606f1caec6c6e6ecce074111e1650f",
+      "family": "directed_scale_free",
+      "graph_file": "exp04_sf_n480_k05_r01.d",
+      "graph_sha256": "1685db1c1c0e66f5e83a2ce27bcb7c4850f0228f74e5179a50c89524a1f2ad2d",
+      "instance_id": "exp04_sf_n480_k05_r01",
+      "n_edges": 2400,
+      "n_vertices": 480,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "c0783653baeed8772c6b80f9bb0f9f26f4c76d4b458ba272b6d1e42f0d9df72d",
+      "family": "directed_scale_free",
+      "graph_file": "exp04_sf_n480_k05_r02.d",
+      "graph_sha256": "6804daead39293ff4fe3363465a1206fa5eeecae84b08d85368e9608413bd4cf",
+      "instance_id": "exp04_sf_n480_k05_r02",
+      "n_edges": 2400,
+      "n_vertices": 480,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "f58e6880c86a688544a30435291fded1e0afaa7ba97f5d7a75e395e26599fc58",
+      "family": "directed_scale_free",
+      "graph_file": "exp04_sf_n480_k05_r03.d",
+      "graph_sha256": "c0592aae9b7fa2828fe04d8ff4f41c7991fff0f3b32623abb7dbcfe23fcc77e5",
+      "instance_id": "exp04_sf_n480_k05_r03",
+      "n_edges": 2400,
+      "n_vertices": 480,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "bc3f3de1352bd282da303bf2f92d598f88b6dc84cc6d5cc1a7f005fc099a4c4b",
+      "family": "directed_scale_free",
+      "graph_file": "exp04_sf_n480_k05_r04.d",
+      "graph_sha256": "9851ac600f3d867dc01aee2f7bb8955c2c17c2d8a83f032008761d8291874dfe",
+      "instance_id": "exp04_sf_n480_k05_r04",
+      "n_edges": 2400,
+      "n_vertices": 480,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "0c2b5dccd19c954b45707d3bfee6f0209687271e19c24344a42a17281ba4984b",
+      "family": "directed_scale_free",
+      "graph_file": "exp04_sf_n480_k05_r05.d",
+      "graph_sha256": "804b22337f2db34a46f6dc42185ede10758cf3beb65cfc8f297cc1c952587b59",
+      "instance_id": "exp04_sf_n480_k05_r05",
+      "n_edges": 2400,
+      "n_vertices": 480,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "f9574a5cae39a2aea426c3a320bf7f025627eb0c6029f562c03fe26f155a7c69",
+      "family": "directed_community",
+      "graph_file": "exp04_cm_n480_k05_r01.d",
+      "graph_sha256": "424c618be1dcdcc1125b8998bfc1ca1c673c917c50b69cc5a2cb05435a8dc3e0",
+      "instance_id": "exp04_cm_n480_k05_r01",
+      "n_edges": 2400,
+      "n_vertices": 480,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "8fd55fef9632bbafbc2d8bb2a2db2907baec09f0071febe46b06fb58d315a7a5",
+      "family": "directed_community",
+      "graph_file": "exp04_cm_n480_k05_r02.d",
+      "graph_sha256": "0560b8c7b4e49ae36611ec816b2482eae336582091554573b8ac7bbe06302bad",
+      "instance_id": "exp04_cm_n480_k05_r02",
+      "n_edges": 2400,
+      "n_vertices": 480,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "7a5d7f8dc8af545cfb9db9013fad7826d848d43a6cf50d4884dff64a9fd841da",
+      "family": "directed_community",
+      "graph_file": "exp04_cm_n480_k05_r03.d",
+      "graph_sha256": "128f96cdeea357a27b17cde00b2b10e32bd0b4cc28142ecc71ecf4f38992f67e",
+      "instance_id": "exp04_cm_n480_k05_r03",
+      "n_edges": 2400,
+      "n_vertices": 480,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "6e2f49254a6a115cf2805dce9155e75f91e69f5314ae62c22b8010fc8a213cc5",
+      "family": "directed_community",
+      "graph_file": "exp04_cm_n480_k05_r04.d",
+      "graph_sha256": "552d7b4502d1eccb487d26a028bf7247b374234cda06590aa8bc95a5d3237571",
+      "instance_id": "exp04_cm_n480_k05_r04",
+      "n_edges": 2400,
+      "n_vertices": 480,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "88eb4d4b2df59aa52210a11bf1a261ea7317c5e51a62b15150a5d3e59132b1d0",
+      "family": "directed_community",
+      "graph_file": "exp04_cm_n480_k05_r05.d",
+      "graph_sha256": "58a6d9006cea0ace86279f10233c617c655a57615b4591047c9ce1ee093a4f4d",
+      "instance_id": "exp04_cm_n480_k05_r05",
+      "n_edges": 2400,
+      "n_vertices": 480,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "f4b2ea2729b089a3b7c23534fba82bbb3e4029888061ac6978203657051a3904",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp04_er_n120_k08_r01.d",
+      "graph_sha256": "846e2a0a6491744f10eab4623bb33e88c9eebd80fef03b3bac7e9453488ff8e0",
+      "instance_id": "exp04_er_n120_k08_r01",
+      "n_edges": 960,
+      "n_vertices": 120,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "533321bb6f10c6d9aa6141f66f44da4e0b6f3bce5a8757ee12f23a73ee11bf05",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp04_er_n120_k08_r02.d",
+      "graph_sha256": "7e513d589426761b9ea9dab12a824fadb3ad39e81169bf4215b22f4082a9544c",
+      "instance_id": "exp04_er_n120_k08_r02",
+      "n_edges": 960,
+      "n_vertices": 120,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "6c90eac75bbf334a8d5f96062e5eeda6efe0d410745904ac9f17745ab32cb16a",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp04_er_n120_k08_r03.d",
+      "graph_sha256": "43869f6c551993fe3c89a37c231398251f571b24b6606b1c2d488c95ba11700a",
+      "instance_id": "exp04_er_n120_k08_r03",
+      "n_edges": 960,
+      "n_vertices": 120,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "e4967e90a709b9778362e1769c83191e5cd833b324d8b3b303c8f227408318df",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp04_er_n120_k08_r04.d",
+      "graph_sha256": "1f9e528845168d11cf28450e754e8826c72011e99119537f9ac59ead9b55d82e",
+      "instance_id": "exp04_er_n120_k08_r04",
+      "n_edges": 960,
+      "n_vertices": 120,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "18a3e6565f4b968fc4acbdfb5b54f60e72a6988800a054310018524391c07c47",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp04_er_n120_k08_r05.d",
+      "graph_sha256": "fbd9beb513ba4640d7eb1aa40a6b10df58a8253ed0531d86abf6ce6b021a68f6",
+      "instance_id": "exp04_er_n120_k08_r05",
+      "n_edges": 960,
+      "n_vertices": 120,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "245f6bcac70ee33dc7f341957f3e861f9bc921cc59ff15162bf4f3cf326fc943",
+      "family": "directed_scale_free",
+      "graph_file": "exp04_sf_n120_k08_r01.d",
+      "graph_sha256": "e0d958866e6d94104d5c07b0d72badf8effccb7405eee550b3ae80f87f22924b",
+      "instance_id": "exp04_sf_n120_k08_r01",
+      "n_edges": 960,
+      "n_vertices": 120,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "938fc719aff79e7743724f17980dfb1432e1a1a4783a0e9ff093fe56eceeea0e",
+      "family": "directed_scale_free",
+      "graph_file": "exp04_sf_n120_k08_r02.d",
+      "graph_sha256": "5b9b11d52c1d921f488dd5c04c43d4a36180fa2af56cccd6957313e869bd2337",
+      "instance_id": "exp04_sf_n120_k08_r02",
+      "n_edges": 960,
+      "n_vertices": 120,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "ab0f8597c0f820edc41cff5495f50cff5fdf2bd0f6462098afae3e4958049f03",
+      "family": "directed_scale_free",
+      "graph_file": "exp04_sf_n120_k08_r03.d",
+      "graph_sha256": "0f1c4382e022f01418dce914de734c3b46deb74be188cd4e7bd6af004cb8566f",
+      "instance_id": "exp04_sf_n120_k08_r03",
+      "n_edges": 960,
+      "n_vertices": 120,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "3d7efe060192048c0e8bc2283ba4877b0650d677e1af75f5ef3243168a8866e8",
+      "family": "directed_scale_free",
+      "graph_file": "exp04_sf_n120_k08_r04.d",
+      "graph_sha256": "585bff0056ffbdce44339d24b44b8780a46d3fe95fdf7333c9335ac1ccee63e9",
+      "instance_id": "exp04_sf_n120_k08_r04",
+      "n_edges": 960,
+      "n_vertices": 120,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "e7a4ab022676453b76dbfcf6e48dd7b0bf322a767ba4a63c22c483e5a88c694e",
+      "family": "directed_scale_free",
+      "graph_file": "exp04_sf_n120_k08_r05.d",
+      "graph_sha256": "78811a0cd3af283e85d6edaf2b7399cc0030dd79bbbcbefba284eefc25b12fd1",
+      "instance_id": "exp04_sf_n120_k08_r05",
+      "n_edges": 960,
+      "n_vertices": 120,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "950092966d286742a8d7243ea0cf935bd86d7e8ded3fdb96292e8974ed391019",
+      "family": "directed_community",
+      "graph_file": "exp04_cm_n120_k08_r01.d",
+      "graph_sha256": "c9d2629da96ca1a802714d8a1d7c2312f6ae0f2a7f60a4a82c3b2d56997c6e99",
+      "instance_id": "exp04_cm_n120_k08_r01",
+      "n_edges": 960,
+      "n_vertices": 120,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "ebcf35547e6e0f373dcd1ade3bcd693c64abee6bfbf33c1eafa1745df7f4e42d",
+      "family": "directed_community",
+      "graph_file": "exp04_cm_n120_k08_r02.d",
+      "graph_sha256": "156253df40ab353e577f702d38cb1e5f74a61a7cf578eab8d5d66952dd37d921",
+      "instance_id": "exp04_cm_n120_k08_r02",
+      "n_edges": 960,
+      "n_vertices": 120,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "be2a5a3b199fdc060f39bb86715fcd0869fe3f2e025bb834a238121dbb71986a",
+      "family": "directed_community",
+      "graph_file": "exp04_cm_n120_k08_r03.d",
+      "graph_sha256": "bf0c2271054cbb22fcb88dfbdc23539a05e68dcc0a282b15a6c7c1bd6a1a2cc5",
+      "instance_id": "exp04_cm_n120_k08_r03",
+      "n_edges": 960,
+      "n_vertices": 120,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "dfd2a56d08b300e7b57ce015e1c83139253b2f98adfa8688ad87a65068f40476",
+      "family": "directed_community",
+      "graph_file": "exp04_cm_n120_k08_r04.d",
+      "graph_sha256": "53038b801af11b2d19b73383907059694ccfe92d724214e58115cb87017b211f",
+      "instance_id": "exp04_cm_n120_k08_r04",
+      "n_edges": 960,
+      "n_vertices": 120,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "942b0dd2c25150d6141ecb18b55a149b3624a695dd49c32868c0a76526c57d59",
+      "family": "directed_community",
+      "graph_file": "exp04_cm_n120_k08_r05.d",
+      "graph_sha256": "cace673eb5301d0c7df60c6f95221e1324edc039c51216d91b44214bd6737e48",
+      "instance_id": "exp04_cm_n120_k08_r05",
+      "n_edges": 960,
+      "n_vertices": 120,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "1df33303cbb177099ef938073b33054b71eb9cfc5a95a921ec4714586db6c9b2",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp04_er_n240_k08_r01.d",
+      "graph_sha256": "9215bf016801e541e2c6225e656118fecc135f13ac057b5cc5aa2faa74db8dfb",
+      "instance_id": "exp04_er_n240_k08_r01",
+      "n_edges": 1920,
+      "n_vertices": 240,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "395ac67145b4a592d75eb446244ff43638524f1ef2213491da46c0ab8075701c",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp04_er_n240_k08_r02.d",
+      "graph_sha256": "df6d7c2201154c07a7bcdbc9b974b928efe683e0efaae44fbe85a7b4599673f8",
+      "instance_id": "exp04_er_n240_k08_r02",
+      "n_edges": 1920,
+      "n_vertices": 240,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "91d4ffa80448899504b7966db8c5ce3ee3c78716d8313ab49bbe46f103da2c37",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp04_er_n240_k08_r03.d",
+      "graph_sha256": "480b504bdabb6e2e231f1555407a745ece9fe3dbde5c3065d480373248b62cb7",
+      "instance_id": "exp04_er_n240_k08_r03",
+      "n_edges": 1920,
+      "n_vertices": 240,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "d215ed35bbf86d7c3541ee9bf77f8e118d101a08c7f7ada29111b0787a5edb0c",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp04_er_n240_k08_r04.d",
+      "graph_sha256": "c317d4bf73cf0795a0bf20d2afdfbf3a23fee613ac7aec64f110e77ed44869b7",
+      "instance_id": "exp04_er_n240_k08_r04",
+      "n_edges": 1920,
+      "n_vertices": 240,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "e4f9b183f46af79331dc92ceb3a5c1450562496d92fe6bb88c982a209edabe94",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp04_er_n240_k08_r05.d",
+      "graph_sha256": "85a6a8b8b22325b729adc74cd872bf82d06f1f47efc153015a9d6d163330167c",
+      "instance_id": "exp04_er_n240_k08_r05",
+      "n_edges": 1920,
+      "n_vertices": 240,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "1c6093c8ca858ced0a8154e4c9398166c24dbdc7b9ac4f628b857568b3c7cd6c",
+      "family": "directed_scale_free",
+      "graph_file": "exp04_sf_n240_k08_r01.d",
+      "graph_sha256": "40cb401bae4c2c66f5361de5bfb656add7a27479190324e3210f2e922172337d",
+      "instance_id": "exp04_sf_n240_k08_r01",
+      "n_edges": 1920,
+      "n_vertices": 240,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "4266c7e92b4f09568c4a2d7be85f4351ebc715582aef412df1f902e3cf6e9283",
+      "family": "directed_scale_free",
+      "graph_file": "exp04_sf_n240_k08_r02.d",
+      "graph_sha256": "a5e093e23ff92f4b457af3379561425255ddb2c2f25eae32b48d686b8a86a9c4",
+      "instance_id": "exp04_sf_n240_k08_r02",
+      "n_edges": 1920,
+      "n_vertices": 240,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "844f4811c660951e8dfa0c5eb23664aa542597e217ade76e614aa532ff09c8af",
+      "family": "directed_scale_free",
+      "graph_file": "exp04_sf_n240_k08_r03.d",
+      "graph_sha256": "9c803b06486c831f4bd351607843018ad514482238be24ac0090a8864fc0439c",
+      "instance_id": "exp04_sf_n240_k08_r03",
+      "n_edges": 1920,
+      "n_vertices": 240,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "c846aa732cd9beeaf2ca17eaa744d75827c2be2497d44d3bc136aef1deae1cf6",
+      "family": "directed_scale_free",
+      "graph_file": "exp04_sf_n240_k08_r04.d",
+      "graph_sha256": "4dcb4c789000ea661d7a78417affd7cd01713e562afb40ed03fffd46da9ea7ad",
+      "instance_id": "exp04_sf_n240_k08_r04",
+      "n_edges": 1920,
+      "n_vertices": 240,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "307228fa15a328f2b4e8fd985a8f5b6f68b9394cd5ec551691eee8dd4abe1e10",
+      "family": "directed_scale_free",
+      "graph_file": "exp04_sf_n240_k08_r05.d",
+      "graph_sha256": "e9665c8ed8705d5c9ceb02917e590bbb2161956ba7571a3a726aa802453db28b",
+      "instance_id": "exp04_sf_n240_k08_r05",
+      "n_edges": 1920,
+      "n_vertices": 240,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "ee88362c539c354eb0bd4e2d3976269e61a0926d88f1b56a6956e1133f7a4d75",
+      "family": "directed_community",
+      "graph_file": "exp04_cm_n240_k08_r01.d",
+      "graph_sha256": "8b92e1f9419707e33f81749e50da0c253cc3199b32f1a33a909add41458cdae9",
+      "instance_id": "exp04_cm_n240_k08_r01",
+      "n_edges": 1920,
+      "n_vertices": 240,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "69cd445557f657f41d8cb8da869c0affb9a054fe1ef9d51b4733f277a3d9c05c",
+      "family": "directed_community",
+      "graph_file": "exp04_cm_n240_k08_r02.d",
+      "graph_sha256": "b226b9a0cbe0b03f45844d4f30f9649a9b1168ad13b588a2e421320030d3944c",
+      "instance_id": "exp04_cm_n240_k08_r02",
+      "n_edges": 1920,
+      "n_vertices": 240,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "14f8951c22d672e9f8fd9e4a30eb8e68e9e315e4c554f67da6b3b72a5b86b760",
+      "family": "directed_community",
+      "graph_file": "exp04_cm_n240_k08_r03.d",
+      "graph_sha256": "fd1ca4e953d9842b16077b7cd78638f5fa02518842500cabe498c4eac44b4aa0",
+      "instance_id": "exp04_cm_n240_k08_r03",
+      "n_edges": 1920,
+      "n_vertices": 240,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "dc5bc87193b582a1fce0cb56d01bb668f5aa045d0ee0efc58297eb07de2433a1",
+      "family": "directed_community",
+      "graph_file": "exp04_cm_n240_k08_r04.d",
+      "graph_sha256": "6b3f6c2ddf9d7fe1e968ab1c3b71b39106d69cda3a539b8625b8f6d3b6c7e447",
+      "instance_id": "exp04_cm_n240_k08_r04",
+      "n_edges": 1920,
+      "n_vertices": 240,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "2ddcd68ed32c6850c69e13f3377b7c46d7d54f35e24f1027ab71a740a99c3e84",
+      "family": "directed_community",
+      "graph_file": "exp04_cm_n240_k08_r05.d",
+      "graph_sha256": "46b50b17b8c76ae3cd9f0c8b97cddb539df982de4a9fe624959ff7038e347a20",
+      "instance_id": "exp04_cm_n240_k08_r05",
+      "n_edges": 1920,
+      "n_vertices": 240,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "a4a0abdae810980214edac90df9e03cc94bf113f21eeebf042cfe95ba437c144",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp04_er_n480_k08_r01.d",
+      "graph_sha256": "3bfec1d28d17a7f0ebe2b6802420e71b0f3d50608d9a5994289205e6c2c42a23",
+      "instance_id": "exp04_er_n480_k08_r01",
+      "n_edges": 3840,
+      "n_vertices": 480,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "acae5a29653355ca9704e07c9a2aaaa33157a6796601254b7d72c0ee5ba08dbb",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp04_er_n480_k08_r02.d",
+      "graph_sha256": "31835d98eb0a502871f2011bb6a07cbed982d2759158384c1e830ac837dfb477",
+      "instance_id": "exp04_er_n480_k08_r02",
+      "n_edges": 3840,
+      "n_vertices": 480,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "561639503a6e0a17890c45273938a7ab6b9b7b299423963e5c40babda1e181bc",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp04_er_n480_k08_r03.d",
+      "graph_sha256": "bbfe7d06d2b444ab85d1638fc99a5928521303130f56db88b09813114e085cad",
+      "instance_id": "exp04_er_n480_k08_r03",
+      "n_edges": 3840,
+      "n_vertices": 480,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "e4b7e20a810cee0489c120ec38b08e61ca5c3328d51fdaa64cca13b7f495eaeb",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp04_er_n480_k08_r04.d",
+      "graph_sha256": "5e8eb580b261e24f89dcd405d5a97006c7c13265835be76591540d385328fcbc",
+      "instance_id": "exp04_er_n480_k08_r04",
+      "n_edges": 3840,
+      "n_vertices": 480,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "e7504dcefd95fc4eb18af13a80340e5da1ece1b5f0eaea290cee6741484cbab6",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp04_er_n480_k08_r05.d",
+      "graph_sha256": "47495292c92f5a2c6d0fab85a6d99f34552ccd8d050dfcfd92596f7362fb8bbe",
+      "instance_id": "exp04_er_n480_k08_r05",
+      "n_edges": 3840,
+      "n_vertices": 480,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "f8b9ce66880cd36b9fb824b1382c0081b306b9228d56292396387fa7b99020b5",
+      "family": "directed_scale_free",
+      "graph_file": "exp04_sf_n480_k08_r01.d",
+      "graph_sha256": "d7be4718c397dfd9ca79f7611ad0f3cf9983ad523203da880cfb110881748141",
+      "instance_id": "exp04_sf_n480_k08_r01",
+      "n_edges": 3840,
+      "n_vertices": 480,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "dbfd9b78a6c880946ec1bcfab536da9238ddf096bf0d68de9cc7ad6f95161b64",
+      "family": "directed_scale_free",
+      "graph_file": "exp04_sf_n480_k08_r02.d",
+      "graph_sha256": "c1893727b59cf6d09a7b138275488b254e1dde3dab08ea2406031465138c8aba",
+      "instance_id": "exp04_sf_n480_k08_r02",
+      "n_edges": 3840,
+      "n_vertices": 480,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "3be8328283103c93783c516813580605166d3fb798cc26d71363d212b308de09",
+      "family": "directed_scale_free",
+      "graph_file": "exp04_sf_n480_k08_r03.d",
+      "graph_sha256": "d6fa3ec5b9ae1fa095ae62f4fcc0bdcde4b73e22e9a6944247b0a97d996118de",
+      "instance_id": "exp04_sf_n480_k08_r03",
+      "n_edges": 3840,
+      "n_vertices": 480,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "f6ec95c8cc091269068f65943b4fb5719d145a1a30cecf6952ec2caa81db6922",
+      "family": "directed_scale_free",
+      "graph_file": "exp04_sf_n480_k08_r04.d",
+      "graph_sha256": "116c9ed305e18a3519a9cdb6a852d13a0e600ee10570aac688c49b90b910d2ce",
+      "instance_id": "exp04_sf_n480_k08_r04",
+      "n_edges": 3840,
+      "n_vertices": 480,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "d45758058d3af1d357aec30220574f5f15219a44c1daab02abf7a5c051bbecfa",
+      "family": "directed_scale_free",
+      "graph_file": "exp04_sf_n480_k08_r05.d",
+      "graph_sha256": "b5ecfc31eda19c4613f44565c5c93cf4f9349c986c73135b9dc88f4b6aac846e",
+      "instance_id": "exp04_sf_n480_k08_r05",
+      "n_edges": 3840,
+      "n_vertices": 480,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "60c0639509d44ba14563952fd68fede9554e04d9bf5a9aef233510e79556d026",
+      "family": "directed_community",
+      "graph_file": "exp04_cm_n480_k08_r01.d",
+      "graph_sha256": "f1bdd4b3943aab23a06ea9589c465dc5017df94a94f22473bcba7b23d92870b7",
+      "instance_id": "exp04_cm_n480_k08_r01",
+      "n_edges": 3840,
+      "n_vertices": 480,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "ee9d8ee6b198093ad0826997e6f9660c310c4dcdc2b4d06b1dd3e1e9a4935ee0",
+      "family": "directed_community",
+      "graph_file": "exp04_cm_n480_k08_r02.d",
+      "graph_sha256": "5c4fcc01f732086e515c09b689e3b36de4e23a2b93cbe07552f548f11ea736f8",
+      "instance_id": "exp04_cm_n480_k08_r02",
+      "n_edges": 3840,
+      "n_vertices": 480,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "2631090c4c525728211c2649cb22aea39bc9365e142470b0ec7e7483ce408bc0",
+      "family": "directed_community",
+      "graph_file": "exp04_cm_n480_k08_r03.d",
+      "graph_sha256": "a70e0ab34b3f02b5dcd5cdfe2175f5fafc2d1066c8c65edfbc67befc60476909",
+      "instance_id": "exp04_cm_n480_k08_r03",
+      "n_edges": 3840,
+      "n_vertices": 480,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "1b3f06f8ffca64ccc4d3da40753f405fb13ae8ddaa1da0f53723c2aae4d1864c",
+      "family": "directed_community",
+      "graph_file": "exp04_cm_n480_k08_r04.d",
+      "graph_sha256": "d78c4fae9eef1d52ddcbca0751da06e29a3a14b25a45e53c09b1f97b3c40201a",
+      "instance_id": "exp04_cm_n480_k08_r04",
+      "n_edges": 3840,
+      "n_vertices": 480,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "6ccf33c19c15a7b868844fea547aad91eef5b8dd6f80bab7b660351f13c1f36e",
+      "family": "directed_community",
+      "graph_file": "exp04_cm_n480_k08_r05.d",
+      "graph_sha256": "4a9072dfb097e55fe99a6debae2dbd2cd1fa951a6cb9cd7752e50b8b11cf65dd",
+      "instance_id": "exp04_cm_n480_k08_r05",
+      "n_edges": 3840,
+      "n_vertices": 480,
+      "source_experiment": "EXP04"
+    },
+    {
+      "dimacs_sha256": "7afbe20f8f3b9aab9fcff6b4495e884e16d896b1389b0bf16d4d759d6d2a3fca",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp06_er_n12_k02_r01__uniform_1_100.d",
+      "graph_sha256": "f6bad8390a9c24767794fa3a7b852f5cf03074d2bfcd80249badc349637b5359",
+      "instance_id": "exp06_er_n12_k02_r01__uniform_1_100",
+      "n_edges": 24,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "730417c615a67b9164419db98f4d16650e8690352a7d19adaa84b613820fe2d0",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp06_er_n12_k02_r01__capped_lognormal.d",
+      "graph_sha256": "03ae6b4d4d4b5547e55f663c56555274f73064b33a8c34a8ad340fc76a86be94",
+      "instance_id": "exp06_er_n12_k02_r01__capped_lognormal",
+      "n_edges": 24,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "b7a2d6d433771962c945627858d3d7e532affa7b22073e4f8d702cce6c18f5a1",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp06_er_n12_k02_r02__uniform_1_100.d",
+      "graph_sha256": "5edd4993b15f8e1428102048daca8649d0db6ec7f3032b7e014390992721dfa6",
+      "instance_id": "exp06_er_n12_k02_r02__uniform_1_100",
+      "n_edges": 24,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "faf338067c3e1d0bc434984a1f3279a26da5074ceb5f1f94a6bd1898d94ce668",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp06_er_n12_k02_r02__capped_lognormal.d",
+      "graph_sha256": "cf71e27f371c9ebb4f86126e4b5557c7aaac86a8aed157e2bdb36bd8879c4faa",
+      "instance_id": "exp06_er_n12_k02_r02__capped_lognormal",
+      "n_edges": 24,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "8cae592f2f98f1115b27e86b84b9790d68a50859092455fe05a7fcd1819987aa",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp06_er_n12_k02_r03__uniform_1_100.d",
+      "graph_sha256": "06411573a593a2f386b87d3cff22fdd29d7b6e7ff9246077bb982be0559551bc",
+      "instance_id": "exp06_er_n12_k02_r03__uniform_1_100",
+      "n_edges": 24,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "6e0b51b1f061bcfd2ac524e5a754edddf606c1ddbd29437e34c50baee33a8c78",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp06_er_n12_k02_r03__capped_lognormal.d",
+      "graph_sha256": "9f091ac4f7bf5c15eadf9006e74cfcd63f15c634c12f88ba228d3ac3c8d743b8",
+      "instance_id": "exp06_er_n12_k02_r03__capped_lognormal",
+      "n_edges": 24,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "b5af24f3bf5505f78804a64bc3d5b85029e4c98123333743d7a8606f981ea078",
+      "family": "directed_scale_free",
+      "graph_file": "exp06_sf_n12_k02_r01__uniform_1_100.d",
+      "graph_sha256": "7c03004c4122e2238421af9e5226131252a15bc7f4e8b843c4f4ddb673cd1ef7",
+      "instance_id": "exp06_sf_n12_k02_r01__uniform_1_100",
+      "n_edges": 24,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "4c63ac09586cdbea69667e543efc4e9754a0f982d4aff114963d2e3d4c66bcb0",
+      "family": "directed_scale_free",
+      "graph_file": "exp06_sf_n12_k02_r01__capped_lognormal.d",
+      "graph_sha256": "33740c00b1a303e8491b9403aa5930b7fcaeb098d2ab74fa13c561a02c460e05",
+      "instance_id": "exp06_sf_n12_k02_r01__capped_lognormal",
+      "n_edges": 24,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "b539d899fd15c5fc03fd1136c9d379b103c788f5aad6de39aa19d571bc3434c8",
+      "family": "directed_scale_free",
+      "graph_file": "exp06_sf_n12_k02_r02__uniform_1_100.d",
+      "graph_sha256": "d1655e4723c1f65091c2c51d735684e529378c6b995f5d4a59feb4d7b7ef126f",
+      "instance_id": "exp06_sf_n12_k02_r02__uniform_1_100",
+      "n_edges": 24,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "a9a1c12cc3a1650c584bb2cb571ad9b7a4855a2c36f48b6dac19df4b80c550fa",
+      "family": "directed_scale_free",
+      "graph_file": "exp06_sf_n12_k02_r02__capped_lognormal.d",
+      "graph_sha256": "69327e33b45a138d9c0189664ac26ccdd6d5b7cc82c00179a9087119377d4865",
+      "instance_id": "exp06_sf_n12_k02_r02__capped_lognormal",
+      "n_edges": 24,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "7799f3896c2b254f854c48ca0bdd8b00c45dfa51d3c3a2c0d7e26ab59a4e41a0",
+      "family": "directed_scale_free",
+      "graph_file": "exp06_sf_n12_k02_r03__uniform_1_100.d",
+      "graph_sha256": "697bc948cd5aede1de7285c60f65944e0115d877e38e95bdffcfcf19b1385517",
+      "instance_id": "exp06_sf_n12_k02_r03__uniform_1_100",
+      "n_edges": 24,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "453c47dcdd3b8ccf7995f490833a9b014eb38e6d1c7b08a2899e2779c8e9ebd4",
+      "family": "directed_scale_free",
+      "graph_file": "exp06_sf_n12_k02_r03__capped_lognormal.d",
+      "graph_sha256": "362bd1ddc05e6ee2ccc959e5d62277ff043162cfda1136acb414b5ba2a73b46d",
+      "instance_id": "exp06_sf_n12_k02_r03__capped_lognormal",
+      "n_edges": 24,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "ef6a591055b1632703f37d2ec6104fe209cc308dce98e021e6aa8185700c8aa6",
+      "family": "directed_community",
+      "graph_file": "exp06_cm_n12_k02_r01__uniform_1_100.d",
+      "graph_sha256": "635fe07d447007045e8f669efbbc73d9f35b52e6e66bea28b9c6391a20e308f9",
+      "instance_id": "exp06_cm_n12_k02_r01__uniform_1_100",
+      "n_edges": 24,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "f23c590a9c15422f2834f5dcaff9305552b4ee6aaf725e1f7e7291e679f58dca",
+      "family": "directed_community",
+      "graph_file": "exp06_cm_n12_k02_r01__capped_lognormal.d",
+      "graph_sha256": "83ebff6eb9ba45d78abdee3f9a5af509afaa57150f6781356bd8f870bcaed1e6",
+      "instance_id": "exp06_cm_n12_k02_r01__capped_lognormal",
+      "n_edges": 24,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "c3bdd38baea6cc6a6b7f605b0a2956816875535226b4af49b1157439b41ae5b0",
+      "family": "directed_community",
+      "graph_file": "exp06_cm_n12_k02_r02__uniform_1_100.d",
+      "graph_sha256": "d78ca61993f9fa679945148791f95b801aaf9f0379f6f75f334f76cd16fdea98",
+      "instance_id": "exp06_cm_n12_k02_r02__uniform_1_100",
+      "n_edges": 24,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "35a447525e9761095b157c7e1b4d5af7c76aed7ccac236f176557054b0ba5216",
+      "family": "directed_community",
+      "graph_file": "exp06_cm_n12_k02_r02__capped_lognormal.d",
+      "graph_sha256": "3e6bb3070f4584a98d7305eaf1e650cdc86427aa03a27d8feb8c9fc2d3415e9c",
+      "instance_id": "exp06_cm_n12_k02_r02__capped_lognormal",
+      "n_edges": 24,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "94f9a434c77e0483dea87cba7a8b1ccdc1559f977e098dd745680c1a4e02f52a",
+      "family": "directed_community",
+      "graph_file": "exp06_cm_n12_k02_r03__uniform_1_100.d",
+      "graph_sha256": "ad855d7b1bbce3215abf225e3a340d2a95b00d4beacfdae844200a17e96927aa",
+      "instance_id": "exp06_cm_n12_k02_r03__uniform_1_100",
+      "n_edges": 24,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "0ec039067ca6a2073dfd42718412053edde19f179795f6a44981e0388a029dab",
+      "family": "directed_community",
+      "graph_file": "exp06_cm_n12_k02_r03__capped_lognormal.d",
+      "graph_sha256": "3d742820744a07700ae13bf13c96416fce10d6391a2176f06288385ee557af22",
+      "instance_id": "exp06_cm_n12_k02_r03__capped_lognormal",
+      "n_edges": 24,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "1e28a7f610cf2835bedc7c0edd9c0843580ccb61f538b5596c023ee401e66957",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp06_er_n12_k04_r01__uniform_1_100.d",
+      "graph_sha256": "13acc7c13b4d784eb98bd29c9badbb20eb37df0f211b9103a1444a0cbcc26e3d",
+      "instance_id": "exp06_er_n12_k04_r01__uniform_1_100",
+      "n_edges": 48,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "2accee8ac49fbc83326978570c68c9f559f7ae8e012b62090850f2dc7d92d528",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp06_er_n12_k04_r01__capped_lognormal.d",
+      "graph_sha256": "c09f84bb6e055d5dc5356fe5c412926fdf3147c67c606460b193adbf3ccfe195",
+      "instance_id": "exp06_er_n12_k04_r01__capped_lognormal",
+      "n_edges": 48,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "3d6d3d29124a35ac867218574317afef8e11a463ffb8ded51c97ceed336afadf",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp06_er_n12_k04_r02__uniform_1_100.d",
+      "graph_sha256": "2d02c6b67b9c92c0e02502e240a569950aaf1d7c5f5c69dbffba83e0288bafae",
+      "instance_id": "exp06_er_n12_k04_r02__uniform_1_100",
+      "n_edges": 48,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "5f882c9f48ee6637e4fc940eb9da3b30c45bee7ef7a65c8c7b68bfbd73ae3f62",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp06_er_n12_k04_r02__capped_lognormal.d",
+      "graph_sha256": "e165ca2abc773b428fdccffa7752e1aafcbfea940ae4e8814f069566da5e2459",
+      "instance_id": "exp06_er_n12_k04_r02__capped_lognormal",
+      "n_edges": 48,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "823cee9ddb54a9b307449aeca1a494b457153edd79c2736b2641a194c6ddc9d7",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp06_er_n12_k04_r03__uniform_1_100.d",
+      "graph_sha256": "e0c72731b1053d1097224fef9934b269553c2be92299dc45f723af7d467a09a6",
+      "instance_id": "exp06_er_n12_k04_r03__uniform_1_100",
+      "n_edges": 48,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "bbbbab7e5b1db2eeec580c6c4b6aa4f3dffbd891daf625fce30fa6580bb31790",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp06_er_n12_k04_r03__capped_lognormal.d",
+      "graph_sha256": "8ebc03f786b4b455d0bee909124539e515fbd4f8e5b2534f9ae6f93388af709a",
+      "instance_id": "exp06_er_n12_k04_r03__capped_lognormal",
+      "n_edges": 48,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "1b54c7b65a82b9a6e6a5bcb95ab7b31887f734e9bd871fd6a14436b8c074f15d",
+      "family": "directed_scale_free",
+      "graph_file": "exp06_sf_n12_k04_r01__uniform_1_100.d",
+      "graph_sha256": "693458d392d75c83f821a7ad324722e9adfc19aed4dd2c97dc4d3757d19082cb",
+      "instance_id": "exp06_sf_n12_k04_r01__uniform_1_100",
+      "n_edges": 48,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "fbc51cb24bf2f20e7635bd30c52b3ccbaec75a5589a94a97e381869c7fc4e24f",
+      "family": "directed_scale_free",
+      "graph_file": "exp06_sf_n12_k04_r01__capped_lognormal.d",
+      "graph_sha256": "1e6db3de4c302b278829cb53b4b92df49b2dda5ae0b4e08497aacdf7f6dc8575",
+      "instance_id": "exp06_sf_n12_k04_r01__capped_lognormal",
+      "n_edges": 48,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "1321ac8b75b457bf1116c3c4a068de5c507064d91bdc64c50335de835059ab52",
+      "family": "directed_scale_free",
+      "graph_file": "exp06_sf_n12_k04_r02__uniform_1_100.d",
+      "graph_sha256": "cb8a7b15ab2f03ac3977cc97d7e5396d72e6e810b421eae9d172e49da0168ac1",
+      "instance_id": "exp06_sf_n12_k04_r02__uniform_1_100",
+      "n_edges": 48,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "1da6af071d91a97e4337cf2bf292dcc8ecafdf5b73c48f12b64c4e01f8aa494c",
+      "family": "directed_scale_free",
+      "graph_file": "exp06_sf_n12_k04_r02__capped_lognormal.d",
+      "graph_sha256": "9d62a5cb4e83565357a1c308b24d6c8c3dc96cd9b8ea87da9a60d9d7210084e2",
+      "instance_id": "exp06_sf_n12_k04_r02__capped_lognormal",
+      "n_edges": 48,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "8a6dafefef53d828b798fcd1f00898efcee92145c6cf5b14bca18f3cecb4eec4",
+      "family": "directed_scale_free",
+      "graph_file": "exp06_sf_n12_k04_r03__uniform_1_100.d",
+      "graph_sha256": "f835cd813597045f0eeb141f321dc5e7b80780cc693966a03727d6daad9529f8",
+      "instance_id": "exp06_sf_n12_k04_r03__uniform_1_100",
+      "n_edges": 48,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "7dbf729586c133ede8b891cdc8ec39be07d8d5a7daff8dcf43aeb7a6770cb1f5",
+      "family": "directed_scale_free",
+      "graph_file": "exp06_sf_n12_k04_r03__capped_lognormal.d",
+      "graph_sha256": "db91765084f80b59e68b51e8d7ed13d502684317976e1404f168431c66e74aaf",
+      "instance_id": "exp06_sf_n12_k04_r03__capped_lognormal",
+      "n_edges": 48,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "21930338020021106ae79747d82865b8cbbf330d0227d70776179f8c6365258d",
+      "family": "directed_community",
+      "graph_file": "exp06_cm_n12_k04_r01__uniform_1_100.d",
+      "graph_sha256": "a9ee0ece7726f4f2947abe76849e09e5b40dd3d3fc9b91c2641557e35dfbc3f5",
+      "instance_id": "exp06_cm_n12_k04_r01__uniform_1_100",
+      "n_edges": 48,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "00b58e7e198a27cc4b1e129184e43de0e7bd06c5ee0af33c084ea4c5042fbd0a",
+      "family": "directed_community",
+      "graph_file": "exp06_cm_n12_k04_r01__capped_lognormal.d",
+      "graph_sha256": "282fd3397d664ea98151c0308ccd49a953afef64536cace2daa365b146e89aa7",
+      "instance_id": "exp06_cm_n12_k04_r01__capped_lognormal",
+      "n_edges": 48,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "8ec69d4276c9cf1432312b4b7495191787cd5198025849d51b5b31695fd91e50",
+      "family": "directed_community",
+      "graph_file": "exp06_cm_n12_k04_r02__uniform_1_100.d",
+      "graph_sha256": "e78e65ec267be9d200fa33d05a8e8ddcaa3b5acf5a90a5aa8c17c5cddab38785",
+      "instance_id": "exp06_cm_n12_k04_r02__uniform_1_100",
+      "n_edges": 48,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "0fb5c9a84610718449c5f875a49cdf2257dae881c2645089948dc72d2f3d5cc5",
+      "family": "directed_community",
+      "graph_file": "exp06_cm_n12_k04_r02__capped_lognormal.d",
+      "graph_sha256": "2ca15bc7838ade28d33ead12f01724f02dea345139361e9eafec77cc5be90eea",
+      "instance_id": "exp06_cm_n12_k04_r02__capped_lognormal",
+      "n_edges": 48,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "4a61863b37adbb78ed136da1644c071d7e6fed166e1bf8b4703674c51fee871b",
+      "family": "directed_community",
+      "graph_file": "exp06_cm_n12_k04_r03__uniform_1_100.d",
+      "graph_sha256": "57b886a675441492da75ad3d81c313bc5604536dc8dd36b51b507c76050cd8ef",
+      "instance_id": "exp06_cm_n12_k04_r03__uniform_1_100",
+      "n_edges": 48,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "3e23aad4114b75e24c8a92a40e0847078b396f506e90e79cc7afb2af3c21db4c",
+      "family": "directed_community",
+      "graph_file": "exp06_cm_n12_k04_r03__capped_lognormal.d",
+      "graph_sha256": "917a82a19bc570bc94bc03f4ca0b5be7e44e6980f2591eb7c64dbc6f2a7d456c",
+      "instance_id": "exp06_cm_n12_k04_r03__capped_lognormal",
+      "n_edges": 48,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "801da6dfee403588181018a9868e3067cb7297327c17f434ca052c77561cc248",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp06_er_n12_k06_r01__uniform_1_100.d",
+      "graph_sha256": "4aa8a3f4714bcba1debfefe58f6fbe5e4bdc2317f2dfff49f3372bb32a252da0",
+      "instance_id": "exp06_er_n12_k06_r01__uniform_1_100",
+      "n_edges": 72,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "c0bae59975e970a9d2d4199472af33d0ea2df7b2a7e96a08a5edf551db347c71",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp06_er_n12_k06_r01__capped_lognormal.d",
+      "graph_sha256": "36d3b6ab574ee3f7daf71c10f13734ac245bc5c68396153742420663fb119eaf",
+      "instance_id": "exp06_er_n12_k06_r01__capped_lognormal",
+      "n_edges": 72,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "8ca4d1457192f9bc024676b2ace219cf3b1c73745201ad5e405d998419127d8a",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp06_er_n12_k06_r02__uniform_1_100.d",
+      "graph_sha256": "73cd7b51bd39d791ebd9026d0edf5d15b17e5699c44c7c8cf785b7c8b137e133",
+      "instance_id": "exp06_er_n12_k06_r02__uniform_1_100",
+      "n_edges": 72,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "0afe484de4c1e95684125f3c73d229682cafa4d3b89a5d446cef3f2b6526a4cb",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp06_er_n12_k06_r02__capped_lognormal.d",
+      "graph_sha256": "6964fdb472d147a5f028254bf781d3bcd1cf1c801c164a2cfeb30046eb9c95c4",
+      "instance_id": "exp06_er_n12_k06_r02__capped_lognormal",
+      "n_edges": 72,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "1f0f4c940798776f4b79e3f66a9de0b0750ecf85a51226348f6b49f9e894430b",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp06_er_n12_k06_r03__uniform_1_100.d",
+      "graph_sha256": "f81980cf1b441042a153aa6465e460334ac769e7537d4d8f00faeebcc1f41e1c",
+      "instance_id": "exp06_er_n12_k06_r03__uniform_1_100",
+      "n_edges": 72,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "5edfee363517d7a6f3bc0fe5fe9ea082d22f251aca14af9a8890f59d55a4a90a",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp06_er_n12_k06_r03__capped_lognormal.d",
+      "graph_sha256": "633912650bc7a4e4f8c3bd38123bf58162a5d39df1f6a5239fef00e668007d3a",
+      "instance_id": "exp06_er_n12_k06_r03__capped_lognormal",
+      "n_edges": 72,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "7e558727d8629f87cd0df14a799b8afcc05b4671b1525b62b0ee5aa3f0f2e353",
+      "family": "directed_scale_free",
+      "graph_file": "exp06_sf_n12_k06_r01__uniform_1_100.d",
+      "graph_sha256": "da4362392d2a93b42eb4b69bd42d6473e4d12f6f02d4c9acc994a7302836aa29",
+      "instance_id": "exp06_sf_n12_k06_r01__uniform_1_100",
+      "n_edges": 72,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "d212b3c51456ecb027be237a565b06a4241e1eeb0d56c7b3ec97a3265fecb43e",
+      "family": "directed_scale_free",
+      "graph_file": "exp06_sf_n12_k06_r01__capped_lognormal.d",
+      "graph_sha256": "e3f990a21592aebef8efd61c3d248ab5e04a8f3d077e419b72ec1373c12a57f0",
+      "instance_id": "exp06_sf_n12_k06_r01__capped_lognormal",
+      "n_edges": 72,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "cc890535400186d7b48db0e02cb508ab0fbbb38bf45c3d976ff4640dadcdd0ba",
+      "family": "directed_scale_free",
+      "graph_file": "exp06_sf_n12_k06_r02__uniform_1_100.d",
+      "graph_sha256": "8fa6b0dcc8ac006f75b048998a4b5a941f18a172fd462b1b810fcc82841db919",
+      "instance_id": "exp06_sf_n12_k06_r02__uniform_1_100",
+      "n_edges": 72,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "1409e382b62f03dc492cd4acd167648533f365205c17e1a92d6bdaa864153474",
+      "family": "directed_scale_free",
+      "graph_file": "exp06_sf_n12_k06_r02__capped_lognormal.d",
+      "graph_sha256": "a0f3f59d196078e12a71bb3d03cdf74a6e8308a35d59590957cc1053c25fa4a3",
+      "instance_id": "exp06_sf_n12_k06_r02__capped_lognormal",
+      "n_edges": 72,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "09251b60ee2d9d10e1351c1c8f297421ca4cfbebcd3ba4a18ee5a96d3d507c2c",
+      "family": "directed_scale_free",
+      "graph_file": "exp06_sf_n12_k06_r03__uniform_1_100.d",
+      "graph_sha256": "197c80cfcc3f35edfcba025c7e3e6c5adae361791573c040d3b28eee40d4555c",
+      "instance_id": "exp06_sf_n12_k06_r03__uniform_1_100",
+      "n_edges": 72,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "d381e7e45fa0cdb5bd4cc993e7e954774611079b1dd967e9e386a1c5e26c1c7d",
+      "family": "directed_scale_free",
+      "graph_file": "exp06_sf_n12_k06_r03__capped_lognormal.d",
+      "graph_sha256": "e8dd033556d42c3f165f3f4f20fe5c2aa425867345191667063843bf0ffdbd25",
+      "instance_id": "exp06_sf_n12_k06_r03__capped_lognormal",
+      "n_edges": 72,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "bed170cd6ae7bb69747dc6cab0ef08ffbe7b76f2781b1d93b3eeab050439fe53",
+      "family": "directed_community",
+      "graph_file": "exp06_cm_n12_k06_r01__uniform_1_100.d",
+      "graph_sha256": "7510639ce41b53e193ccc4dd5414256a8e80306bd7180bdecc10c14da85e6416",
+      "instance_id": "exp06_cm_n12_k06_r01__uniform_1_100",
+      "n_edges": 72,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "317aa9ad97176405bfe9df5fc0ad4905e9a2d50cbd2ba49441248b7c0d5adcb9",
+      "family": "directed_community",
+      "graph_file": "exp06_cm_n12_k06_r01__capped_lognormal.d",
+      "graph_sha256": "5b104ed24c1fd9fe774fbdac0b8cace1dc737713cb5b6bd00f8a8057c914eb28",
+      "instance_id": "exp06_cm_n12_k06_r01__capped_lognormal",
+      "n_edges": 72,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "5acacf6ce5696a029bec3557256693e733430f466e5d8af9ebea7e62581902fe",
+      "family": "directed_community",
+      "graph_file": "exp06_cm_n12_k06_r02__uniform_1_100.d",
+      "graph_sha256": "5454faa095bf8a7ebc31b652e69000daea94fe69de79c92a6bfb4557a6fdd95a",
+      "instance_id": "exp06_cm_n12_k06_r02__uniform_1_100",
+      "n_edges": 72,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "5fba6e53949d891bc8960b67eedea3cdde2623aeb6713b24254ba7f8c822a5ab",
+      "family": "directed_community",
+      "graph_file": "exp06_cm_n12_k06_r02__capped_lognormal.d",
+      "graph_sha256": "36ad8963c0ec53ff6bd30d6af46709a7c29c04935f09055a563d61574367696a",
+      "instance_id": "exp06_cm_n12_k06_r02__capped_lognormal",
+      "n_edges": 72,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "dfcd752ea0a344830ac9f7ce92959c5dc59a4da8437ed6d88df53fc12e350f19",
+      "family": "directed_community",
+      "graph_file": "exp06_cm_n12_k06_r03__uniform_1_100.d",
+      "graph_sha256": "a2179be8d79317611d442edf83c2680a4d2a395b2b684c66ba2d1285b0322610",
+      "instance_id": "exp06_cm_n12_k06_r03__uniform_1_100",
+      "n_edges": 72,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "5f450ba2bc9119e5621f8b7c97daa78d49e67b365b7b4a3f9c30bf7a4fd57dd4",
+      "family": "directed_community",
+      "graph_file": "exp06_cm_n12_k06_r03__capped_lognormal.d",
+      "graph_sha256": "6209b6965be974f79c9f1c53153e0c37bb3a1455f07410f8bc2aa938e0d7797f",
+      "instance_id": "exp06_cm_n12_k06_r03__capped_lognormal",
+      "n_edges": 72,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "a3946c4ae559faebf3dbea6312a766855a979b251d23ed71114b68a3b172cc34",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp06_er_n20_k02_r01__uniform_1_100.d",
+      "graph_sha256": "f40fa10acbdf4772ccc050718a78c747c05ad77571210f7aec47b0a6bc2f268d",
+      "instance_id": "exp06_er_n20_k02_r01__uniform_1_100",
+      "n_edges": 40,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "24e9a840b128e082973cdb7d2e9166cf3b6b93b2c8a6efd15fe20870f1664384",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp06_er_n20_k02_r01__capped_lognormal.d",
+      "graph_sha256": "92bcc8464b2b1b8a2f1ad642eac06d96cccae8ded65246d5a377ac2973d66d2b",
+      "instance_id": "exp06_er_n20_k02_r01__capped_lognormal",
+      "n_edges": 40,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "c864e5a12425996e06d69200057aa7b8e988cdb4b59a2beeb6fc5c739e83494e",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp06_er_n20_k02_r02__uniform_1_100.d",
+      "graph_sha256": "b571d7284fa04d159bddc2ed20b53c0f558be9c35f02564993f31c770cebefc5",
+      "instance_id": "exp06_er_n20_k02_r02__uniform_1_100",
+      "n_edges": 40,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "126cc1c5f681cdc40d7717e2f396fca6e6b81290c9fb91887053ab1f6e051a54",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp06_er_n20_k02_r02__capped_lognormal.d",
+      "graph_sha256": "9b4f195d8e122c31e2120be4306d972db3d1e2d4e74c72c65cd64069643f6211",
+      "instance_id": "exp06_er_n20_k02_r02__capped_lognormal",
+      "n_edges": 40,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "68c72237f3a80ce3fb190ac0d2d6974734e9cd402ba3ca5627bf2c9cb23d79b2",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp06_er_n20_k02_r03__uniform_1_100.d",
+      "graph_sha256": "1c5f4234d5374bc3b210b8dc1d534f1f30601ef82b26b68701792188e60b830d",
+      "instance_id": "exp06_er_n20_k02_r03__uniform_1_100",
+      "n_edges": 40,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "1e3fd4227a26cf24661fc5d01e44e8a541b648a0751502582242f0c8962423bd",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp06_er_n20_k02_r03__capped_lognormal.d",
+      "graph_sha256": "9fe27c8343f9a5ca060518cf1bba874547d0f346a162ab0d6865cdfe04c88ca1",
+      "instance_id": "exp06_er_n20_k02_r03__capped_lognormal",
+      "n_edges": 40,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "765574ff3e8765d60f2b615eace1052e9c4becdf3fbeeddf22792a672abb5078",
+      "family": "directed_scale_free",
+      "graph_file": "exp06_sf_n20_k02_r01__uniform_1_100.d",
+      "graph_sha256": "ba9aa389509f5183bb9d41ad13ddcaf2565433b13fd87260cd4e022e48f6d33b",
+      "instance_id": "exp06_sf_n20_k02_r01__uniform_1_100",
+      "n_edges": 40,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "c1e461f93c4c7a932a897bd33be9acd22c7e75ad50793d65d523aed73bbfc738",
+      "family": "directed_scale_free",
+      "graph_file": "exp06_sf_n20_k02_r01__capped_lognormal.d",
+      "graph_sha256": "ffa3b9575d8448a1505bc55aabdbb05a2dff1e54807054cb5187a2c446b6d2f4",
+      "instance_id": "exp06_sf_n20_k02_r01__capped_lognormal",
+      "n_edges": 40,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "dcf08c66a2dd83697d07c4431830a461736915be68e10f6678e4ec1a9ba03e8e",
+      "family": "directed_scale_free",
+      "graph_file": "exp06_sf_n20_k02_r02__uniform_1_100.d",
+      "graph_sha256": "7ef4e77606e8e1553d4d647e5c4a3166d9f9d3201afeec99b5587bad1c456f4b",
+      "instance_id": "exp06_sf_n20_k02_r02__uniform_1_100",
+      "n_edges": 40,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "b7e0c44a4b595ff112dbad4a975301e8c3f3da9f41b49fb1ce4f132aaeb6b92c",
+      "family": "directed_scale_free",
+      "graph_file": "exp06_sf_n20_k02_r02__capped_lognormal.d",
+      "graph_sha256": "49d7b53a8687c747dd574e757e76a389da20156f81de6c7be30736c02de7dcda",
+      "instance_id": "exp06_sf_n20_k02_r02__capped_lognormal",
+      "n_edges": 40,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "d9fadc58ac1d0047a01a0828cf50b1b40724437ffe32b238700fa5c987a70f9f",
+      "family": "directed_scale_free",
+      "graph_file": "exp06_sf_n20_k02_r03__uniform_1_100.d",
+      "graph_sha256": "9a4960d256e7e612c96fd5e13de866ebda117730d5c3321f1603ca1b6125844c",
+      "instance_id": "exp06_sf_n20_k02_r03__uniform_1_100",
+      "n_edges": 40,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "891f9b659c52de93ad349aefdce8822a0853eff3acb2d0608938a62900e91993",
+      "family": "directed_scale_free",
+      "graph_file": "exp06_sf_n20_k02_r03__capped_lognormal.d",
+      "graph_sha256": "7dfb54d3e39b164535f90fd434426b98c98cc668b97b8d96cc8ea2fd7469090e",
+      "instance_id": "exp06_sf_n20_k02_r03__capped_lognormal",
+      "n_edges": 40,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "e6f5874810c4bc731c26b65b87748e427b7a5d50a21d1f03153701b7ed60e93d",
+      "family": "directed_community",
+      "graph_file": "exp06_cm_n20_k02_r01__uniform_1_100.d",
+      "graph_sha256": "de6ae323799b3dd428fba404d79dcabcc353a484c24940140ef59790a40e1d75",
+      "instance_id": "exp06_cm_n20_k02_r01__uniform_1_100",
+      "n_edges": 40,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "f4a81993e56164991f525c14e7ce445b7a1a340ff6bc5bf89cbbff03d20e30b3",
+      "family": "directed_community",
+      "graph_file": "exp06_cm_n20_k02_r01__capped_lognormal.d",
+      "graph_sha256": "8d30cb4050de6bbf324188be832b93c54f6cd68888f9b17c41611f1a165577d0",
+      "instance_id": "exp06_cm_n20_k02_r01__capped_lognormal",
+      "n_edges": 40,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "41073ec136d56739d046fbb890ce17dd988b054e658a17711d0fadff0a2a962a",
+      "family": "directed_community",
+      "graph_file": "exp06_cm_n20_k02_r02__uniform_1_100.d",
+      "graph_sha256": "03f6876f08268780b4048620457e1d77f5cff47da3314c54f47092cea53a47e7",
+      "instance_id": "exp06_cm_n20_k02_r02__uniform_1_100",
+      "n_edges": 40,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "894c4a6b2cae4eddaa0c0466453ebef28b3a71305825c96290826b52faca19c7",
+      "family": "directed_community",
+      "graph_file": "exp06_cm_n20_k02_r02__capped_lognormal.d",
+      "graph_sha256": "a04459cf271ced628d0bf220d2fc6ab39be3d7f3f03d24cd1b1daa9ebceb260b",
+      "instance_id": "exp06_cm_n20_k02_r02__capped_lognormal",
+      "n_edges": 40,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "6885004eea2ed92f27388ec68c5fbccaa8a1717027747252edd50b5a43c452b2",
+      "family": "directed_community",
+      "graph_file": "exp06_cm_n20_k02_r03__uniform_1_100.d",
+      "graph_sha256": "3c17c882a139e1b0f003ec24df3a9fdac7b06269eb8f2852d6d8e8efbdfa4391",
+      "instance_id": "exp06_cm_n20_k02_r03__uniform_1_100",
+      "n_edges": 40,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "7c85d6339ba9cd330874363fe9c7c44c7f0f094b3372a844b3fc57f2b96fe2f0",
+      "family": "directed_community",
+      "graph_file": "exp06_cm_n20_k02_r03__capped_lognormal.d",
+      "graph_sha256": "50721465dd92b7222c989fe08599477a186e2bb34d772410a0926b12fc018a64",
+      "instance_id": "exp06_cm_n20_k02_r03__capped_lognormal",
+      "n_edges": 40,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "b94ef85907c5b7fc327dd21d7f4d01ec86b7b6554534db874754d221a7cca284",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp06_er_n20_k04_r01__uniform_1_100.d",
+      "graph_sha256": "2585963a046fb120d1806b0c2cbfa4e064e064850705b2ef2ba1fe62994be146",
+      "instance_id": "exp06_er_n20_k04_r01__uniform_1_100",
+      "n_edges": 80,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "601b72894b282b329e53c8f8344ec2e1e87e30084783ff3809eb0c6fe68a9f4e",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp06_er_n20_k04_r01__capped_lognormal.d",
+      "graph_sha256": "31308398a3031f50da6bbda48e09a57f607b7d0c2f57fc122a7259fc101a9d1b",
+      "instance_id": "exp06_er_n20_k04_r01__capped_lognormal",
+      "n_edges": 80,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "b1aa43f0b138e614d5dbbf977a8f155fd6caf308c84fbc9e45ad3600a49adab3",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp06_er_n20_k04_r02__uniform_1_100.d",
+      "graph_sha256": "038fbd9dee1745402040afc43dcc3bba6fa0be0d441671128f5eb17779f3cb42",
+      "instance_id": "exp06_er_n20_k04_r02__uniform_1_100",
+      "n_edges": 80,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "64df1af0d119d13227bc28b75c94cdef1d9b77a3711360c5782bfcc839e3c8f4",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp06_er_n20_k04_r02__capped_lognormal.d",
+      "graph_sha256": "412b55b437b105868155258bae874f2914f61128a28e7bd98f1c3b46d241a033",
+      "instance_id": "exp06_er_n20_k04_r02__capped_lognormal",
+      "n_edges": 80,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "bd50646873313213dcf38626819abb145c00087a0f65d874ff52d6b4ed567870",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp06_er_n20_k04_r03__uniform_1_100.d",
+      "graph_sha256": "a5f43be5d9a67207888b21b4c5196feaeb0d50c69141ce353e35313d58bdff57",
+      "instance_id": "exp06_er_n20_k04_r03__uniform_1_100",
+      "n_edges": 80,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "be9a861be56b63c5b80e257049c29971141a05c9f200acb538f86c08f9c42903",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp06_er_n20_k04_r03__capped_lognormal.d",
+      "graph_sha256": "afca16289488b59b2268898613f06daff3e3fcb5cc1934fd1544484af37e586d",
+      "instance_id": "exp06_er_n20_k04_r03__capped_lognormal",
+      "n_edges": 80,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "8d297dd363ee24342768221df27758623ad8b55b4d37353b6937213c44382144",
+      "family": "directed_scale_free",
+      "graph_file": "exp06_sf_n20_k04_r01__uniform_1_100.d",
+      "graph_sha256": "f9589e50f028699e953084631ce2b21166dc703772b75ac6e310a4b68ac18539",
+      "instance_id": "exp06_sf_n20_k04_r01__uniform_1_100",
+      "n_edges": 80,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "fee83048978750d8565ea4848a743b61cea909b842a82a74837178d82d11fc7e",
+      "family": "directed_scale_free",
+      "graph_file": "exp06_sf_n20_k04_r01__capped_lognormal.d",
+      "graph_sha256": "2fa09bc8b8d37e8a34bc148eac5f28490752d0dd6c36801b09cea6f72439797b",
+      "instance_id": "exp06_sf_n20_k04_r01__capped_lognormal",
+      "n_edges": 80,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "be1932019b064bfe674d6110af183dc6accc55a9ead2813b725ba524b68ccbcd",
+      "family": "directed_scale_free",
+      "graph_file": "exp06_sf_n20_k04_r02__uniform_1_100.d",
+      "graph_sha256": "aee11f5b8a2d4bd0fc62936c8f3c647cd63f33b59f3bec957268d07f3ecde813",
+      "instance_id": "exp06_sf_n20_k04_r02__uniform_1_100",
+      "n_edges": 80,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "d19ff96c6752f87a5569328ebcdecc66b902a60b5e0215155bf8f9156179cf73",
+      "family": "directed_scale_free",
+      "graph_file": "exp06_sf_n20_k04_r02__capped_lognormal.d",
+      "graph_sha256": "7e2c292ac33b9dc0b490ff43bae8bb43448a0094fb0af2588a16138ea93e2cce",
+      "instance_id": "exp06_sf_n20_k04_r02__capped_lognormal",
+      "n_edges": 80,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "e4768f62c0672b0e1ecd1cee97ff23c499317491d1c950557895624454380e94",
+      "family": "directed_scale_free",
+      "graph_file": "exp06_sf_n20_k04_r03__uniform_1_100.d",
+      "graph_sha256": "11294d1704814ac5f4340a749a585e4439c17cf6f34cb21bf9fffa51f67110a8",
+      "instance_id": "exp06_sf_n20_k04_r03__uniform_1_100",
+      "n_edges": 80,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "98dab239f7901f06ffb8f556992e5b18720026b4ac9b2cb57508e863f0de1b68",
+      "family": "directed_scale_free",
+      "graph_file": "exp06_sf_n20_k04_r03__capped_lognormal.d",
+      "graph_sha256": "61c437a4f480153c7628224910d810f51dbd9d39da9f6ec8b03b53c6c3c5ff54",
+      "instance_id": "exp06_sf_n20_k04_r03__capped_lognormal",
+      "n_edges": 80,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "e0cf88cda1e709afafff17da3d4c8c0ad4a0f248a0bcc2ce7f228280ae15a8e0",
+      "family": "directed_community",
+      "graph_file": "exp06_cm_n20_k04_r01__uniform_1_100.d",
+      "graph_sha256": "e9bb7e8dd1d6df7cb905591770fae3155df2d2c14bc12dcbcf77160174f810d5",
+      "instance_id": "exp06_cm_n20_k04_r01__uniform_1_100",
+      "n_edges": 80,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "be58680acf87011c79034bf10e55837311d05f06678c7a96b70f2f8bb10d72e9",
+      "family": "directed_community",
+      "graph_file": "exp06_cm_n20_k04_r01__capped_lognormal.d",
+      "graph_sha256": "638edafe6cb7a6bb78a8c66d32e08170bfe4a236998049c850973a61d68a9ed9",
+      "instance_id": "exp06_cm_n20_k04_r01__capped_lognormal",
+      "n_edges": 80,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "b4be644ea40e23c0da6f628ad3b86bd27455a5e57845239f00afb9f9bde3aa25",
+      "family": "directed_community",
+      "graph_file": "exp06_cm_n20_k04_r02__uniform_1_100.d",
+      "graph_sha256": "97abd55ddfb3ba581c62911287484ceb844cba86b1d59bb65c025c60878a1eb2",
+      "instance_id": "exp06_cm_n20_k04_r02__uniform_1_100",
+      "n_edges": 80,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "a4f8e02aaa7a59fbd8859b90b4b94bec67c2163e50ebe199d1fdf7d95bf640e8",
+      "family": "directed_community",
+      "graph_file": "exp06_cm_n20_k04_r02__capped_lognormal.d",
+      "graph_sha256": "3d22e14439e16d4ac661cb399fb1bcc880808b761aa23b1e1573282d0d39e600",
+      "instance_id": "exp06_cm_n20_k04_r02__capped_lognormal",
+      "n_edges": 80,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "ac23f3f2517f42bf2fa963e1b7fcb7f5f84c5588b9a97ee65f7618099d40fc99",
+      "family": "directed_community",
+      "graph_file": "exp06_cm_n20_k04_r03__uniform_1_100.d",
+      "graph_sha256": "0b2a85efa6f61f144ef2ec689f76a57a717b15c96a9f96e79c9fe4db9c16b70e",
+      "instance_id": "exp06_cm_n20_k04_r03__uniform_1_100",
+      "n_edges": 80,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "88465bb277181caca1f491b2dcd04d9ad901bfce37d51b19bb8e38d089235a1a",
+      "family": "directed_community",
+      "graph_file": "exp06_cm_n20_k04_r03__capped_lognormal.d",
+      "graph_sha256": "849c41e6e375b9ee82edadc8e5fb5c348a66b9f80730583e81b7ac30ab8e0a43",
+      "instance_id": "exp06_cm_n20_k04_r03__capped_lognormal",
+      "n_edges": 80,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "9510f03a3f63a5cf48e19f394feb95891194b1537534bda4eacd94c7629a04fa",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp06_er_n20_k06_r01__uniform_1_100.d",
+      "graph_sha256": "45f9561edbc266457e56d06158443954339ee21e0527300a759cfe2c50dc8be9",
+      "instance_id": "exp06_er_n20_k06_r01__uniform_1_100",
+      "n_edges": 120,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "ae8f796d92c86c538ef37c68e6662c91cd82aa90e7818f85f64f88802dc783ce",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp06_er_n20_k06_r01__capped_lognormal.d",
+      "graph_sha256": "cc95bb111de23cd1a010651ad66847f9b060b58df4df331317e26dee3d67cf94",
+      "instance_id": "exp06_er_n20_k06_r01__capped_lognormal",
+      "n_edges": 120,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "9780bbc9f6453e422b6eb02e5c17d61a01856e64d477470c52d162dace1ffaad",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp06_er_n20_k06_r02__uniform_1_100.d",
+      "graph_sha256": "60d3b123083f751a333e61e06130c9d6082328c02a2e7f87eaf1c27a1d42c48c",
+      "instance_id": "exp06_er_n20_k06_r02__uniform_1_100",
+      "n_edges": 120,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "4bd7425a6fecd79d8eb56a8e054c1b2a003108cd03f693760ac4f101b7b90a66",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp06_er_n20_k06_r02__capped_lognormal.d",
+      "graph_sha256": "414aad1152fd9dc3643722a6fb3b843b1a2086cd48c2e9a1abac717052620429",
+      "instance_id": "exp06_er_n20_k06_r02__capped_lognormal",
+      "n_edges": 120,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "b885d57d695fa9fa85b806faa132e3496bb69859dd0476159f3b8297966c763a",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp06_er_n20_k06_r03__uniform_1_100.d",
+      "graph_sha256": "bcab09609b6f2055cb7f0e7c2e6727b9c3d6581ab017828d2e1b24398ec120ae",
+      "instance_id": "exp06_er_n20_k06_r03__uniform_1_100",
+      "n_edges": 120,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "8149d1f5b07905de06b68885ee3ecc7fad8fb27d3a389e655ddb7146ce0095f3",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp06_er_n20_k06_r03__capped_lognormal.d",
+      "graph_sha256": "284089cca129d3099f205c7c3b66593200ad3ddc92c0e2f49eccf3f33778f58b",
+      "instance_id": "exp06_er_n20_k06_r03__capped_lognormal",
+      "n_edges": 120,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "11172a7e5ac20634116587999dd5e24c824122dbfca7c8758fd12adc4ebbbff1",
+      "family": "directed_scale_free",
+      "graph_file": "exp06_sf_n20_k06_r01__uniform_1_100.d",
+      "graph_sha256": "5b51bbba474f465e582c49f68521fcd057307fc7484affad042561bbc3b586d8",
+      "instance_id": "exp06_sf_n20_k06_r01__uniform_1_100",
+      "n_edges": 120,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "7b7efbf96ad4668fc392d7f59bf302f9679619deff67cfa49017b3b0f5178e3e",
+      "family": "directed_scale_free",
+      "graph_file": "exp06_sf_n20_k06_r01__capped_lognormal.d",
+      "graph_sha256": "1b91d911ba395546887c15f5a96e1bec809a878785c4a5069dd8128422945f29",
+      "instance_id": "exp06_sf_n20_k06_r01__capped_lognormal",
+      "n_edges": 120,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "c061e32b00fac780249d67d41873848792ba992cdabb7c327234230513ac2a6a",
+      "family": "directed_scale_free",
+      "graph_file": "exp06_sf_n20_k06_r02__uniform_1_100.d",
+      "graph_sha256": "114869659ec5be678665769fac52af17f4b8713c44eb57c16a272ba9f350907a",
+      "instance_id": "exp06_sf_n20_k06_r02__uniform_1_100",
+      "n_edges": 120,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "18f715ee5b161f4b3c19d1c1de92ad079b9820e704f0c9ad91d090e74524ac53",
+      "family": "directed_scale_free",
+      "graph_file": "exp06_sf_n20_k06_r02__capped_lognormal.d",
+      "graph_sha256": "fa14b9fed2c329c5cc86fc59d25e2c3f45d3eb519572fa7f574e8b09b1475131",
+      "instance_id": "exp06_sf_n20_k06_r02__capped_lognormal",
+      "n_edges": 120,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "43e0d3aaa18364dfaff07e6358700e4d2ba37cec0daa1e39e9aa6702c389d781",
+      "family": "directed_scale_free",
+      "graph_file": "exp06_sf_n20_k06_r03__uniform_1_100.d",
+      "graph_sha256": "948db6dcdf788b91d0aeacf8a71ec190f2d1bb4829e562f79bd260b3996f912d",
+      "instance_id": "exp06_sf_n20_k06_r03__uniform_1_100",
+      "n_edges": 120,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "99ced0b68aad84f2a77d94839fdf6d2663e69abfad8e0bbc9228c6fb3e320367",
+      "family": "directed_scale_free",
+      "graph_file": "exp06_sf_n20_k06_r03__capped_lognormal.d",
+      "graph_sha256": "c534f1c6ea63e3f612cc245b5de70d94f3d0431e28bdeee66527319b0d7d8bb2",
+      "instance_id": "exp06_sf_n20_k06_r03__capped_lognormal",
+      "n_edges": 120,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "7f32de4091fabef61c7f416ce41f9883c2057f91655f017ed9b28411f822b16c",
+      "family": "directed_community",
+      "graph_file": "exp06_cm_n20_k06_r01__uniform_1_100.d",
+      "graph_sha256": "f248a4ddb0c93484759dad1e165f88f6fec4e984d361f9f027ebcddbf0fada11",
+      "instance_id": "exp06_cm_n20_k06_r01__uniform_1_100",
+      "n_edges": 120,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "86cc15a24c05eb2023f1d672a5f44052b58e63ff6f54ff315324daedda0c6693",
+      "family": "directed_community",
+      "graph_file": "exp06_cm_n20_k06_r01__capped_lognormal.d",
+      "graph_sha256": "cd2ab17e8499f777acb98110e5b23cf034f9ecde68bbda083993678a670ca797",
+      "instance_id": "exp06_cm_n20_k06_r01__capped_lognormal",
+      "n_edges": 120,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "f82d2acc4a5bf87203f33ccc877a40cd9610645063b2dfa7a5529271983bff0a",
+      "family": "directed_community",
+      "graph_file": "exp06_cm_n20_k06_r02__uniform_1_100.d",
+      "graph_sha256": "9bb85d6c083634b97ff8ad0ba021e0d73c86d1ff218258747a78b3ead9a18c1b",
+      "instance_id": "exp06_cm_n20_k06_r02__uniform_1_100",
+      "n_edges": 120,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "f78984cefd515986143c677cfaeaae14aeab864f57178acc6ec0fff8f71c07c6",
+      "family": "directed_community",
+      "graph_file": "exp06_cm_n20_k06_r02__capped_lognormal.d",
+      "graph_sha256": "d4b640e2f7b41bb61269329a7389731503d2c2685f9b2d56b1a5c186480f043c",
+      "instance_id": "exp06_cm_n20_k06_r02__capped_lognormal",
+      "n_edges": 120,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "b240252b0533bcdeda7683d5e177e64f148bb90ee6f96937677b9878c130d09b",
+      "family": "directed_community",
+      "graph_file": "exp06_cm_n20_k06_r03__uniform_1_100.d",
+      "graph_sha256": "7fb975b63a916fa5e03956b88d1c0821b1dc997097e5af6341fc6d4f6f05d0fd",
+      "instance_id": "exp06_cm_n20_k06_r03__uniform_1_100",
+      "n_edges": 120,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "389d50fedf81efe03bd3b47a8798d14284502ed350e62a918814cc1499e2d804",
+      "family": "directed_community",
+      "graph_file": "exp06_cm_n20_k06_r03__capped_lognormal.d",
+      "graph_sha256": "541611bc2fd4d311b450e7893a5633067e4c3a666d238c47bbb89ff6497cd5af",
+      "instance_id": "exp06_cm_n20_k06_r03__capped_lognormal",
+      "n_edges": 120,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "2ef750fe2810989c1ce0cb225d56b3dd462f27208a7cfbe70fbb46ff76175788",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp06_er_n28_k02_r01__uniform_1_100.d",
+      "graph_sha256": "2bfc20a2e01960466256042af44f583d8b828c6d73c97a1885cfab6a32b69bd9",
+      "instance_id": "exp06_er_n28_k02_r01__uniform_1_100",
+      "n_edges": 56,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "3162215040c7986a33c92db9f258e024871786df0af5127b4a0cda85065cb000",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp06_er_n28_k02_r01__capped_lognormal.d",
+      "graph_sha256": "1b56ad761e48ec59478ce80160fbba1de2330c04febf9a0964fcdbda5f900bb1",
+      "instance_id": "exp06_er_n28_k02_r01__capped_lognormal",
+      "n_edges": 56,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "008b3d3f9ac0352967dccd1bc64b5ad804717069e1577ab7e01b47e07f34c556",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp06_er_n28_k02_r02__uniform_1_100.d",
+      "graph_sha256": "6c3318f12a236b03cd259eca8a55cccd880e050d3e644357a45776a59a4fba46",
+      "instance_id": "exp06_er_n28_k02_r02__uniform_1_100",
+      "n_edges": 56,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "bbb34b11972f46a028a8efae75aef850994379e946634fa5f0c127b81650cf12",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp06_er_n28_k02_r02__capped_lognormal.d",
+      "graph_sha256": "d496ba08ba95cd21038ba9a97a394a80eb0bf92cfead06ff99ee4038f74c841b",
+      "instance_id": "exp06_er_n28_k02_r02__capped_lognormal",
+      "n_edges": 56,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "0d69eb020c72566e2a33f846f58947f6f6973125525b1654ab3d5bcb1e2d1dab",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp06_er_n28_k02_r03__uniform_1_100.d",
+      "graph_sha256": "c0187082e17f2fbf1bcc7224c8ea7bc5f758d18f9088e37ccc200c0e73e22187",
+      "instance_id": "exp06_er_n28_k02_r03__uniform_1_100",
+      "n_edges": 56,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "9dea893df1de5d905485b83cc6502f707dd7423e790339ad6a1cdde0e8fcb317",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp06_er_n28_k02_r03__capped_lognormal.d",
+      "graph_sha256": "10addc508341bdd0bfd7f027c276372a94ec52ab92be9be1f7cb7c5734e3da05",
+      "instance_id": "exp06_er_n28_k02_r03__capped_lognormal",
+      "n_edges": 56,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "15214bdf80dbc823f2f17b76682f0abc7f40d8dd194d16369011c11be7d8149c",
+      "family": "directed_scale_free",
+      "graph_file": "exp06_sf_n28_k02_r01__uniform_1_100.d",
+      "graph_sha256": "a9b5126e9657bf18d5769af18761d510f76070b8a7abc80530a240bf9774ceca",
+      "instance_id": "exp06_sf_n28_k02_r01__uniform_1_100",
+      "n_edges": 56,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "d661a238d378890c38233880c769d6e36978fe79b4dbef23dc3c0ecf350e8d3f",
+      "family": "directed_scale_free",
+      "graph_file": "exp06_sf_n28_k02_r01__capped_lognormal.d",
+      "graph_sha256": "d3b2697f3438213a3e0c79384b7e140c056568b99e72de5908c9a7ce6084380e",
+      "instance_id": "exp06_sf_n28_k02_r01__capped_lognormal",
+      "n_edges": 56,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "70a7aec0eddd960162fd0bab16334f06c139eb0bd402f1528ffd782131eeac6e",
+      "family": "directed_scale_free",
+      "graph_file": "exp06_sf_n28_k02_r02__uniform_1_100.d",
+      "graph_sha256": "967afd868ed77be3f67a76efa315255887eaedc9578b8a3c361b4d820cc267f5",
+      "instance_id": "exp06_sf_n28_k02_r02__uniform_1_100",
+      "n_edges": 56,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "8c5e726fc84a51caaef2481a5447bee21f0f46b96d34f473cd3f50d3a1f3d90a",
+      "family": "directed_scale_free",
+      "graph_file": "exp06_sf_n28_k02_r02__capped_lognormal.d",
+      "graph_sha256": "6332fe34c6ca65053ba8d74474387d675dd5d2342a1de46cd98ea84122cfe48c",
+      "instance_id": "exp06_sf_n28_k02_r02__capped_lognormal",
+      "n_edges": 56,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "8f569f69e1225fcaa9ddf4cce0d41dff9bfe0711f0dc61fc5a9e6a8f441e1898",
+      "family": "directed_scale_free",
+      "graph_file": "exp06_sf_n28_k02_r03__uniform_1_100.d",
+      "graph_sha256": "8079d9ea25aabc4c6861a179170ccaded53a3b2c143e86c9c65607c78d3dc5a7",
+      "instance_id": "exp06_sf_n28_k02_r03__uniform_1_100",
+      "n_edges": 56,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "ad7186bf4cd7bdabcf38c4f65c85d53be246040bbac314d05b10b54c5e966836",
+      "family": "directed_scale_free",
+      "graph_file": "exp06_sf_n28_k02_r03__capped_lognormal.d",
+      "graph_sha256": "83366c901b6200d77a0ea4fa19a483d26c11ab6b11b5a806b2c77ffb9f0bcf91",
+      "instance_id": "exp06_sf_n28_k02_r03__capped_lognormal",
+      "n_edges": 56,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "49fd422872e421aa24d9b55265ea8e7f17be8ac2b2f6764bdc11d699f8487f1f",
+      "family": "directed_community",
+      "graph_file": "exp06_cm_n28_k02_r01__uniform_1_100.d",
+      "graph_sha256": "76ce180cf7c99e7c66c6d718c870ea3ec9c3810a27abad99e478f54dc3e65a9f",
+      "instance_id": "exp06_cm_n28_k02_r01__uniform_1_100",
+      "n_edges": 56,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "e3395c20accd0ed6ad195951f47485d2c9043ef7df43705b55a6128ff0dfe5ae",
+      "family": "directed_community",
+      "graph_file": "exp06_cm_n28_k02_r01__capped_lognormal.d",
+      "graph_sha256": "7a0b5c02dfc1fd2b13db2cba0a84d7d4980e5ffd7f8f4bcbf8c88b92ddfcbe6b",
+      "instance_id": "exp06_cm_n28_k02_r01__capped_lognormal",
+      "n_edges": 56,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "28285222ec67820afb96482c3b3d21305884aba62c05a21b6f30bcd0fa0bacde",
+      "family": "directed_community",
+      "graph_file": "exp06_cm_n28_k02_r02__uniform_1_100.d",
+      "graph_sha256": "95ebf3ed8d668fae1742a19244dbdcede51e89236d5b40e21c5f83100fead919",
+      "instance_id": "exp06_cm_n28_k02_r02__uniform_1_100",
+      "n_edges": 56,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "20c844629258d9f6dc94bcb5360625d44d0903905aa7d3b0b5359364aa5c981b",
+      "family": "directed_community",
+      "graph_file": "exp06_cm_n28_k02_r02__capped_lognormal.d",
+      "graph_sha256": "a50ed07d3a25e0df9a7349c7c7464bf72cd029d5c3f2e895a6d8516eb3552d2c",
+      "instance_id": "exp06_cm_n28_k02_r02__capped_lognormal",
+      "n_edges": 56,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "1a57c09d9601d04cc8991ef17583ddf5dd889e9bb599dee06bd353d01dfa654d",
+      "family": "directed_community",
+      "graph_file": "exp06_cm_n28_k02_r03__uniform_1_100.d",
+      "graph_sha256": "653bdfbad87ab142af00a65d11076da3944920b5eb8c7fc26321680aa302a904",
+      "instance_id": "exp06_cm_n28_k02_r03__uniform_1_100",
+      "n_edges": 56,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "6d0a8167b1895ae91446ed76ff9dae8122acc0f094a5ad00da04249dc2cd3b4a",
+      "family": "directed_community",
+      "graph_file": "exp06_cm_n28_k02_r03__capped_lognormal.d",
+      "graph_sha256": "4b700033eae351276123d2661bb8915b381fe33d3f9da119c9b6aeae36e4e5c7",
+      "instance_id": "exp06_cm_n28_k02_r03__capped_lognormal",
+      "n_edges": 56,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "9edfcd152263b85b1ac01282fd112b004ff032b4eba89348ca60189ea380d849",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp06_er_n28_k04_r01__uniform_1_100.d",
+      "graph_sha256": "96650c673f572a8e454a64954501e1f5081aaa5dd04b3338ce1cc2ec86423124",
+      "instance_id": "exp06_er_n28_k04_r01__uniform_1_100",
+      "n_edges": 112,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "6da8ef8dc87e8ca79f86d2ba733dc36128d76fe36ca4f18fcff38a86cacee306",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp06_er_n28_k04_r01__capped_lognormal.d",
+      "graph_sha256": "1cd082906686932b639512893c13d1764dff7f1c64e8ab2e5b237395d4b1e46f",
+      "instance_id": "exp06_er_n28_k04_r01__capped_lognormal",
+      "n_edges": 112,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "88e490f427261f9a03c576a5191e862d1c959490933e63b7d27118df5f560bdf",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp06_er_n28_k04_r02__uniform_1_100.d",
+      "graph_sha256": "18f5b71638198fec0e82d5dd456440b73069bcaf109887c3178ca73ad8a2c63a",
+      "instance_id": "exp06_er_n28_k04_r02__uniform_1_100",
+      "n_edges": 112,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "b04d99b3b24993b1d811c7ec850f15578752255c91a9b27d9f68b84955b66ed6",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp06_er_n28_k04_r02__capped_lognormal.d",
+      "graph_sha256": "99868a0bb6c5df89cb84f4f674e827b6c1ef13d1640e2db08817fa89743265c1",
+      "instance_id": "exp06_er_n28_k04_r02__capped_lognormal",
+      "n_edges": 112,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "6855fc7db157f8a697951f71b99b870f5ecf27b8f402411509d154f64b7ba84a",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp06_er_n28_k04_r03__uniform_1_100.d",
+      "graph_sha256": "2032d885204cce7b88e55cf69c02cbd266b4812f54712324345d37c9203e91d2",
+      "instance_id": "exp06_er_n28_k04_r03__uniform_1_100",
+      "n_edges": 112,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "aaf53e5a23690a019acd6469edb4b39665d369e41c746031a8a107e3b9c517b0",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp06_er_n28_k04_r03__capped_lognormal.d",
+      "graph_sha256": "8d644cf9eb7735c87dbfdc809cf8ed1326073ecdd85dcdea362ca666f229496b",
+      "instance_id": "exp06_er_n28_k04_r03__capped_lognormal",
+      "n_edges": 112,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "4851e20992d260dbbec8c0ae2b572498c1e545946e46a70234e34ece0d1c366f",
+      "family": "directed_scale_free",
+      "graph_file": "exp06_sf_n28_k04_r01__uniform_1_100.d",
+      "graph_sha256": "5a26a2ec85bda954cfc7f064f12abb9634d1323e5b931d2c26f65cb93fbb40b7",
+      "instance_id": "exp06_sf_n28_k04_r01__uniform_1_100",
+      "n_edges": 112,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "4155f13608cd953a241dbd9cdb7078ecc03825ce6b0ef0a2d591749f3eba99dc",
+      "family": "directed_scale_free",
+      "graph_file": "exp06_sf_n28_k04_r01__capped_lognormal.d",
+      "graph_sha256": "85656605f39ec195f80f71d2266cb6d3c996ceccf4a7dec7c610060519dd5ce6",
+      "instance_id": "exp06_sf_n28_k04_r01__capped_lognormal",
+      "n_edges": 112,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "23a316cb5901af787fb8c7f80362ba3a2ec89e8395a3150347f63fe861ad8c5a",
+      "family": "directed_scale_free",
+      "graph_file": "exp06_sf_n28_k04_r02__uniform_1_100.d",
+      "graph_sha256": "89464666dabfdad98814f2e11b5e653804019a1b7d1d56959e5100f85b127108",
+      "instance_id": "exp06_sf_n28_k04_r02__uniform_1_100",
+      "n_edges": 112,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "2f0a88d35e676cabdfb69080284607517b830e7b6c78f3cc8a52e755aa405374",
+      "family": "directed_scale_free",
+      "graph_file": "exp06_sf_n28_k04_r02__capped_lognormal.d",
+      "graph_sha256": "741d623bdc7cbe2d923f357dbd02ec3eab2d1ccf63cf1b589d3c790c3ec11acf",
+      "instance_id": "exp06_sf_n28_k04_r02__capped_lognormal",
+      "n_edges": 112,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "ab892bc46e248fe8e89bf3f9ea70f9239ed30528f5e033240d77c46737e6928f",
+      "family": "directed_scale_free",
+      "graph_file": "exp06_sf_n28_k04_r03__uniform_1_100.d",
+      "graph_sha256": "f91bc04c51a8e4eb3c0f3e4291136f15dbb506dfd13f02397061074c099daa4f",
+      "instance_id": "exp06_sf_n28_k04_r03__uniform_1_100",
+      "n_edges": 112,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "3ddeadb262f7621e4b2c3016bc58f43de05cb156f78734a44c54f89029030eab",
+      "family": "directed_scale_free",
+      "graph_file": "exp06_sf_n28_k04_r03__capped_lognormal.d",
+      "graph_sha256": "604537a4e6f7f81d2005c3dfb1dedd9a3a24ddf37232215b9b0744f87b37ad91",
+      "instance_id": "exp06_sf_n28_k04_r03__capped_lognormal",
+      "n_edges": 112,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "e14c37b205b3eff033cbd846dffffc85b6e005551761aab42d666a22aa4eb819",
+      "family": "directed_community",
+      "graph_file": "exp06_cm_n28_k04_r01__uniform_1_100.d",
+      "graph_sha256": "cb4aa853244e73e2d0afa0365b4dacd8ea988562528dea2e952309a818e849f5",
+      "instance_id": "exp06_cm_n28_k04_r01__uniform_1_100",
+      "n_edges": 112,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "ff84efc383f598d3aea2d01c76af943b8829b61467edcd7df7b15db95a2999a7",
+      "family": "directed_community",
+      "graph_file": "exp06_cm_n28_k04_r01__capped_lognormal.d",
+      "graph_sha256": "38cdc580254a5767d8037758c394c7a1d843515405ddc00ae12c5483de224a1e",
+      "instance_id": "exp06_cm_n28_k04_r01__capped_lognormal",
+      "n_edges": 112,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "95d2be94dd04d5875602d3033d41ddc65c98fda727273c0ef0ba8cb16c87b586",
+      "family": "directed_community",
+      "graph_file": "exp06_cm_n28_k04_r02__uniform_1_100.d",
+      "graph_sha256": "11f6ecc2911f5af2adbf5e3a36afac8e5580929448eb45d65b0c1c533dbb8afa",
+      "instance_id": "exp06_cm_n28_k04_r02__uniform_1_100",
+      "n_edges": 112,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "8ebf94227c5c7e11617fdd35c77b086d1ed4f065a3be8df9975d24e496827707",
+      "family": "directed_community",
+      "graph_file": "exp06_cm_n28_k04_r02__capped_lognormal.d",
+      "graph_sha256": "0ed528d7e5d996583edcd98cbdb693082c7a015b6ef9c65814f96f04a4c2ec1c",
+      "instance_id": "exp06_cm_n28_k04_r02__capped_lognormal",
+      "n_edges": 112,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "0b5b53d21bf5d0dbcfe4398863976007f292ac5c715c322884152204cdeac1c1",
+      "family": "directed_community",
+      "graph_file": "exp06_cm_n28_k04_r03__uniform_1_100.d",
+      "graph_sha256": "e43adb7c68c236408779fc1b80ac7901a0c8c5ac9a26e74687303524fb613745",
+      "instance_id": "exp06_cm_n28_k04_r03__uniform_1_100",
+      "n_edges": 112,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "17db577cc810e5d1501b6824b7562ecf3690131b2182583eb1ea6b38b7d2d291",
+      "family": "directed_community",
+      "graph_file": "exp06_cm_n28_k04_r03__capped_lognormal.d",
+      "graph_sha256": "93a4dbfb3a096850143e3105ebf3cf387777599cbb2d7257808288dc19d5ee39",
+      "instance_id": "exp06_cm_n28_k04_r03__capped_lognormal",
+      "n_edges": 112,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "e928cb3f53349251493835a3e441301437323f6a328869b6c30dce2e52cfadcd",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp06_er_n28_k06_r01__uniform_1_100.d",
+      "graph_sha256": "c29983c6045058df63ab5a507ddfd910c784c55cf211c9f039837c4efa377576",
+      "instance_id": "exp06_er_n28_k06_r01__uniform_1_100",
+      "n_edges": 168,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "e855c008fda2441a7695e9ab87e5b4783480395932cb93325190312ee943b4d0",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp06_er_n28_k06_r01__capped_lognormal.d",
+      "graph_sha256": "44e5cb5bafa0c74d54a61e15989bd1618d27b93a96112a1e77c1b11fd611218b",
+      "instance_id": "exp06_er_n28_k06_r01__capped_lognormal",
+      "n_edges": 168,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "b8c4249c930b13ae5aa53d4634c8f03d4a99045d18c1ccda092784f3d3d71d68",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp06_er_n28_k06_r02__uniform_1_100.d",
+      "graph_sha256": "b0f5a01640965e5e55d03663693632af890c106290cb92921c1a923c55e42e9d",
+      "instance_id": "exp06_er_n28_k06_r02__uniform_1_100",
+      "n_edges": 168,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "ed8ab5043d6f83b5ae57cdc67a7b03ef85375def28ce11c2bc8bd1691ed4551b",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp06_er_n28_k06_r02__capped_lognormal.d",
+      "graph_sha256": "f678e49193252baa6ab92fac49cff0e01e900fcc927dfd0dad4893b71e9881fb",
+      "instance_id": "exp06_er_n28_k06_r02__capped_lognormal",
+      "n_edges": 168,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "e77488439da9ddf7a2a084af8e93f87007bd381752b087831a11cdc6e2726072",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp06_er_n28_k06_r03__uniform_1_100.d",
+      "graph_sha256": "0eaca082d519cf9ca970c72a2146a256f6945a30d3efbd52ebca840d7aa74681",
+      "instance_id": "exp06_er_n28_k06_r03__uniform_1_100",
+      "n_edges": 168,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "86e4d34b128002201ff54344d6f29a5f64cb45d76180cbb3b7a7e4bd6391cc6b",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp06_er_n28_k06_r03__capped_lognormal.d",
+      "graph_sha256": "fba19cb40912ef317ae6860e09754e91781836605f0be4a034355aa47cc22a83",
+      "instance_id": "exp06_er_n28_k06_r03__capped_lognormal",
+      "n_edges": 168,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "a56804a5ddfda90159074846b84b95d8a9a798c4ba9ef45efe50869a70e402b9",
+      "family": "directed_scale_free",
+      "graph_file": "exp06_sf_n28_k06_r01__uniform_1_100.d",
+      "graph_sha256": "fa4ab4e4ad75abced8d04cc3b1440783b7999b48c5df52ea74a6d0a41b2c3ae3",
+      "instance_id": "exp06_sf_n28_k06_r01__uniform_1_100",
+      "n_edges": 168,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "52d43596259522d28e0706b2078779a253273c1949aa23a6bd3f83873a087ba3",
+      "family": "directed_scale_free",
+      "graph_file": "exp06_sf_n28_k06_r01__capped_lognormal.d",
+      "graph_sha256": "818b744903d786faa1067ca38bf97862df60dcfe5542aa5c4f0c6ff5a4fb75ce",
+      "instance_id": "exp06_sf_n28_k06_r01__capped_lognormal",
+      "n_edges": 168,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "36395059d406786b74841bcce774ff148ae7c1e3c159c781926fb8a3421eacdb",
+      "family": "directed_scale_free",
+      "graph_file": "exp06_sf_n28_k06_r02__uniform_1_100.d",
+      "graph_sha256": "77d06eeb4cf28f6fa54f22d36d6a7e01d392b908bbb783d31977c67077b2283a",
+      "instance_id": "exp06_sf_n28_k06_r02__uniform_1_100",
+      "n_edges": 168,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "b0571e929b84897cea0d43565e15f98daa8461e531a00b7aac746b57f1cfd078",
+      "family": "directed_scale_free",
+      "graph_file": "exp06_sf_n28_k06_r02__capped_lognormal.d",
+      "graph_sha256": "eb1c8e1ae4dc9662e0aeee371f5439c20a8d35978f41be655082bd4bfd12ea8b",
+      "instance_id": "exp06_sf_n28_k06_r02__capped_lognormal",
+      "n_edges": 168,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "634d0e0d4b8f1842c34f2807deb03dcba347669c87bdde36a7738e7b46c6ad14",
+      "family": "directed_scale_free",
+      "graph_file": "exp06_sf_n28_k06_r03__uniform_1_100.d",
+      "graph_sha256": "b3bc7f321b43f50958c1ca41258ae9f75fd16da9f56341bac745f16d6585a1af",
+      "instance_id": "exp06_sf_n28_k06_r03__uniform_1_100",
+      "n_edges": 168,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "5787da5eb409bba75f6ff728f69bbdc899ebd996eb74561f9e441c907252b1fb",
+      "family": "directed_scale_free",
+      "graph_file": "exp06_sf_n28_k06_r03__capped_lognormal.d",
+      "graph_sha256": "d582ea0f817141088fc20756e29a310c2c6095b5e5053a638b97dd6e07f6adc4",
+      "instance_id": "exp06_sf_n28_k06_r03__capped_lognormal",
+      "n_edges": 168,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "edbb1bd23d46f799f5708053a6f27ed4176c741d172bb8d6d6e150954baa1125",
+      "family": "directed_community",
+      "graph_file": "exp06_cm_n28_k06_r01__uniform_1_100.d",
+      "graph_sha256": "2720de8f3b354743e49af77de7f315a8b6dcd85d82f45eac6f1be431dab5a278",
+      "instance_id": "exp06_cm_n28_k06_r01__uniform_1_100",
+      "n_edges": 168,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "df4758a05ed24136a3e30b9a4fd91a1e13a76fbe18ddb29b75261f9c458b7c3d",
+      "family": "directed_community",
+      "graph_file": "exp06_cm_n28_k06_r01__capped_lognormal.d",
+      "graph_sha256": "33c4658957c16d2d5c2fc6cb44bd89edbf6242af6e9955447b03a10e2aff39e7",
+      "instance_id": "exp06_cm_n28_k06_r01__capped_lognormal",
+      "n_edges": 168,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "63268a40bb6591815205bd2e6a97180d008e24466762b3b7bf94ff82e55e3f98",
+      "family": "directed_community",
+      "graph_file": "exp06_cm_n28_k06_r02__uniform_1_100.d",
+      "graph_sha256": "8c06bbef83f4ec1f9c9a7bee1415167159f6303ce20141e78cc9e3156bec0e4f",
+      "instance_id": "exp06_cm_n28_k06_r02__uniform_1_100",
+      "n_edges": 168,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "a56fe55ed8e9442d6d404516aeee6b147078d2870943fa2e5392a8a9e2de9553",
+      "family": "directed_community",
+      "graph_file": "exp06_cm_n28_k06_r02__capped_lognormal.d",
+      "graph_sha256": "d49457a79a2fd297a5fe39b2e529edf13bbd914ad60332fc32a32f373f55b3f3",
+      "instance_id": "exp06_cm_n28_k06_r02__capped_lognormal",
+      "n_edges": 168,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "4c6a2acdf4e0907179506dcf157f5ff558312aad35f931a76916081bb046a8ef",
+      "family": "directed_community",
+      "graph_file": "exp06_cm_n28_k06_r03__uniform_1_100.d",
+      "graph_sha256": "ad96cf45ef89aa3a807a5761bb7a91a5f149a44983d6e512cbe031a36c13997f",
+      "instance_id": "exp06_cm_n28_k06_r03__uniform_1_100",
+      "n_edges": 168,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "6c2975ad47186e717b690cef323e91119916eb5e095ccd53c1049853f0e409c6",
+      "family": "directed_community",
+      "graph_file": "exp06_cm_n28_k06_r03__capped_lognormal.d",
+      "graph_sha256": "de22a9a5f9677c019c3dd1149515485acc4f89fba333282f225a1242c2ee4415",
+      "instance_id": "exp06_cm_n28_k06_r03__capped_lognormal",
+      "n_edges": 168,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "8578a16767394581c3472ef8d57959bce970ded9a4266a9b42175c5ec56c9ab4",
+      "family": "planted_order",
+      "graph_file": "exp06_po_n12_c05_r01__uniform_1_100.d",
+      "graph_sha256": "915e52d9362a6ac884c03e7744c749fd7ca48ea23e2550d3c1de8595b9f6996a",
+      "instance_id": "exp06_po_n12_c05_r01__uniform_1_100",
+      "n_edges": 48,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "ce16cc059a89a491a7ec1efe3bcda9278885f6c775c1933dd781525a06a31d87",
+      "family": "planted_order",
+      "graph_file": "exp06_po_n12_c05_r01__capped_lognormal.d",
+      "graph_sha256": "0b90619931364676b3c0ad06dcc9daeb647aa38f041c5259896c32877badb6ed",
+      "instance_id": "exp06_po_n12_c05_r01__capped_lognormal",
+      "n_edges": 48,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "c0b4e3a77c7475415c684c24c5fa6a79335d68297f7874bb12318f528d6d246e",
+      "family": "planted_order",
+      "graph_file": "exp06_po_n12_c05_r02__uniform_1_100.d",
+      "graph_sha256": "cdc1b29b5f7d813e7b9557881e21d35c1d8a717db5409f91288d532c84d72245",
+      "instance_id": "exp06_po_n12_c05_r02__uniform_1_100",
+      "n_edges": 48,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "43674df05a73aaa10329678263d38527f7e9cef06abfb94b6d9409587d46dc91",
+      "family": "planted_order",
+      "graph_file": "exp06_po_n12_c05_r02__capped_lognormal.d",
+      "graph_sha256": "67242299156a0d15535c54e4a347cac02da813a282cc3922e01ed516c81f344e",
+      "instance_id": "exp06_po_n12_c05_r02__capped_lognormal",
+      "n_edges": 48,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "0b3b147429c615f31a084984540beacb8e959705e9bda210d48f72fe9ab30168",
+      "family": "planted_order",
+      "graph_file": "exp06_po_n12_c15_r01__uniform_1_100.d",
+      "graph_sha256": "9eb3d7b0e43e20acdd5d1d15d1fe285c525a851d2b0d56543572d6868916444a",
+      "instance_id": "exp06_po_n12_c15_r01__uniform_1_100",
+      "n_edges": 48,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "e11758cd58fadd405ad193cc80b391a770a6d0d172913ecd2484aa1d858e51d9",
+      "family": "planted_order",
+      "graph_file": "exp06_po_n12_c15_r01__capped_lognormal.d",
+      "graph_sha256": "63898fae03f05a60a9858983e6952ce259fcd0b0a26be7d279b311841ed64501",
+      "instance_id": "exp06_po_n12_c15_r01__capped_lognormal",
+      "n_edges": 48,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "7d2134574544ab71794d84901cab4aee9da76bc43a6b48fdcfdd4b729a641ccc",
+      "family": "planted_order",
+      "graph_file": "exp06_po_n12_c15_r02__uniform_1_100.d",
+      "graph_sha256": "e08851b4fa3778e5ee52cdba3c27a0a521f17f93f594f1b52c72b56cfa10a4aa",
+      "instance_id": "exp06_po_n12_c15_r02__uniform_1_100",
+      "n_edges": 48,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "5408e4846c1aed0e613a28560520ed80ba1e6ffe83b42de360c264f16acf498f",
+      "family": "planted_order",
+      "graph_file": "exp06_po_n12_c15_r02__capped_lognormal.d",
+      "graph_sha256": "387ebad321a8a6c6ad429def8d43ff034da65928bb3001e59248021d857254ba",
+      "instance_id": "exp06_po_n12_c15_r02__capped_lognormal",
+      "n_edges": 48,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "83561353c76137dfa71d0aaa64229dd15f2a0d35d1b0406d4c5ae0fe015176f5",
+      "family": "planted_order",
+      "graph_file": "exp06_po_n12_c30_r01__uniform_1_100.d",
+      "graph_sha256": "fb7a338965e3788b5406c21d3c0e547d51faf27c8a953ace1542a9b2c1b31ab6",
+      "instance_id": "exp06_po_n12_c30_r01__uniform_1_100",
+      "n_edges": 48,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "ed1b9937e93a99199ad98138e71b0c76e5f83194fd12e29929e08f84b4efb183",
+      "family": "planted_order",
+      "graph_file": "exp06_po_n12_c30_r01__capped_lognormal.d",
+      "graph_sha256": "28c9a7e030d41d48eb038cdabc0b5fe1ca41fdf2c09d5339d41f24d1c0b9d9c7",
+      "instance_id": "exp06_po_n12_c30_r01__capped_lognormal",
+      "n_edges": 48,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "986e2ae19dc156efafa25a4bcde8d79e6dbc27901d3097b554f2f2395668c015",
+      "family": "planted_order",
+      "graph_file": "exp06_po_n12_c30_r02__uniform_1_100.d",
+      "graph_sha256": "36d13c2d213f3a14a3906840112c82330c80714201e2501595ac837f0a592928",
+      "instance_id": "exp06_po_n12_c30_r02__uniform_1_100",
+      "n_edges": 48,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "fc07488b6bf2fe8d8f3e5b84cef15da49d8509d9c80b08dff6e9d5e7e6bc3d80",
+      "family": "planted_order",
+      "graph_file": "exp06_po_n12_c30_r02__capped_lognormal.d",
+      "graph_sha256": "1087df6d779f5bd375b2a5ea21a311f1d5d60fa4d6b170fcd4cf7820ad27d3e8",
+      "instance_id": "exp06_po_n12_c30_r02__capped_lognormal",
+      "n_edges": 48,
+      "n_vertices": 12,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "9244c2c4dd0e4f9f5970d6a3ee5415702614ee036d8da7cf7028b14f7bad08f7",
+      "family": "planted_order",
+      "graph_file": "exp06_po_n20_c05_r01__uniform_1_100.d",
+      "graph_sha256": "a77adeec3f62d41171dda1ffa4d8f7bbd6dee65435eb1b884ac26f87bd5af9eb",
+      "instance_id": "exp06_po_n20_c05_r01__uniform_1_100",
+      "n_edges": 80,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "7098f1dab3779be354a9868077acc7571d89d8f9f1b9b320b6c1fdf5ca718b24",
+      "family": "planted_order",
+      "graph_file": "exp06_po_n20_c05_r01__capped_lognormal.d",
+      "graph_sha256": "265a585972e3fb166ef05a94cdf504a8894c8f48b3cd706efc0cfa72ad0c8edb",
+      "instance_id": "exp06_po_n20_c05_r01__capped_lognormal",
+      "n_edges": 80,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "0bae9a4e0baed98885c52690630ebe2d4b1aa52a7f39dac9e7e812ed047575b3",
+      "family": "planted_order",
+      "graph_file": "exp06_po_n20_c05_r02__uniform_1_100.d",
+      "graph_sha256": "d81ae574610a2b06d8846d1c1c8bc9798de73485de2c27411337a32909a82c2d",
+      "instance_id": "exp06_po_n20_c05_r02__uniform_1_100",
+      "n_edges": 80,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "3494cbfecc54fe50282a3bcfbdaaea7fe19b9df73a6daa2f963e0423db788b5d",
+      "family": "planted_order",
+      "graph_file": "exp06_po_n20_c05_r02__capped_lognormal.d",
+      "graph_sha256": "5d7802a4537d8d80f66b97ae1545d1dbf38c39ffcbc9b34520deee9523ace22c",
+      "instance_id": "exp06_po_n20_c05_r02__capped_lognormal",
+      "n_edges": 80,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "e0a7ad89c3278f5975424746afa0d4dd121956dd3a5d688d1556939ad6272eea",
+      "family": "planted_order",
+      "graph_file": "exp06_po_n20_c15_r01__uniform_1_100.d",
+      "graph_sha256": "861f11259f7fa482a0ac0152c78e84d2c7fd97872737e48ee18bd57a7fd71ba6",
+      "instance_id": "exp06_po_n20_c15_r01__uniform_1_100",
+      "n_edges": 80,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "b6221f229901177961182c7df1019e142c31dcfff9533ec9e40387297ef81d80",
+      "family": "planted_order",
+      "graph_file": "exp06_po_n20_c15_r01__capped_lognormal.d",
+      "graph_sha256": "1fefa11514e5bcf1155211c234f42cd9a9ddb6fd7ca61bd4a3deebb62f6a61e5",
+      "instance_id": "exp06_po_n20_c15_r01__capped_lognormal",
+      "n_edges": 80,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "c1dfabfb1312878345ed15902be01080f3434a47c5ec456e0ddf307700cbfe57",
+      "family": "planted_order",
+      "graph_file": "exp06_po_n20_c15_r02__uniform_1_100.d",
+      "graph_sha256": "e181cee7d0370910a34f4b67d65fc3f1ee1beee16a0a074c848bc00c27ad4d3c",
+      "instance_id": "exp06_po_n20_c15_r02__uniform_1_100",
+      "n_edges": 80,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "e5fc2e0a42ef8742c82c5ffdb392aea87268b9603c025bd2fb624dc4075735b5",
+      "family": "planted_order",
+      "graph_file": "exp06_po_n20_c15_r02__capped_lognormal.d",
+      "graph_sha256": "eba6a0faa456c7a73bf6614e06aac5dd9150345c7e6a694fd24ba048f92820fa",
+      "instance_id": "exp06_po_n20_c15_r02__capped_lognormal",
+      "n_edges": 80,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "3d40b8e14638107203c205a914f0f957f5155b23e5575fa950e41407c2eb8994",
+      "family": "planted_order",
+      "graph_file": "exp06_po_n20_c30_r01__uniform_1_100.d",
+      "graph_sha256": "8be722331152f5b8d8f36fbe26ac683f33d9eefb0ad50e3659ebbc24f24913af",
+      "instance_id": "exp06_po_n20_c30_r01__uniform_1_100",
+      "n_edges": 80,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "b3501db541e3b246517e6f8ce6b2c10bf256f422002c0859005ace02acc1a844",
+      "family": "planted_order",
+      "graph_file": "exp06_po_n20_c30_r01__capped_lognormal.d",
+      "graph_sha256": "e2526bb6634980594ccabb81a7d52c158298cf206a91eaa45b3046dede2489e7",
+      "instance_id": "exp06_po_n20_c30_r01__capped_lognormal",
+      "n_edges": 80,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "f7330265cdb5859b55a75ccaed4556162bc018a3b825d0985a400b9b38396a65",
+      "family": "planted_order",
+      "graph_file": "exp06_po_n20_c30_r02__uniform_1_100.d",
+      "graph_sha256": "a3ee6595fd5cc903d53a1b1b910aca2dd83ca54ce5f2d490f14006d94c718a87",
+      "instance_id": "exp06_po_n20_c30_r02__uniform_1_100",
+      "n_edges": 80,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "5380776a79c3f6da35469e6397e239e2e38034df3c53e035680be2fbaf38e84f",
+      "family": "planted_order",
+      "graph_file": "exp06_po_n20_c30_r02__capped_lognormal.d",
+      "graph_sha256": "19274a26a434e15505c1f829d51b84ac9d201611f1b22ea5555926b3c65e25ea",
+      "instance_id": "exp06_po_n20_c30_r02__capped_lognormal",
+      "n_edges": 80,
+      "n_vertices": 20,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "7c8991877a45658b73eb29b5bf85eabd687f94e067551833d54cb42ce509fb86",
+      "family": "planted_order",
+      "graph_file": "exp06_po_n28_c05_r01__uniform_1_100.d",
+      "graph_sha256": "b31d49462e367071b4d735bbe419f9630358827d7baf4fc8253c3a2ce9b55884",
+      "instance_id": "exp06_po_n28_c05_r01__uniform_1_100",
+      "n_edges": 112,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "d64424dd69931a211112a60a069a2c3849adbccab97ed8b46766d59a27828717",
+      "family": "planted_order",
+      "graph_file": "exp06_po_n28_c05_r01__capped_lognormal.d",
+      "graph_sha256": "1fbfe3ebca3d77e21e892a5bf6eb15ad5806a40a024027cb8aa0187cfc31aa46",
+      "instance_id": "exp06_po_n28_c05_r01__capped_lognormal",
+      "n_edges": 112,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "60f07dbc8ffa0d8995333e444f7d94d127fcf345b927b77304e76c22db7d2fed",
+      "family": "planted_order",
+      "graph_file": "exp06_po_n28_c05_r02__uniform_1_100.d",
+      "graph_sha256": "54f48ebd3ffbbd39b064b773fc55ba43861efd01f8c4bf328cf427663f3aeee2",
+      "instance_id": "exp06_po_n28_c05_r02__uniform_1_100",
+      "n_edges": 112,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "d6933e98c86397522eee8575376cfaebffae4c042b310ebf7d8a1ca2b9872b51",
+      "family": "planted_order",
+      "graph_file": "exp06_po_n28_c05_r02__capped_lognormal.d",
+      "graph_sha256": "ff9c09482a09feb7308da3d7215e85c9d5023406dbd64a810fa47671d0d18b59",
+      "instance_id": "exp06_po_n28_c05_r02__capped_lognormal",
+      "n_edges": 112,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "7d5b09f73e9e0d638a5b3ce30ef603ccb9e3cbfd4d3f0117b7037ccd6df8a5c3",
+      "family": "planted_order",
+      "graph_file": "exp06_po_n28_c15_r01__uniform_1_100.d",
+      "graph_sha256": "a2bf4e1fbbf25aae2c21d6b06d7079c57e2c5b0428dedb33adf415b1738dbb3e",
+      "instance_id": "exp06_po_n28_c15_r01__uniform_1_100",
+      "n_edges": 112,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "8afc6a74aa179cb47d1ad0c809c75d14b32882cc16fda9cc52d705ef82cfaffa",
+      "family": "planted_order",
+      "graph_file": "exp06_po_n28_c15_r01__capped_lognormal.d",
+      "graph_sha256": "e53f385af429dd43320b7239ab25a2a456c3969b39d9c551e23b25e7f5ac0412",
+      "instance_id": "exp06_po_n28_c15_r01__capped_lognormal",
+      "n_edges": 112,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "127158a0b7188ae000246cea38a2149698187b26a13217f4f112249bdc763130",
+      "family": "planted_order",
+      "graph_file": "exp06_po_n28_c15_r02__uniform_1_100.d",
+      "graph_sha256": "e4857276611dc3d0572e88c5b44cddc904ce2f179bd369a0948b3acc29e83a98",
+      "instance_id": "exp06_po_n28_c15_r02__uniform_1_100",
+      "n_edges": 112,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "d8583b414343c36205885f46c97877738b3c0febef5253d4a0b8e7644899dfda",
+      "family": "planted_order",
+      "graph_file": "exp06_po_n28_c15_r02__capped_lognormal.d",
+      "graph_sha256": "609b9baa56d1c44f9e02d2086d553ae7c5fc2436891c66d142cce8a7dfc81e9e",
+      "instance_id": "exp06_po_n28_c15_r02__capped_lognormal",
+      "n_edges": 112,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "94d4de95915b0b15b6bd07d2206445fd21eead39c46a58699a0dd6d2b4ce9291",
+      "family": "planted_order",
+      "graph_file": "exp06_po_n28_c30_r01__uniform_1_100.d",
+      "graph_sha256": "a18e07200a5cb1dbfd5bee9b750f7980e7e1d256daff59ee12b701d59b9b25a7",
+      "instance_id": "exp06_po_n28_c30_r01__uniform_1_100",
+      "n_edges": 112,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "765f010950f6a5ff7e4f0caa666d499757743ed74d009728e12332c547911452",
+      "family": "planted_order",
+      "graph_file": "exp06_po_n28_c30_r01__capped_lognormal.d",
+      "graph_sha256": "71bfa4e258186e20a6f94da0805656839bbf0cd6c03810d62945f72ac4644c1c",
+      "instance_id": "exp06_po_n28_c30_r01__capped_lognormal",
+      "n_edges": 112,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "bef3cf3485f818ef770271871def84d3397adad4dc05a0b82067ca4ea2826a00",
+      "family": "planted_order",
+      "graph_file": "exp06_po_n28_c30_r02__uniform_1_100.d",
+      "graph_sha256": "cdae23cdc216fa1e103517ae17adece290cbc945c09f124a1c763fbce9f1a3be",
+      "instance_id": "exp06_po_n28_c30_r02__uniform_1_100",
+      "n_edges": 112,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    },
+    {
+      "dimacs_sha256": "1c81348b1464e4a43660fef7236ecaf8cdf89db57157ffa354f5c86fe9ad133c",
+      "family": "planted_order",
+      "graph_file": "exp06_po_n28_c30_r02__capped_lognormal.d",
+      "graph_sha256": "a614cbd4e5797f9896d73113f0194ff0f31929d9fbb7a3c7f696d30f5093fa53",
+      "instance_id": "exp06_po_n28_c30_r02__capped_lognormal",
+      "n_edges": 112,
+      "n_vertices": 28,
+      "source_experiment": "EXP06"
+    }
+  ],
+  "n_weighted_instances": 378,
+  "okubo_epochs": 3,
+  "per_run_wall_cap_seconds": 30,
+  "schema": "mwfas-exp09-production-proposal-v1",
+  "seeds": [
+    1,
+    2
+  ],
+  "slurm": {
+    "account": "ikoutis",
+    "cpus": 1,
+    "memory_gb": 4,
+    "output_root": "CUSTODY_PATH/production-output",
+    "partition": "general",
+    "qos": "low",
+    "walltime_hours": 8
+  },
+  "statistics": "graph/topology is unit; seeds repeated within graph; EXP06 weight variants paired within topology; report family/size/degree and exact-gap strata; never call uncertified best-known an optimum",
+  "status": "PREPARED_NOT_APPROVED_GATE_FAILED",
+  "validation": [
+    "verify frozen input file and weighted graph SHA-256",
+    "preserve original native C output and conversion",
+    "complete numeric vertex permutation",
+    "recompute original-arc backward weight and C forward score independently",
+    "verify DAG after backward arc removal",
+    "retain timeout and failure checkpoints"
+  ]
+}

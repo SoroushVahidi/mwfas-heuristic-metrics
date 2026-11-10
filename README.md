@@ -57,3 +57,7 @@ All ten printed numerical tables are publicly replayable; 11/17 tracked claim gr
 [Public verifier, benchmark profiles and instructions](release/benchmark-supplement-v1.0.0/README.md) accompany the [versioned Hugging Face supplementary evidence](https://huggingface.co/datasets/SoroushVahidi/mwfas-benchmark-extension/tree/benchmark-supplement-v1.0.0/releases/benchmark-supplement-v1.0.0). This additive release supports saved-output verification of supplementary Tables S1–S3 and preserves every earlier release. It does not rerun optimization or imply journal acceptance.
 
 [Post-publication anonymous verification: PASS](https://huggingface.co/datasets/SoroushVahidi/mwfas-benchmark-extension/blob/6058617e819cf99a3fafcc3e5997720cff1a3e02/releases/benchmark-supplement-v1.0.0/public_validation/PUBLIC_VERIFICATION.json) — all release checksums, both profiles, table45 objectives and supplementary Tables S1–S3 were reproduced using public downloads and documented upstream inputs.
+
+## Complete benchmark access index
+
+[benchmark-access-v1.0.0](release/benchmark-access-v1.0.0/README.md) links all 442 inputs, 5,254 outcome/status records and 243 references. Anonymous checking resolved 414 published-byte plus 28 upstream inputs and rescored all 5,131 feasible outcomes. Historical diagnostic/pilot source snapshots are separately labeled as contextual evidence rather than full campaign replay. Scientific results and earlier release versions are unchanged.

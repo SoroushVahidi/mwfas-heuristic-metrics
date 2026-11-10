@@ -1,0 +1,106 @@
+{
+  "schema": "mwfas-exp08b-multi-scc-diagnostic-v1",
+  "status": "FROZEN_PILOT",
+  "selection_rule": "Among all 135 independently validated EXP04 graphs, select those with at least two cyclic SCCs using graph structure only: sole ER case; lexicographically first community case; lexicographically first scale-free 120/k03 case; scale-free 240/k03 case with three cyclic SCCs; lexicographically first scale-free 240/k05 case; lexicographically first scale-free 480/k05 case. Selection made before EXP08B outcomes.",
+  "source_revision": "40209c26966247d9bf9ad34764de4ac4181f98c2",
+  "source_experiment": "EXP04 validated synthetic graph families",
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "iteration_budget": 50,
+  "objective_checkpoints": [
+    10,
+    50
+  ],
+  "run_cap_seconds": 15,
+  "campaign_cpu_cap_seconds": 900,
+  "ipsns_parameters": {
+    "seed_ordering": "L2",
+    "topK_scc": 15,
+    "destroy_addback_frac": 0.3,
+    "destroy_remove_frac": 0.02,
+    "tol": 1e-12,
+    "wmsf_seed_mode": "full",
+    "scc_select_mode": "weighted"
+  },
+  "instances": [
+    {
+      "instance_id": "exp04_er_n240_k03_r02",
+      "family": "erdos_renyi_directed",
+      "n_vertices": 240,
+      "n_edges": 720,
+      "dimacs_sha256": "e5bf27edf11926143165b3dff1d5bf20a23d95bd6a68227c5d23b93aa90718ea",
+      "graph_sha256": "c904266dba7a41ec4c197323726b9ae15ca794aa9eb67446d70ac334e9c0440c",
+      "cyclic_scc_sizes": [
+        204,
+        2
+      ]
+    },
+    {
+      "instance_id": "exp04_cm_n240_k03_r01",
+      "family": "directed_community",
+      "n_vertices": 240,
+      "n_edges": 720,
+      "dimacs_sha256": "c21d2930cb85463a49c85874756f4c24df6c2fbe7c4dba14e7c13b530d241b39",
+      "graph_sha256": "c412d932cb656b0d295c1843e86b4f2e0fa1379184022035d02936dcf5654ca8",
+      "cyclic_scc_sizes": [
+        220,
+        2
+      ]
+    },
+    {
+      "instance_id": "exp04_sf_n120_k03_r01",
+      "family": "directed_scale_free",
+      "n_vertices": 120,
+      "n_edges": 360,
+      "dimacs_sha256": "a35772f5de9723e5df75a395d0ce9bd5e461d97049d78f1ea81ca3825d7c6bae",
+      "graph_sha256": "3e39d0a73a5dca745c631fb58f545f1c2be3a0cc76fccee8cebdfada44564587",
+      "cyclic_scc_sizes": [
+        25,
+        3
+      ]
+    },
+    {
+      "instance_id": "exp04_sf_n240_k03_r03",
+      "family": "directed_scale_free",
+      "n_vertices": 240,
+      "n_edges": 720,
+      "dimacs_sha256": "ca33dd4683e19024964e56b8eea934e2a4479b209a8afaeff3edbba6cf969573",
+      "graph_sha256": "051d6c3e9a909ee479620a4bfef07de114420b98e18086c3abdd9682d0667c37",
+      "cyclic_scc_sizes": [
+        20,
+        12,
+        3
+      ]
+    },
+    {
+      "instance_id": "exp04_sf_n240_k05_r02",
+      "family": "directed_scale_free",
+      "n_vertices": 240,
+      "n_edges": 1200,
+      "dimacs_sha256": "c0dfc9a3a3e20a4ff2e694dbeedc507ec2522c2c8a3591afc301d7bd4717ef14",
+      "graph_sha256": "8da3460cd20c94a5ff471bd7d66c919d178cd27ccc1e94e1b7fde47614bcbb7d",
+      "cyclic_scc_sizes": [
+        138,
+        2
+      ]
+    },
+    {
+      "instance_id": "exp04_sf_n480_k05_r02",
+      "family": "directed_scale_free",
+      "n_vertices": 480,
+      "n_edges": 2400,
+      "dimacs_sha256": "c0783653baeed8772c6b80f9bb0f9f26f4c76d4b458ba272b6d1e42f0d9df72d",
+      "graph_sha256": "6804daead39293ff4fe3363465a1206fa5eeecae84b08d85368e9608413bd4cf",
+      "cyclic_scc_sizes": [
+        281,
+        2,
+        2
+      ]
+    }
+  ]
+}

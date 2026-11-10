@@ -1,0 +1,111 @@
+{
+  "conditional_limits": {
+    "initial_memory_gb": 16,
+    "max_cpus": 4,
+    "max_slurm_wall_hours": 3,
+    "max_two_stage_run_seconds": 600
+  },
+  "conditional_run_indices": [
+    1,
+    2
+  ],
+  "instances": [
+    {
+      "dimacs_sha256": "7afbe20f8f3b9aab9fcff6b4495e884e16d896b1389b0bf16d4d759d6d2a3fca",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp06_er_n12_k02_r01__uniform_1_100.d",
+      "graph_sha256": "f6bad8390a9c24767794fa3a7b852f5cf03074d2bfcd80249badc349637b5359",
+      "instance_id": "exp06_er_n12_k02_r01__uniform_1_100",
+      "isolated_vertices": 0,
+      "largest_scc_size": 9,
+      "mean_outdegree": 2,
+      "n_edges": 24,
+      "n_vertices": 12,
+      "scc_count": 4,
+      "source_experiment": "EXP06",
+      "weight_distribution": "uniform_1_100"
+    },
+    {
+      "dimacs_sha256": "601b72894b282b329e53c8f8344ec2e1e87e30084783ff3809eb0c6fe68a9f4e",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp06_er_n20_k04_r01__capped_lognormal.d",
+      "graph_sha256": "31308398a3031f50da6bbda48e09a57f607b7d0c2f57fc122a7259fc101a9d1b",
+      "instance_id": "exp06_er_n20_k04_r01__capped_lognormal",
+      "isolated_vertices": 0,
+      "largest_scc_size": 19,
+      "mean_outdegree": 4,
+      "n_edges": 80,
+      "n_vertices": 20,
+      "scc_count": 2,
+      "source_experiment": "EXP06",
+      "weight_distribution": "capped_lognormal"
+    },
+    {
+      "dimacs_sha256": "531546afd2f313b1e0ce5ae89b8ad55833bf57d38ed6b62ed90fd2d8b0b0b7cb",
+      "family": "erdos_renyi_directed",
+      "graph_file": "er_n060_k03.d",
+      "graph_sha256": "e6fb84e9ae5ff2cf58f187280f16b597e4a8333a9f34f9c15077d76d195d2e42",
+      "instance_id": "er_n060_k03",
+      "isolated_vertices": 0,
+      "largest_scc_size": 53,
+      "mean_outdegree": 3,
+      "n_edges": 180,
+      "n_vertices": 60,
+      "scc_count": 8,
+      "source_experiment": "EXP03",
+      "weight_distribution": "uniform_1_100"
+    },
+    {
+      "dimacs_sha256": "8dac86da541567c74bc8204609be3244d182c00dcfdad5d8741e0362109ae86d",
+      "family": "directed_scale_free",
+      "graph_file": "sf_n060_k04.d",
+      "graph_sha256": "fa82c5821b4825980f22c38e8d7b31ad5be88e72df7890a7f65d33585377cf8b",
+      "instance_id": "sf_n060_k04",
+      "isolated_vertices": 0,
+      "largest_scc_size": 26,
+      "mean_outdegree": 4,
+      "n_edges": 240,
+      "n_vertices": 60,
+      "scc_count": 35,
+      "source_experiment": "EXP03",
+      "weight_distribution": "uniform_1_100"
+    },
+    {
+      "dimacs_sha256": "950092966d286742a8d7243ea0cf935bd86d7e8ded3fdb96292e8974ed391019",
+      "family": "directed_community",
+      "graph_file": "exp04_cm_n120_k08_r01.d",
+      "graph_sha256": "c9d2629da96ca1a802714d8a1d7c2312f6ae0f2a7f60a4a82c3b2d56997c6e99",
+      "instance_id": "exp04_cm_n120_k08_r01",
+      "isolated_vertices": 0,
+      "largest_scc_size": 120,
+      "mean_outdegree": 8,
+      "n_edges": 960,
+      "n_vertices": 120,
+      "scc_count": 1,
+      "source_experiment": "EXP04",
+      "weight_distribution": "independent uniform positive integers 1..100"
+    },
+    {
+      "dimacs_sha256": "7b09303e4905c6f64e20f34ddd1abac3276c624026494c1d527f65011fa6e779",
+      "family": "erdos_renyi_directed",
+      "graph_file": "exp04_er_n240_k05_r01.d",
+      "graph_sha256": "86ad10ac0856bfcac4b904f8694cc966f1835d991fd29c0a98c1889960f4a531",
+      "instance_id": "exp04_er_n240_k05_r01",
+      "isolated_vertices": 0,
+      "largest_scc_size": 238,
+      "mean_outdegree": 5,
+      "n_edges": 1200,
+      "n_vertices": 240,
+      "scc_count": 3,
+      "source_experiment": "EXP04",
+      "weight_distribution": "independent uniform positive integers 1..100"
+    }
+  ],
+  "jax_prng_key_rule": "run_idx + 220 in author Rocket script",
+  "parent_config": "configs/exp09.json",
+  "parent_config_sha256": "d5332116e5db433a1a9e95dbfb0ca30ecc70cddb2c7301e5b38fb71509ef6cd9",
+  "schema": "mwfas-exp09b-conditional-candidate-v1",
+  "selection_rule": "two exact-certified small cases including nonuniform weights; one ER and one scale-free 60-vertex graph; one community 120-vertex graph; one ER 240-vertex graph; selected from frozen EXP09 properties before EXP09B outcomes",
+  "status": "FROZEN_NOT_EXECUTED_FIDELITY_BLOCKED",
+  "upstream_revision": "c30a6ac857c44e05833a8495781d97e2829deb44"
+}

@@ -1,0 +1,5 @@
+# Historical diagnostic and pilot context
+
+These original project-authored code/configuration/analysis snapshots cover EXP08/08B, EXP09/09B, EXP10, EXP11, EXP22/24, EXP25 and EXP27. The source inventory records exact originating commits and original-to-public hashes. They add public context for diagnostics, unsuccessful comparisons, design decisions and earlier pilots; their numerical records are not new scientific results. Paths and internal execution identifiers may be redacted. Original historical checksums refer to original bytes, not redacted files.
+
+Availability class: publicly released, transport/hash verified, but not newly independently reproduced as complete experiments. Most underlying inputs already occur in the linked benchmark. Complete raw campaign outputs for some pilots remain in original cluster custody and are not present in the accessible local worktrees; the presence of a report or protocol does not imply an independently replayable campaign. Do not execute campaign drivers as part of saved-output verification. Scheduler files and unrelated manuscript/correspondence material are excluded. EXP31 lies outside this release scope.

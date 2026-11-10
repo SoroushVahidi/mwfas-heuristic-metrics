@@ -1,0 +1,70 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "case": "weighted_cycle",
+      "objective": 2,
+      "rank_sha256": "073cc8ccd82c14bb0c3b160b8a7e3d98a345daed85aec4bb7fd327db186076df",
+      "seed": 1,
+      "status": "PASS",
+      "fresh_saved_output_check": "PASS"
+    },
+    {
+      "case": "weighted_cycle",
+      "objective": 2,
+      "rank_sha256": "073cc8ccd82c14bb0c3b160b8a7e3d98a345daed85aec4bb7fd327db186076df",
+      "seed": 2,
+      "status": "PASS",
+      "fresh_saved_output_check": "PASS"
+    },
+    {
+      "case": "acyclic",
+      "objective": 0,
+      "rank_sha256": "3f31bc2191b8b55d447838e14cbce78ca44feba5b46c902ade4cc2eb7b68a041",
+      "seed": 1,
+      "status": "PASS",
+      "fresh_saved_output_check": "PASS"
+    },
+    {
+      "case": "acyclic",
+      "objective": 0,
+      "rank_sha256": "3f31bc2191b8b55d447838e14cbce78ca44feba5b46c902ade4cc2eb7b68a041",
+      "seed": 2,
+      "status": "PASS",
+      "fresh_saved_output_check": "PASS"
+    },
+    {
+      "case": "opposing_arcs",
+      "objective": 3,
+      "rank_sha256": "073cc8ccd82c14bb0c3b160b8a7e3d98a345daed85aec4bb7fd327db186076df",
+      "seed": 1,
+      "status": "PASS",
+      "fresh_saved_output_check": "PASS"
+    },
+    {
+      "case": "opposing_arcs",
+      "objective": 3,
+      "rank_sha256": "073cc8ccd82c14bb0c3b160b8a7e3d98a345daed85aec4bb7fd327db186076df",
+      "seed": 2,
+      "status": "PASS",
+      "fresh_saved_output_check": "PASS"
+    },
+    {
+      "case": "disconnected_with_isolates",
+      "objective": 3,
+      "rank_sha256": "f3c0ad0dbfda32a4fb24bcf9948fa811bdefc4664b44e10854a11e3fe94c342b",
+      "seed": 1,
+      "status": "PASS",
+      "fresh_saved_output_check": "PASS"
+    },
+    {
+      "case": "disconnected_with_isolates",
+      "objective": 3,
+      "rank_sha256": "9c045e5bc9952fa229c62c9768a15c08cf78086cced40b98ab5a6ff107effaeb",
+      "seed": 2,
+      "status": "PASS",
+      "fresh_saved_output_check": "PASS"
+    }
+  ],
+  "optimizer_or_external_binary_executions": 0
+}

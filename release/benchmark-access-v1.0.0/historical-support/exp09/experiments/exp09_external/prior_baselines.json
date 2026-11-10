@@ -1,0 +1,397 @@
+{
+  "cm_n060_k06": {
+    "algorithms": {
+      "ipsns": {
+        "iteration_budget": 400,
+        "median_objective": 3357.0,
+        "median_wall_seconds": 3.1263145750272088,
+        "min_objective": 3357.0,
+        "n": 3
+      },
+      "lrta": {
+        "iteration_budget": null,
+        "median_objective": 3478.0,
+        "median_wall_seconds": 1.118195612973068,
+        "min_objective": 3478.0,
+        "n": 1
+      },
+      "wmsf_l2": {
+        "iteration_budget": null,
+        "median_objective": 3364.0,
+        "median_wall_seconds": 0.8165693319751881,
+        "min_objective": 3364.0,
+        "n": 1
+      }
+    },
+    "source_experiment": "EXP03"
+  },
+  "er_n060_k03": {
+    "algorithms": {
+      "ipsns": {
+        "iteration_budget": 400,
+        "median_objective": 775.0,
+        "median_wall_seconds": 1.170184314949438,
+        "min_objective": 775.0,
+        "n": 3
+      },
+      "lrta": {
+        "iteration_budget": null,
+        "median_objective": 848.0,
+        "median_wall_seconds": 2.021340523962863,
+        "min_objective": 848.0,
+        "n": 1
+      },
+      "wmsf_l2": {
+        "iteration_budget": null,
+        "median_objective": 875.0,
+        "median_wall_seconds": 0.7695455610519275,
+        "min_objective": 875.0,
+        "n": 1
+      }
+    },
+    "source_experiment": "EXP03"
+  },
+  "exp04_cm_n120_k08_r01": {
+    "algorithms": {
+      "igraph_eades_weighted": {
+        "iteration_budget": null,
+        "median_objective": 12836.0,
+        "median_wall_seconds": 0.7843593640136532,
+        "min_objective": 12836.0,
+        "n": 1
+      },
+      "ipsns": {
+        "iteration_budget": 400,
+        "median_objective": 10040.0,
+        "median_wall_seconds": 11.34373812499689,
+        "min_objective": 10040.0,
+        "n": 3
+      },
+      "lrta": {
+        "iteration_budget": null,
+        "median_objective": 10733.0,
+        "median_wall_seconds": 0.976982107036747,
+        "min_objective": 10733.0,
+        "n": 1
+      },
+      "wmsf_l2": {
+        "iteration_budget": null,
+        "median_objective": 11205.0,
+        "median_wall_seconds": 1.3715465330169536,
+        "min_objective": 11205.0,
+        "n": 1
+      }
+    },
+    "source_experiment": "EXP04"
+  },
+  "exp04_cm_n480_k05_r01": {
+    "algorithms": {
+      "igraph_eades_weighted": {
+        "iteration_budget": null,
+        "median_objective": 24009.0,
+        "median_wall_seconds": 1.0354755709995516,
+        "min_objective": 24009.0,
+        "n": 1
+      },
+      "ipsns": {
+        "iteration_budget": 400,
+        "median_objective": 15624.0,
+        "median_wall_seconds": 73.0285870769876,
+        "min_objective": 15624.0,
+        "n": 3
+      },
+      "lrta": {
+        "iteration_budget": null,
+        "median_objective": 17236.0,
+        "median_wall_seconds": 1.0177582470350899,
+        "min_objective": 17236.0,
+        "n": 1
+      },
+      "wmsf_l2": {
+        "iteration_budget": null,
+        "median_objective": 17412.0,
+        "median_wall_seconds": 1.1270440919906832,
+        "min_objective": 17412.0,
+        "n": 1
+      }
+    },
+    "source_experiment": "EXP04"
+  },
+  "exp04_er_n120_k03_r01": {
+    "algorithms": {
+      "igraph_eades_weighted": {
+        "iteration_budget": null,
+        "median_objective": 2594.0,
+        "median_wall_seconds": 0.8684345429646783,
+        "min_objective": 2594.0,
+        "n": 1
+      },
+      "ipsns": {
+        "iteration_budget": 400,
+        "median_objective": 1389.0,
+        "median_wall_seconds": 6.248653293994721,
+        "min_objective": 1389.0,
+        "n": 3
+      },
+      "lrta": {
+        "iteration_budget": null,
+        "median_objective": 1636.0,
+        "median_wall_seconds": 4.039530141046271,
+        "min_objective": 1636.0,
+        "n": 1
+      },
+      "wmsf_l2": {
+        "iteration_budget": null,
+        "median_objective": 1528.0,
+        "median_wall_seconds": 1.1867883499944583,
+        "min_objective": 1528.0,
+        "n": 1
+      }
+    },
+    "source_experiment": "EXP04"
+  },
+  "exp04_er_n240_k05_r01": {
+    "algorithms": {
+      "igraph_eades_weighted": {
+        "iteration_budget": null,
+        "median_objective": 11545.0,
+        "median_wall_seconds": 0.8252517419750802,
+        "min_objective": 11545.0,
+        "n": 1
+      },
+      "ipsns": {
+        "iteration_budget": 400,
+        "median_objective": 7763.0,
+        "median_wall_seconds": 20.07255843898747,
+        "min_objective": 7763.0,
+        "n": 3
+      },
+      "lrta": {
+        "iteration_budget": null,
+        "median_objective": 8173.0,
+        "median_wall_seconds": 1.127341240993701,
+        "min_objective": 8173.0,
+        "n": 1
+      },
+      "wmsf_l2": {
+        "iteration_budget": null,
+        "median_objective": 8794.0,
+        "median_wall_seconds": 0.9834892540238798,
+        "min_objective": 8794.0,
+        "n": 1
+      }
+    },
+    "source_experiment": "EXP04"
+  },
+  "exp04_sf_n120_k03_r01": {
+    "algorithms": {
+      "igraph_eades_weighted": {
+        "iteration_budget": null,
+        "median_objective": 494.0,
+        "median_wall_seconds": 0.8678747279918753,
+        "min_objective": 494.0,
+        "n": 1
+      },
+      "ipsns": {
+        "iteration_budget": 400,
+        "median_objective": 388.0,
+        "median_wall_seconds": 1.018609919003211,
+        "min_objective": 388.0,
+        "n": 3
+      },
+      "lrta": {
+        "iteration_budget": null,
+        "median_objective": 388.0,
+        "median_wall_seconds": 0.8193083470105194,
+        "min_objective": 388.0,
+        "n": 1
+      },
+      "wmsf_l2": {
+        "iteration_budget": null,
+        "median_objective": 437.0,
+        "median_wall_seconds": 0.8348972349776886,
+        "min_objective": 437.0,
+        "n": 1
+      }
+    },
+    "source_experiment": "EXP04"
+  },
+  "exp06_cm_n12_k02_r01__uniform_1_100": {
+    "algorithms": {
+      "igraph_eades_weighted": {
+        "iteration_budget": null,
+        "median_objective": 103.0,
+        "median_wall_seconds": 0.8183412390062585,
+        "min_objective": 103.0,
+        "n": 1
+      },
+      "ipsns": {
+        "iteration_budget": 200,
+        "median_objective": 103.0,
+        "median_wall_seconds": 0.8666929299943149,
+        "min_objective": 103.0,
+        "n": 3
+      },
+      "lrta": {
+        "iteration_budget": null,
+        "median_objective": 118.0,
+        "median_wall_seconds": 0.9182390750502236,
+        "min_objective": 118.0,
+        "n": 1
+      },
+      "wmsf_l2": {
+        "iteration_budget": null,
+        "median_objective": 103.0,
+        "median_wall_seconds": 0.9757811700110324,
+        "min_objective": 103.0,
+        "n": 1
+      }
+    },
+    "exact": {
+      "lower_bound": 103.0,
+      "objective": 103.0,
+      "status": "CERTIFIED_OPTIMAL"
+    },
+    "source_experiment": "EXP06"
+  },
+  "exp06_er_n12_k02_r01__uniform_1_100": {
+    "algorithms": {
+      "igraph_eades_weighted": {
+        "iteration_budget": null,
+        "median_objective": 217.0,
+        "median_wall_seconds": 1.9216630639857613,
+        "min_objective": 217.0,
+        "n": 1
+      },
+      "ipsns": {
+        "iteration_budget": 200,
+        "median_objective": 150.0,
+        "median_wall_seconds": 0.880846971005667,
+        "min_objective": 150.0,
+        "n": 3
+      },
+      "lrta": {
+        "iteration_budget": null,
+        "median_objective": 150.0,
+        "median_wall_seconds": 1.9253753820084967,
+        "min_objective": 150.0,
+        "n": 1
+      },
+      "wmsf_l2": {
+        "iteration_budget": null,
+        "median_objective": 217.0,
+        "median_wall_seconds": 1.973128800978884,
+        "min_objective": 217.0,
+        "n": 1
+      }
+    },
+    "exact": {
+      "lower_bound": 150.0,
+      "objective": 150.0,
+      "status": "CERTIFIED_OPTIMAL"
+    },
+    "source_experiment": "EXP06"
+  },
+  "exp06_er_n20_k04_r01__capped_lognormal": {
+    "algorithms": {
+      "igraph_eades_weighted": {
+        "iteration_budget": null,
+        "median_objective": 543.0,
+        "median_wall_seconds": 0.766338734945748,
+        "min_objective": 543.0,
+        "n": 1
+      },
+      "ipsns": {
+        "iteration_budget": 200,
+        "median_objective": 357.0,
+        "median_wall_seconds": 0.9170441749738529,
+        "min_objective": 357.0,
+        "n": 3
+      },
+      "lrta": {
+        "iteration_budget": null,
+        "median_objective": 377.0,
+        "median_wall_seconds": 0.8158435379737057,
+        "min_objective": 377.0,
+        "n": 1
+      },
+      "wmsf_l2": {
+        "iteration_budget": null,
+        "median_objective": 377.0,
+        "median_wall_seconds": 0.7753105799783953,
+        "min_objective": 377.0,
+        "n": 1
+      }
+    },
+    "exact": {
+      "lower_bound": 334.0,
+      "objective": 334.0,
+      "status": "CERTIFIED_OPTIMAL"
+    },
+    "source_experiment": "EXP06"
+  },
+  "exp06_sf_n12_k02_r01__uniform_1_100": {
+    "algorithms": {
+      "igraph_eades_weighted": {
+        "iteration_budget": null,
+        "median_objective": 90.0,
+        "median_wall_seconds": 0.7671451490023173,
+        "min_objective": 90.0,
+        "n": 1
+      },
+      "ipsns": {
+        "iteration_budget": 200,
+        "median_objective": 90.0,
+        "median_wall_seconds": 0.8669019039953128,
+        "min_objective": 90.0,
+        "n": 3
+      },
+      "lrta": {
+        "iteration_budget": null,
+        "median_objective": 90.0,
+        "median_wall_seconds": 0.8703045529546216,
+        "min_objective": 90.0,
+        "n": 1
+      },
+      "wmsf_l2": {
+        "iteration_budget": null,
+        "median_objective": 90.0,
+        "median_wall_seconds": 0.7664467630092986,
+        "min_objective": 90.0,
+        "n": 1
+      }
+    },
+    "exact": {
+      "lower_bound": 90.0,
+      "objective": 90.0,
+      "status": "CERTIFIED_OPTIMAL"
+    },
+    "source_experiment": "EXP06"
+  },
+  "sf_n060_k04": {
+    "algorithms": {
+      "ipsns": {
+        "iteration_budget": 400,
+        "median_objective": 914.0,
+        "median_wall_seconds": 0.970183786994312,
+        "min_objective": 914.0,
+        "n": 3
+      },
+      "lrta": {
+        "iteration_budget": null,
+        "median_objective": 914.0,
+        "median_wall_seconds": 0.7703528300044127,
+        "min_objective": 914.0,
+        "n": 1
+      },
+      "wmsf_l2": {
+        "iteration_budget": null,
+        "median_objective": 929.0,
+        "median_wall_seconds": 0.8167094769887626,
+        "min_objective": 929.0,
+        "n": 1
+      }
+    },
+    "source_experiment": "EXP03"
+  }
+}

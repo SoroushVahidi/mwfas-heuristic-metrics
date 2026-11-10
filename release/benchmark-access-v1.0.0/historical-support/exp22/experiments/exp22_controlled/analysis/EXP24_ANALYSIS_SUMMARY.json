@@ -1,0 +1,61 @@
+{
+  "corrected_audit": {
+    "statuses": {
+      "FAILED": 0,
+      "INVALID": 0,
+      "PASS": 0,
+      "TIMEOUT": 15
+    },
+    "usable_objectives": 9
+  },
+  "first_audit": {
+    "statuses": {
+      "FAILED": 0,
+      "INVALID": 0,
+      "PASS": 0,
+      "TIMEOUT": 1
+    },
+    "usable_objectives": 1
+  },
+  "format": "exp24-controlled-pilot-analysis-v1",
+  "graph_budgets": 13,
+  "graphs": 5,
+  "original_audit": {
+    "statuses": {
+      "FAILED": 0,
+      "INVALID": 22,
+      "PASS": 37,
+      "TIMEOUT": 19
+    },
+    "usable_objectives": 51
+  },
+  "paired_seeds": {
+    "restart_minus_ipsns_per_T": 12,
+    "restart_minus_single_per_T": 24,
+    "single_minus_ipsns_per_T": 12
+  },
+  "recovery": {
+    "original_invalid": 22,
+    "remaining_invalid": 6,
+    "remaining_invalid_task_ids": [
+      "exp04_er_n480_k05_r01__b1__ipsns_frozen__s1",
+      "exp04_er_n480_k05_r01__b1__ipsns_frozen__s2",
+      "exp04_er_n480_k05_r01__b1__xiong_restarts__s1",
+      "exp04_er_n480_k05_r01__b1__xiong_restarts__s2",
+      "exp04_er_n480_k05_r01__b1__xiong_single__s2",
+      "exp04_sf_n120_k05_r01__b1__ipsns_frozen__s2"
+    ],
+    "replaced_invalid": 16
+  },
+  "source_revisions": {
+    "ipsns": "40209c26966247d9bf9ad34764de4ac4181f98c2",
+    "xiong": "8340e1633ba9290a567a882aff4d74f01b38102d"
+  },
+  "statuses": {
+    "INVALID": 6,
+    "PASS": 37,
+    "TIMEOUT": 35
+  },
+  "tasks": 78,
+  "usable_objectives": 61
+}

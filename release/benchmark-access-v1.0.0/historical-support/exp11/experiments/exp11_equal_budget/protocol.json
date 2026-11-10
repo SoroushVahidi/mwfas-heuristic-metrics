@@ -1,0 +1,21 @@
+{
+  "format": "exp11-feasibility-protocol-v1",
+  "base_revision": "764f6cd284a502524b51c65fa8d13855c3a73c95",
+  "xiong_revision": "8340e1633ba9290a567a882aff4d74f01b38102d",
+  "ipsns_revision": "40209c26966247d9bf9ad34764de4ac4181f98c2",
+  "canonical_inventory": "analysis/cross_campaign/results/08a2a48/wulver__canonical_graphs.csv.gz",
+  "synthetic_ids": ["exp04_er_n120_k05_r01", "exp04_cm_n120_k05_r01", "exp04_sf_n120_k05_r01", "exp04_er_n480_k05_r01"],
+  "real_world_ids": ["exp05_college_full_count"],
+  "synthetic_budgets_seconds": [1, 10, 30],
+  "real_world_budgets_seconds": [120],
+  "arms": ["xiong_single", "xiong_restarts", "ipsns_frozen"],
+  "top_level_seeds": [1, 2],
+  "maximum_tasks": 78,
+  "maximum_sum_task_budgets_seconds": 1704,
+  "ipsns_iterations": 200,
+  "restart_seed_rule": "first seed equals top-level seed; later seed = 1 + ((top_seed * 1000003 + restart_index * 104729) mod 2147483646), restart_index starts at 1",
+  "deadline_rule": "monotonic deadline starts before worker process launch; graph parse, conversion, executable launch, validation, and controller overhead all count; only fully validated outputs checkpointed before the deadline are creditable",
+  "endpoint_rule": "minimum independently recomputed backward-arc weight among complete feasible orderings checkpointed before deadline; timeout without such an ordering has no objective",
+  "ipsns_incumbent_rule": "frozen function writes complete order only on return; progress scalar is not a valid incumbent; no instrumentation or inferred trajectory",
+  "analysis_rule": "descriptive per-input status, objective, normalized objective difference, restart improvement and wall/CPU diagnostics; no significance test or population-level claim"
+}

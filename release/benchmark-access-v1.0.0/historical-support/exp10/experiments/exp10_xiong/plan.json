@@ -1,0 +1,14 @@
+{
+  "format": "exp10-xiong-matched-v1",
+  "xiong_revision": "8340e1633ba9290a567a882aff4d74f01b38102d",
+  "ipsns_revision": "40209c26966247d9bf9ad34764de4ac4181f98c2",
+  "canonical_inventory": "analysis/cross_campaign/results/08a2a48/wulver__canonical_graphs.csv.gz",
+  "synthetic": {"campaign": "EXP04", "target_degree": 5, "sizes": [120, 240, 480], "replicates": [1, 2]},
+  "real_world_ids": ["exp05_college_full_count", "exp05_email_full", "exp05_wiki_vote_full_reference"],
+  "seeds": [1, 2],
+  "algorithms": ["xiong_rasstar", "ipsns"],
+  "ipsns_iterations": 200,
+  "process_wall_cap_seconds": 120,
+  "maximum_tasks": 84,
+  "third_party_source_policy": "Private research evaluation only; do not commit or redistribute Xiong source or binary."
+}

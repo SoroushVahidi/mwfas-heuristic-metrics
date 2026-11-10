@@ -1,0 +1,45 @@
+{
+  "format": "exp27-compatibility-protocol-v1",
+  "source_preflight_commit": "018ea9edc73c32fff71af54cc71b28de96ce9f14",
+  "adapter_release_revision": "0c8d88e2a045f5e791760b87e2f3b21fed53185c",
+  "baseline_revision": "40209c26966247d9bf9ad34764de4ac4181f98c2",
+  "ipsns_file_sha256": "46a3f2b549897df1037ebe257e47b17490bddaa97effb2e31bce20a50ea54b36",
+  "xiong_revision": "8340e1633ba9290a567a882aff4d74f01b38102d",
+  "xiong_source_archive_sha256": "ff3f9f7a6182fccf8ea0b8e7d056ab8b34a612cb86da62dedf1b892bb75a1a07",
+  "xiong_binary_sha256": "f58c54bb41e6e896225df40fab52b4e8e747a0967aa80ea3583c8025f2b7a2a9",
+  "graphs": {
+    "exp04_cm_n480_k08_r02": {
+      "cap_seconds": 30,
+      "dimacs_sha256": "ee9d8ee6b198093ad0826997e6f9660c310c4dcdc2b4d06b1dd3e1e9a4935ee0",
+      "canonical_graph_sha256": "5c4fcc01f732086e515c09b689e3b36de4e23a2b93cbe07552f548f11ea736f8",
+      "n": 480, "m": 3840, "total_weight": 194188, "source_loop_constant": 0
+    },
+    "exp13_lodes_de_commute": {
+      "cap_seconds": 300,
+      "dimacs_sha256": "23b2e6cb3695caa4efc86cb2c0a17b036ede9aad235bf7e5df05610fe039a6c6",
+      "canonical_graph_sha256": "05ee0be0bfa1badd9d8ecf029fc00baea203a28547f0c21dd0c959372fd9bf4c",
+      "n": 259, "m": 38004, "total_weight": 337017, "source_loop_constant": 18628
+    }
+  },
+  "synthetic_arms": [
+    {"arm": "lrta", "seed": null},
+    {"arm": "wmsf_l2", "seed": null},
+    {"arm": "weighted_eades", "seed": null},
+    {"arm": "insertion_lrta", "seed": null},
+    {"arm": "insertion_wmsf_l2", "seed": null},
+    {"arm": "ipsns", "seed": 1},
+    {"arm": "ipsns", "seed": 2},
+    {"arm": "xiong_single", "seed": 1},
+    {"arm": "xiong_single", "seed": 2},
+    {"arm": "xiong_restarts", "seed": 1},
+    {"arm": "xiong_restarts", "seed": 2}
+  ],
+  "real_arm": {"arm": "ipsns", "seed": 1},
+  "max_tasks": 12,
+  "nominal_cap_seconds": 630,
+  "controller_shutdown_reserve_seconds": 3.0,
+  "worker_internal_reserve_seconds": 4.0,
+  "ipsns": {"seed_ordering": "L2", "iters": 200, "topK_scc": 15, "destroy_addback_frac": 0.30, "destroy_remove_frac": 0.02, "tol": 1e-12, "wmsf_seed_mode": "full", "scc_select_mode": "weighted"},
+  "insertion": {"max_moves": 1000, "deadline_rule": "task_monotonic_deadline_minus_worker_reserve"},
+  "xiong": {"command": "RASstar -r SEED -p -o RANKS", "weight_replacing_option": "omitted", "restart_seed_rule": "EXP11: seed if index=0 else 1+((seed*1000003+index*104729)%2147483646)"}
+}

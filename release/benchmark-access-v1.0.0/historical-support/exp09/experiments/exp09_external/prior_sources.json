@@ -1,0 +1,25 @@
+{
+  "schema": "mwfas-exp09-prior-export-provenance-v1",
+  "exports": {
+    "EXP03": {
+      "path": "CUSTODY_PATH/algorithm_runs.parquet",
+      "sha256": "ceb0e9a439f3fdf3ef52b7176388d0874ea7e13662f4bb5c5d9ed982912efe4a",
+      "validation_report": "CUSTODY_PATH/validation_report.json",
+      "validation_sha256": "eb5af2a290a76a26b26418fdad75d9fc8d3864f7a5b84ea0fcf3a706de44231e"
+    },
+    "EXP04": {
+      "path": "CUSTODY_PATH/algorithm_runs.parquet",
+      "sha256": "e366b93b445715da0b71f697142cdc7ee777c91c799a3ec3537fd7cf91cbaf26",
+      "validation_report": "CUSTODY_PATH/validation_report.json",
+      "validation_sha256": "fce36f276474f220b5076743143cb4eaf36e6b3c6c8bc68a713aba55ab9f3e89"
+    },
+    "EXP06": {
+      "path": "CUSTODY_PATH/heuristic_runs.parquet",
+      "sha256": "2af3c76b1885839de73797c190f7adfe65de10d6527734a99ff13aa951065f95",
+      "exact_path": "CUSTODY_PATH/exact_solver_runs.parquet",
+      "exact_sha256": "77a4e836c13730b01b886ae2f741879b95f38958e82739fb98f19dbc0ed06442",
+      "validation_report": "CUSTODY_PATH/validation_report.json",
+      "validation_sha256": "c377314c24bf9954cb5aa1dd1fcc12844d6a1b81ebcb7ca49dcd4b6a96131086"
+    }
+  }
+}
