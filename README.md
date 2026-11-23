@@ -1,4 +1,29 @@
-# MWFAS Heuristic Metrics: public reference and validation package
+# MWFAS Heuristic Metrics: Audited Benchmark Data and Verifiers
+
+**In plain words.** Papers on heuristics for the *minimum weighted feedback arc set* problem often report numbers that are hard to check, because the exact graphs, orderings and run conditions are missing. This repository is the verification side of an **audited benchmark** for MWFAS heuristics. It provides validation code (a DIMACS reader, backward-arc and acyclicity checks), pinned hash-checked references to every public input, and scripts that recompute published objective values from public downloads. The metrics themselves live on Hugging Face ([mwfas-heuristic-metrics](https://huggingface.co/datasets/SoroushVahidi/mwfas-heuristic-metrics), [mwfas-benchmark-extension](https://huggingface.co/datasets/SoroushVahidi/mwfas-benchmark-extension)).
+
+## Paper
+
+- **Preprint:** S. Vahidi. *An Audited Benchmark for Minimum Weighted Feedback Arc Set: Graph Identity, Algorithm Comparison, and Reproducibility.* Research Square, 2026. [doi:10.21203/rs.3.rs-11436856/v1](https://doi.org/10.21203/rs.3.rs-11436856/v1). Not yet peer-reviewed. (The repository text below calls the accompanying manuscript *An Audited Benchmark Dataset for Reproducible Evaluation of Minimum Weighted Feedback Arc Set Heuristics*.)
+
+```bibtex
+@misc{vahidi2026auditedmwfas,
+  author = {Vahidi, Soroush},
+  title  = {An Audited Benchmark for Minimum Weighted Feedback Arc Set: Graph Identity, Algorithm Comparison, and Reproducibility},
+  year   = {2026},
+  note   = {Research Square preprint},
+  doi    = {10.21203/rs.3.rs-11436856/v1}
+}
+```
+
+Related public work:
+
+- Algorithms evaluated: [minimum-weighted-fas-heuristics](https://github.com/SoroushVahidi/minimum-weighted-fas-heuristics), preprint [doi:10.2139/ssrn.6281222](https://doi.org/10.2139/ssrn.6281222)
+- Ranking application (published): S. Vahidi, The Journal of Supercomputing 2026, [doi:10.1007/s11227-026-08852-4](https://doi.org/10.1007/s11227-026-08852-4)
+
+---
+
+> The detailed documentation below is kept from the previous README, with only small factual updates.
 
 **Research author: Soroush Vahidi.** This independent repository provides original validation code, baseline audit metadata, schemas and hash-checked references for the MWFAS Heuristic Metrics research program. It has a new Git history and contains no private experimental evidence or raw historical research graphs.
 
